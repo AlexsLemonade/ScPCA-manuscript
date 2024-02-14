@@ -99,21 +99,3 @@ jobs:
           CI_BUILD_WEB_URL: https://github.com/${{ github.repository }}/commit/${{ github.sha }}/checks
           CI_JOB_WEB_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: bash ci/deploy.sh
-  deploy-preview:
-    runs-on: ubuntu-20.04
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Install and Build
-        if: github.event.action != 'closed' # You might want to skip the build if the PR has been closed
-        run: |
-          npm install
-          npm run build
-      - name: Deploy preview
-        uses: rossjrw/pr-preview-action@v1
-        with:
-          source-dir: .
-          preview-branch: output
-          action: auto # https://github.com/marketplace/actions/deploy-pr-preview#configuration
