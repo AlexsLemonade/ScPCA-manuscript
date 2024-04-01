@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2024-03-27'
+date-meta: '2024-04-01'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -35,11 +35,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2024-03-27" />
-  <meta name="citation_publication_date" content="2024-03-27" />
-  <meta property="article:published_time" content="2024-03-27" />
-  <meta name="dc.modified" content="2024-03-27T13:09:00+00:00" />
-  <meta property="article:modified_time" content="2024-03-27T13:09:00+00:00" />
+  <meta name="dc.date" content="2024-04-01" />
+  <meta name="citation_publication_date" content="2024-04-01" />
+  <meta property="article:published_time" content="2024-04-01" />
+  <meta name="dc.modified" content="2024-04-01T20:57:27+00:00" />
+  <meta property="article:modified_time" content="2024-04-01T20:57:27+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -93,9 +93,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/e95df636601c92ea7acaeb0efb75261593b3da11/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/e95df636601c92ea7acaeb0efb75261593b3da11/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/e95df636601c92ea7acaeb0efb75261593b3da11/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/fa9c3b17ecce1be431191a563584ffeb8d7dd4dc/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/fa9c3b17ecce1be431191a563584ffeb8d7dd4dc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/fa9c3b17ecce1be431191a563584ffeb8d7dd4dc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -117,10 +117,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/e95df636601c92ea7acaeb0efb75261593b3da11/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/fa9c3b17ecce1be431191a563584ffeb8d7dd4dc/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@e95df63](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/e95df636601c92ea7acaeb0efb75261593b3da11)
-on March 27, 2024.
+from [AlexsLemonade/ScPCA-manuscript@fa9c3b1](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/fa9c3b17ecce1be431191a563584ffeb8d7dd4dc)
+on April 1, 2024.
 </em></small>
 
 
@@ -381,12 +381,12 @@ The project card also indicates the type(s) of sequencing performed, including t
 
 ## Uniform processing of data available on the ScPCA Portal
 
-All data available on the Portal was uniformly processed using [`scpca-nf`](https://github.com/AlexsLemonade/scpca-nf), an open-source and efficient Nextflow [@doi:10.1038/nbt.3820] workflow for quantifying single-cell and single-nuclei RNA-seq data.
+We developed [`scpca-nf`](https://github.com/AlexsLemonade/scpca-nf), an open-source and efficient Nextflow [@doi:10.1038/nbt.3820] workflow for quantifying single-cell and single-nuclei RNA-seq data and processed all data available on the Portal with it.
 Using Nextflow as the backbone for the `scpca-nf` workflow ensures both reproducibility and portability.
 All dependencies for the workflow are handled automatically, as each process in the workflow is run in a Docker container.
 Nextflow is compatible with various computing environments, including high-performance computing clusters and cloud-based computing, allowing users to run the workflow in their preferred environment.
-Setup requires organizing input files and updating a single configuration file for your computing environment after installing Nextflow and either Docker or Singularity.
-Nextflow will also handle parallelizing sample processing as allowed by your environment, minimizing run time.
+Setup requires organizing input files and updating a single configuration file for the computing environment after installing Nextflow and either Docker or Singularity.
+Nextflow will also handle parallelizing sample processing as allowed by the environment, minimizing run time.
 The combination of being able to execute a Nextflow workflow in any environment and run individual processes in Docker containers makes this workflow easily portable for external use.
 
 When building `scpca-nf`, we sought a fast and memory-efficient tool for gene expression quantification to minimize processing costs.
