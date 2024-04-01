@@ -38,8 +38,8 @@ header-includes: |
   <meta name="dc.date" content="2024-04-01" />
   <meta name="citation_publication_date" content="2024-04-01" />
   <meta property="article:published_time" content="2024-04-01" />
-  <meta name="dc.modified" content="2024-04-01T20:57:27+00:00" />
-  <meta property="article:modified_time" content="2024-04-01T20:57:27+00:00" />
+  <meta name="dc.modified" content="2024-04-01T21:05:34+00:00" />
+  <meta property="article:modified_time" content="2024-04-01T21:05:34+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -57,7 +57,7 @@ header-includes: |
   <meta name="citation_author_orcid" content="0000-0002-9090-4788" />
   <meta name="citation_author" content="David S. Mejia" />
   <meta name="citation_author_institution" content="Childhood Cancer Data Lab, Alex&#39;s Lemonade Stand Foundation, Bala Cynwyd, PA, 19004, USA" />
-  <meta name="citation_author_orcid" content="TODO" />
+  <meta name="citation_author_orcid" content="0000-0003-1679-0353" />
   <meta name="citation_author" content="Deepashree Venkatesh Prasad" />
   <meta name="citation_author_institution" content="Childhood Cancer Data Lab, Alex&#39;s Lemonade Stand Foundation, Bala Cynwyd, PA, 19004, USA" />
   <meta name="citation_author_orcid" content="0000-0001-5756-4083" />
@@ -93,9 +93,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/fa9c3b17ecce1be431191a563584ffeb8d7dd4dc/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/fa9c3b17ecce1be431191a563584ffeb8d7dd4dc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/fa9c3b17ecce1be431191a563584ffeb8d7dd4dc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b84c7a5448ef15101f4f858fb7fd2d57fb9ef016/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b84c7a5448ef15101f4f858fb7fd2d57fb9ef016/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b84c7a5448ef15101f4f858fb7fd2d57fb9ef016/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -117,9 +117,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/fa9c3b17ecce1be431191a563584ffeb8d7dd4dc/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/b84c7a5448ef15101f4f858fb7fd2d57fb9ef016/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@fa9c3b1](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/fa9c3b17ecce1be431191a563584ffeb8d7dd4dc)
+from [AlexsLemonade/ScPCA-manuscript@b84c7a5](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/b84c7a5448ef15101f4f858fb7fd2d57fb9ef016)
 on April 1, 2024.
 </em></small>
 
@@ -168,7 +168,7 @@ on April 1, 2024.
 + **David S. Mejia**
   <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [TODO](https://orcid.org/TODO)
+    [0000-0003-1679-0353](https://orcid.org/0000-0003-1679-0353)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [davidsmejia](https://github.com/davidsmejia)
     <br>
