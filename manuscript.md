@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2024-04-01'
+date-meta: '2024-04-03'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -35,11 +35,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2024-04-01" />
-  <meta name="citation_publication_date" content="2024-04-01" />
-  <meta property="article:published_time" content="2024-04-01" />
-  <meta name="dc.modified" content="2024-04-01T21:05:34+00:00" />
-  <meta property="article:modified_time" content="2024-04-01T21:05:34+00:00" />
+  <meta name="dc.date" content="2024-04-03" />
+  <meta name="citation_publication_date" content="2024-04-03" />
+  <meta property="article:published_time" content="2024-04-03" />
+  <meta name="dc.modified" content="2024-04-03T14:10:39+00:00" />
+  <meta property="article:modified_time" content="2024-04-03T14:10:39+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -65,10 +65,8 @@ header-includes: |
   <meta name="citation_author_institution" content="Childhood Cancer Data Lab, Alex&#39;s Lemonade Stand Foundation, Bala Cynwyd, PA, 19004, USA" />
   <meta name="citation_author" content="Arkadii Yakovets" />
   <meta name="citation_author_institution" content="Childhood Cancer Data Lab, Alex&#39;s Lemonade Stand Foundation, Bala Cynwyd, PA, 19004, USA" />
-  <meta name="citation_author_orcid" content="TODO" />
   <meta name="citation_author" content="Kurt G. Wheeler" />
   <meta name="citation_author_institution" content="Childhood Cancer Data Lab, Alex&#39;s Lemonade Stand Foundation, Bala Cynwyd, PA, 19004, USA" />
-  <meta name="citation_author_orcid" content="TODO" />
   <meta name="citation_author" content="Chante J. Bethell" />
   <meta name="citation_author_institution" content="Childhood Cancer Data Lab, Alex&#39;s Lemonade Stand Foundation, Bala Cynwyd, PA, 19004, USA" />
   <meta name="citation_author_institution" content="The University of Texas MD Anderson Cancer Center, UTHealth Houston Graduate School of Biomedical Sciences, Houston, TX, 77030, USA" />
@@ -93,9 +91,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b84c7a5448ef15101f4f858fb7fd2d57fb9ef016/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b84c7a5448ef15101f4f858fb7fd2d57fb9ef016/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b84c7a5448ef15101f4f858fb7fd2d57fb9ef016/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/1164e863ce7c32bc0f5b37c15d131a6ee7ee507f/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/1164e863ce7c32bc0f5b37c15d131a6ee7ee507f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/1164e863ce7c32bc0f5b37c15d131a6ee7ee507f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -117,10 +115,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/b84c7a5448ef15101f4f858fb7fd2d57fb9ef016/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/1164e863ce7c32bc0f5b37c15d131a6ee7ee507f/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@b84c7a5](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/b84c7a5448ef15101f4f858fb7fd2d57fb9ef016)
-on April 1, 2024.
+from [AlexsLemonade/ScPCA-manuscript@1164e86](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/1164e863ce7c32bc0f5b37c15d131a6ee7ee507f)
+on April 3, 2024.
 </em></small>
 
 
@@ -201,8 +199,6 @@ on April 1, 2024.
 
 + **Arkadii Yakovets**
   <br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [TODO](https://orcid.org/TODO)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [arkid15r](https://github.com/arkid15r)
     <br>
@@ -213,8 +209,6 @@ on April 1, 2024.
 
 + **Kurt G. Wheeler**
   <br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [TODO](https://orcid.org/TODO)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [kurtwheeler](https://github.com/kurtwheeler)
     <br>

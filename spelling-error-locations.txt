@@ -1,6 +1,1 @@
-content/03.results.md:16:TODO
-content/03.results.md:139:TODO
-content/03.results.md:202:TODO
-content/03.results.md:239:TODO
-content/05.discussion.md:25:TODO
 content/06.administrative.md:5:SMF

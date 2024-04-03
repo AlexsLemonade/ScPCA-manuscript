@@ -26,7 +26,6 @@ sjspielman
 SMF
 Spielman
 Taroni
-TODO
 UTHealth
 Venkatesh
 Yakovets
