@@ -65,8 +65,8 @@
   <meta name="dc.date" content="2024-04-03" />
   <meta name="citation_publication_date" content="2024-04-03" />
   <meta property="article:published_time" content="2024-04-03" />
-  <meta name="dc.modified" content="2024-04-03T14:10:39+00:00" />
-  <meta property="article:modified_time" content="2024-04-03T14:10:39+00:00" />
+  <meta name="dc.modified" content="2024-04-03T16:43:40+00:00" />
+  <meta property="article:modified_time" content="2024-04-03T16:43:40+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -118,9 +118,9 @@
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/1164e863ce7c32bc0f5b37c15d131a6ee7ee507f/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/1164e863ce7c32bc0f5b37c15d131a6ee7ee507f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/1164e863ce7c32bc0f5b37c15d131a6ee7ee507f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/3756993ac8011f23d66880013329f18b4caf5b9e/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/3756993ac8011f23d66880013329f18b4caf5b9e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/3756993ac8011f23d66880013329f18b4caf5b9e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -137,9 +137,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/1164e863ce7c32bc0f5b37c15d131a6ee7ee507f/">permalink</a>)
+(<a href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/3756993ac8011f23d66880013329f18b4caf5b9e/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/AlexsLemonade/ScPCA-manuscript/tree/1164e863ce7c32bc0f5b37c15d131a6ee7ee507f">AlexsLemonade/ScPCA-manuscript@1164e86</a>
+from <a href="https://github.com/AlexsLemonade/ScPCA-manuscript/tree/3756993ac8011f23d66880013329f18b4caf5b9e">AlexsLemonade/ScPCA-manuscript@3756993</a>
 on April 3, 2024.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -620,8 +620,9 @@ If median-based normalization failed for any reason, ADT counts were log-transfo
 Normalized counts are only available for any cells that would be retained after ADT filtering, and any cells that would be filtered out based on <code>DropletUtils::cleanTagCounts()</code> are assigned <code>NA</code>.
 The normalized ADT data are available in the <code>altExp</code> of the processed object.</p>
 <h3 id="processing-hto-data-from-multiplexed-libraries">Processing HTO data from multiplexed libraries</h3>
-<p>Although we did not perform any demultiplexing of samples within a multiplexed library, we did apply three different demultiplexing methods.
-Results from all three methods are included in the filtered and processed <code>SingleCellExperiment</code> objects along with the HTO counts data.</p>
+<p>To identify which cells come from which samples in a multiplexed library, we applied three different demultiplexing methods: genetic demultiplexing, HTO demultiplexing using <code>DropletUtils::hashedDrops()</code>, and HTO demultiplexing using <code>Seurat::HTODemux()</code>.
+We do not provide separate <code>SingleCellExperiment</code> objects for each sample in a library.
+Each multiplexed library object contains the counts data from all samples and the results from all three demultiplexing methods to allow users to select which method(s) to use.</p>
 <h4 id="genetic-demultiplexing">Genetic demultiplexing</h4>
 <p>If all samples in a multiplexed library were also sequenced using bulk RNA-seq, we performed genetic demultiplexing using genotype data from both bulk RNA-seq and single-cell or single-nuclei RNA-seq <span class="citation" data-cites="zLp25QYu">[<a href="#ref-zLp25QYu" role="doc-biblioref">47</a>]</span>.
 If bulk RNA-seq was not available, no genetic demultiplexing was performed.</p>
