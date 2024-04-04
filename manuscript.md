@@ -38,8 +38,8 @@ header-includes: |
   <meta name="dc.date" content="2024-04-04" />
   <meta name="citation_publication_date" content="2024-04-04" />
   <meta property="article:published_time" content="2024-04-04" />
-  <meta name="dc.modified" content="2024-04-04T16:20:40+00:00" />
-  <meta property="article:modified_time" content="2024-04-04T16:20:40+00:00" />
+  <meta name="dc.modified" content="2024-04-04T21:18:15+00:00" />
+  <meta property="article:modified_time" content="2024-04-04T21:18:15+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -91,9 +91,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b57eb10ce0000b0a4a5b7ef22c21ed9b8d1b0c84/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b57eb10ce0000b0a4a5b7ef22c21ed9b8d1b0c84/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b57eb10ce0000b0a4a5b7ef22c21ed9b8d1b0c84/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/e698e8df5f035d4713c7dc509df2d4e85be091e1/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/e698e8df5f035d4713c7dc509df2d4e85be091e1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/e698e8df5f035d4713c7dc509df2d4e85be091e1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -115,9 +115,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/b57eb10ce0000b0a4a5b7ef22c21ed9b8d1b0c84/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/e698e8df5f035d4713c7dc509df2d4e85be091e1/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@b57eb10](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/b57eb10ce0000b0a4a5b7ef22c21ed9b8d1b0c84)
+from [AlexsLemonade/ScPCA-manuscript@e698e8d](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/e698e8df5f035d4713c7dc509df2d4e85be091e1)
 on April 4, 2024.
 </em></small>
 
@@ -506,6 +506,8 @@ The genes available in the merged object will be the same as those in each indiv
 Where possible, library-, cell- and gene-specific metadata found in the individual processed `SingleCellExperiment` objects are also merged.
 The merged normalized counts matrix is then used to select high-variance genes in a library-aware manner before performing dimensionality reduction with both PCA and UMAP.
 `merge.nf` outputs the merged and processed object as a `SingleCellExperiment` object.
+The more samples that are included in a merged object, the larger the object, and the more difficult it is to work with that object in R or Python.
+Therefore, we do not provide merged objects for projects with more than 50 samples.
 
 We also account for additional modalities in `merge.nf`.
 If at least one library in a project contains ADT data, the raw and normalized ADT data are also merged and saved as an `altExp` in the merged `SingleCellExperiment` object.
@@ -744,6 +746,7 @@ The top 50 principal components were selected and used to calculate UMAP embeddi
 
 If any libraries included in the ScPCA project contain additional ADT data, the ADT data are also merged and stored in the `altExp` slot of the merged `SingleCellExperiment` object.
 By contrast, if any libraries included in the ScPCA project are multiplexed and contain HTO data, no merged object is created.
+Merged objects were not created for projects with more than 50 samples because of the computational resources that would be required for working with those objects.
 
 ### Converting SingleCellExperiment objects to AnnData objects
 
