@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2024-04-03'
+date-meta: '2024-04-04'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -35,11 +35,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2024-04-03" />
-  <meta name="citation_publication_date" content="2024-04-03" />
-  <meta property="article:published_time" content="2024-04-03" />
-  <meta name="dc.modified" content="2024-04-03T16:43:40+00:00" />
-  <meta property="article:modified_time" content="2024-04-03T16:43:40+00:00" />
+  <meta name="dc.date" content="2024-04-04" />
+  <meta name="citation_publication_date" content="2024-04-04" />
+  <meta property="article:published_time" content="2024-04-04" />
+  <meta name="dc.modified" content="2024-04-04T14:02:26+00:00" />
+  <meta property="article:modified_time" content="2024-04-04T14:02:26+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -91,9 +91,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/3756993ac8011f23d66880013329f18b4caf5b9e/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/3756993ac8011f23d66880013329f18b4caf5b9e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/3756993ac8011f23d66880013329f18b4caf5b9e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/3e6f15f202f1d13fc22bad98cc7ae12122f35339/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/3e6f15f202f1d13fc22bad98cc7ae12122f35339/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/3e6f15f202f1d13fc22bad98cc7ae12122f35339/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -115,10 +115,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/3756993ac8011f23d66880013329f18b4caf5b9e/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/3e6f15f202f1d13fc22bad98cc7ae12122f35339/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@3756993](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/3756993ac8011f23d66880013329f18b4caf5b9e)
-on April 3, 2024.
+from [AlexsLemonade/ScPCA-manuscript@3e6f15f](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/3e6f15f202f1d13fc22bad98cc7ae12122f35339)
+on April 4, 2024.
 </em></small>
 
 
@@ -806,6 +806,7 @@ Processed output from running `scpca-nf` on samples from pediatric tumors, cell 
 ## Acknowledgments
 
 We thank the data generators and submitters of the Single-cell Pediatric Cancer Atlas.
+We also thank Anna Greene for her role in constructing the Single-cell Pediatric Cancer Atlas funding opportunity.
 
 This work was funded through the Alex's Lemonade Stand Foundation Childhood Cancer Data Lab and Childhood Cancer Data Lab Postdoctoral Fellowship (SMF).
 
