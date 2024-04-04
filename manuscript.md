@@ -38,8 +38,8 @@ header-includes: |
   <meta name="dc.date" content="2024-04-04" />
   <meta name="citation_publication_date" content="2024-04-04" />
   <meta property="article:published_time" content="2024-04-04" />
-  <meta name="dc.modified" content="2024-04-04T15:28:02+00:00" />
-  <meta property="article:modified_time" content="2024-04-04T15:28:02+00:00" />
+  <meta name="dc.modified" content="2024-04-04T16:20:40+00:00" />
+  <meta property="article:modified_time" content="2024-04-04T16:20:40+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -91,9 +91,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c7ff2f075298dca1f9fb1ad25c579add373199a9/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c7ff2f075298dca1f9fb1ad25c579add373199a9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c7ff2f075298dca1f9fb1ad25c579add373199a9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b57eb10ce0000b0a4a5b7ef22c21ed9b8d1b0c84/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b57eb10ce0000b0a4a5b7ef22c21ed9b8d1b0c84/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b57eb10ce0000b0a4a5b7ef22c21ed9b8d1b0c84/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -115,9 +115,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/c7ff2f075298dca1f9fb1ad25c579add373199a9/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/b57eb10ce0000b0a4a5b7ef22c21ed9b8d1b0c84/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@c7ff2f0](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/c7ff2f075298dca1f9fb1ad25c579add373199a9)
+from [AlexsLemonade/ScPCA-manuscript@b57eb10](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/b57eb10ce0000b0a4a5b7ef22c21ed9b8d1b0c84)
 on April 4, 2024.
 </em></small>
 
@@ -595,6 +595,7 @@ Single-cell or single-nuclei libraries were generated using one of the commercia
 For bulk RNA-seq, RNA was collected and sequenced using either paired-end or single-end sequencing.
 For spatial transcriptomics, cDNA libraries were generated using the Visium kit from 10x Genomics.
 All libraries were processed using our open-source pipeline, `scpca-nf`, to produce summarized gene expression data.
+A detailed summary with the total number of samples and libraries collected for each sequencing method broken down by project is available in Table S1.
 
 ### Metadata
 
@@ -674,7 +675,7 @@ The normalized ADT data are available in the `altExp` of the processed object.
 ### Processing HTO data from multiplexed libraries
 
 To identify which cells come from which samples in a multiplexed library, we applied three different demultiplexing methods: genetic demultiplexing, HTO demultiplexing using `DropletUtils::hashedDrops()`, and  HTO demultiplexing using `Seurat::HTODemux()`.
-We do not provide separate `SingleCellExperiment` objects for each sample in a library. 
+We do not provide separate `SingleCellExperiment` objects for each sample in a library.
 Each multiplexed library object contains the counts data from all samples and the results from all three demultiplexing methods to allow users to select which method(s) to use.
 
 #### Genetic demultiplexing
@@ -938,7 +939,7 @@ This table provides descriptions and sample and library counts for each project 
 `Total number of samples (S)`: Number of samples associated with the project.
 `Total number of libraries (L)`: Number of libraries associated with the project.
 Due to additional sequencing modalities and/or multiplexing, projects may have more libraries than samples.
-All remaining columns give the number of libraries (as designated with `(L)`) with the given suspension type or additional modality.
+All remaining columns give the number of libraries (as designated with `(L)`) with the given suspension type, 10x kit version, or additional modality.
 <br><br>
 
 <!-- Table S2 -->
