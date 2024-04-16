@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2024-04-04'
+date-meta: '2024-04-16'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -35,11 +35,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2024-04-04" />
-  <meta name="citation_publication_date" content="2024-04-04" />
-  <meta property="article:published_time" content="2024-04-04" />
-  <meta name="dc.modified" content="2024-04-04T21:18:15+00:00" />
-  <meta property="article:modified_time" content="2024-04-04T21:18:15+00:00" />
+  <meta name="dc.date" content="2024-04-16" />
+  <meta name="citation_publication_date" content="2024-04-16" />
+  <meta property="article:published_time" content="2024-04-16" />
+  <meta name="dc.modified" content="2024-04-16T16:57:29+00:00" />
+  <meta property="article:modified_time" content="2024-04-16T16:57:29+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -91,9 +91,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/e698e8df5f035d4713c7dc509df2d4e85be091e1/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/e698e8df5f035d4713c7dc509df2d4e85be091e1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/e698e8df5f035d4713c7dc509df2d4e85be091e1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c79771265be32478d0e2115b4b7be1de41bf30e0/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c79771265be32478d0e2115b4b7be1de41bf30e0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c79771265be32478d0e2115b4b7be1de41bf30e0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -115,10 +115,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/e698e8df5f035d4713c7dc509df2d4e85be091e1/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/c79771265be32478d0e2115b4b7be1de41bf30e0/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@e698e8d](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/e698e8df5f035d4713c7dc509df2d4e85be091e1)
-on April 4, 2024.
+from [AlexsLemonade/ScPCA-manuscript@c797712](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/c79771265be32478d0e2115b4b7be1de41bf30e0)
+on April 16, 2024.
 </em></small>
 
 
@@ -352,18 +352,18 @@ In addition to providing a human-readable value for the submitted metadata, we a
 Submitted metadata was mapped to associated ontology term identifiers obtained from HsapDV (age) [@url:https://www.ebi.ac.uk/ols4/ontologies/hsapdv], PATO (sex) [@doi:10.1093/bib/bbx035; @url:https://www.ebi.ac.uk/ols4/ontologies/pato], NCBI taxonomy (organism) [@doi:10.1093/database/baaa062; @url:https://www.ncbi.nlm.nih.gov/taxonomy], MONDO (disease) [@doi:10.1101/2022.04.13.22273750; @url:https://www.ebi.ac.uk/ols4/ontologies/mondo], UBERON (tissue) [@doi:10.1186/2041-1480-5-21; @doi:10.1186/gb-2012-13-1-r5; @url:https://www.ebi.ac.uk/ols4/ontologies/uberon], and Hancestro (ethnicity, if applicable) [@doi:10.1186/s13059-018-1396-2; @url:https://www.ebi.ac.uk/ols4/ontologies/hancestro].
 By providing these ontology term identifiers for each sample, users have access to standardized metadata terms that facilitate comparisons among datasets within the Portal as well as to data from other research projects.
 
-The Portal contains data from 500 samples and over 50 tumor types [@doi:10.1016/j.devcel.2022.04.003; @doi:10.21203/rs.3.rs-2517703/v1; @doi:10.21203/rs.3.rs-2517758/v1; @doi:10.1038/nature23647; @doi:10.1038/s41467-021-24781-7; @doi:10.1093/neuonc/noad207; @doi:10.1101/2023.12.26.573390].
+The Portal contains data from over 500 samples and over 50 tumor types [@doi:10.1016/j.devcel.2022.04.003; @doi:10.21203/rs.3.rs-2517703/v1; @doi:10.21203/rs.3.rs-2517758/v1; @doi:10.1038/nature23647; @doi:10.1038/s41467-021-24781-7; @doi:10.1093/neuonc/noad207; @doi:10.1101/2023.12.26.573390].
 <!-- TODO: Update numbers -->
 Figure {@fig:fig1}A summarizes all samples from patient tumors and patient-derived xenografts currently available on the Portal.
 The total number of samples for each diagnosis is shown, along with the proportion of samples from each disease stage within a diagnosis group.
-The largest number of samples found on the Portal were obtained from patients with leukemia (n = 192).
-The Portal also includes samples from brain and central nervous system tumors (n = 154), sarcoma and soft tissue tumors (n = 68), and a variety of other solid tumors (n = 87).
-Most samples were collected at initial diagnosis (n = 424), with a smaller number of samples collected either at recurrence (n = 64), during progressive disease (n = 10), or post-mortem (n = 2).
+The largest number of samples found on the Portal were obtained from patients with leukemia (n = 191).
+The Portal also includes samples from brain and central nervous system tumors (n = 166), sarcoma and soft tissue tumors (n = 68), and a variety of other solid tumors (n = 86).
+Most samples were collected at initial diagnosis (n = 426), with a smaller number of samples collected either at recurrence (n = 67), during progressive disease (n = 12), or post-mortem (n = 5).
 Along with the patient tumors, the Portal contains a small number of human tumor cell line samples (n = 4).
 
 Each of the available samples contains summarized gene expression data from either single-cell or single-nuclei RNA sequencing.
 However, some samples also include additional data, such as quantified expression data from tagging cells with antibody-derived tags (ADT), such as CITE-seq antibodies [@doi:10.1038/nmeth.4380], or multiplexing samples with hashtag oligonucleotides (HTO) [@doi:10.1186/s13059-018-1603-1] prior to sequencing.
-Out of the 500 samples, 96 have associated CITE-seq data, and 19 have associated multiplexing data.
+Out of the 518 samples, 96 have associated CITE-seq data, and 19 have associated multiplexing data.
 In some cases, multiple libraries from the same sample were collected for additional sequencing, either for bulk RNA-seq or spatial transcriptomics.
 Specifically, 118 samples on the Portal were sequenced using bulk RNA-seq and 94 samples were sequenced using spatial transcriptomics.
 A summary of the number of samples with each additional modality is shown in Figure {@fig:fig1}B, and a detailed summary of the total samples with each sequencing method broken down by project is available in Table S1.
@@ -507,7 +507,7 @@ Where possible, library-, cell- and gene-specific metadata found in the individu
 The merged normalized counts matrix is then used to select high-variance genes in a library-aware manner before performing dimensionality reduction with both PCA and UMAP.
 `merge.nf` outputs the merged and processed object as a `SingleCellExperiment` object.
 The more samples that are included in a merged object, the larger the object, and the more difficult it is to work with that object in R or Python.
-Therefore, we do not provide merged objects for projects with more than 50 samples.
+Therefore, we do not provide merged objects for projects with more than 100 samples.
 
 We also account for additional modalities in `merge.nf`.
 If at least one library in a project contains ADT data, the raw and normalized ADT data are also merged and saved as an `altExp` in the merged `SingleCellExperiment` object.
@@ -746,7 +746,7 @@ The top 50 principal components were selected and used to calculate UMAP embeddi
 
 If any libraries included in the ScPCA project contain additional ADT data, the ADT data are also merged and stored in the `altExp` slot of the merged `SingleCellExperiment` object.
 By contrast, if any libraries included in the ScPCA project are multiplexed and contain HTO data, no merged object is created.
-Merged objects were not created for projects with more than 50 samples because of the computational resources that would be required for working with those objects.
+Merged objects were not created for projects with more than 100 samples because of the computational resources that would be required for working with those objects.
 
 ### Converting SingleCellExperiment objects to AnnData objects
 
