@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2024-04-16'
+date-meta: '2024-04-18'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -35,11 +35,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2024-04-16" />
-  <meta name="citation_publication_date" content="2024-04-16" />
-  <meta property="article:published_time" content="2024-04-16" />
-  <meta name="dc.modified" content="2024-04-16T16:57:29+00:00" />
-  <meta property="article:modified_time" content="2024-04-16T16:57:29+00:00" />
+  <meta name="dc.date" content="2024-04-18" />
+  <meta name="citation_publication_date" content="2024-04-18" />
+  <meta property="article:published_time" content="2024-04-18" />
+  <meta name="dc.modified" content="2024-04-18T18:56:22+00:00" />
+  <meta property="article:modified_time" content="2024-04-18T18:56:22+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -91,9 +91,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c79771265be32478d0e2115b4b7be1de41bf30e0/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c79771265be32478d0e2115b4b7be1de41bf30e0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c79771265be32478d0e2115b4b7be1de41bf30e0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/01d2a7c47d299ec426da06a063238aeee33f5f0f/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/01d2a7c47d299ec426da06a063238aeee33f5f0f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/01d2a7c47d299ec426da06a063238aeee33f5f0f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -115,10 +115,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/c79771265be32478d0e2115b4b7be1de41bf30e0/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/01d2a7c47d299ec426da06a063238aeee33f5f0f/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@c797712](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/c79771265be32478d0e2115b4b7be1de41bf30e0)
-on April 16, 2024.
+from [AlexsLemonade/ScPCA-manuscript@01d2a7c](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/01d2a7c47d299ec426da06a063238aeee33f5f0f)
+on April 18, 2024.
 </em></small>
 
 
@@ -606,6 +606,7 @@ The submitted metadata was standardized across projects, including converting al
 For example, all samples obtained at diagnosis were assigned the value `Initial diagnosis` for disease timing.
 
 In an effort to ensure sample metadata for ScPCA are compatible with CZI's CELLxGENE, ontology term identifiers were assigned to metadata categories for each sample following the guidelines present in the CELLxGENE schema [@url:https://cellxgene.cziscience.com; @url:https://github.com/chanzuckerberg/single-cell-curation/blob/main/schema/3.0.0/schema.md], as shown in Table {@tbl:metadata}.
+<br><br>
 
 | Metadata field   | Ontology term description             |
 | ----------- | ------------------------------------------------------------------------------ |
@@ -857,7 +858,8 @@ C. Example of a project card as displayed on the "Browse" page of the ScPCA Port
 This project card is associated with project `SCPCP000009` [@doi:10.21203/rs.3.rs-2517703/v1; @doi:10.21203/rs.3.rs-2517758/v1].
 Project cards include information about the number of samples, technologies and modalities, additional sample metadata information, submitter-provided diagnoses, and a submitter-provided abstract.
 Where available, submitter-provided citation information, as well as other databases where this data has been deposited, are also provided.
-<br><br>
+<br><br><br><br><br>
+
 
 <!-- Figure 2 -->
 ![**Overview of the `scpca-nf` workflow.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.0/figures/compiled_figures/pngs/figure_2.png?sanitize=true){#fig:fig2 tag="2" width="7in"}
@@ -889,6 +891,7 @@ F. UMAP embeddings of log-normalized RNA expression values where each cell is co
 G. UMAP embeddings of log-normalized RNA expression values for the top four most variable genes, colored by the given gene's expression.
 In the actual summary QC report, the top 12 most highly variable genes are shown.
 <br><br>
+
 
 <!-- Figure 3 -->
 ![**ScPCA Portal project download file structure and merged object workflow.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.0/figures/compiled_figures/pngs/figure_3.png?sanitize=true){#fig:fig3 tag="3" width="7in"}
@@ -1037,7 +1040,7 @@ Red diamonds represent the median delta median score for all cells with high-qua
 <br><br>
 
 <!--Figure S5-->
-![**Cell type annotation with `CellAssign`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.0/figures/compiled_figures/pngs/figure_s5.png?sanitize=true){#fig:figS5 tag="S5" width="7in"}
+![**Cell type annotation with `CellAssign`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.0/figures/compiled_figures/pngs/figure_s5.png?sanitize=true){#fig:figS5 tag="S5" height="10in"}
 
 Both plots in this figure are examples of plots that display results from annotating cells with `CellAssign` that can be found in the cell type summary report, shown here for library `SCPCL000490`[@doi:10.1016/j.devcel.2022.04.003].
 
@@ -1050,7 +1053,7 @@ A value of 1 means that there is complete overlap between which cells are annota
 <br><br>
 
 <!-- Figure S6 -->
-![**Assessment of cell type annotation quality.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.0/figures/compiled_figures/pngs/figure_s6.png?sanitize=true){#fig:figS6 tag="S6" width="7in"}
+![**Assessment of cell type annotation quality.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.0/figures/compiled_figures/pngs/figure_s6.png?sanitize=true){#fig:figS6 tag="S6" height="10in"}
 
 Both plots in this figure are examples of diagnostic plots in the cell type summary report, shown for library `SCPCL000001` [@doi:10.1093/neuonc/noad207].
 
