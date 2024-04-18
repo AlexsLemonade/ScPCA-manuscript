@@ -1,22 +1,46 @@
 [
 {
-  "id": "url:https://github.com/manubot/rootstock",
+  "id": "url:https://cells.ucsc.edu/",
   "type": "webpage",
-  "URL": "https://github.com/manubot/rootstock",
-  "title": "manubot/rootstock GitHub repository",
-  "container-title": "GitHub",
-  "issued": {
-    "date-parts": [
-      [
-        2019
-      ]
-    ]
-  },
-  "author": [
-    {
-      "given": "Daniel",
-      "family": "Himmelstein"
-    }
-  ]
+  "URL": "https://cells.ucsc.edu/",
+  "title": "UCSC Cell Browser"
+},
+{
+  "id": "url:https://www.ebi.ac.uk/ols4/ontologies/hancestro",
+  "type": "webpage",
+  "URL": "https://www.ebi.ac.uk/ols4/ontologies/hancestro",
+  "title": "Ontology Lookup Service (OLS) - Hancestro"
+},
+{
+  "id": "url:https://www.ebi.ac.uk/ols4/ontologies/hsapdv",
+  "type": "webpage",
+  "URL": "https://www.ebi.ac.uk/ols4/ontologies/hsapdv",
+  "title": "Ontology Lookup Service (OLS) - HsapDv"
+},
+{
+  "id": "url:https://www.ebi.ac.uk/ols4/ontologies/mondo",
+  "type": "webpage",
+  "URL": "https://www.ebi.ac.uk/ols4/ontologies/mondo",
+  "title": "Ontology Lookup Service (OLS) - MONDO"
+},
+{
+  "id": "url:https://www.ebi.ac.uk/ols4/ontologies/pato",
+  "type": "webpage",
+  "URL": "https://www.ebi.ac.uk/ols4/ontologies/pato",
+  "title": "Ontology Lookup Service (OLS) - PATO"
+},
+{
+  "id": "url:https://www.ebi.ac.uk/ols4/ontologies/uberon",
+  "type": "webpage",
+  "URL": "https://www.ebi.ac.uk/ols4/ontologies/uberon",
+  "title": "Ontology Lookup Service (OLS) - UBERON"
+},
+{
+  "id": "url:https://github.com/chanzuckerberg/single-cell-curation/blob/main/schema/3.0.0/schema.md",
+  "type": "webpage",
+  "abstract": "Code and documentation for the curation of cellxgene datasets - chanzuckerberg/single-cell-curation",
+  "container-title": "CZI Cellxgene",
+  "title": "CZI Single cell curation schema 3.0.0",
+  "URL": "https://github.com/chanzuckerberg/single-cell-curation/blob/main/schema/3.0.0/schema.md"
 }
 ]
