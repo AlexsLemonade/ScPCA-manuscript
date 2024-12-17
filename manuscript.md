@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2024-04-18'
+date-meta: '2024-12-17'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -35,11 +35,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2024-04-18" />
-  <meta name="citation_publication_date" content="2024-04-18" />
-  <meta property="article:published_time" content="2024-04-18" />
-  <meta name="dc.modified" content="2024-04-18T18:56:22+00:00" />
-  <meta property="article:modified_time" content="2024-04-18T18:56:22+00:00" />
+  <meta name="dc.date" content="2024-12-17" />
+  <meta name="citation_publication_date" content="2024-12-17" />
+  <meta property="article:published_time" content="2024-12-17" />
+  <meta name="dc.modified" content="2024-12-17T16:58:04+00:00" />
+  <meta property="article:modified_time" content="2024-12-17T16:58:04+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -91,9 +91,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/01d2a7c47d299ec426da06a063238aeee33f5f0f/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/01d2a7c47d299ec426da06a063238aeee33f5f0f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/01d2a7c47d299ec426da06a063238aeee33f5f0f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b74a9709211a03be1151739c21a7b4854848f34c/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b74a9709211a03be1151739c21a7b4854848f34c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b74a9709211a03be1151739c21a7b4854848f34c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -115,10 +115,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/01d2a7c47d299ec426da06a063238aeee33f5f0f/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/b74a9709211a03be1151739c21a7b4854848f34c/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@01d2a7c](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/01d2a7c47d299ec426da06a063238aeee33f5f0f)
-on April 18, 2024.
+from [AlexsLemonade/ScPCA-manuscript@b74a970](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/b74a9709211a03be1151739c21a7b4854848f34c)
+on December 17, 2024.
 </em></small>
 
 
@@ -288,7 +288,7 @@ Jaclyn N. Taroni \<jaclyn.taroni@ccdatalab.org\>.
 ## Abstract {.page_break_before}
 
 The Single-cell Pediatric Cancer Atlas (ScPCA) Portal (<https://scpca.alexslemonade.org/>) is a data resource for uniformly processed single-cell and single-nuclei RNA sequencing (RNA-seq) data and de-identified metadata from pediatric tumor samples.
-Originally comprised of data from 10 projects funded by Alex’s Lemonade Stand Foundation, the Portal currently contains summarized gene expression data for over 500 samples from over 50 types of cancers from ALSF-funded and community-contributed datasets.
+Originally comprised of data from 10 projects funded by Alex’s Lemonade Stand Foundation, the Portal currently contains summarized gene expression data for 700 samples from 55 types of cancers from ALSF-funded and community-contributed datasets.
 In addition to gene expression data from single-cell and single-nuclei RNA-seq, the Portal holds data obtained from bulk RNA-seq, spatial transcriptomics, and feature barcoding methods, such as CITE-seq and cell hashing.
 
 ScPCA data are available for download as `SingleCellExperiment` or `AnnData` objects and are ready for downstream analyses.
@@ -321,7 +321,7 @@ Pediatric cancer is much less common than adult cancer, so the number of availab
 Thus, it is imperative to provide harmonized data from pediatric tumors to all pediatric cancer researchers [@doi:10.1186/s13040-018-0190-8].
 To address this unmet need, Alex's Lemonade Stand Foundation and the Childhood Cancer Data Lab developed and maintain the Single-cell Pediatric Cancer Atlas (ScPCA) Portal (<https://scpca.alexslemonade.org/>), an open-source data resource for single-cell and single-nuclei RNA-seq data of pediatric tumors.
 
-The ScPCA Portal holds uniformly processed summarized gene expression from 10x Genomics droplet-based single-cell and single-nuclei RNA-seq for over 500 samples from a diverse set of over 50 types of pediatric cancers.
+The ScPCA Portal holds uniformly processed summarized gene expression from 10x Genomics droplet-based single-cell and single-nuclei RNA-seq for 700 samples from a diverse set of 55 types of pediatric cancers.
 Originally comprised of data from ten projects funded by Alex's Lemonade Stand Foundation, the Portal has since expanded to include data contributed by pediatric cancer research community members.
 In addition to gene expression data from single-cell and single-nuclei RNA-seq, the Portal includes data obtained from bulk RNA-seq, spatial transcriptomics, and feature barcoding methods, such as CITE-seq and cell hashing.
 All data provided on the portal are available in formats ready for downstream analysis with common workflow ecosystems such as `SingleCellExperiment` objects used by `R/Bioconductor`[@doi:10.1038/s41592-019-0654-x] or `AnnData` objects used by `Scanpy` and related Python modules [@doi:10.1186/s13059-017-1382-0].
@@ -352,7 +352,7 @@ In addition to providing a human-readable value for the submitted metadata, we a
 Submitted metadata was mapped to associated ontology term identifiers obtained from HsapDV (age) [@url:https://www.ebi.ac.uk/ols4/ontologies/hsapdv], PATO (sex) [@doi:10.1093/bib/bbx035; @url:https://www.ebi.ac.uk/ols4/ontologies/pato], NCBI taxonomy (organism) [@doi:10.1093/database/baaa062; @url:https://www.ncbi.nlm.nih.gov/taxonomy], MONDO (disease) [@doi:10.1101/2022.04.13.22273750; @url:https://www.ebi.ac.uk/ols4/ontologies/mondo], UBERON (tissue) [@doi:10.1186/2041-1480-5-21; @doi:10.1186/gb-2012-13-1-r5; @url:https://www.ebi.ac.uk/ols4/ontologies/uberon], and Hancestro (ethnicity, if applicable) [@doi:10.1186/s13059-018-1396-2; @url:https://www.ebi.ac.uk/ols4/ontologies/hancestro].
 By providing these ontology term identifiers for each sample, users have access to standardized metadata terms that facilitate comparisons among datasets within the Portal as well as to data from other research projects.
 
-The Portal contains data from over 500 samples and over 50 tumor types [@doi:10.1016/j.devcel.2022.04.003; @doi:10.21203/rs.3.rs-2517703/v1; @doi:10.21203/rs.3.rs-2517758/v1; @doi:10.1038/nature23647; @doi:10.1038/s41467-021-24781-7; @doi:10.1093/neuonc/noad207; @doi:10.1101/2023.12.26.573390].
+The Portal contains data from 700 samples and 55 tumor types [@doi:10.1016/j.devcel.2022.04.003; @doi:10.21203/rs.3.rs-2517703/v1; @doi:10.21203/rs.3.rs-2517758/v1; @doi:10.1038/nature23647; @doi:10.1038/s41467-021-24781-7; @doi:10.1093/neuonc/noad207; @doi:10.1101/2023.12.26.573390].
 <!-- TODO: Update numbers -->
 Figure {@fig:fig1}A summarizes all samples from patient tumors and patient-derived xenografts currently available on the Portal.
 The total number of samples for each diagnosis is shown, along with the proportion of samples from each disease stage within a diagnosis group.
@@ -404,7 +404,7 @@ Finally, cell types are classified using two automated methods, `SingleR` [@doi:
 The results from this analysis are stored in a processed `SingleCellExperiment` object saved to a file with the suffix `_processed.rds`.
 
 To make downloading from the Portal convenient for R and Python users, downloads are available as either `SingleCellExperiment` or `AnnData`[@doi:10.1101/2021.12.16.473007] objects.
-`scpca-nf` converts all `SingleCellExperiment` objects to `AnnData` objects, which are saved as `.hdf5` files (Figure {@fig:fig2}A).
+`scpca-nf` converts all `SingleCellExperiment` objects to `AnnData` objects, which are saved as `.h5ad` files (Figure {@fig:fig2}A).
 Downloads contain the unfiltered, filtered, and processed objects from `scpca-nf` to allow users to choose to perform their own filtering and normalization or to start their analysis from a processed object.
 
 All downloads from the Portal include a quality control (QC) report with a summary of processing information (e.g., `alevin-fry` version), library statistics (e.g., the total number of cells), and a collection of diagnostic plots for each library (Figure {@fig:fig2}B-G).
@@ -434,7 +434,7 @@ The ADT by cell counts matrix is normalized by first determining the ambient pro
 We skip normalization for cells with low-quality ADT expression, as indicated by `DropletUtils::cleanTagCounts()`.
 Although `scpca-nf` normalizes ADT counts, the workflow does not perform any dimensionality reduction of ADT data; only the RNA counts data are used as input for dimensionality reduction.
 The normalized ADT data are saved as an `altExp` within the processed `SingleCellExperiment` containing the normalized RNA data and is output to a file with the suffix `_processed.rds`.
-All files containing `SingleCellExperiment` objects and associated `altExp` objects are converted to `AnnData` objects and exported as separate RNA (`_rna.hdf5`) and ADT (`_adt.hdf5`) `AnnData` objects.
+All files containing `SingleCellExperiment` objects and associated `altExp` objects are converted to `AnnData` objects and exported as separate RNA (`_rna.h5ad`) and ADT (`_adt.h5ad`) `AnnData` objects.
 
 If a library contains associated ADT data, the QC report output by `scpca-nf` will include an additional section with a summary of ADT-related statistics, such as how many cells express each ADT, and ADT-specific diagnostic plots (Figure {@fig:figS2}B-D).
 As mentioned above, `scpca-nf` uses `DropletUtils::cleanTagCounts()` to calculate QC statistics for each cell using ADT expression but does not filter any cells from the object.
@@ -482,7 +482,7 @@ See what you think during your review.
 -->
 On the Portal, users can select to download data from individual samples or all data from an entire ScPCA project.
 When downloading data for an entire project, users can choose between receiving the individual files for each sample (default) or one file containing the gene expression data and metadata for all samples in the project as a merged object.
-Users also have the option to choose their desired format and receive the data as `SingleCellExperiment` (`.rds`) or `AnnData` (`.hdf5`) objects.
+Users also have the option to choose their desired format and receive the data as `SingleCellExperiment` (`.rds`) or `AnnData` (`.h5ad`) objects.
 
 For downloads with samples as individual files, the download folder will include a sub-folder for each sample in the project (Figure {@fig:fig3}A).
 Each sample folder contains all three object types (unfiltered, filtered, and processed) in the requested file format and the QC and cell type summary report for all libraries from the given sample.
@@ -497,7 +497,7 @@ Providing data for all samples within a single file facilitates performing joint
 Therefore, we provide a single, merged object for each project containing all raw and normalized gene expression data and metadata for all single-cell and single-nuclei RNA-seq libraries within a given ScPCA project.
 We provide merged objects for all projects in the Portal except for those with multiplexing, due to potential ambiguity in identifying samples across multiplexed libraries.
 The data in the merged object has simply been combined without further processing; no batch-corrected or integrated data are included.
-If downloading data from an ScPCA project as a single, merged file, the download will include a single `.rds` or `.hdf5` file, a summary report for the merged object, and a folder with all individual QC and cell type reports for each library found in the merged object (Figure {@fig:fig3}B).
+If downloading data from an ScPCA project as a single, merged file, the download will include a single `.rds` or `.h5ad` file, a summary report for the merged object, and a folder with all individual QC and cell type reports for each library found in the merged object (Figure {@fig:fig3}B).
 
 To build the merged objects, we created an additional stand-alone workflow for merging the output from `scpca-nf`, `merge.nf` (Figure {@fig:fig3}C).
 `merge.nf` takes as input the processed `SingleCellExperiment` objects output by `scpca-nf` for all single-cell and single-nuclei libraries included in a given ScPCA project.
@@ -512,8 +512,8 @@ Therefore, we do not provide merged objects for projects with more than 100 samp
 We also account for additional modalities in `merge.nf`.
 If at least one library in a project contains ADT data, the raw and normalized ADT data are also merged and saved as an `altExp` in the merged `SingleCellExperiment` object.
 If any libraries in a project are multiplexed, no merged object is created, as there is no guarantee that a unique HTO was used for each sample in a given project.
-All merged `SingleCellExperiment` objects are converted to `AnnData` objects and exported as `.hdf5` files.
-If the merged object contains an `altExp` with merged ADT data, two `AnnData` objects are exported to create separate RNA (`_rna.hdf5`) and ADT (`_adt.hdf5`) objects.
+All merged `SingleCellExperiment` objects are converted to `AnnData` objects and exported as `.h5ad` files.
+If the merged object contains an `altExp` with merged ADT data, two `AnnData` objects are exported to create separate RNA (`_rna.h5ad`) and ADT (`_adt.h5ad`) objects.
 
 `merge.nf` outputs a summary report for each merged object, which includes a set of tables summarizing the types of samples and libraries included in the project, such as types of diagnosis, and a faceted UMAP showing all cells from all libraries.
 In the UMAP, each panel represents a different library included in the merged object, with all cells from the specified library shown in color, while all other cells are gray.
@@ -751,12 +751,12 @@ Merged objects were not created for projects with more than 100 samples because 
 
 ### Converting SingleCellExperiment objects to AnnData objects
 
-`zellkonverter::writeH5AD()` [@doi:10.18129/B9.bioc.zellkonverter] was used to convert `SingleCellExperiment` objects to `AnnData` format and export the objects as `.hdf5` files.
-For any `SingleCellExperiment` objects containing an `altExp` (e.g., ADT data), the RNA and ADT data were exported and saved separately as RNA (`_rna.hdf5`) and ADT (`_adt.hdf5`) files.
+`zellkonverter::writeH5AD()` [@doi:10.18129/B9.bioc.zellkonverter] was used to convert `SingleCellExperiment` objects to `AnnData` format and export the objects as `.h5ad` files.
+For any `SingleCellExperiment` objects containing an `altExp` (e.g., ADT data), the RNA and ADT data were exported and saved separately as RNA (`_rna.h5ad`) and ADT (`_adt.h5ad`) files.
 Multiplexed libraries were not converted to `AnnData` objects, due to the potential for ambiguity in sample origin assignments.
 
-All merged `SingleCellExperiment` objects were converted to `AnnData` objects and saved as `.hdf5` files.
-If a merged `SingleCellExperiment` object contained any ADT data, the RNA and ADT data were exported and saved separately as RNA (`_rna.hdf5`) and ADT (`_adt.hdf5`) objects.
+All merged `SingleCellExperiment` objects were converted to `AnnData` objects and saved as `.h5ad` files.
+If a merged `SingleCellExperiment` object contained any ADT data, the RNA and ADT data were exported and saved separately as RNA (`_rna.h5ad`) and ADT (`_adt.h5ad`) objects.
 In contrast, if a merged `SingleCellExperiment` object contained HTO data due to the presence of any multiplexed libraries in the merged object, the HTO data was removed from the `SingleCellExperiment` object and not included in the exported `AnnData` object.
 
 ## Code and data availability
@@ -778,7 +778,7 @@ All original code was developed within the following repositories and is publicl
 ## Discussion
 
 Here, we introduced the ScPCA Portal, a downloadable collection of uniformly processed, summarized single-cell and single-nuclei RNA-seq data and de-identified metadata from pediatric tumor samples.
-The Portal includes 500 samples from over 50 tumor types, making this the most comprehensive collection of publicly available single-cell RNA-seq datasets from pediatric tumor samples to our knowledge.
+The Portal includes 700 samples from 55 tumor types, making this the most comprehensive collection of publicly available single-cell RNA-seq datasets from pediatric tumor samples to our knowledge.
 Summarized data are available at three different processing stages: unfiltered, filtered, or processed objects, permitting users to choose to start from a processed object or perform their own processing, such as filtering and normalization.
 Processed objects containing normalized gene expression data, reduced dimensionality results from PCA and UMAP, and cell type annotations are provided to save researchers time and allow users to skip straight to downstream analysis, such as identifying marker genes or exploring genes of interest.
 Standardized metadata, containing human-readable values for all fields and ontology term identifiers for a subset of metadata fields, is included in a separate metadata file and the data objects for all samples.

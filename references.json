@@ -4250,7 +4250,7 @@
   },
   {
     "publisher": "Cold Spring Harbor Laboratory",
-    "abstract": "<jats:title>Abstract</jats:title><jats:p>Quickly and flexibly exploring high-dimensional datasets, such as scRNAseq data, is underserved but critical for hypothesis generation, dataset annotation, publication, sharing, and community reuse. cellxgene is a highly generalizable, web-based interface for exploring high dimensional datasets along categorical, continuous and spatial dimensions, as well as feature annotation. cellxgene is differentiated by its ability to performantly handle millions of observations, and bridges a critical gap by enabling computational and experimental biologists to iteratively ask questions of private and public datasets. In doing so, cellxgene increases the utility and reusability of datasets across the single-cell ecosystem.</jats:p><jats:p>The codebase can be accessed at <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://github.com/chanzuckerberg/cellxgene\">https://github.com/chanzuckerberg/cellxgene</jats:ext-link>. For questions and inquiries, please contact <jats:email>cellxgene@chanzuckerberg.com</jats:email>.</jats:p>",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Quickly and flexibly exploring high-dimensional datasets, such as scRNAseq data, is underserved but critical for hypothesis generation, dataset annotation, publication, sharing, and community reuse. cellxgene is a highly generalizable, web-based interface for exploring high dimensional datasets along categorical, continuous and spatial dimensions, as well as feature annotation. cellxgene is differentiated by its ability to performantly handle millions of observations, and bridges a critical gap by enabling computational and experimental biologists to iteratively ask questions of private and public datasets. In doing so, cellxgene increases the utility and reusability of datasets across the single-cell ecosystem.</jats:p><jats:p>The codebase can be accessed at<jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://github.com/chanzuckerberg/cellxgene\">https://github.com/chanzuckerberg/cellxgene</jats:ext-link>. For questions and inquiries, please contact<jats:email>cellxgene@chanzuckerberg.com</jats:email>.</jats:p>",
     "DOI": "10.1101/2021.04.05.438318",
     "type": "manuscript",
     "source": "Crossref",
@@ -4360,7 +4360,7 @@
   },
   {
     "publisher": "Cold Spring Harbor Laboratory",
-    "abstract": "<jats:title>Abstract</jats:title><jats:p>We present <jats:italic>STARsolo</jats:italic>, a comprehensive turnkey solution for quantifying gene expression in single-cell/nucleus RNA-seq data, built into RNA-seq aligner <jats:italic>STAR</jats:italic>. Using simulated data that closely resembles realistic scRNA-seq, we demonstrate that <jats:italic>STARsolo</jats:italic> is highly accurate and significantly outperforms pseudoalignment-to-transcriptome tools. <jats:italic>STARsolo</jats:italic> can replicate the results of, but is considerably faster than <jats:italic>CellRanger</jats:italic>, currently the most widely used tool for pre-processing scRNA-seq data. In addition to uniquely mapped reads, <jats:italic>STARsolo</jats:italic> takes account of multi-gene reads, necessary to detect certain classes of biologically important genes. It has a flexible cell barcode processing scheme, compatible with many established scRNA-seq protocols, and extendable to emerging technologies. <jats:italic>STARsolo</jats:italic> can quantify transcriptomic features beyond gene expression, which we illustrate by analyzing cell-type-specific alternative splicing in the Tabula Muris project.</jats:p>",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>We present<jats:italic>STARsolo</jats:italic>, a comprehensive turnkey solution for quantifying gene expression in single-cell/nucleus RNA-seq data, built into RNA-seq aligner<jats:italic>STAR</jats:italic>. Using simulated data that closely resembles realistic scRNA-seq, we demonstrate that<jats:italic>STARsolo</jats:italic>is highly accurate and significantly outperforms pseudoalignment-to-transcriptome tools.<jats:italic>STARsolo</jats:italic>can replicate the results of, but is considerably faster than<jats:italic>CellRanger</jats:italic>, currently the most widely used tool for pre-processing scRNA-seq data. In addition to uniquely mapped reads,<jats:italic>STARsolo</jats:italic>takes account of multi-gene reads, necessary to detect certain classes of biologically important genes. It has a flexible cell barcode processing scheme, compatible with many established scRNA-seq protocols, and extendable to emerging technologies.<jats:italic>STARsolo</jats:italic>can quantify transcriptomic features beyond gene expression, which we illustrate by analyzing cell-type-specific alternative splicing in the Tabula Muris project.</jats:p>",
     "DOI": "10.1101/2021.05.05.442755",
     "type": "manuscript",
     "source": "Crossref",
@@ -5069,11 +5069,11 @@
   },
   {
     "publisher": "Cold Spring Harbor Laboratory",
-    "abstract": "<jats:title>Abstract</jats:title><jats:p>Initial classification of acute leukemia involves the assignment of blasts to cell states within the hematopoietic hierarchy based on morphological and immunophenotypic features. Yet, these traditional classification approaches lack precision, especially at the level of immature blasts. Single-cell RNA-sequencing (scRNA-seq) enables precise determination of cell state using thousands of markers, thus providing an opportunity to re-examine present-day classification schemes of acute leukemia. Here, we developed a detailed reference map of human bone marrow hematopoiesis from 263,519 single-cell transcriptomes spanning 55 cellular states. Cell state annotations were benchmarked against purified cell populations, and in-depth characterization of gene expression programs underlying hematopoietic differentiation was undertaken. Projection of single-cell transcriptomes from 175 samples spanning acute myeloid leukemia (AML), mixed phenotype acute leukemia (MPAL), and acute erythroid leukemia (AEL) revealed 11 subtypes involving distinct stages of hematopoietic differentiation. These included AML subtypes with notable lymphoid or erythroid lineage priming, challenging traditional diagnostic boundaries between AML, MPAL, and AEL. Quantification of lineage priming in bulk patient cohorts revealed specific genetic alterations associated with this unconventional lineage priming. Integration of transcriptional and genetic information at the single-cell level revealed how genetic subclones can induce lineage restriction, differentiation blocks, or expansion of mature myeloid cells. Furthermore, we demonstrate that distinct cellular hierarchies can co-exist within individual patients, providing insight into AML evolution in response to varying selection pressures. Together, precise mapping of hematopoietic cell states can serve as a foundation for refining disease classification in acute leukemia and understanding response or resistance to emerging therapies.</jats:p>",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>In acute myeloid leukemia (AML), genetic mutations distort hematopoietic differentiation, resulting in the accumulation of leukemic blasts. Yet, it remains unclear how these mutations intersect with cellular origins and whether they converge upon similar differentiation patterns. Single-cell RNA sequencing (scRNA-seq) has enabled high-resolution mapping of the relationship between leukemia and normal cell states, yet this application is hampered by imprecise reference maps of normal hematopoiesis and small sample sizes among patient cohorts. As a first step we constructed a reference atlas of human bone marrow hematopoiesis from 263,519 single-cell transcriptomes spanning 55 cellular states, that was benchmarked against independent datasets of immunophenotypically pure hematopoietic stem and progenitor cells. Using this reference atlas, we mapped over 1.2 million single-cell transcriptomes spanning 318 AML, mixed phenotype acute leukemia (MPAL), and acute erythroid leukemia (AEL) samples. This large-scale analysis, together with systematic mapping of genotype-to-phenotype associations between driver mutations and differentiation landscapes, revealed convergence of diverse genetic alterations on twelve recurrent patterns of aberrant differentiation in AML. This included unconventional lymphoid and erythroid priming linked to<jats:italic>RUNX1</jats:italic>and<jats:italic>TP53</jats:italic>mutations, respectively. We also identified non-genetic determinants of AML differentiation such as two subgroups of<jats:italic>KMT2A</jats:italic>-rearranged AML that differ in the identity of their leukemic stem cells (LSCs), likely reflecting distinct cellular origins. Furthermore, distinct LSC-driven hierarchies can co-exist within individual patients, providing insights into AML evolution. Together, precise mapping of normal and malignant cell states provides a framework for advancing the study and disease classification of hematologic malignancies thereby informing therapy development.</jats:p>",
     "DOI": "10.1101/2023.12.26.573390",
     "type": "manuscript",
     "source": "Crossref",
-    "title": "Precise single-cell transcriptomic mapping of normal and leukemic cell states reveals unconventional lineage priming in acute myeloid leukemia",
+    "title": "Single-cell transcriptional mapping reveals genetic and non-genetic determinants of aberrant differentiation in AML",
     "author": [
       {
         "given": "Andy G.X.",
@@ -5100,6 +5100,10 @@
         "family": "Bansal"
       },
       {
+        "given": "David",
+        "family": "Chen"
+      },
+      {
         "given": "Qingsong",
         "family": "Gao"
       },
@@ -5110,6 +5114,10 @@
       {
         "given": "James A.",
         "family": "Kennedy"
+      },
+      {
+        "given": "Andrea",
+        "family": "Arruda"
       },
       {
         "given": "Mark D.",
@@ -5368,9 +5376,9 @@
   {
     "publisher": "Springer Science and Business Media LLC",
     "issue": "1",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>We present Uberon, an integrated cross-species ontology consisting of over 6,500 classes representing a variety of anatomical entities, organized according to traditional anatomical classification criteria. The ontology represents structures in a species-neutral way and includes extensive associations to existing species-centric anatomical ontologies, allowing integration of model organism and human data. Uberon provides a necessary bridge between anatomical structures in different taxa for cross-species inference. It uses novel methods for representing taxonomic variation, and has proved to be essential for translational phenotype analyses. Uberon is available at <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"http://uberon.org\">http://uberon.org</jats:ext-link></jats:p>",
     "DOI": "10.1186/gb-2012-13-1-r5",
     "type": "article-journal",
-    "page": "R5",
     "source": "Crossref",
     "title": "Uberon, an integrative multi-species anatomy ontology",
     "volume": "13",
@@ -5401,7 +5409,9 @@
     "issued": {
       "date-parts": [
         [
-          2012
+          2012,
+          1,
+          31
         ]
       ]
     },
@@ -5701,11 +5711,11 @@
     "title": "EmptyDrops: distinguishing cells from empty droplets in droplet-based single-cell RNA sequencing data",
     "volume": "20",
     "author": [
+      {},
       {
         "given": "Aaron T. L.",
         "family": "Lun"
       },
-      {},
       {
         "given": "Samantha",
         "family": "Riesenfeld"
@@ -5813,7 +5823,7 @@
   {
     "publisher": "Springer Science and Business Media LLC",
     "issue": "1",
-    "abstract": "<jats:title>Abstract</jats:title><jats:sec>\n                <jats:title>Background</jats:title>\n                <jats:p>RNA profiling technologies at single-cell resolutions, including single-cell and single-nuclei RNA sequencing (scRNA-seq and snRNA-seq, scnRNA-seq for short), can help characterize the composition of tissues and reveal cells that influence key functions in both healthy and disease tissues. However, the use of these technologies is operationally challenging because of high costs and stringent sample-collection requirements. Computational deconvolution methods that infer the composition of bulk-profiled samples using scnRNA-seq-characterized cell types can broaden scnRNA-seq applications, but their effectiveness remains controversial.</jats:p>\n              </jats:sec><jats:sec>\n                <jats:title>Results</jats:title>\n                <jats:p>We produced the first systematic evaluation of deconvolution methods on datasets with either known or scnRNA-seq-estimated compositions. Our analyses revealed biases that are common to scnRNA-seq 10X Genomics assays and illustrated the importance of accurate and properly controlled data preprocessing and method selection and optimization. Moreover, our results suggested that concurrent RNA-seq and scnRNA-seq profiles can help improve the accuracy of both scnRNA-seq preprocessing and the deconvolution methods that employ them. Indeed, our proposed method, Single-cell RNA Quantity Informed Deconvolution (SQUID), which combines RNA-seq transformation and dampened weighted least-squares deconvolution approaches, consistently outperformed other methods in predicting the composition of cell mixtures and tissue samples.</jats:p>\n              </jats:sec><jats:sec>\n                <jats:title>Conclusions</jats:title>\n                <jats:p>We showed that analysis of concurrent RNA-seq and scnRNA-seq profiles with SQUID can produce accurate cell-type abundance estimates and that this accuracy improvement was necessary for identifying outcomes-predictive cancer cell subclones in pediatric acute myeloid leukemia and neuroblastoma datasets. These results suggest that deconvolution accuracy improvements are vital to enabling its applications in the life sciences.</jats:p>\n              </jats:sec>",
+    "abstract": "<jats:title>Abstract</jats:title><jats:sec><jats:title>Background</jats:title><jats:p>RNA profiling technologies at single-cell resolutions, including single-cell and single-nuclei RNA sequencing (scRNA-seq and snRNA-seq, scnRNA-seq for short), can help characterize the composition of tissues and reveal cells that influence key functions in both healthy and disease tissues. However, the use of these technologies is operationally challenging because of high costs and stringent sample-collection requirements. Computational deconvolution methods that infer the composition of bulk-profiled samples using scnRNA-seq-characterized cell types can broaden scnRNA-seq applications, but their effectiveness remains controversial.</jats:p></jats:sec><jats:sec><jats:title>Results</jats:title><jats:p>We produced the first systematic evaluation of deconvolution methods on datasets with either known or scnRNA-seq-estimated compositions. Our analyses revealed biases that are common to scnRNA-seq 10X Genomics assays and illustrated the importance of accurate and properly controlled data preprocessing and method selection and optimization. Moreover, our results suggested that concurrent RNA-seq and scnRNA-seq profiles can help improve the accuracy of both scnRNA-seq preprocessing and the deconvolution methods that employ them. Indeed, our proposed method, Single-cell RNA Quantity Informed Deconvolution (SQUID), which combines RNA-seq transformation and dampened weighted least-squares deconvolution approaches, consistently outperformed other methods in predicting the composition of cell mixtures and tissue samples.</jats:p></jats:sec><jats:sec><jats:title>Conclusions</jats:title><jats:p>We showed that analysis of concurrent RNA-seq and scnRNA-seq profiles with SQUID can produce accurate cell-type abundance estimates and that this accuracy improvement was necessary for identifying outcomes-predictive cancer cell subclones in pediatric acute myeloid leukemia and neuroblastoma datasets. These results suggest that deconvolution accuracy improvements are vital to enabling its applications in the life sciences.</jats:p></jats:sec>",
     "DOI": "10.1186/s13059-023-03016-6",
     "type": "article-journal",
     "source": "Crossref",
@@ -6049,7 +6059,7 @@
   },
   {
     "publisher": "Research Square Platform LLC",
-    "abstract": "<jats:title>Abstract</jats:title>\n        <jats:p>Central nervous system (CNS) tumors are the leading cause of pediatric cancer death, and these patients have an increased risk for developing secondary neoplasms. Due to the low prevalence of pediatric CNS tumors, major advances in targeted therapies have been lagging compared to other adult tumors. We collected single nuclei RNA-seq data from 35 pediatric CNS tumors and three non-tumoral pediatric brain tissues (84,700 nuclei) and characterized tumor heterogeneity and transcriptomic alterations. We distinguished cell subpopulations associated with specific tumor types including radial glial cells in ependymomas and oligodendrocyte precursor cells in astrocytomas. In tumors, we observed pathways important in neural stem cell-like populations, a cell type previously associated with therapy resistance. Lastly, we identified transcriptomic alterations among pediatric CNS tumor types compared to non-tumor tissues, while accounting for cell type effects on gene expression. Our results suggest potential tumor type and cell type-specific targets for pediatric CNS tumor treatment. In this study, we address current gaps in understanding single nuclei gene expression profiles of previously uninvestigated tumor types and enhance current knowledge of gene expression profiles of single cells of various pediatric CNS tumors.</jats:p>",
+    "abstract": "<title>Abstract</title>\n        <p>Central nervous system (CNS) tumors are the leading cause of pediatric cancer death, and these patients have an increased risk for developing secondary neoplasms. Due to the low prevalence of pediatric CNS tumors, major advances in targeted therapies have been lagging compared to other adult tumors. We collected single nuclei RNA-seq data from 35 pediatric CNS tumors and three non-tumoral pediatric brain tissues (84,700 nuclei) and characterized tumor heterogeneity and transcriptomic alterations. We distinguished cell subpopulations associated with specific tumor types including radial glial cells in ependymomas and oligodendrocyte precursor cells in astrocytomas. In tumors, we observed pathways important in neural stem cell-like populations, a cell type previously associated with therapy resistance. Lastly, we identified transcriptomic alterations among pediatric CNS tumor types compared to non-tumor tissues, while accounting for cell type effects on gene expression. Our results suggest potential tumor type and cell type-specific targets for pediatric CNS tumor treatment. In this study, we address current gaps in understanding single nuclei gene expression profiles of previously uninvestigated tumor types and enhance current knowledge of gene expression profiles of single cells of various pediatric CNS tumors.</p>",
     "DOI": "10.21203/rs.3.rs-2517703/v1",
     "type": "manuscript",
     "source": "Crossref",
@@ -6105,7 +6115,7 @@
   },
   {
     "publisher": "Research Square Platform LLC",
-    "abstract": "<jats:title>Abstract</jats:title>\n        <jats:p>Although intratumoral heterogeneity has been established in pediatric central nervous system tumors, epigenomic alterations at the cell type level have largely remained unresolved. To identify cell type-specific alterations to cytosine modifications in pediatric central nervous system tumors we utilized a multi-omic approach that integrated bulk DNA cytosine modification data (methylation and hydroxymethylation) with both bulk and single-cell RNA-sequencing data. We demonstrate a large reduction in the scope of significantly differentially modified cytosines in tumors when accounting for tumor cell type composition. In the progenitor-like cell types of tumors, we identified a preponderance differential CpG hydroxymethylation rather than methylation. Genes with differential hydroxymethylation, like HDAC4 and IGF1R, were associated with cell type-specific changes in gene expression in tumors. Our results highlight the importance of epigenomic alterations in the progenitor-like cell types and its role in cell type-specific transcriptional regulation in pediatric CNS tumors.</jats:p>",
+    "abstract": "<title>Abstract</title>\n        <p>Although intratumoral heterogeneity has been established in pediatric central nervous system tumors, epigenomic alterations at the cell type level have largely remained unresolved. To identify cell type-specific alterations to cytosine modifications in pediatric central nervous system tumors we utilized a multi-omic approach that integrated bulk DNA cytosine modification data (methylation and hydroxymethylation) with both bulk and single-cell RNA-sequencing data. We demonstrate a large reduction in the scope of significantly differentially modified cytosines in tumors when accounting for tumor cell type composition. In the progenitor-like cell types of tumors, we identified a preponderance differential CpG hydroxymethylation rather than methylation. Genes with differential hydroxymethylation, like HDAC4 and IGF1R, were associated with cell type-specific changes in gene expression in tumors. Our results highlight the importance of epigenomic alterations in the progenitor-like cell types and its role in cell type-specific transcriptional regulation in pediatric CNS tumors.</p>",
     "DOI": "10.21203/rs.3.rs-2517758/v1",
     "type": "manuscript",
     "source": "Crossref",
@@ -6483,8 +6493,8 @@
       "date-parts": [
         [
           "2024",
-          4,
-          18
+          12,
+          17
         ]
       ]
     },
@@ -6501,8 +6511,8 @@
       "date-parts": [
         [
           "2024",
-          4,
-          18
+          12,
+          17
         ]
       ]
     },
@@ -6526,8 +6536,8 @@
       "date-parts": [
         [
           "2024",
-          4,
-          18
+          12,
+          17
         ]
       ]
     },
@@ -6544,8 +6554,8 @@
       "date-parts": [
         [
           "2024",
-          4,
-          18
+          12,
+          17
         ]
       ]
     },
@@ -6565,8 +6575,8 @@
       "date-parts": [
         [
           "2024",
-          4,
-          18
+          12,
+          17
         ]
       ]
     },
@@ -6601,8 +6611,8 @@
       "date-parts": [
         [
           "2024",
-          4,
-          18
+          12,
+          17
         ]
       ]
     },
@@ -6620,8 +6630,8 @@
       "date-parts": [
         [
           "2024",
-          4,
-          18
+          12,
+          17
         ]
       ]
     },
@@ -6639,16 +6649,16 @@
       "date-parts": [
         [
           "2024",
-          4,
-          18
+          12,
+          17
         ]
       ]
     },
     "issued": {
       "date-parts": [
         [
-          "2023",
-          9,
+          "2024",
+          8,
           29
         ]
       ]
@@ -6700,8 +6710,8 @@
       "date-parts": [
         [
           "2024",
-          4,
-          18
+          12,
+          17
         ]
       ]
     },
@@ -6716,8 +6726,8 @@
       "date-parts": [
         [
           "2024",
-          4,
-          18
+          12,
+          17
         ]
       ]
     },
