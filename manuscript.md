@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2024-12-17'
+date-meta: '2025-01-14'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -35,11 +35,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2024-12-17" />
-  <meta name="citation_publication_date" content="2024-12-17" />
-  <meta property="article:published_time" content="2024-12-17" />
-  <meta name="dc.modified" content="2024-12-17T16:58:04+00:00" />
-  <meta property="article:modified_time" content="2024-12-17T16:58:04+00:00" />
+  <meta name="dc.date" content="2025-01-14" />
+  <meta name="citation_publication_date" content="2025-01-14" />
+  <meta property="article:published_time" content="2025-01-14" />
+  <meta name="dc.modified" content="2025-01-14T15:55:51+00:00" />
+  <meta property="article:modified_time" content="2025-01-14T15:55:51+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -91,9 +91,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b74a9709211a03be1151739c21a7b4854848f34c/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b74a9709211a03be1151739c21a7b4854848f34c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b74a9709211a03be1151739c21a7b4854848f34c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/6c5de76828f424fe5c6dfcf1f050e992c6f659ad/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/6c5de76828f424fe5c6dfcf1f050e992c6f659ad/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/6c5de76828f424fe5c6dfcf1f050e992c6f659ad/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -115,10 +115,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/b74a9709211a03be1151739c21a7b4854848f34c/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/6c5de76828f424fe5c6dfcf1f050e992c6f659ad/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@b74a970](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/b74a9709211a03be1151739c21a7b4854848f34c)
-on December 17, 2024.
+from [AlexsLemonade/ScPCA-manuscript@6c5de76](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/6c5de76828f424fe5c6dfcf1f050e992c6f659ad)
+on January 14, 2025.
 </em></small>
 
 
@@ -356,10 +356,10 @@ The Portal contains data from 700 samples and 55 tumor types [@doi:10.1016/j.dev
 <!-- TODO: Update numbers -->
 Figure {@fig:fig1}A summarizes all samples from patient tumors and patient-derived xenografts currently available on the Portal.
 The total number of samples for each diagnosis is shown, along with the proportion of samples from each disease stage within a diagnosis group.
-The largest number of samples found on the Portal were obtained from patients with leukemia (n = 191).
-The Portal also includes samples from brain and central nervous system tumors (n = 166), sarcoma and soft tissue tumors (n = 68), and a variety of other solid tumors (n = 86).
-Most samples were collected at initial diagnosis (n = 426), with a smaller number of samples collected either at recurrence (n = 67), during progressive disease (n = 12), or post-mortem (n = 5).
-Along with the patient tumors, the Portal contains a small number of human tumor cell line samples (n = 4).
+The largest number of samples found on the Portal were obtained from patients with leukemia (n = 216).
+The Portal also includes samples from sarcoma and soft tissue tumors (n = 194), brain and central nervous system tumors (n = 167), and a variety of other solid tumors (n = 117).
+Most samples were collected at initial diagnosis (n = 521), with a smaller number of samples collected either at recurrence (n = 129), during progressive disease (n = 13), during or after treatment (n = 11), or post-mortem (n = 5).
+Along with the patient tumors, the Portal contains a small number of human tumor cell line samples (n = 6).
 
 Each of the available samples contains summarized gene expression data from either single-cell or single-nuclei RNA sequencing.
 However, some samples also include additional data, such as quantified expression data from tagging cells with antibody-derived tags (ADT), such as CITE-seq antibodies [@doi:10.1038/nmeth.4380], or multiplexing samples with hashtag oligonucleotides (HTO) [@doi:10.1186/s13059-018-1603-1] prior to sequencing.
@@ -852,7 +852,7 @@ B. Barplot showing sample counts across types of modalities present in the ScPCA
 All samples in the portal are shown under the "All Samples" heading.
 Samples under the "Samples with additional modalities" heading represent a subset of the total samples with the given additional modality.
 Colors shown for each additional modality indicate the suspension type used, either single-cell or single-nuclei RNA-seq.
-For example, 75 single-cell samples and 43 single-nuclei samples have accompanying Bulk RNA-seq data.
+For example, 75 single-cell samples and 67 single-nuclei samples have accompanying Bulk RNA-seq data.
 
 C. Example of a project card as displayed on the "Browse" page of the ScPCA Portal.
 This project card is associated with project `SCPCP000009` [@doi:10.21203/rs.3.rs-2517703/v1; @doi:10.21203/rs.3.rs-2517758/v1].
