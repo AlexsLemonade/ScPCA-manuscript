@@ -44,7 +44,7 @@ Hancestro
 HCA
 heatmap
 hexamer
-Hotchberg
+Hochberg
 HsapDv
 HTAN
 HTO
