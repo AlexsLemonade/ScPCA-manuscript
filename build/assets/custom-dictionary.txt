@@ -45,7 +45,7 @@ HCA
 heatmap
 hexamer
 Hotchberg
-HsapDV
+HsapDv
 HTAN
 HTO
 HTOs
