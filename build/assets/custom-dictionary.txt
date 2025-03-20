@@ -12,6 +12,7 @@ barcoding
 barplot
 barplots
 benchmarking
+Benjamini
 cDNA
 celldex
 CELLxGENE
@@ -43,7 +44,8 @@ Hancestro
 HCA
 heatmap
 hexamer
-HsapDV
+Hochberg
+HsapDv
 HTAN
 HTO
 HTOs
@@ -63,6 +65,8 @@ NCBI
 NCBITaxon
 Nextflow
 orcid
+overrepresented
+overrepresentation
 parallelizing
 PATO
 PCA
@@ -70,6 +74,7 @@ permalink
 pmc
 pmcid
 pmid
+pseudobulk
 pseudocount
 pubmed
 reproducibility
@@ -111,5 +116,6 @@ NI
 AY
 KGW
 CJB
+SMF
 JO
 JNT
