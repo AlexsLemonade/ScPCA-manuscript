@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2025-01-14'
+date-meta: '2025-03-20'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -35,11 +35,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2025-01-14" />
-  <meta name="citation_publication_date" content="2025-01-14" />
-  <meta property="article:published_time" content="2025-01-14" />
-  <meta name="dc.modified" content="2025-01-14T15:55:51+00:00" />
-  <meta property="article:modified_time" content="2025-01-14T15:55:51+00:00" />
+  <meta name="dc.date" content="2025-03-20" />
+  <meta name="citation_publication_date" content="2025-03-20" />
+  <meta property="article:published_time" content="2025-03-20" />
+  <meta name="dc.modified" content="2025-03-20T19:47:55+00:00" />
+  <meta property="article:modified_time" content="2025-03-20T19:47:55+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -91,9 +91,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/6c5de76828f424fe5c6dfcf1f050e992c6f659ad/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/6c5de76828f424fe5c6dfcf1f050e992c6f659ad/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/6c5de76828f424fe5c6dfcf1f050e992c6f659ad/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/24b3c6be9984b6ac723f3582f84e5ad36a537acc/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/24b3c6be9984b6ac723f3582f84e5ad36a537acc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/24b3c6be9984b6ac723f3582f84e5ad36a537acc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -115,10 +115,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/6c5de76828f424fe5c6dfcf1f050e992c6f659ad/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/24b3c6be9984b6ac723f3582f84e5ad36a537acc/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@6c5de76](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/6c5de76828f424fe5c6dfcf1f050e992c6f659ad)
-on January 14, 2025.
+from [AlexsLemonade/ScPCA-manuscript@24b3c6b](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/24b3c6be9984b6ac723f3582f84e5ad36a537acc)
+on March 20, 2025.
 </em></small>
 
 
@@ -349,7 +349,7 @@ All samples on the Portal include a core set of metadata obtained from investiga
 Some investigators submitted additional metadata, such as treatment and tumor stage, which can also be found on the Portal.
 All submitted metadata was standardized to maintain consistency across projects before adding to the Portal.
 In addition to providing a human-readable value for the submitted metadata, we also provide ontology term identifiers, if applicable.
-Submitted metadata was mapped to associated ontology term identifiers obtained from HsapDV (age) [@url:https://www.ebi.ac.uk/ols4/ontologies/hsapdv], PATO (sex) [@doi:10.1093/bib/bbx035; @url:https://www.ebi.ac.uk/ols4/ontologies/pato], NCBI taxonomy (organism) [@doi:10.1093/database/baaa062; @url:https://www.ncbi.nlm.nih.gov/taxonomy], MONDO (disease) [@doi:10.1101/2022.04.13.22273750; @url:https://www.ebi.ac.uk/ols4/ontologies/mondo], UBERON (tissue) [@doi:10.1186/2041-1480-5-21; @doi:10.1186/gb-2012-13-1-r5; @url:https://www.ebi.ac.uk/ols4/ontologies/uberon], and Hancestro (ethnicity, if applicable) [@doi:10.1186/s13059-018-1396-2; @url:https://www.ebi.ac.uk/ols4/ontologies/hancestro].
+Submitted metadata was mapped to associated ontology term identifiers obtained from HsapDv (age) [@url:https://www.ebi.ac.uk/ols4/ontologies/hsapdv], PATO (sex) [@doi:10.1093/bib/bbx035; @url:https://www.ebi.ac.uk/ols4/ontologies/pato], NCBI taxonomy (organism) [@doi:10.1093/database/baaa062; @url:https://www.ncbi.nlm.nih.gov/taxonomy], MONDO (disease) [@doi:10.1101/2022.04.13.22273750; @url:https://www.ebi.ac.uk/ols4/ontologies/mondo], UBERON (tissue) [@doi:10.1186/2041-1480-5-21; @doi:10.1186/gb-2012-13-1-r5; @url:https://www.ebi.ac.uk/ols4/ontologies/uberon], and Hancestro (ethnicity, if applicable) [@doi:10.1186/s13059-018-1396-2; @url:https://www.ebi.ac.uk/ols4/ontologies/hancestro].
 By providing these ontology term identifiers for each sample, users have access to standardized metadata terms that facilitate comparisons among datasets within the Portal as well as to data from other research projects.
 
 The Portal contains data from 700 samples and 55 tumor types [@doi:10.1016/j.devcel.2022.04.003; @doi:10.21203/rs.3.rs-2517703/v1; @doi:10.21203/rs.3.rs-2517758/v1; @doi:10.1038/nature23647; @doi:10.1038/s41467-021-24781-7; @doi:10.1093/neuonc/noad207; @doi:10.1101/2023.12.26.573390].
@@ -759,6 +759,34 @@ All merged `SingleCellExperiment` objects were converted to `AnnData` objects an
 If a merged `SingleCellExperiment` object contained any ADT data, the RNA and ADT data were exported and saved separately as RNA (`_rna.h5ad`) and ADT (`_adt.h5ad`) objects.
 In contrast, if a merged `SingleCellExperiment` object contained HTO data due to the presence of any multiplexed libraries in the merged object, the HTO data was removed from the `SingleCellExperiment` object and not included in the exported `AnnData` object.
 
+### Analysis of bulk RNA-seq data
+
+#### Data preparation
+
+We identified solid tumor samples with both bulk and single-cell (or single-nuclei) RNA-seq data in the ScPCA Portal for analysis, with multiplexed samples excluded (N=105).
+We removed low-quality samples based on visual inspection of quality control reports (N=8), leaving a total of 97 samples across five ScPCA projects for analysis.
+
+For each project, we transformed and normalized bulk counts matrices for all samples using `DESeq2::rlog()` [@doi:10.1186/s13059-014-0550-8].
+We obtained pseudobulk counts by summing raw single-cell counts for each sample, and similarly transformed each project's resulting counts matrix with `DESeq2::rlog()`.
+We filtered out genes which were not observed in either the bulk or pseudobulk raw counts matrices before subsequent analysis.
+For each project, we then used the `lme4` [@doi:10.18637/jss.v067.i01] R package to construct a linear model predicting bulk from pseudobulk counts considering a random effect for sample id: `bulk ~ pseudobulk + (1|sample_id)`.
+
+#### Overrepresentation analysis
+
+We next asked whether certain cell types might be overrepresented in one modality compared to the other.
+For this, we first identified cell types of interest as all consensus cell types possible for each project. <!-- TODO: phrasing. -->
+We then created gene sets for each consensus cell type using the project's `CellAssign` marker gene reference.
+Because a consensus cell type can encompass multiple cell types in the marker gene reference, we defined each consensus cell type's gene set as the union of all marker genes for each of its constituent reference cell types.
+
+For input to the overrepresentation analysis, we summarized model residuals within each project by taking the median residual for each gene across samples and then transformed these summarized residuals into Z-scores.
+We identified outlier genes as those with Z-scores greater than 2.5 (positive outliers) or less than -2.5 (negative outliers).
+In this case, positive outliers represent genes with comparatively higher expression in the bulk modality, and negative outliers represent genes with comparatively higher expression in the single-cell modality.
+
+For each consensus cell type gene set, we calculated two odds ratios representing whether genes were overrepresented in the positive outliers (enriched in bulk) or negative outliers (enriched in pseudobulk).
+We calculated P-values for both the bulk and pseudobulk enrichment directions via permutation testing with 10,000 replicates.
+We defined gene sets with significant overrepresentation as those with a false-discovery-rate-corrected P-value ≤ 0.05 [@doi:10.1111/j.2517-6161.1995.tb02031.x].
+
+
 ## Code and data availability
 
 All summarized gene expression data and de-identified metadata are available for download on the ScPCA Portal, <https://scpca.alexslemonade.org/>.
@@ -770,7 +798,7 @@ All original code was developed within the following repositories and is publicl
 - The `scpca-nf` workflow used to process all samples available on the Portal can be found at <https://github.com/AlexsLemonade/scpca-nf>.
 - The Single-cell Pediatric Cancer Atlas Portal code can be found at <https://github.com/AlexsLemonade/scpca-portal>.
 - Benchmarking of tools used to build `scpca-nf` can be found at <https://github.com/AlexsLemonade/alsf-scpca/tree/main/analysis> and <https://github.com/AlexsLemonade/sc-data-integration/tree/main/celltype_annotation>.
-- All code for the underlying figures can be found at <https://github.com/AlexsLemonade/scpca-paper-figures>.
+- All code for the underlying figures and analyses can be found at <https://github.com/AlexsLemonade/scpca-paper-figures>.
 - The manuscript can be found at <https://github.com/AlexsLemonade/ScPCA-manuscript>.
 
 
