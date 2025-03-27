@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2025-03-20'
+date-meta: '2025-03-27'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -35,11 +35,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2025-03-20" />
-  <meta name="citation_publication_date" content="2025-03-20" />
-  <meta property="article:published_time" content="2025-03-20" />
-  <meta name="dc.modified" content="2025-03-20T19:47:55+00:00" />
-  <meta property="article:modified_time" content="2025-03-20T19:47:55+00:00" />
+  <meta name="dc.date" content="2025-03-27" />
+  <meta name="citation_publication_date" content="2025-03-27" />
+  <meta property="article:published_time" content="2025-03-27" />
+  <meta name="dc.modified" content="2025-03-27T20:16:31+00:00" />
+  <meta property="article:modified_time" content="2025-03-27T20:16:31+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -91,9 +91,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/24b3c6be9984b6ac723f3582f84e5ad36a537acc/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/24b3c6be9984b6ac723f3582f84e5ad36a537acc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/24b3c6be9984b6ac723f3582f84e5ad36a537acc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a892b937831cc86fb79557d02783dac28d0b8dff/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a892b937831cc86fb79557d02783dac28d0b8dff/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a892b937831cc86fb79557d02783dac28d0b8dff/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -115,10 +115,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/24b3c6be9984b6ac723f3582f84e5ad36a537acc/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/a892b937831cc86fb79557d02783dac28d0b8dff/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@24b3c6b](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/24b3c6be9984b6ac723f3582f84e5ad36a537acc)
-on March 20, 2025.
+from [AlexsLemonade/ScPCA-manuscript@a892b93](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/a892b937831cc86fb79557d02783dac28d0b8dff)
+on March 27, 2025.
 </em></small>
 
 
@@ -716,7 +716,7 @@ In addition to using the default parameters for `salmon quant`, we applied the `
 Cell type labels determined by both `SingleR`[@doi:10.1038/s41590-018-0276-y] and `CellAssign`[@doi:10.1038/s41592-019-0529-1] were added to processed `SingleCellExperiment` objects.
 If cell types were obtained from the submitter of the dataset, the submitter-provided annotations were incorporated into all `SingleCellExperiment` objects (unfiltered, filtered, and processed).
 
-To prepare the references used for assigning cell types, we developed a separate workflow `build-celltype-index.nf` within `scpca-nf`.
+To prepare the references used for assigning cell types, we developed a separate workflow, `build-celltype-index.nf`, within `scpca-nf`.
 For `SingleR`, we used the `BlueprintEncodeData` from the `celldex` package [@doi:10.3324/haematol.2013.094243; @doi:10.1038/nature11247] to train the `SingleR` classification model with `SingleR::trainSingleR()`.
 In the main `scpca-nf` workflow, this model and the processed `SingleCellExperiment` object were input to `SingleR::classifySingleR()`.
 The `SingleR` output of cell type annotations and a score matrix for each cell and all possible cell types were added to the processed `SingleCellExperiment` object output.
@@ -730,6 +730,24 @@ For example, we created a reference containing bone, connective tissue, smooth m
 Given the processed `SingleCellExperiment` object and organ-specific reference, `scvi.external.CellAssign` was used in the main `scpca-nf` workflow to train the model and predict the assigned cell type.
 For each cell, `CellAssign` calculates a probability of assignment to each cell type in the reference.
 The probability matrix and a prediction based on the most probable cell type were added as cell type annotations to the processed `SingleCellExperiment` object output.
+
+#### Assigning consensus cell types
+
+Cell type labels obtained from `SingleR` and `CellAssign` were then used to assign an ontology-aware consensus cell type label. 
+We first assigned each of the cell types present in the `PanglaoDB` [@doi:10.1093/database/baz046] reference used with `CellAssign` to an appropriate Cell Ontology term [@url:https://www.ebi.ac.uk/ols4/ontologies/cl].
+For cell types available in the `BlueprintEncodeData` reference used with `SingleR`, we used the provided Cell Ontology terms.
+
+We then created a reference table containing all possible combinations of cell types assigned using `SingleR` and `CellAssign` and identified the latest common ancestor (LCA) [@url:https://rdrr.io/bioc/ontoProc/man/findCommonAncestors.html] between the two cell type terms. 
+The LCA was then used as the consensus cell type label if the following criteria were met, otherwise no consensus cell type was assigned:
+
+1. The terms shared only one distinct LCA.
+The only exception to this rule was if the terms shared two LCAs, one of which was `hematopoietic precursor cell`; then `hematopoietic precursor cell` was used as the consensus label. 
+
+2. The LCA had fewer than 170 descendants, or was either `neuron` or `epithelial cell`.
+
+We also excluded the following non-specific LCA terms: `bone cell`, `lining cell`, `blood cell`, `progenitor cell`, and `supporting cell`. 
+
+The consensus cell type assignments, including both the Cell Ontology term and the associated human-readable name, are available in the processed `SingleCellExperiment` objects. 
 
 ### Generating merged data
 
@@ -798,6 +816,7 @@ All original code was developed within the following repositories and is publicl
 - The `scpca-nf` workflow used to process all samples available on the Portal can be found at <https://github.com/AlexsLemonade/scpca-nf>.
 - The Single-cell Pediatric Cancer Atlas Portal code can be found at <https://github.com/AlexsLemonade/scpca-portal>.
 - Benchmarking of tools used to build `scpca-nf` can be found at <https://github.com/AlexsLemonade/alsf-scpca/tree/main/analysis> and <https://github.com/AlexsLemonade/sc-data-integration/tree/main/celltype_annotation>.
+- All code for creating the reference files used for consensus cell type assignment can be found at <https://github.com/AlexsLemonade/OpenScPCA-analysis/tree/main/analyses/cell-type-consensus>. 
 - All code for the underlying figures and analyses can be found at <https://github.com/AlexsLemonade/scpca-paper-figures>.
 - The manuscript can be found at <https://github.com/AlexsLemonade/ScPCA-manuscript>.
 
