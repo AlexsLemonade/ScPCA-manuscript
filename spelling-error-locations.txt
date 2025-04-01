@@ -1,6 +1,0 @@
-content/04.methods.md:150:LCA
-content/04.methods.md:151:LCA
-content/04.methods.md:153:LCA
-content/04.methods.md:154:LCAs
-content/04.methods.md:156:LCA
-content/04.methods.md:158:LCA

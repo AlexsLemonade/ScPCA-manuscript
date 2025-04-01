@@ -6609,8 +6609,8 @@
       "date-parts": [
         [
           "2025",
-          3,
-          27
+          4,
+          1
         ]
       ]
     },
@@ -6627,8 +6627,8 @@
       "date-parts": [
         [
           "2025",
-          3,
-          27
+          4,
+          1
         ]
       ]
     },
@@ -6652,8 +6652,8 @@
       "date-parts": [
         [
           "2025",
-          3,
-          27
+          4,
+          1
         ]
       ]
     },
@@ -6670,8 +6670,8 @@
       "date-parts": [
         [
           "2025",
-          3,
-          27
+          4,
+          1
         ]
       ]
     },
@@ -6691,8 +6691,8 @@
       "date-parts": [
         [
           "2025",
-          3,
-          27
+          4,
+          1
         ]
       ]
     },
@@ -6727,8 +6727,8 @@
       "date-parts": [
         [
           "2025",
-          3,
-          27
+          4,
+          1
         ]
       ]
     },
@@ -6740,14 +6740,14 @@
     "abstract": "A set of analysis pipelines that perform sample demultiplexing, barcode processing, single cell 3' and 5' gene counting, V(D)J transcript sequence assembly and annotation, and Feature Barcode analysis from single cell data.",
     "container-title": "10x Genomics",
     "language": "en",
-    "title": "Cell Ranger - Official 10x Genomics Support",
+    "title": "Cell Ranger",
     "URL": "https://www.10xgenomics.com/support/software/cell-ranger/latest",
     "accessed": {
       "date-parts": [
         [
           "2025",
-          3,
-          27
+          4,
+          1
         ]
       ]
     },
@@ -6759,14 +6759,14 @@
     "abstract": "10x Genomics Visium Spatial Software Suite",
     "container-title": "10x Genomics",
     "language": "en",
-    "title": "Space Ranger - Official 10x Genomics Support",
+    "title": "Space Ranger",
     "URL": "https://www.10xgenomics.com/support/software/space-ranger/latest",
     "accessed": {
       "date-parts": [
         [
           "2025",
-          3,
-          27
+          4,
+          1
         ]
       ]
     },
@@ -6784,8 +6784,8 @@
       "date-parts": [
         [
           "2025",
-          3,
-          27
+          4,
+          1
         ]
       ]
     },
@@ -6810,8 +6810,8 @@
       "date-parts": [
         [
           "2025",
-          3,
-          27
+          4,
+          1
         ]
       ]
     },
@@ -6862,8 +6862,8 @@
       "date-parts": [
         [
           "2025",
-          3,
-          27
+          4,
+          1
         ]
       ]
     },
@@ -6878,8 +6878,8 @@
       "date-parts": [
         [
           "2025",
-          3,
-          27
+          4,
+          1
         ]
       ]
     },

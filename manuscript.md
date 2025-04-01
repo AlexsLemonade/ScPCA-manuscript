@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2025-03-27'
+date-meta: '2025-04-01'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -35,11 +35,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2025-03-27" />
-  <meta name="citation_publication_date" content="2025-03-27" />
-  <meta property="article:published_time" content="2025-03-27" />
-  <meta name="dc.modified" content="2025-03-27T20:16:31+00:00" />
-  <meta property="article:modified_time" content="2025-03-27T20:16:31+00:00" />
+  <meta name="dc.date" content="2025-04-01" />
+  <meta name="citation_publication_date" content="2025-04-01" />
+  <meta property="article:published_time" content="2025-04-01" />
+  <meta name="dc.modified" content="2025-04-01T18:26:34+00:00" />
+  <meta property="article:modified_time" content="2025-04-01T18:26:34+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -91,9 +91,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a892b937831cc86fb79557d02783dac28d0b8dff/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a892b937831cc86fb79557d02783dac28d0b8dff/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a892b937831cc86fb79557d02783dac28d0b8dff/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b76821a7747929f7ed612c50917cbe3ffb3b8961/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b76821a7747929f7ed612c50917cbe3ffb3b8961/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b76821a7747929f7ed612c50917cbe3ffb3b8961/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -115,10 +115,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/a892b937831cc86fb79557d02783dac28d0b8dff/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/b76821a7747929f7ed612c50917cbe3ffb3b8961/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@a892b93](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/a892b937831cc86fb79557d02783dac28d0b8dff)
-on March 27, 2025.
+from [AlexsLemonade/ScPCA-manuscript@b76821a](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/b76821a7747929f7ed612c50917cbe3ffb3b8961)
+on April 1, 2025.
 </em></small>
 
 
@@ -553,7 +553,7 @@ If `CellAssign` cannot find a likely cell type from the marker gene matrix, it d
 Because we annotate cells from tumor samples using references containing only normal cells, we anticipate that many cells, particularly the tumor cells, may not have an exact match; reporting this to the end user is valuable.
 Indeed, when applying `CellAssign` to tumor samples with our chosen reference, we observed that many of the cells were unassigned.
 We included an example in Figure {@fig:figS5}A where unassigned cell types are labeled with `Unknown`.
-When comparing annotations obtained from `CellAssign` to submitter-provided annotations, we noticed the labels for non-tumor cells are similar between `CellAssign` and submitter annotations, while the tumor cells were not assigned using `CellAssign` (Figure {@fig:figS5}B).
+When comparing annotations obtained from `CellAssign` to `SingleR` annotations and submitter-provided annotations, we noticed the labels for non-tumor cells were similar between `CellAssign`, `SingleR`, and submitter annotations, while the tumor cells were not assigned using `CellAssign` (Figure {@fig:figS5}B).
 
 ### Adding cell type annotations to the ScPCA Portal
 
@@ -576,16 +576,16 @@ The Jaccard similarity index is displayed in a heatmap, an example of which is s
 
 The report also includes a diagnostic plot evaluating the confidence of cell type annotations determined by each method.
 To evaluate confidence in `SingleR` cell type annotations, the delta median statistic is calculated by subtracting the median score from the score associated with the assigned cell type label [@url:https://bioconductor.org/books/release/SingleRBook/annotation-diagnostics.html#based-on-the-deltas-across-cells].
-The distribution of delta median values for each cell type is shown in the cell type report, where a higher delta median statistic for a cell indicates higher confidence in the final cell type annotation (Figure {@fig:figS6}A).
+The distribution of delta median values for each cell type is shown in the cell type report, where a higher delta median statistic for a cell indicates higher confidence in the final cell type annotation.
 `CellAssign` calculates the probability that each cell belongs to each possible cell type provided in the reference, and the cell type label with the highest probability is assigned as the cell type for that cell.
 <!-- TODO: What exactly do we mean by reliable labels? Labels that are appropriate for the dataset -->
 These values range from 0 to 1, with larger values indicating greater confidence in a given cell type label, so we expect more confident labels to have most values close to 1.
-An example of the plot included in the report displaying the distribution of all probabilities for each cell type is shown in Figure {@fig:figS6}B.
+A plot displaying the distribution of all probabilities for each cell type is included in the cell type report.
 
 If the submitter provided cell types, the submitter annotations are compared to the annotations from both `SingleR` and `CellAssign`.
 A summary of this comparison is included in the cell type report along with a table summarizing the submitter cell type annotations and a UMAP plot where each cell is colored by the submitter annotation.
 The Jaccard similarity index is calculated for all pairs of cell type labels in submitter annotations and `SingleR` annotations and in submitter annotations and `CellAssign` annotations.
-The results from both comparisons are displayed in a stacked heatmap available in the report, an example of which is shown in Figure {@fig:figS7}.
+The results from both comparisons are displayed in a stacked heatmap available in the report, an example of which is shown in Figure {@fig:figS5}B.
 
 
 ## Materials and Methods
@@ -890,7 +890,7 @@ AGH, JAS, SJS, DSM, DVP, NI, AY, KGW, CJB, JO, and JNT are or were employees of 
 ## Figure Titles and Legends {.page_break_before}
 
 <!-- Figure 1 -->
-![**Overview of ScPCA Portal contents.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.0/figures/compiled_figures/pngs/figure_1.png?sanitize=true){#fig:fig1 tag="1" width="7in"}
+![**Overview of ScPCA Portal contents.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_1.png?sanitize=true){#fig:fig1 tag="1" width="7in"}
 
 A. Barplots showing sample counts across four main cancer groupings in the ScPCA Portal, with each bar displaying the number of samples for each cancer type.
 Each bar is shaded based on the number of samples with each disease timing, and total sample counts for each cancer type are shown to the right of each bar.
@@ -909,7 +909,7 @@ Where available, submitter-provided citation information, as well as other datab
 
 
 <!-- Figure 2 -->
-![**Overview of the `scpca-nf` workflow.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.0/figures/compiled_figures/pngs/figure_2.png?sanitize=true){#fig:fig2 tag="2" width="7in"}
+![**Overview of the `scpca-nf` workflow.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_2.png?sanitize=true){#fig:fig2 tag="2" width="7in"}
 
 A. Overview of `scpca-nf`, the primary workflow for processing single-cell and single-nuclei RNA-seq data for the ScPCA Portal.
 Mapping is first performed with `alevin-fry` to generate a gene by cell count matrix, which is read into `R` and converted into a `SingleCellExperiment` (`SCE`) object.
@@ -941,7 +941,7 @@ In the actual summary QC report, the top 12 most highly variable genes are shown
 
 
 <!-- Figure 3 -->
-![**ScPCA Portal project download file structure and merged object workflow.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.0/figures/compiled_figures/pngs/figure_3.png?sanitize=true){#fig:fig3 tag="3" width="7in"}
+![**ScPCA Portal project download file structure and merged object workflow.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_3.png?sanitize=true){#fig:fig3 tag="3" width="7in"}
 
 A. File download structure for an ScPCA Portal project download in `SingleCellExperiment` (`SCE`) format.
 The download folder is named according to both the project ID and the date it was downloaded.
@@ -967,7 +967,7 @@ The libraries pictured are a subset of libraries in the ScPCA project `SCPCP0000
 <br><br>
 
 <!-- Figure 4 -->
-![**Cell type annotation in `scpca-nf`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.0/figures/compiled_figures/pngs/figure_4.png?sanitize=true){#fig:fig4 tag="4" width="7in"}
+![**Cell type annotation in `scpca-nf`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_4.png?sanitize=true){#fig:fig4 tag="4" width="7in"}
 
 A. Expanded view of the process for adding cell type annotations within `scpca-nf`, as introduced in Figure {@fig:fig2}A.
 Cell type annotation is performed on the `Processed SCE Object`.
@@ -1008,7 +1008,7 @@ The reference includes marker genes for all cell types present in each organ.
 <br><br>
 
 <!-- Figure S1 -->
-![**Results from benchmarking `alevin-fry` and `CellRanger` performance.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.0/figures/compiled_figures/pngs/figure_s1.png?sanitize=true){#fig:figS1 tag="S1" width="7in"}
+![**Results from benchmarking `alevin-fry` and `CellRanger` performance.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_s1.png?sanitize=true){#fig:figS1 tag="S1" width="7in"}
 
 Each panel compares metrics for six representative ScPCA libraries, including three single-cell and three single-nuclei suspensions, obtained from processing libraries with both `alevin-fry` and `CellRanger`.
 
@@ -1029,7 +1029,7 @@ Distributions reflect broad agreement between platforms in the total number of g
 <br><br>
 
 <!-- Figure S2 -->
-![**Processing additional single-cell modalities in `scpca-nf`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.0/figures/compiled_figures/pngs/figure_s2.png?sanitize=true){#fig:figS2 tag="S2" width="7in"}
+![**Processing additional single-cell modalities in `scpca-nf`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_s2.png?sanitize=true){#fig:figS2 tag="S2" width="7in"}
 
 A. Overview of the `scpca-nf` workflow for processing libraries with CITE-seq or antibody-derived tag (ADT) derived data.
 The workflow mirrors that shown in Figure {@fig:fig2}A with several differences accounting for the presence of ADT data.
@@ -1063,7 +1063,7 @@ Third, only `SCE` files are provided for multiplexed libraries; no corresponding
 <br><br>
 
 <!-- Figure S3 -->
-![**Processing other sequencing modalities with `scpca-nf`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.0/figures/compiled_figures/pngs/figure_s3.png?sanitize=true){#fig:figS3 tag="S3" width="7in"}
+![**Processing other sequencing modalities with `scpca-nf`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_s3.png?sanitize=true){#fig:figS3 tag="S3" width="7in"}
 
 A. Overview of the bulk RNA-Seq workflow.
 A set of FASTQ files from libraries sequenced with bulk RNA-seq are provided as input.
@@ -1076,7 +1076,7 @@ The workflow directly returns the results from running `spaceranger` without any
 <br><br>
 
 <!--Figure S4-->
-![**Evaluation of references available in the celldex package for use with SingleR.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.0/figures/compiled_figures/pngs/figure_s4.png?sanitize=true){#fig:figS4 tag="S4" width="7in"}
+![**Evaluation of references available in the celldex package for use with SingleR.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_s4.png?sanitize=true){#fig:figS4 tag="S4" width="7in"}
 
 `SingleR` was used to annotate ScPCA libraries using four different human-specific references from the `celldex` package.
 Libraries represent three different diagnosis groups in the ScPCA Portal - Brain and CNS, Leukemia, and Sarcoma -  as indicated in the labels for the individual panels.
@@ -1087,40 +1087,15 @@ Red diamonds represent the median delta median score for all cells with high-qua
 <br><br>
 
 <!--Figure S5-->
-![**Cell type annotation with `CellAssign`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.0/figures/compiled_figures/pngs/figure_s5.png?sanitize=true){#fig:figS5 tag="S5" height="10in"}
+![**Cell type annotation with `CellAssign`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_s5.png?sanitize=true){#fig:figS5 tag="S5" height="10in"}
 
-Both plots in this figure are examples of plots that display results from annotating cells with `CellAssign` that can be found in the cell type summary report, shown here for library `SCPCL000490`[@doi:10.1016/j.devcel.2022.04.003].
+Both plots in this figure are examples of plots that display results from annotating cells with `CellAssign` that can be found in the cell type summary report, shown here for library `SCPCL000498` [@doi:10.1016/j.devcel.2022.04.003]. 
 
 A. A grid of UMAPs is shown for each cell type annotated using `CellAssign`, with the cell type of interest shown in color and all other cells belonging to other cell types shown in gray.
 The top four cell types with the greatest number of assigned cells are shown, while all other cells are grouped together and labeled with `All remaining cell types`.
 Any cells that are unable to be assigned by `CellAssign` are labeled with `Unknown cell type`.
 
-B. This example heatmap displays a comparison between submitter-provided annotations and annotations with `CellAssign`, where heatmap cells are colored by the Jaccard similarity index.
-A value of 1 means that there is complete overlap between which cells are annotated with the two labels being compared, and a value of 0 means that there is no overlap between which cells are annotated with the two labels being compared.
-<br><br>
-
-<!-- Figure S6 -->
-![**Assessment of cell type annotation quality.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.0/figures/compiled_figures/pngs/figure_s6.png?sanitize=true){#fig:figS6 tag="S6" height="10in"}
-
-Both plots in this figure are examples of diagnostic plots in the cell type summary report, shown for library `SCPCL000001` [@doi:10.1093/neuonc/noad207].
-
-A. Diagnostic plot showing `SingleR` cell type annotation quality.
-Cell type annotations are shown on the y-axis, the delta median statistic is shown on the x-axis.
-The delta median statistic is calculated for each cell as the difference between the `SingleR` score of the annotated cell type label and the median score of all other cell type labels in the reference dataset.
-Higher values indicate a higher quality cell type annotation, although there is no absolute scale for these values.
-Each black point represents a cell, where closed circles denote cells with high-quality annotations and open circles denote cells with low-quality annotations, as assessed by `SingleR`.
-Red diamonds represent the median delta median scores for all cells with high-quality annotations associated with the given cell type label.
-
-B. Diagnostic plot showing `CellAssign` cell type annotation quality.
-Cell type annotations are shown on the y-axis, and the probability of the annotated cell type as calculated by `CellAssign` is shown on the x-axis.
-Each row displays probabilities for only the cells associated with the given cell type annotation, and blue line segments show the probabilities for individual cells in each distribution.
-Taller line segments are shown for any distribution with five or fewer cells.
-<br><br>
-
-<!-- Figure S7 -->
-![**Comparison of cell type annotations across methods.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.0/figures/compiled_figures/pngs/figure_s7.png?sanitize=true){#fig:figS7 tag="S7" width="7in"}
-
-This example heatmap from the cell type summary report compares submitter-provided annotations to annotations with `SingleR` and `CellAssign`, shown for library `SCPCL000498` [@doi:10.1016/j.devcel.2022.04.003].
+B. This example heatmap from the cell type summary report compares submitter-provided annotations to annotations with `SingleR` and `CellAssign`.
 This heatmap is only shown in the cell type summary report if submitters provided cell type annotations.
 Heatmap cells are colored by the Jaccard similarity index.
 A value of 1 means that there is complete overlap between which cells are annotated with the two labels being compared, and a value of 0 means that there is no overlap between which cells are annotated with the two labels being compared.
