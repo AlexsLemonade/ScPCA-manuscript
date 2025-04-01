@@ -38,8 +38,8 @@ header-includes: |
   <meta name="dc.date" content="2025-04-01" />
   <meta name="citation_publication_date" content="2025-04-01" />
   <meta property="article:published_time" content="2025-04-01" />
-  <meta name="dc.modified" content="2025-04-01T18:26:34+00:00" />
-  <meta property="article:modified_time" content="2025-04-01T18:26:34+00:00" />
+  <meta name="dc.modified" content="2025-04-01T18:55:30+00:00" />
+  <meta property="article:modified_time" content="2025-04-01T18:55:30+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -91,9 +91,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b76821a7747929f7ed612c50917cbe3ffb3b8961/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b76821a7747929f7ed612c50917cbe3ffb3b8961/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b76821a7747929f7ed612c50917cbe3ffb3b8961/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/bad727ab476af83a759d853393df01e1617c6886/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/bad727ab476af83a759d853393df01e1617c6886/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/bad727ab476af83a759d853393df01e1617c6886/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -115,9 +115,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/b76821a7747929f7ed612c50917cbe3ffb3b8961/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/bad727ab476af83a759d853393df01e1617c6886/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@b76821a](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/b76821a7747929f7ed612c50917cbe3ffb3b8961)
+from [AlexsLemonade/ScPCA-manuscript@bad727a](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/bad727ab476af83a759d853393df01e1617c6886)
 on April 1, 2025.
 </em></small>
 
@@ -979,6 +979,20 @@ B. Example heatmap as shown in the cell type summary report comparing annotation
 Heatmap cells are colored by the Jaccard similarity index.
 A value of 1 means that there is complete overlap between which cells are annotated with the two labels being compared, and a value of 0 means that there is no overlap between which cells are annotated with the two labels being compared.
 The heatmap shown is from library `SCPCL000498` [@doi:10.1016/j.devcel.2022.04.003].
+<br><br>
+
+<!-- Figure 6 -->
+![**Comparison of bulk and pseudobulk modalities.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_6.png?sanitize=true){#fig:fig6 tag="6" width="7in"}
+
+A. Scatter plots colored by point density of `DESeq2`-transformed and normalized bulk RNA-seq expression compared to pseudobulk expression from single-cell/nuclei RNA-seq.
+Samples with RNA-seq for both bulk and single-cell/nuclei modalities, excluding multiplexed samples, from ScPCA projects comprising brain and central nervous system tumors are shown, with the number of samples considered per project shown in parentheses.
+The regression line is also shown for each project.
+Results from additional projects are shown in Figure {@fig:figS8}A.
+
+B. Odds ratios from overrepresentation analysis for the same samples shown in panel A, colored by FDR-corrected significance.
+Each odds ratio represents the odds that marker genes for the given cell type were overrepresented in bulk RNA-seq when compared to single-cell/nuclei RNA-seq, relative to other genes.
+A total of 36 consensus cell types were evaluated for each project shown here.
+Results from additional projects are shown in Figure {@fig:figS8}B.
 
 ## Supplementary Figures and Tables {.page_break_before}
 
@@ -1099,6 +1113,19 @@ B. This example heatmap from the cell type summary report compares submitter-pro
 This heatmap is only shown in the cell type summary report if submitters provided cell type annotations.
 Heatmap cells are colored by the Jaccard similarity index.
 A value of 1 means that there is complete overlap between which cells are annotated with the two labels being compared, and a value of 0 means that there is no overlap between which cells are annotated with the two labels being compared.
+<br><br>
+
+<!-- Figure S8 -->
+![**Comparison of bulk and pseudobulk modalities for additional projects.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_s8.png?sanitize=true){#fig:figS8 tag="S8" width="7in"}
+
+A. Scatter plots colored by point density of `DESeq2`-transformed and normalized bulk RNA-seq expression compared to pseudobulk expression from single-nuclei RNA-seq.
+Projects with RNA-seq for both bulk and single-cell/nuclei modalities that are not displayed in Figure {@fig:fig6}A are shown. 
+All samples shown here are single-nuclei, and the number of samples considered per project is shown in parentheses.
+The regression line is also shown for each project.
+
+B. Odds ratios from overrepresentation analysis for the same samples shown in panel A, colored by FDR-corrected significance.
+Each odds ratio represents the odds that marker genes for the given cell type were overrepresented in the bulk modality, relative to other genes.
+31 consensus cell types were evaluated for project `SCPCP000006`, and 37 consensus cell types were evaluated for project `SCPCP000017`.
 
 
 ## References {.page_break_before}
