@@ -39,6 +39,10 @@ genomic
 genotype
 genotypes
 github
+glioma
+gliomas
+granulocyte
+granulocytes
 GRCh
 Hancestro
 HCA
@@ -63,6 +67,7 @@ microarray
 microenvironment
 MONDO
 mortem
+myeloid
 NCBI
 NCBITaxon
 Nextflow
