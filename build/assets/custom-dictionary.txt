@@ -5,6 +5,7 @@ al
 alevin
 ALSF
 AnnData
+astrocytes
 ATAC
 barcode
 barcodes
@@ -64,14 +65,17 @@ manubot
 Marioni
 microarray
 microenvironment
+microenvironments
 microvascular
 modality's
 MONDO
+monocytes
 mortem
 NCBI
 NCBITaxon
 Nextflow
 orcid
+osteosarcomas
 overrepresented
 overrepresentation
 parallelizing
@@ -96,6 +100,7 @@ SingleCellExperiment
 SingleR
 SRA
 strikethrough
+stromal
 subdiagnosis
 submitters
 subprocess
@@ -115,6 +120,7 @@ unicode
 unspliced
 Visium
 wikidata
+Wilms
 xenografts
 AGH
 JAS
