@@ -43,6 +43,8 @@ github
 glial
 glioma
 gliomas
+granulocyte
+granulocytes
 GRCh
 Hancestro
 HCA
@@ -71,6 +73,7 @@ modality's
 MONDO
 monocytes
 mortem
+myeloid
 NCBI
 NCBITaxon
 Nextflow
