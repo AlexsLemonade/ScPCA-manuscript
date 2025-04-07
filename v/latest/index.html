@@ -17,7 +17,7 @@
   <meta name="author" content="Jennifer O’Malley" />
   <meta name="author" content="Casey S. Greene" />
   <meta name="author" content="Jaclyn N. Taroni" />
-  <meta name="dcterms.date" content="2025-04-02" />
+  <meta name="dcterms.date" content="2025-04-07" />
   <meta name="keywords" content="single-cell RNA-seq, single-nuclei RNA-seq, pediatric cancer, resource, Nextflow, open science, reproducibility" />
   <title>The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors</title>
   <style>
@@ -62,11 +62,11 @@
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2025-04-02" />
-  <meta name="citation_publication_date" content="2025-04-02" />
-  <meta property="article:published_time" content="2025-04-02" />
-  <meta name="dc.modified" content="2025-04-02T16:42:57+00:00" />
-  <meta property="article:modified_time" content="2025-04-02T16:42:57+00:00" />
+  <meta name="dc.date" content="2025-04-07" />
+  <meta name="citation_publication_date" content="2025-04-07" />
+  <meta property="article:published_time" content="2025-04-07" />
+  <meta name="dc.modified" content="2025-04-07T18:44:12+00:00" />
+  <meta property="article:modified_time" content="2025-04-07T18:44:12+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -118,9 +118,9 @@
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/147a66e8e1aa3c0c61b1e7677869b5de0641a0b4/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/147a66e8e1aa3c0c61b1e7677869b5de0641a0b4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/147a66e8e1aa3c0c61b1e7677869b5de0641a0b4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2c29e74ca0bc1b166bb2008e2a002ff3107755f4/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2c29e74ca0bc1b166bb2008e2a002ff3107755f4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2c29e74ca0bc1b166bb2008e2a002ff3107755f4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -137,10 +137,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/147a66e8e1aa3c0c61b1e7677869b5de0641a0b4/">permalink</a>)
+(<a href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2c29e74ca0bc1b166bb2008e2a002ff3107755f4/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/AlexsLemonade/ScPCA-manuscript/tree/147a66e8e1aa3c0c61b1e7677869b5de0641a0b4">AlexsLemonade/ScPCA-manuscript@147a66e</a>
-on April 2, 2025.
+from <a href="https://github.com/AlexsLemonade/ScPCA-manuscript/tree/2c29e74ca0bc1b166bb2008e2a002ff3107755f4">AlexsLemonade/ScPCA-manuscript@2c29e74</a>
+on April 7, 2025.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -477,8 +477,9 @@ As such, we include cell type annotations determined using two different automat
 For <code>SingleR</code>, this can be in the form of an annotated gene expression dataset from a microarray, bulk RNA-seq, or single-cell RNA-seq experiment.
 <code>CellAssign</code> requires a matrix of cell types and expected marker genes.
 Most public annotated reference datasets that can be used with these methods – including those we use for the Portal – are derived from normal tissue, making accurately annotating tumor datasets particularly difficult.
-Because there are limitations to the annotations provided on the Portal, comparing the two methods and observing consistent cell type annotations across methods can indicate higher confidence in the provided labels.
-For some ScPCA projects, submitters provided their own curated cell type annotations, including annotation of tumor cells and disease-specific cell states.
+Comparing the two methods and observing consistent cell type annotations across methods can indicate higher confidence in the provided labels, so we created a set of ontology-aware rules to assign consensus cell type labels based on the agreement between <code>SingleR</code> and <code>CellAssign</code>.
+These consensus cell type assignments can be found in all processed <code>SingleCellExperiment</code> and <code>AnnData</code> objects on the Portal.</p>
+<p>For some ScPCA projects, submitters provided their own curated cell type annotations, including annotation of tumor cells and disease-specific cell states.
 These submitter-provided annotations can be found in all <code>SingleCellExperiment</code> and <code>AnnData</code> objects (unfiltered, filtered, and processed).</p>
 <h3 id="choosing-cell-typing-methods-and-references">Choosing cell typing methods and references</h3>
 <p><code>SingleR</code> is a reference-based annotation method that requires an existing bulk or single-cell RNA-seq dataset with annotations.
@@ -525,6 +526,24 @@ A plot displaying the distribution of all probabilities for each cell type is in
 A summary of this comparison is included in the cell type report along with a table summarizing the submitter cell type annotations and a UMAP plot where each cell is colored by the submitter annotation.
 The Jaccard similarity index is calculated for all pairs of cell type labels in submitter annotations and <code>SingleR</code> annotations and in submitter annotations and <code>CellAssign</code> annotations.
 The results from both comparisons are displayed in a stacked heatmap available in the report, an example of which is shown in Figure <a href="#fig:figS5">S5</a>B.</p>
+<h3 id="assigning-consensus-cell-types">Assigning consensus cell types</h3>
+<p><code>SingleR</code> and <code>CellAssign</code> use different references and distinct computational approaches to label cells.
+We expect cells with the same or similar cell type labels using both methods will likely be more accurately annotated.
+Because of this, we assigned consensus cell type labels when we observed agreement between the two automated methods.
+To account for different levels of granularity in reference datasets, we employed an ontology-based approach to assign a consensus cell type label.
+Specifically, the consensus cell type annotation is equivalent to the latest common ancestor (LCA) <span class="citation" data-cites="17SbnOJiL">[<a href="#ref-17SbnOJiL" role="doc-biblioref">55</a>]</span> shared between the two predicted cell types.
+To ensure specificity in our consensus labels, cells were only assigned a consensus cell type if the identified LCA had no more than 170 descendant terms, with a few exceptions (see Methods for more details).<br />
+This threshold was chosen to exclude overly general cell ontology terms, such as lymphocyte, while retaining meaningful classifications like T cell and B cell.
+After assigning all consensus cell types, we looked at the expression of cell-type specific marker genes across all cells to validate our assignments (Figure <a href="#fig:fig5">5</a>A, Figure <a href="#fig:figS6">S6</a>).</p>
+<p>The addition of the consensus cell type label provides a harmonized cell type annotation for all 700 samples in the ScPCA Portal, making it easy for users to perform downstream analyses across multiple samples.
+Consensus annotations can be particularly useful when examining samples from multiple projects submitted by different investigators.
+The availability of uniformly processed gene expression data with provided consensus annotations makes it easy to analyze and draw conclusions across a large set of samples.
+For example, we show the distribution of cell types observed in all high-grade and low-grade glioma samples in Figure <a href="#fig:fig5">5</a>B, which originate from six different projects and four different investigators.
+Here, we can identify similar cell types across all glioma samples, but the composition of cell types present in each sample is heterogeneous.</p>
+<p>Previous studies have characterized the glioma immune microenvironment as being predominantly composed of myeloid cells, including microglia and glioma-associated macrophages, with smaller proportions of lymphocytes such as T cells <span class="citation" data-cites="yxJiICJJ 9U8b91g7">[<a href="#ref-yxJiICJJ" role="doc-biblioref">56</a>,<a href="#ref-9U8b91g7" role="doc-biblioref">57</a>]</span>.
+Focusing on the immune infiltrate in glioma samples reveals that most immune cells in ScPCA samples are classified as either myeloid or T cell types.
+However, there is notable heterogeneity even within HGG and LGG subtypes (Figure <a href="#fig:fig5">5</a>C).
+A summary of all the consensus cell types observed in all other ScPCA samples can be found in Figure <a href="#fig:figS7">S7</a>.</p>
 <h2 id="materials-and-methods">Materials and Methods</h2>
 <h3 id="data-generation-and-processing">Data generation and processing</h3>
 <p>Raw data and metadata were generated and compiled by each lab and institution contributing to the Portal.
@@ -537,7 +556,7 @@ A detailed summary with the total number of samples and libraries collected for 
 <p>Submitters were required to submit the age, sex, organism, diagnosis, subdiagnosis (if applicable), and tissue of origin for each sample.
 The submitted metadata was standardized across projects, including converting all ages to years, removing abbreviations used in diagnosis, subdiagnosis, or tissue of origin, and using standard values across projects as much as possible for diagnosis, subdiagnosis, disease timing, and tissue of origin.
 For example, all samples obtained at diagnosis were assigned the value <code>Initial diagnosis</code> for disease timing.</p>
-<p>In an effort to ensure sample metadata for ScPCA are compatible with CZI’s CELLxGENE, ontology term identifiers were assigned to metadata categories for each sample following the guidelines present in the CELLxGENE schema <span class="citation" data-cites="W0TbGvjF QgMCMjVA">[<a href="#ref-W0TbGvjF" role="doc-biblioref">55</a>,<a href="#ref-QgMCMjVA" role="doc-biblioref">56</a>]</span>, as shown in Table <a href="#tbl:metadata">1</a>.
+<p>In an effort to ensure sample metadata for ScPCA are compatible with CZI’s CELLxGENE, ontology term identifiers were assigned to metadata categories for each sample following the guidelines present in the CELLxGENE schema <span class="citation" data-cites="W0TbGvjF QgMCMjVA">[<a href="#ref-W0TbGvjF" role="doc-biblioref">58</a>,<a href="#ref-QgMCMjVA" role="doc-biblioref">59</a>]</span>, as shown in Table <a href="#tbl:metadata">1</a>.
 <br><br></p>
 <div id="tbl:metadata" class="tablenos">
 <table id="tbl:metadata">
@@ -581,7 +600,7 @@ For example, all samples obtained at diagnosis were assigned the value <code>Ini
 </table>
 </div>
 <h3 id="processing-single-cell-and-single-nuclei-rna-seq-data-with-alevin-fry">Processing single-cell and single-nuclei RNA-seq data with alevin-fry</h3>
-<p>To quantify RNA-seq gene expression for each cell or nucleus in a library, <code>scpca-nf</code> uses <code>salmon alevin</code> <span class="citation" data-cites="91inc6cK">[<a href="#ref-91inc6cK" role="doc-biblioref">57</a>]</span> and <code>alevin-fry</code><span class="citation" data-cites="hYvj5GBC">[<a href="#ref-hYvj5GBC" role="doc-biblioref">12</a>]</span> to generate a gene by cell counts matrix.
+<p>To quantify RNA-seq gene expression for each cell or nucleus in a library, <code>scpca-nf</code> uses <code>salmon alevin</code> <span class="citation" data-cites="91inc6cK">[<a href="#ref-91inc6cK" role="doc-biblioref">60</a>]</span> and <code>alevin-fry</code><span class="citation" data-cites="hYvj5GBC">[<a href="#ref-hYvj5GBC" role="doc-biblioref">12</a>]</span> to generate a gene by cell counts matrix.
 Prior to mapping, we generated an index using transcripts from both spliced cDNA and unspliced cDNA sequences, denoted as the <code>splici</code> index <span class="citation" data-cites="hYvj5GBC">[<a href="#ref-hYvj5GBC" role="doc-biblioref">12</a>]</span>.
 The index was generated from the human genome, GRCh38, Ensembl version 104.
 <code>salmon alevin</code> was run using selective alignment to the <code>splici</code> index with the <code>--rad</code> option to generate a reduced alignment data (RAD) file required for input to <code>alevin-fry</code>.</p>
@@ -630,10 +649,10 @@ Each multiplexed library object contains the counts data from all samples and th
 <h4 id="genetic-demultiplexing">Genetic demultiplexing</h4>
 <p>If all samples in a multiplexed library were also sequenced using bulk RNA-seq, we performed genetic demultiplexing using genotype data from both bulk RNA-seq and single-cell or single-nuclei RNA-seq <span class="citation" data-cites="zLp25QYu">[<a href="#ref-zLp25QYu" role="doc-biblioref">47</a>]</span>.
 If bulk RNA-seq was not available, no genetic demultiplexing was performed.</p>
-<p>Bulk RNA-seq reads for each sample were mapped to a reference genome using <code>STAR</code> <span class="citation" data-cites="tTu8Ds9Z">[<a href="#ref-tTu8Ds9Z" role="doc-biblioref">58</a>]</span>, and multiplexed single-cell or single-nuclei RNA-seq reads were mapped to the same reference genome using <code>STARsolo</code><span class="citation" data-cites="rxoRG1BR">[<a href="#ref-rxoRG1BR" role="doc-biblioref">59</a>]</span>.
-The mapped bulk reads were used to call variants and assign genotypes with <code>bcftools mpileup</code> <span class="citation" data-cites="eyOvxHVn">[<a href="#ref-eyOvxHVn" role="doc-biblioref">60</a>]</span>.
-<code>cellsnp-lite</code> was then used to genotype single-cell data at the identified sites found in the bulk RNA-seq data <span class="citation" data-cites="wd1cI6xh">[<a href="#ref-wd1cI6xh" role="doc-biblioref">61</a>]</span>.
-Finally, <code>vireo</code> was used to identify the sample of origin <span class="citation" data-cites="wd1cI6xh">[<a href="#ref-wd1cI6xh" role="doc-biblioref">61</a>]</span>.</p>
+<p>Bulk RNA-seq reads for each sample were mapped to a reference genome using <code>STAR</code> <span class="citation" data-cites="tTu8Ds9Z">[<a href="#ref-tTu8Ds9Z" role="doc-biblioref">61</a>]</span>, and multiplexed single-cell or single-nuclei RNA-seq reads were mapped to the same reference genome using <code>STARsolo</code><span class="citation" data-cites="rxoRG1BR">[<a href="#ref-rxoRG1BR" role="doc-biblioref">62</a>]</span>.
+The mapped bulk reads were used to call variants and assign genotypes with <code>bcftools mpileup</code> <span class="citation" data-cites="eyOvxHVn">[<a href="#ref-eyOvxHVn" role="doc-biblioref">63</a>]</span>.
+<code>cellsnp-lite</code> was then used to genotype single-cell data at the identified sites found in the bulk RNA-seq data <span class="citation" data-cites="wd1cI6xh">[<a href="#ref-wd1cI6xh" role="doc-biblioref">64</a>]</span>.
+Finally, <code>vireo</code> was used to identify the sample of origin <span class="citation" data-cites="wd1cI6xh">[<a href="#ref-wd1cI6xh" role="doc-biblioref">64</a>]</span>.</p>
 <h4 id="hto-demultiplexing">HTO demultiplexing</h4>
 <p>For all multiplexed libraries, we performed demultiplexing using <code>DropletUtils::hashedDrops()</code> and <code>Seurat::HTODemux()</code>.
 For both methods, we used the default parameters and only performed demultiplexing on the filtered cells present in the filtered object.
@@ -663,11 +682,11 @@ For example, we created a reference containing bone, connective tissue, smooth m
 <p>Given the processed <code>SingleCellExperiment</code> object and organ-specific reference, <code>scvi.external.CellAssign</code> was used in the main <code>scpca-nf</code> workflow to train the model and predict the assigned cell type.
 For each cell, <code>CellAssign</code> calculates a probability of assignment to each cell type in the reference.
 The probability matrix and a prediction based on the most probable cell type were added as cell type annotations to the processed <code>SingleCellExperiment</code> object output.</p>
-<h4 id="assigning-consensus-cell-types">Assigning consensus cell types</h4>
+<h4 id="assigning-consensus-cell-types-1">Assigning consensus cell types</h4>
 <p>Cell type labels obtained from <code>SingleR</code> and <code>CellAssign</code> were then used to assign an ontology-aware consensus cell type label.
-We first assigned each of the cell types present in the <code>PanglaoDB</code> <span class="citation" data-cites="T3PlZ3Vh">[<a href="#ref-T3PlZ3Vh" role="doc-biblioref">54</a>]</span> reference used with <code>CellAssign</code> to an appropriate Cell Ontology term <span class="citation" data-cites="wBFzn1br">[<a href="#ref-wBFzn1br" role="doc-biblioref">62</a>]</span>.
+We first assigned each of the cell types present in the <code>PanglaoDB</code> <span class="citation" data-cites="T3PlZ3Vh">[<a href="#ref-T3PlZ3Vh" role="doc-biblioref">54</a>]</span> reference used with <code>CellAssign</code> to an appropriate Cell Ontology term <span class="citation" data-cites="wBFzn1br">[<a href="#ref-wBFzn1br" role="doc-biblioref">65</a>]</span>.
 For cell types available in the <code>BlueprintEncodeData</code> reference used with <code>SingleR</code>, we used the provided Cell Ontology terms.</p>
-<p>We then created a reference table containing all possible combinations of cell types assigned using <code>SingleR</code> and <code>CellAssign</code> and identified the latest common ancestor (LCA) <span class="citation" data-cites="17SbnOJiL">[<a href="#ref-17SbnOJiL" role="doc-biblioref">63</a>]</span> between the two cell type terms.
+<p>We then created a reference table containing all possible combinations of cell types assigned using <code>SingleR</code> and <code>CellAssign</code> and identified the latest common ancestor (LCA) <span class="citation" data-cites="17SbnOJiL">[<a href="#ref-17SbnOJiL" role="doc-biblioref">55</a>]</span> between the two cell type terms.
 The LCA was then used as the consensus cell type label if the following criteria were met, otherwise no consensus cell type was assigned:</p>
 <ol type="1">
 <li><p>The terms shared only one distinct LCA.
@@ -676,6 +695,9 @@ The only exception to this rule was if the terms shared two LCAs, one of which w
 </ol>
 <p>We also excluded the following non-specific LCA terms: <code>bone cell</code>, <code>lining cell</code>, <code>blood cell</code>, <code>progenitor cell</code>, and <code>supporting cell</code>.</p>
 <p>The consensus cell type assignments, including both the Cell Ontology term and the associated human-readable name, are available in the processed <code>SingleCellExperiment</code> objects.</p>
+<p>Consensus cell type assignments were evaluated by looking at marker gene expression in a set of cell-type specific marker genes.
+Marker genes were obtained from the list of Human cell markers on <code>CellMarker2.0</code> <span class="citation" data-cites="MclvBVPD">[<a href="#ref-MclvBVPD" role="doc-biblioref">66</a>]</span>.
+We considered only those that are specific to a single cell type, with the exception of hematopoietic precursor cells, which express genes found in other, more differentiated immune cells.</p>
 <h3 id="generating-merged-data">Generating merged data</h3>
 <p>Merged objects are created with the <code>merge.nf</code> workflow within <code>scpca-nf</code>.
 This workflow takes as input the processed <code>SingleCellExperiment</code> objects in a given ScPCA project output by <code>scpca-nf</code> and creates a single merged <code>SingleCellExperiment</code> object containing gene expression data and metadata from all libraries in that project.
@@ -691,7 +713,7 @@ The top 50 principal components were selected and used to calculate UMAP embeddi
 By contrast, if any libraries included in the ScPCA project are multiplexed and contain HTO data, no merged object is created.
 Merged objects were not created for projects with more than 100 samples because of the computational resources that would be required for working with those objects.</p>
 <h3 id="converting-singlecellexperiment-objects-to-anndata-objects">Converting SingleCellExperiment objects to AnnData objects</h3>
-<p><code>zellkonverter::writeH5AD()</code> <span class="citation" data-cites="11dH4UgRF">[<a href="#ref-11dH4UgRF" role="doc-biblioref">64</a>]</span> was used to convert <code>SingleCellExperiment</code> objects to <code>AnnData</code> format and export the objects as <code>.h5ad</code> files.
+<p><code>zellkonverter::writeH5AD()</code> <span class="citation" data-cites="11dH4UgRF">[<a href="#ref-11dH4UgRF" role="doc-biblioref">67</a>]</span> was used to convert <code>SingleCellExperiment</code> objects to <code>AnnData</code> format and export the objects as <code>.h5ad</code> files.
 For any <code>SingleCellExperiment</code> objects containing an <code>altExp</code> (e.g., ADT data), the RNA and ADT data were exported and saved separately as RNA (<code>_rna.h5ad</code>) and ADT (<code>_adt.h5ad</code>) files.
 Multiplexed libraries were not converted to <code>AnnData</code> objects, due to the potential for ambiguity in sample origin assignments.</p>
 <p>All merged <code>SingleCellExperiment</code> objects were converted to <code>AnnData</code> objects and saved as <code>.h5ad</code> files.
@@ -701,10 +723,10 @@ In contrast, if a merged <code>SingleCellExperiment</code> object contained HTO 
 <h4 id="data-preparation">Data preparation</h4>
 <p>We identified solid tumor samples with both bulk and single-cell (or single-nuclei) RNA-seq data in the ScPCA Portal for analysis, with multiplexed samples excluded (N=105).
 We removed low-quality samples based on visual inspection of quality control reports (N=8), leaving a total of 97 samples across five ScPCA projects for analysis.</p>
-<p>For each project, we transformed and normalized bulk counts matrices for all samples using <code>DESeq2::rlog()</code> <span class="citation" data-cites="w9AOzBMw">[<a href="#ref-w9AOzBMw" role="doc-biblioref">65</a>]</span>.
+<p>For each project, we transformed and normalized bulk counts matrices for all samples using <code>DESeq2::rlog()</code> <span class="citation" data-cites="w9AOzBMw">[<a href="#ref-w9AOzBMw" role="doc-biblioref">68</a>]</span>.
 We obtained pseudobulk counts by summing raw single-cell counts for each sample, and similarly transformed each project’s resulting counts matrix with <code>DESeq2::rlog()</code>.
 We filtered out genes which were not observed in either the bulk or pseudobulk raw counts matrices before subsequent analysis.
-For each project, we then used the <code>lme4</code> <span class="citation" data-cites="AUoV0xkq">[<a href="#ref-AUoV0xkq" role="doc-biblioref">66</a>]</span> R package to construct a linear model predicting bulk from pseudobulk counts considering a random effect for sample id: <code>bulk ~ pseudobulk + (1|sample_id)</code>.</p>
+For each project, we then used the <code>lme4</code> <span class="citation" data-cites="AUoV0xkq">[<a href="#ref-AUoV0xkq" role="doc-biblioref">69</a>]</span> R package to construct a linear model predicting bulk from pseudobulk counts considering a random effect for sample id: <code>bulk ~ pseudobulk + (1|sample_id)</code>.</p>
 <h4 id="overrepresentation-analysis">Overrepresentation analysis</h4>
 <p>We next asked whether certain cell types might be overrepresented in one modality compared to the other.
 For this, we first identified cell types of interest as all consensus cell types possible for each project. <!-- TODO: phrasing. -->
@@ -715,7 +737,7 @@ We identified outlier genes as those with Z-scores greater than 2.5 (positive ou
 In this case, positive outliers represent genes with comparatively higher expression in the bulk modality, and negative outliers represent genes with comparatively higher expression in the single-cell modality.</p>
 <p>For each consensus cell type gene set, we calculated two odds ratios representing whether genes were overrepresented in the positive outliers (enriched in bulk) or negative outliers (enriched in pseudobulk).
 We calculated P-values for both the bulk and pseudobulk enrichment directions via permutation testing with 10,000 replicates.
-We defined gene sets with significant overrepresentation as those with a false-discovery-rate-corrected P-value ≤ 0.05 <span class="citation" data-cites="UeFCwwR7">[<a href="#ref-UeFCwwR7" role="doc-biblioref">67</a>]</span>.</p>
+We defined gene sets with significant overrepresentation as those with a false-discovery-rate-corrected P-value ≤ 0.05 <span class="citation" data-cites="UeFCwwR7">[<a href="#ref-UeFCwwR7" role="doc-biblioref">70</a>]</span>.</p>
 <h2 id="code-and-data-availability">Code and data availability</h2>
 <p>All summarized gene expression data and de-identified metadata are available for download on the ScPCA Portal, <a href="https://scpca.alexslemonade.org/" class="uri">https://scpca.alexslemonade.org/</a>.</p>
 <p>Documentation for the Portal can be found at <a href="https://scpca.readthedocs.io" class="uri">https://scpca.readthedocs.io</a>.</p>
@@ -737,7 +759,7 @@ Standardized metadata, containing human-readable values for all fields and ontol
 Every library includes a quality control report, which lets users assess data quality and identify low-quality libraries that they may wish to exclude from further downstream analyses.</p>
 <p>Data on the Portal is available as either <code>SingleCellExperiment</code> or <code>AnnData</code> objects, so users can work in R or Python with the downloaded data using common analysis systems such as <code>Bioconductor</code> or <code>Scanpy</code>, depending on their preference.
 Providing data as <code>AnnData</code> objects also means users can easily integrate ScPCA data with data and tools available on other platforms.
-In particular, the format of the provided <code>AnnData</code> objects was designed to be mostly compliant with the requirements of CZI CELLxGENE <span class="citation" data-cites="115InIIhW WrWip7GV 7NobF7Ei">[<a href="#ref-115InIIhW" role="doc-biblioref">68</a>,<a href="#ref-WrWip7GV" role="doc-biblioref">69</a>,<a href="#ref-7NobF7Ei" role="doc-biblioref">70</a>]</span>, but these objects can also be used with UCSC Cell Browser <span class="citation" data-cites="xCP3BjTw VKaQa2Z3">[<a href="#ref-xCP3BjTw" role="doc-biblioref">71</a>,<a href="#ref-VKaQa2Z3" role="doc-biblioref">72</a>]</span> or Kana <span class="citation" data-cites="1DswCJYT0 1FzXrvESX">[<a href="#ref-1DswCJYT0" role="doc-biblioref">73</a>,<a href="#ref-1FzXrvESX" role="doc-biblioref">74</a>]</span>.
+In particular, the format of the provided <code>AnnData</code> objects was designed to be mostly compliant with the requirements of CZI CELLxGENE <span class="citation" data-cites="115InIIhW WrWip7GV 7NobF7Ei">[<a href="#ref-115InIIhW" role="doc-biblioref">71</a>,<a href="#ref-WrWip7GV" role="doc-biblioref">72</a>,<a href="#ref-7NobF7Ei" role="doc-biblioref">73</a>]</span>, but these objects can also be used with UCSC Cell Browser <span class="citation" data-cites="xCP3BjTw VKaQa2Z3">[<a href="#ref-xCP3BjTw" role="doc-biblioref">74</a>,<a href="#ref-VKaQa2Z3" role="doc-biblioref">75</a>]</span> or Kana <span class="citation" data-cites="1DswCJYT0 1FzXrvESX">[<a href="#ref-1DswCJYT0" role="doc-biblioref">76</a>,<a href="#ref-1FzXrvESX" role="doc-biblioref">77</a>]</span>.
 Additionally, users can choose to download a merged <code>SingleCellExperiment</code> or <code>AnnData</code> object containing all gene expression data and metadata from all samples in a project.
 This is helpful for analyzing multiple samples simultaneously and performing analyses such as differential gene expression or gene set enrichment.</p>
 <p>To provide users with cell type annotations, we used two automated methods, <code>SingleR</code> and <code>CellAssign</code>, which use public references.
@@ -751,10 +773,10 @@ Processed output from running <code>scpca-nf</code> on samples from pediatric tu
 <p>Many samples on the Portal have additional sequencing data, including corresponding ADT data from CITE-seq, cell hashing data, bulk RNA-seq, or spatial transcriptomics, enabling users to gather more information about a single sample than they could from single-cell or single-nuclei RNA-seq alone.
 Samples with CITE-seq have additional information about cell-surface protein expression in individual cells, which can help determine cell types and correlate RNA to protein expression <span class="citation" data-cites="abp5rbw2">[<a href="#ref-abp5rbw2" role="doc-biblioref">32</a>]</span>.
 Spatial transcriptomics data on the Portal are not single-cell resolution, making it hard to identify cell types and spatial patterns from the spatial data alone.
-By providing matching single-cell RNA-seq, users can implement analysis tools, like those that use single-cell RNA-seq to deconvolute spatial data, to gain more insights about the spatial data <span class="citation" data-cites="Whp3r83M">[<a href="#ref-Whp3r83M" role="doc-biblioref">75</a>]</span>.
-Similarly, users can gain more insight from bulk RNA-seq data available on the Portal by integrating with single-cell RNA-seq data from the same sample <span class="citation" data-cites="mgOojr60 GpuiAcfU">[<a href="#ref-mgOojr60" role="doc-biblioref">76</a>,<a href="#ref-GpuiAcfU" role="doc-biblioref">77</a>]</span>.
+By providing matching single-cell RNA-seq, users can implement analysis tools, like those that use single-cell RNA-seq to deconvolute spatial data, to gain more insights about the spatial data <span class="citation" data-cites="Whp3r83M">[<a href="#ref-Whp3r83M" role="doc-biblioref">78</a>]</span>.
+Similarly, users can gain more insight from bulk RNA-seq data available on the Portal by integrating with single-cell RNA-seq data from the same sample <span class="citation" data-cites="mgOojr60 GpuiAcfU">[<a href="#ref-mgOojr60" role="doc-biblioref">79</a>,<a href="#ref-GpuiAcfU" role="doc-biblioref">80</a>]</span>.
 The single-cell RNA-seq data available on the Portal can also be used to deconvolute existing bulk RNA-seq datasets, allowing researchers to infer abundance of different cell types or cell states in bulk RNA-seq data.
-Data available on the ScPCA Portal can be used to re-analyze any existing pediatric cancer datasets with bulk RNA-seq, such as the Pediatric Brain Tumor Atlas <span class="citation" data-cites="U5WisTG5 5VXMHJ7N">[<a href="#ref-U5WisTG5" role="doc-biblioref">78</a>,<a href="#ref-5VXMHJ7N" role="doc-biblioref">79</a>]</span>.
+Data available on the ScPCA Portal can be used to re-analyze any existing pediatric cancer datasets with bulk RNA-seq, such as the Pediatric Brain Tumor Atlas <span class="citation" data-cites="U5WisTG5 5VXMHJ7N">[<a href="#ref-U5WisTG5" role="doc-biblioref">81</a>,<a href="#ref-5VXMHJ7N" role="doc-biblioref">82</a>]</span>.
 This allows researchers to glean more insight from previously published data without obtaining fresh samples, saving time and money.</p>
 <h2 id="acknowledgments">Acknowledgments</h2>
 <p>We thank the data generators and submitters of the Single-cell Pediatric Cancer Atlas.
@@ -930,7 +952,7 @@ The heatmap shown is from library <code>SCPCL000498</code> <span class="citation
 <p>A. Dot plot showing expression of cell-type-specific marker genes across all libraries from brain and central nervous system (CNS) tumors.
 Expression is shown for each broad cell type annotation, where each broad cell type annotation is a collection of similar consensus cell type annotations.
 The y-axis displays the broad consensus cell type observed across libraries, with the total number of cells indicated in parentheses.
-The x-axis displays marker genes, determined by <code>CellMarker2.0</code> <span class="citation" data-cites="MclvBVPD">[<a href="#ref-MclvBVPD" role="doc-biblioref">80</a>]</span>, used for consensus cell type validation for each cell type shown along the top annotation bar.
+The x-axis displays marker genes, determined by <code>CellMarker2.0</code> <span class="citation" data-cites="MclvBVPD">[<a href="#ref-MclvBVPD" role="doc-biblioref">66</a>]</span>, used for consensus cell type validation for each cell type shown along the top annotation bar.
 Dots are colored by mean gene expression across libraries and sized proportionally to the percent of libraries they are observed in, out of all cells with the same broad cell type annotation in brain and CNS tumor libraries.</p>
 <p>B. Barplot showing the percentage of each broad consensus cell type annotation across libraries of brain and CNS tumors, separated into high-grade (left panel) and low-grade (right panel) glioma diagnoses.</p>
 <p>C. Barplot showing all consensus cell types classified as immune cells across libraries of brain and CNS tumors, separated into high-grade (left panel) and low-grade (right panel) glioma diagnoses.
@@ -1081,7 +1103,7 @@ A value of 1 means that there is complete overlap between which cells are annota
 <p>Dot plots showing expression of cell-type-specific marker genes across all libraries from Leukemia (A), Sarcoma (B), and Other solid tumors (C) diagnosis groups.
 Expression is shown for each broad cell type annotation, where each broad cell type annotation is a collection of similar consensus cell type annotations.
 The y-axis displays the broad consensus cell type observed across libraries, with the total number of cells indicated in parentheses.
-The x-axis displays marker genes, determined by <code>CellMarker2.0</code> <span class="citation" data-cites="MclvBVPD">[<a href="#ref-MclvBVPD" role="doc-biblioref">80</a>]</span>, used for consensus cell type validation for each cell type shown along the top annotation bar.
+The x-axis displays marker genes, determined by <code>CellMarker2.0</code> <span class="citation" data-cites="MclvBVPD">[<a href="#ref-MclvBVPD" role="doc-biblioref">66</a>]</span>, used for consensus cell type validation for each cell type shown along the top annotation bar.
 Dots are colored by mean gene expression across libraries and sized proportionally to the percent of libraries they are observed in, out of all cells with the same broad cell type annotation in the given diagnosis.
 <br><br></p>
 <!-- Figure S7 -->
@@ -1273,83 +1295,89 @@ Each odds ratio represents the odds that marker genes for the given cell type we
 <div id="ref-T3PlZ3Vh" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">54. </div><div class="csl-right-inline"><strong>PanglaoDB: a web server for exploration of mouse and human single-cell RNA sequencing data</strong> <div class="csl-block">Oscar Franzén, Li-Ming Gan, Johan LM Björkegren</div> <em>Database</em> (2019-01-01) <a href="https://doi.org/ggkzxr">https://doi.org/ggkzxr</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/database/baz046">10.1093/database/baz046</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30951143">30951143</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6450036">PMC6450036</a></div></div>
 </div>
+<div id="ref-17SbnOJiL" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">55. </div><div class="csl-right-inline"><strong>findCommonAncestors: Find common ancestors in ontoProc: processing of ontologies of anatomy, cell lines, and so on</strong> <a href="https://rdrr.io/bioc/ontoProc/man/findCommonAncestors.html">https://rdrr.io/bioc/ontoProc/man/findCommonAncestors.html</a></div>
+</div>
+<div id="ref-yxJiICJJ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">56. </div><div class="csl-right-inline"><strong>Therapeutic approaches to modulate the immune microenvironment in gliomas</strong> <div class="csl-block">Andreas Sarantopoulos, Chibawanye Ene, Elisa Aquilanti</div> <em>npj Precision Oncology</em> (2024-10-23) <a href="https://doi.org/g9bjzf">https://doi.org/g9bjzf</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41698-024-00717-4">10.1038/s41698-024-00717-4</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/39443641">39443641</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11500177">PMC11500177</a></div></div>
+</div>
+<div id="ref-9U8b91g7" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">57. </div><div class="csl-right-inline"><strong>Tumor microenvironment in glioblastoma: Current and emerging concepts</strong> <div class="csl-block">Pratibha Sharma, Ashley Aaroe, Jiyong Liang, Vinay K Puduvalli</div> <em>Neuro-Oncology Advances</em> (2023-01-01) <a href="https://doi.org/g9bjzg">https://doi.org/g9bjzg</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/noajnl/vdad009">10.1093/noajnl/vdad009</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/36968288">36968288</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10034917">PMC10034917</a></div></div>
+</div>
 <div id="ref-W0TbGvjF" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">55. </div><div class="csl-right-inline"><strong>Cellxgene Data Portal</strong> <div class="csl-block">Cellxgene Data Portal</div> <a href="https://cellxgene.cziscience.com/">https://cellxgene.cziscience.com/</a></div>
+<div class="csl-left-margin">58. </div><div class="csl-right-inline"><strong>Cellxgene Data Portal</strong> <div class="csl-block">Cellxgene Data Portal</div> <a href="https://cellxgene.cziscience.com/">https://cellxgene.cziscience.com/</a></div>
 </div>
 <div id="ref-QgMCMjVA" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">56. </div><div class="csl-right-inline"><strong>CZI Single cell curation schema 3.0.0</strong> <div class="csl-block">CZI Cellxgene</div> <a href="https://github.com/chanzuckerberg/single-cell-curation/blob/main/schema/3.0.0/schema.md">https://github.com/chanzuckerberg/single-cell-curation/blob/main/schema/3.0.0/schema.md</a></div>
+<div class="csl-left-margin">59. </div><div class="csl-right-inline"><strong>CZI Single cell curation schema 3.0.0</strong> <div class="csl-block">CZI Cellxgene</div> <a href="https://github.com/chanzuckerberg/single-cell-curation/blob/main/schema/3.0.0/schema.md">https://github.com/chanzuckerberg/single-cell-curation/blob/main/schema/3.0.0/schema.md</a></div>
 </div>
 <div id="ref-91inc6cK" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">57. </div><div class="csl-right-inline"><strong>Alignment and mapping methodology influence transcript abundance estimation</strong> <div class="csl-block">Avi Srivastava, Laraib Malik, Hirak Sarkar, Mohsen Zakeri, Fatemeh Almodaresi, Charlotte Soneson, Michael I Love, Carl Kingsford, Rob Patro</div> <em>Genome Biology</em> (2020-09-07) <a href="https://doi.org/gg98sd">https://doi.org/gg98sd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s13059-020-02151-8">10.1186/s13059-020-02151-8</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32894187">32894187</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7487471">PMC7487471</a></div></div>
+<div class="csl-left-margin">60. </div><div class="csl-right-inline"><strong>Alignment and mapping methodology influence transcript abundance estimation</strong> <div class="csl-block">Avi Srivastava, Laraib Malik, Hirak Sarkar, Mohsen Zakeri, Fatemeh Almodaresi, Charlotte Soneson, Michael I Love, Carl Kingsford, Rob Patro</div> <em>Genome Biology</em> (2020-09-07) <a href="https://doi.org/gg98sd">https://doi.org/gg98sd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s13059-020-02151-8">10.1186/s13059-020-02151-8</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32894187">32894187</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7487471">PMC7487471</a></div></div>
 </div>
 <div id="ref-tTu8Ds9Z" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">58. </div><div class="csl-right-inline"><strong>STAR: ultrafast universal RNA-seq aligner</strong> <div class="csl-block">Alexander Dobin, Carrie A Davis, Felix Schlesinger, Jorg Drenkow, Chris Zaleski, Sonali Jha, Philippe Batut, Mark Chaisson, Thomas R Gingeras</div> <em>Bioinformatics</em> (2012-10-25) <a href="https://doi.org/f4h523">https://doi.org/f4h523</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bioinformatics/bts635">10.1093/bioinformatics/bts635</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23104886">23104886</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3530905">PMC3530905</a></div></div>
+<div class="csl-left-margin">61. </div><div class="csl-right-inline"><strong>STAR: ultrafast universal RNA-seq aligner</strong> <div class="csl-block">Alexander Dobin, Carrie A Davis, Felix Schlesinger, Jorg Drenkow, Chris Zaleski, Sonali Jha, Philippe Batut, Mark Chaisson, Thomas R Gingeras</div> <em>Bioinformatics</em> (2012-10-25) <a href="https://doi.org/f4h523">https://doi.org/f4h523</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bioinformatics/bts635">10.1093/bioinformatics/bts635</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23104886">23104886</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3530905">PMC3530905</a></div></div>
 </div>
 <div id="ref-rxoRG1BR" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">59. </div><div class="csl-right-inline"><strong>STARsolo: accurate, fast and versatile mapping/quantification of single-cell and single-nucleus RNA-seq data</strong> <div class="csl-block">Benjamin Kaminow, Dinar Yunusov, Alexander Dobin</div> <em>Cold Spring Harbor Laboratory</em> (2021-05-05) <a href="https://doi.org/gqj7ft">https://doi.org/gqj7ft</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2021.05.05.442755">10.1101/2021.05.05.442755</a></div></div>
+<div class="csl-left-margin">62. </div><div class="csl-right-inline"><strong>STARsolo: accurate, fast and versatile mapping/quantification of single-cell and single-nucleus RNA-seq data</strong> <div class="csl-block">Benjamin Kaminow, Dinar Yunusov, Alexander Dobin</div> <em>Cold Spring Harbor Laboratory</em> (2021-05-05) <a href="https://doi.org/gqj7ft">https://doi.org/gqj7ft</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2021.05.05.442755">10.1101/2021.05.05.442755</a></div></div>
 </div>
 <div id="ref-eyOvxHVn" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">60. </div><div class="csl-right-inline"><strong>Twelve years of SAMtools and BCFtools</strong> <div class="csl-block">Petr Danecek, James K Bonfield, Jennifer Liddle, John Marshall, Valeriu Ohan, Martin O Pollard, Andrew Whitwham, Thomas Keane, Shane A McCarthy, Robert M Davies, Heng Li</div> <em>GigaScience</em> (2021-01-29) <a href="https://doi.org/gjxzc9">https://doi.org/gjxzc9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/gigascience/giab008">10.1093/gigascience/giab008</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33590861">33590861</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7931819">PMC7931819</a></div></div>
+<div class="csl-left-margin">63. </div><div class="csl-right-inline"><strong>Twelve years of SAMtools and BCFtools</strong> <div class="csl-block">Petr Danecek, James K Bonfield, Jennifer Liddle, John Marshall, Valeriu Ohan, Martin O Pollard, Andrew Whitwham, Thomas Keane, Shane A McCarthy, Robert M Davies, Heng Li</div> <em>GigaScience</em> (2021-01-29) <a href="https://doi.org/gjxzc9">https://doi.org/gjxzc9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/gigascience/giab008">10.1093/gigascience/giab008</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33590861">33590861</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7931819">PMC7931819</a></div></div>
 </div>
 <div id="ref-wd1cI6xh" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">61. </div><div class="csl-right-inline"><strong>Cellsnp-lite: an efficient tool for genotyping single cells</strong> <div class="csl-block">Xianjie Huang, Yuanhua Huang</div> <em>Bioinformatics</em> (2021-05-08) <a href="https://doi.org/gqcggs">https://doi.org/gqcggs</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bioinformatics/btab358">10.1093/bioinformatics/btab358</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33963851">33963851</a></div></div>
+<div class="csl-left-margin">64. </div><div class="csl-right-inline"><strong>Cellsnp-lite: an efficient tool for genotyping single cells</strong> <div class="csl-block">Xianjie Huang, Yuanhua Huang</div> <em>Bioinformatics</em> (2021-05-08) <a href="https://doi.org/gqcggs">https://doi.org/gqcggs</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bioinformatics/btab358">10.1093/bioinformatics/btab358</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33963851">33963851</a></div></div>
 </div>
 <div id="ref-wBFzn1br" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">62. </div><div class="csl-right-inline"><strong>Ontology Lookup Service (OLS)</strong> <a href="https://www.ebi.ac.uk/ols4/ontologies/cl">https://www.ebi.ac.uk/ols4/ontologies/cl</a></div>
-</div>
-<div id="ref-17SbnOJiL" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">63. </div><div class="csl-right-inline"><strong>findCommonAncestors: Find common ancestors in ontoProc: processing of ontologies of anatomy, cell lines, and so on</strong> <a href="https://rdrr.io/bioc/ontoProc/man/findCommonAncestors.html">https://rdrr.io/bioc/ontoProc/man/findCommonAncestors.html</a></div>
-</div>
-<div id="ref-11dH4UgRF" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">64. </div><div class="csl-right-inline"><strong>zellkonverter</strong> <div class="csl-block">Luke Zappia, Aaron Lun</div> <em>Bioconductor</em> (2020) <a href="https://doi.org/gtnrz5">https://doi.org/gtnrz5</a> <div class="csl-block">DOI: <a href="https://doi.org/10.18129/b9.bioc.zellkonverter">10.18129/b9.bioc.zellkonverter</a></div></div>
-</div>
-<div id="ref-w9AOzBMw" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">65. </div><div class="csl-right-inline"><strong>Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2</strong> <div class="csl-block">Michael I Love, Wolfgang Huber, Simon Anders</div> <em>Genome Biology</em> (2014-12-05) <a href="https://doi.org/gd3zvn">https://doi.org/gd3zvn</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s13059-014-0550-8">10.1186/s13059-014-0550-8</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25516281">25516281</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4302049">PMC4302049</a></div></div>
-</div>
-<div id="ref-AUoV0xkq" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">66. </div><div class="csl-right-inline"><strong>Fitting Linear Mixed-Effects Models Using&lt;b&gt;lme4&lt;/b&gt;</strong> <div class="csl-block">Douglas Bates, Martin Mächler, Ben Bolker, Steve Walker</div> <em>Journal of Statistical Software</em> (2015) <a href="https://doi.org/gcrnkw">https://doi.org/gcrnkw</a> <div class="csl-block">DOI: <a href="https://doi.org/10.18637/jss.v067.i01">10.18637/jss.v067.i01</a></div></div>
-</div>
-<div id="ref-UeFCwwR7" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">67. </div><div class="csl-right-inline"><strong>Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing</strong> <div class="csl-block">Yoav Benjamini, Yosef Hochberg</div> <em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em> (1995-01-01) <a href="https://doi.org/gfpkdx">https://doi.org/gfpkdx</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1111/j.2517-6161.1995.tb02031.x">10.1111/j.2517-6161.1995.tb02031.x</a></div></div>
-</div>
-<div id="ref-115InIIhW" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">68. </div><div class="csl-right-inline"><strong>cellxgene: a performant, scalable exploration platform for high dimensional sparse matrices</strong> <div class="csl-block">Colin Megill, Bruce Martin, Charlotte Weaver, Sidney Bell, Lia Prins, Seve Badajoz, Brian McCandless, Angela Oliveira Pisco, Marcus Kinsella, Fiona Griffin, … Ambrose Carr</div> <em>Cold Spring Harbor Laboratory</em> (2021-04-06) <a href="https://doi.org/gst8vt">https://doi.org/gst8vt</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2021.04.05.438318">10.1101/2021.04.05.438318</a></div></div>
-</div>
-<div id="ref-WrWip7GV" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">69. </div><div class="csl-right-inline"><strong>CZ CELL×GENE Discover: A single-cell data platform for scalable exploration, analysis and modeling of aggregated data</strong><div class="csl-block">, Shibla Abdulla, Brian Aevermann, Pedro Assis, Seve Badajoz, Sidney M Bell, Emanuele Bezzi, Batuhan Cakir, Jim Chaffer, Signe Chambers, … Ambrose Carr</div> <em>Cold Spring Harbor Laboratory</em> (2023-11-02) <a href="https://doi.org/gtk3dd">https://doi.org/gtk3dd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2023.10.30.563174">10.1101/2023.10.30.563174</a></div></div>
-</div>
-<div id="ref-7NobF7Ei" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">70. </div><div class="csl-right-inline"><strong>Cellxgene Data Portal</strong> <div class="csl-block">Cellxgene Data Portal</div> <a href="https://cellxgene.cziscience.com/">https://cellxgene.cziscience.com/</a></div>
-</div>
-<div id="ref-xCP3BjTw" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">71. </div><div class="csl-right-inline"><strong>UCSC Cell Browser: visualize your single-cell data</strong> <div class="csl-block">Matthew L Speir, Aparna Bhaduri, Nikolay S Markov, Pablo Moreno, Tomasz J Nowakowski, Irene Papatheodorou, Alex A Pollen, Brian J Raney, Lucas Seninge, WJames Kent, Maximilian Haeussler</div> <em>Bioinformatics</em> (2021-07-09) <a href="https://doi.org/gtk3db">https://doi.org/gtk3db</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bioinformatics/btab503">10.1093/bioinformatics/btab503</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/34244710">34244710</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8652023">PMC8652023</a></div></div>
-</div>
-<div id="ref-VKaQa2Z3" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">72. </div><div class="csl-right-inline"><strong>UCSC Cell Browser</strong> <a href="https://cells.ucsc.edu/">https://cells.ucsc.edu/</a></div>
-</div>
-<div id="ref-1DswCJYT0" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">73. </div><div class="csl-right-inline"><strong>Powering single-cell analyses in the browser with WebAssembly</strong> <div class="csl-block">Aaron Lun, Jayaram Kancherla</div> <em>Cold Spring Harbor Laboratory</em> (2022-03-04) <a href="https://doi.org/gtk3dc">https://doi.org/gtk3dc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2022.03.02.482701">10.1101/2022.03.02.482701</a></div></div>
-</div>
-<div id="ref-1FzXrvESX" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">74. </div><div class="csl-right-inline"><strong>kana</strong> <a href="https://www.kanaverse.org/kana/">https://www.kanaverse.org/kana/</a></div>
-</div>
-<div id="ref-Whp3r83M" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">75. </div><div class="csl-right-inline"><strong>A comprehensive benchmarking with practical guidelines for cellular deconvolution of spatial transcriptomics</strong> <div class="csl-block">Haoyang Li, Juexiao Zhou, Zhongxiao Li, Siyuan Chen, Xingyu Liao, Bin Zhang, Ruochi Zhang, Yu Wang, Shiwei Sun, Xin Gao</div> <em>Nature Communications</em> (2023-03-21) <a href="https://doi.org/gtk3c9">https://doi.org/gtk3c9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41467-023-37168-7">10.1038/s41467-023-37168-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/36941264">36941264</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10027878">PMC10027878</a></div></div>
-</div>
-<div id="ref-mgOojr60" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">76. </div><div class="csl-right-inline"><strong>Computational deconvolution of transcriptomics data from mixed cell populations</strong> <div class="csl-block">Francisco Avila Cobos, Jo Vandesompele, Pieter Mestdagh, Katleen De Preter</div> <em>Bioinformatics</em> (2018-01-16) <a href="https://doi.org/gctpvd">https://doi.org/gctpvd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bioinformatics/bty019">10.1093/bioinformatics/bty019</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29351586">29351586</a></div></div>
-</div>
-<div id="ref-GpuiAcfU" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">77. </div><div class="csl-right-inline"><strong>Effective methods for bulk RNA-seq deconvolution using scnRNA-seq transcriptomes</strong> <div class="csl-block">Francisco Avila Cobos, Mohammad Javad Najaf Panah, Jessica Epps, Xiaochen Long, Tsz-Kwong Man, Hua-Sheng Chiu, Elad Chomsky, Evgeny Kiner, Michael J Krueger, Diego di Bernardo, … Pavel Sumazin</div> <em>Genome Biology</em> (2023-08-01) <a href="https://doi.org/gsmvqq">https://doi.org/gsmvqq</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s13059-023-03016-6">10.1186/s13059-023-03016-6</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37528411">37528411</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10394903">PMC10394903</a></div></div>
-</div>
-<div id="ref-U5WisTG5" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">78. </div><div class="csl-right-inline"><strong>The children's brain tumor network (CBTN) - Accelerating research in pediatric central nervous system tumors through collaboration and open science</strong> <div class="csl-block">Jena V Lilly, Jo Lynne Rokita, Jennifer L Mason, Tatiana Patton, Stephanie Stefankiewiz, David Higgins, Gerri Trooskin, Carina A Larouci, Kamnaa Arya, Elizabeth Appert, … Angela J Waanders</div> <em>Neoplasia</em> (2023-01) <a href="https://doi.org/grkvcf">https://doi.org/grkvcf</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.neo.2022.100846">10.1016/j.neo.2022.100846</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/36335802">36335802</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9641002">PMC9641002</a></div></div>
-</div>
-<div id="ref-5VXMHJ7N" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">79. </div><div class="csl-right-inline"><strong>OpenPBTA: The Open Pediatric Brain Tumor Atlas</strong> <div class="csl-block">Joshua A Shapiro, Krutika S Gaonkar, Stephanie J Spielman, Candace L Savonen, Chante J Bethell, Run Jin, Komal S Rathi, Yuankun Zhu, Laura E Egolf, Bailey K Farrow, … Jaclyn N Taroni</div> <em>Cell Genomics</em> (2023-07) <a href="https://doi.org/gr92p6">https://doi.org/gr92p6</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.xgen.2023.100340">10.1016/j.xgen.2023.100340</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37492101">37492101</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10363844">PMC10363844</a></div></div>
+<div class="csl-left-margin">65. </div><div class="csl-right-inline"><strong>Ontology Lookup Service (OLS)</strong> <a href="https://www.ebi.ac.uk/ols4/ontologies/cl">https://www.ebi.ac.uk/ols4/ontologies/cl</a></div>
 </div>
 <div id="ref-MclvBVPD" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">80. </div><div class="csl-right-inline"><strong>CellMarker 2.0: an updated database of manually curated cell markers in human/mouse and web tools based on scRNA-seq data</strong> <div class="csl-block">Congxue Hu, Tengyue Li, Yingqi Xu, Xinxin Zhang, Feng Li, Jing Bai, Jing Chen, Wenqi Jiang, Kaiyue Yang, Qi Ou, … Yunpeng Zhang</div> <em>Nucleic Acids Research</em> (2022-10-27) <a href="https://doi.org/gq473c">https://doi.org/gq473c</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/nar/gkac947">10.1093/nar/gkac947</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/36300619">36300619</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9825416">PMC9825416</a></div></div>
+<div class="csl-left-margin">66. </div><div class="csl-right-inline"><strong>CellMarker 2.0: an updated database of manually curated cell markers in human/mouse and web tools based on scRNA-seq data</strong> <div class="csl-block">Congxue Hu, Tengyue Li, Yingqi Xu, Xinxin Zhang, Feng Li, Jing Bai, Jing Chen, Wenqi Jiang, Kaiyue Yang, Qi Ou, … Yunpeng Zhang</div> <em>Nucleic Acids Research</em> (2022-10-27) <a href="https://doi.org/gq473c">https://doi.org/gq473c</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/nar/gkac947">10.1093/nar/gkac947</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/36300619">36300619</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9825416">PMC9825416</a></div></div>
+</div>
+<div id="ref-11dH4UgRF" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">67. </div><div class="csl-right-inline"><strong>zellkonverter</strong> <div class="csl-block">Luke Zappia, Aaron Lun</div> <em>Bioconductor</em> (2020) <a href="https://doi.org/gtnrz5">https://doi.org/gtnrz5</a> <div class="csl-block">DOI: <a href="https://doi.org/10.18129/b9.bioc.zellkonverter">10.18129/b9.bioc.zellkonverter</a></div></div>
+</div>
+<div id="ref-w9AOzBMw" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">68. </div><div class="csl-right-inline"><strong>Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2</strong> <div class="csl-block">Michael I Love, Wolfgang Huber, Simon Anders</div> <em>Genome Biology</em> (2014-12-05) <a href="https://doi.org/gd3zvn">https://doi.org/gd3zvn</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s13059-014-0550-8">10.1186/s13059-014-0550-8</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25516281">25516281</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4302049">PMC4302049</a></div></div>
+</div>
+<div id="ref-AUoV0xkq" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">69. </div><div class="csl-right-inline"><strong>Fitting Linear Mixed-Effects Models Using&lt;b&gt;lme4&lt;/b&gt;</strong> <div class="csl-block">Douglas Bates, Martin Mächler, Ben Bolker, Steve Walker</div> <em>Journal of Statistical Software</em> (2015) <a href="https://doi.org/gcrnkw">https://doi.org/gcrnkw</a> <div class="csl-block">DOI: <a href="https://doi.org/10.18637/jss.v067.i01">10.18637/jss.v067.i01</a></div></div>
+</div>
+<div id="ref-UeFCwwR7" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">70. </div><div class="csl-right-inline"><strong>Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing</strong> <div class="csl-block">Yoav Benjamini, Yosef Hochberg</div> <em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em> (1995-01-01) <a href="https://doi.org/gfpkdx">https://doi.org/gfpkdx</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1111/j.2517-6161.1995.tb02031.x">10.1111/j.2517-6161.1995.tb02031.x</a></div></div>
+</div>
+<div id="ref-115InIIhW" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">71. </div><div class="csl-right-inline"><strong>cellxgene: a performant, scalable exploration platform for high dimensional sparse matrices</strong> <div class="csl-block">Colin Megill, Bruce Martin, Charlotte Weaver, Sidney Bell, Lia Prins, Seve Badajoz, Brian McCandless, Angela Oliveira Pisco, Marcus Kinsella, Fiona Griffin, … Ambrose Carr</div> <em>Cold Spring Harbor Laboratory</em> (2021-04-06) <a href="https://doi.org/gst8vt">https://doi.org/gst8vt</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2021.04.05.438318">10.1101/2021.04.05.438318</a></div></div>
+</div>
+<div id="ref-WrWip7GV" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">72. </div><div class="csl-right-inline"><strong>CZ CELL×GENE Discover: A single-cell data platform for scalable exploration, analysis and modeling of aggregated data</strong><div class="csl-block">, Shibla Abdulla, Brian Aevermann, Pedro Assis, Seve Badajoz, Sidney M Bell, Emanuele Bezzi, Batuhan Cakir, Jim Chaffer, Signe Chambers, … Ambrose Carr</div> <em>Cold Spring Harbor Laboratory</em> (2023-11-02) <a href="https://doi.org/gtk3dd">https://doi.org/gtk3dd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2023.10.30.563174">10.1101/2023.10.30.563174</a></div></div>
+</div>
+<div id="ref-7NobF7Ei" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">73. </div><div class="csl-right-inline"><strong>Cellxgene Data Portal</strong> <div class="csl-block">Cellxgene Data Portal</div> <a href="https://cellxgene.cziscience.com/">https://cellxgene.cziscience.com/</a></div>
+</div>
+<div id="ref-xCP3BjTw" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">74. </div><div class="csl-right-inline"><strong>UCSC Cell Browser: visualize your single-cell data</strong> <div class="csl-block">Matthew L Speir, Aparna Bhaduri, Nikolay S Markov, Pablo Moreno, Tomasz J Nowakowski, Irene Papatheodorou, Alex A Pollen, Brian J Raney, Lucas Seninge, WJames Kent, Maximilian Haeussler</div> <em>Bioinformatics</em> (2021-07-09) <a href="https://doi.org/gtk3db">https://doi.org/gtk3db</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bioinformatics/btab503">10.1093/bioinformatics/btab503</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/34244710">34244710</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8652023">PMC8652023</a></div></div>
+</div>
+<div id="ref-VKaQa2Z3" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">75. </div><div class="csl-right-inline"><strong>UCSC Cell Browser</strong> <a href="https://cells.ucsc.edu/">https://cells.ucsc.edu/</a></div>
+</div>
+<div id="ref-1DswCJYT0" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">76. </div><div class="csl-right-inline"><strong>Powering single-cell analyses in the browser with WebAssembly</strong> <div class="csl-block">Aaron Lun, Jayaram Kancherla</div> <em>Cold Spring Harbor Laboratory</em> (2022-03-04) <a href="https://doi.org/gtk3dc">https://doi.org/gtk3dc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2022.03.02.482701">10.1101/2022.03.02.482701</a></div></div>
+</div>
+<div id="ref-1FzXrvESX" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">77. </div><div class="csl-right-inline"><strong>kana</strong> <a href="https://www.kanaverse.org/kana/">https://www.kanaverse.org/kana/</a></div>
+</div>
+<div id="ref-Whp3r83M" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">78. </div><div class="csl-right-inline"><strong>A comprehensive benchmarking with practical guidelines for cellular deconvolution of spatial transcriptomics</strong> <div class="csl-block">Haoyang Li, Juexiao Zhou, Zhongxiao Li, Siyuan Chen, Xingyu Liao, Bin Zhang, Ruochi Zhang, Yu Wang, Shiwei Sun, Xin Gao</div> <em>Nature Communications</em> (2023-03-21) <a href="https://doi.org/gtk3c9">https://doi.org/gtk3c9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41467-023-37168-7">10.1038/s41467-023-37168-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/36941264">36941264</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10027878">PMC10027878</a></div></div>
+</div>
+<div id="ref-mgOojr60" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">79. </div><div class="csl-right-inline"><strong>Computational deconvolution of transcriptomics data from mixed cell populations</strong> <div class="csl-block">Francisco Avila Cobos, Jo Vandesompele, Pieter Mestdagh, Katleen De Preter</div> <em>Bioinformatics</em> (2018-01-16) <a href="https://doi.org/gctpvd">https://doi.org/gctpvd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bioinformatics/bty019">10.1093/bioinformatics/bty019</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29351586">29351586</a></div></div>
+</div>
+<div id="ref-GpuiAcfU" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">80. </div><div class="csl-right-inline"><strong>Effective methods for bulk RNA-seq deconvolution using scnRNA-seq transcriptomes</strong> <div class="csl-block">Francisco Avila Cobos, Mohammad Javad Najaf Panah, Jessica Epps, Xiaochen Long, Tsz-Kwong Man, Hua-Sheng Chiu, Elad Chomsky, Evgeny Kiner, Michael J Krueger, Diego di Bernardo, … Pavel Sumazin</div> <em>Genome Biology</em> (2023-08-01) <a href="https://doi.org/gsmvqq">https://doi.org/gsmvqq</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s13059-023-03016-6">10.1186/s13059-023-03016-6</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37528411">37528411</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10394903">PMC10394903</a></div></div>
+</div>
+<div id="ref-U5WisTG5" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">81. </div><div class="csl-right-inline"><strong>The children's brain tumor network (CBTN) - Accelerating research in pediatric central nervous system tumors through collaboration and open science</strong> <div class="csl-block">Jena V Lilly, Jo Lynne Rokita, Jennifer L Mason, Tatiana Patton, Stephanie Stefankiewiz, David Higgins, Gerri Trooskin, Carina A Larouci, Kamnaa Arya, Elizabeth Appert, … Angela J Waanders</div> <em>Neoplasia</em> (2023-01) <a href="https://doi.org/grkvcf">https://doi.org/grkvcf</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.neo.2022.100846">10.1016/j.neo.2022.100846</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/36335802">36335802</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9641002">PMC9641002</a></div></div>
+</div>
+<div id="ref-5VXMHJ7N" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">82. </div><div class="csl-right-inline"><strong>OpenPBTA: The Open Pediatric Brain Tumor Atlas</strong> <div class="csl-block">Joshua A Shapiro, Krutika S Gaonkar, Stephanie J Spielman, Candace L Savonen, Chante J Bethell, Run Jin, Komal S Rathi, Yuankun Zhu, Laura E Egolf, Bailey K Farrow, … Jaclyn N Taroni</div> <em>Cell Genomics</em> (2023-07) <a href="https://doi.org/gr92p6">https://doi.org/gr92p6</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.xgen.2023.100340">10.1016/j.xgen.2023.100340</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37492101">37492101</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10363844">PMC10363844</a></div></div>
 </div>
 </div>
 <!-- default theme -->
