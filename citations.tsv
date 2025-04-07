@@ -53,6 +53,9 @@ url:https://bioconductor.org/books/release/SingleRBook/annotation-diagnostics.ht
 doi:10.3324/haematol.2013.094243	doi:10.3324/haematol.2013.094243	doi:10.3324/haematol.2013.094243	MzCvXTgB
 doi:10.1038/nature11247	doi:10.1038/nature11247	doi:10.1038/nature11247	15J98V2qM
 doi:10.1093/database/baz046	doi:10.1093/database/baz046	doi:10.1093/database/baz046	T3PlZ3Vh
+url:https://rdrr.io/bioc/ontoProc/man/findCommonAncestors.html	url:https://rdrr.io/bioc/ontoProc/man/findCommonAncestors.html	url:https://rdrr.io/bioc/ontoProc/man/findCommonAncestors.html	17SbnOJiL
+doi:10.1038/s41698-024-00717-4	doi:10.1038/s41698-024-00717-4	doi:10.1038/s41698-024-00717-4	yxJiICJJ
+doi:10.1093/noajnl/vdad009	doi:10.1093/noajnl/vdad009	doi:10.1093/noajnl/vdad009	9U8b91g7
 url:https://cellxgene.cziscience.com	url:https://cellxgene.cziscience.com	url:https://cellxgene.cziscience.com	W0TbGvjF
 url:https://github.com/chanzuckerberg/single-cell-curation/blob/main/schema/3.0.0/schema.md	url:https://github.com/chanzuckerberg/single-cell-curation/blob/main/schema/3.0.0/schema.md	url:https://github.com/chanzuckerberg/single-cell-curation/blob/main/schema/3.0.0/schema.md	QgMCMjVA
 doi:10.1186/s13059-020-02151-8	doi:10.1186/s13059-020-02151-8	doi:10.1186/s13059-020-02151-8	91inc6cK
@@ -61,7 +64,7 @@ doi:10.1101/2021.05.05.442755	doi:10.1101/2021.05.05.442755	doi:10.1101/2021.05.
 doi:10.1093/gigascience/giab008	doi:10.1093/gigascience/giab008	doi:10.1093/gigascience/giab008	eyOvxHVn
 doi:10.1093/bioinformatics/btab358	doi:10.1093/bioinformatics/btab358	doi:10.1093/bioinformatics/btab358	wd1cI6xh
 url:https://www.ebi.ac.uk/ols4/ontologies/cl	url:https://www.ebi.ac.uk/ols4/ontologies/cl	url:https://www.ebi.ac.uk/ols4/ontologies/cl	wBFzn1br
-url:https://rdrr.io/bioc/ontoProc/man/findCommonAncestors.html	url:https://rdrr.io/bioc/ontoProc/man/findCommonAncestors.html	url:https://rdrr.io/bioc/ontoProc/man/findCommonAncestors.html	17SbnOJiL
+doi:10.1093/nar/gkac947	doi:10.1093/nar/gkac947	doi:10.1093/nar/gkac947	MclvBVPD
 doi:10.18129/B9.bioc.zellkonverter	doi:10.18129/B9.bioc.zellkonverter	doi:10.18129/b9.bioc.zellkonverter	11dH4UgRF
 doi:10.1186/s13059-014-0550-8	doi:10.1186/s13059-014-0550-8	doi:10.1186/s13059-014-0550-8	w9AOzBMw
 doi:10.18637/jss.v067.i01	doi:10.18637/jss.v067.i01	doi:10.18637/jss.v067.i01	AUoV0xkq
@@ -78,4 +81,3 @@ doi:10.1093/bioinformatics/bty019	doi:10.1093/bioinformatics/bty019	doi:10.1093/
 doi:10.1186/s13059-023-03016-6	doi:10.1186/s13059-023-03016-6	doi:10.1186/s13059-023-03016-6	GpuiAcfU
 doi:10.1016/j.neo.2022.100846	doi:10.1016/j.neo.2022.100846	doi:10.1016/j.neo.2022.100846	U5WisTG5
 doi:10.1016/j.xgen.2023.100340	doi:10.1016/j.xgen.2023.100340	doi:10.1016/j.xgen.2023.100340	5VXMHJ7N
-doi:10.1093/nar/gkac947	doi:10.1093/nar/gkac947	doi:10.1093/nar/gkac947	MclvBVPD

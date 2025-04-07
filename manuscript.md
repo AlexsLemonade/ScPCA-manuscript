@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2025-04-02'
+date-meta: '2025-04-07'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -35,11 +35,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2025-04-02" />
-  <meta name="citation_publication_date" content="2025-04-02" />
-  <meta property="article:published_time" content="2025-04-02" />
-  <meta name="dc.modified" content="2025-04-02T16:42:57+00:00" />
-  <meta property="article:modified_time" content="2025-04-02T16:42:57+00:00" />
+  <meta name="dc.date" content="2025-04-07" />
+  <meta name="citation_publication_date" content="2025-04-07" />
+  <meta property="article:published_time" content="2025-04-07" />
+  <meta name="dc.modified" content="2025-04-07T18:44:12+00:00" />
+  <meta property="article:modified_time" content="2025-04-07T18:44:12+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -91,9 +91,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/147a66e8e1aa3c0c61b1e7677869b5de0641a0b4/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/147a66e8e1aa3c0c61b1e7677869b5de0641a0b4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/147a66e8e1aa3c0c61b1e7677869b5de0641a0b4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2c29e74ca0bc1b166bb2008e2a002ff3107755f4/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2c29e74ca0bc1b166bb2008e2a002ff3107755f4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2c29e74ca0bc1b166bb2008e2a002ff3107755f4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -115,10 +115,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/147a66e8e1aa3c0c61b1e7677869b5de0641a0b4/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/2c29e74ca0bc1b166bb2008e2a002ff3107755f4/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@147a66e](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/147a66e8e1aa3c0c61b1e7677869b5de0641a0b4)
-on April 2, 2025.
+from [AlexsLemonade/ScPCA-manuscript@2c29e74](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/2c29e74ca0bc1b166bb2008e2a002ff3107755f4)
+on April 7, 2025.
 </em></small>
 
 
@@ -530,7 +530,9 @@ Annotating cell types with automated methods like `SingleR` and `CellAssign` req
 For `SingleR`, this can be in the form of an annotated gene expression dataset from a microarray, bulk RNA-seq, or single-cell RNA-seq experiment.
 `CellAssign` requires a matrix of cell types and expected marker genes.
 Most public annotated reference datasets that can be used with these methods – including those we use for the Portal – are derived from normal tissue, making accurately annotating tumor datasets particularly difficult.
-Because there are limitations to the annotations provided on the Portal, comparing the two methods and observing consistent cell type annotations across methods can indicate higher confidence in the provided labels.
+Comparing the two methods and observing consistent cell type annotations across methods can indicate higher confidence in the provided labels, so we created a set of ontology-aware rules to assign consensus cell type labels based on the agreement between `SingleR` and `CellAssign`. 
+These consensus cell type assignments can be found in all processed `SingleCellExperiment` and `AnnData` objects on the Portal. 
+
 For some ScPCA projects, submitters provided their own curated cell type annotations, including annotation of tumor cells and disease-specific cell states.
 These submitter-provided annotations can be found in all `SingleCellExperiment` and `AnnData` objects (unfiltered, filtered, and processed).
 
@@ -586,6 +588,28 @@ If the submitter provided cell types, the submitter annotations are compared to 
 A summary of this comparison is included in the cell type report along with a table summarizing the submitter cell type annotations and a UMAP plot where each cell is colored by the submitter annotation.
 The Jaccard similarity index is calculated for all pairs of cell type labels in submitter annotations and `SingleR` annotations and in submitter annotations and `CellAssign` annotations.
 The results from both comparisons are displayed in a stacked heatmap available in the report, an example of which is shown in Figure {@fig:figS5}B.
+
+### Assigning consensus cell types 
+
+`SingleR` and `CellAssign` use different references and distinct computational approaches to label cells. 
+We expect cells with the same or similar cell type labels using both methods will likely be more accurately annotated. 
+Because of this, we assigned consensus cell type labels when we observed agreement between the two automated methods.
+To account for different levels of granularity in reference datasets, we employed an ontology-based approach to assign a consensus cell type label. 
+Specifically, the consensus cell type annotation is equivalent to the latest common ancestor (LCA) [@url:https://rdrr.io/bioc/ontoProc/man/findCommonAncestors.html] shared between the two predicted cell types. 
+To ensure specificity in our consensus labels, cells were only assigned a consensus cell type if the identified LCA had no more than 170 descendant terms, with a few exceptions (see Methods for more details).  
+This threshold was chosen to exclude overly general cell ontology terms, such as lymphocyte, while retaining meaningful classifications like T cell and B cell.
+After assigning all consensus cell types, we looked at the expression of cell-type specific marker genes across all cells to validate our assignments (Figure {@fig:fig5}A, Figure {@fig:figS6}). 
+
+The addition of the consensus cell type label provides a harmonized cell type annotation for all 700 samples in the ScPCA Portal, making it easy for users to perform downstream analyses across multiple samples. 
+Consensus annotations can be particularly useful when examining samples from multiple projects submitted by different investigators. 
+The availability of uniformly processed gene expression data with provided consensus annotations makes it easy to analyze and draw conclusions across a large set of samples. 
+For example, we show the distribution of cell types observed in all high-grade and low-grade glioma samples in Figure {@fig:fig5}B, which originate from six different projects and four different investigators. 
+Here, we can identify similar cell types across all glioma samples, but the composition of cell types present in each sample is heterogeneous.
+
+Previous studies have characterized the glioma immune microenvironment as being predominantly composed of myeloid cells, including microglia and glioma-associated macrophages, with smaller proportions of lymphocytes such as T cells [@doi:10.1038/s41698-024-00717-4; @doi:10.1093/noajnl/vdad009].
+Focusing on the immune infiltrate in glioma samples reveals that most immune cells in ScPCA samples are classified as either myeloid or T cell types. 
+However, there is notable heterogeneity even within HGG and LGG subtypes (Figure {@fig:fig5}C). 
+A summary of all the consensus cell types observed in all other ScPCA samples can be found in Figure {@fig:figS7}. 
 
 
 ## Materials and Methods
@@ -748,6 +772,10 @@ The only exception to this rule was if the terms shared two LCAs, one of which w
 We also excluded the following non-specific LCA terms: `bone cell`, `lining cell`, `blood cell`, `progenitor cell`, and `supporting cell`. 
 
 The consensus cell type assignments, including both the Cell Ontology term and the associated human-readable name, are available in the processed `SingleCellExperiment` objects. 
+
+Consensus cell type assignments were evaluated by looking at marker gene expression in a set of cell-type specific marker genes. 
+Marker genes were obtained from the list of Human cell markers on `CellMarker2.0` [@doi:10.1093/nar/gkac947]. 
+We considered only those that are specific to a single cell type, with the exception of hematopoietic precursor cells, which express genes found in other, more differentiated immune cells. 
 
 ### Generating merged data
 
