@@ -101,6 +101,7 @@ strikethrough
 subdiagnosis
 submitters
 subprocess
+subtypes
 svg
 svgs
 tbl
