@@ -40,6 +40,9 @@ genotype
 genotypes
 github
 glioma
+gliomas
+granulocyte
+granulocytes
 GRCh
 Hancestro
 HCA
