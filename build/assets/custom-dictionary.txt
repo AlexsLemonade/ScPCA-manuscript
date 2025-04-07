@@ -47,7 +47,9 @@ GRCh
 Hancestro
 HCA
 heatmap
+hematopoietic
 hexamer
+HGG
 Hochberg
 HsapDv
 HTAN
@@ -60,11 +62,13 @@ Jaccard
 latex
 LCA
 LCAs
+LGG
 Lun
 manubot
 Marioni
 microarray
 microenvironment
+microglia
 MONDO
 mortem
 myeloid
@@ -97,6 +101,7 @@ strikethrough
 subdiagnosis
 submitters
 subprocess
+subtypes
 svg
 svgs
 tbl
