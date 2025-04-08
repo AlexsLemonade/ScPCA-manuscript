@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2025-04-07'
+date-meta: '2025-04-08'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -35,11 +35,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2025-04-07" />
-  <meta name="citation_publication_date" content="2025-04-07" />
-  <meta property="article:published_time" content="2025-04-07" />
-  <meta name="dc.modified" content="2025-04-07T18:44:12+00:00" />
-  <meta property="article:modified_time" content="2025-04-07T18:44:12+00:00" />
+  <meta name="dc.date" content="2025-04-08" />
+  <meta name="citation_publication_date" content="2025-04-08" />
+  <meta property="article:published_time" content="2025-04-08" />
+  <meta name="dc.modified" content="2025-04-08T15:27:41+00:00" />
+  <meta property="article:modified_time" content="2025-04-08T15:27:41+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -91,9 +91,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2c29e74ca0bc1b166bb2008e2a002ff3107755f4/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2c29e74ca0bc1b166bb2008e2a002ff3107755f4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2c29e74ca0bc1b166bb2008e2a002ff3107755f4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/ad8f835f986ebad3b6d0c9717572e9b0603a40ca/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/ad8f835f986ebad3b6d0c9717572e9b0603a40ca/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/ad8f835f986ebad3b6d0c9717572e9b0603a40ca/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -115,10 +115,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/2c29e74ca0bc1b166bb2008e2a002ff3107755f4/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/ad8f835f986ebad3b6d0c9717572e9b0603a40ca/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@2c29e74](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/2c29e74ca0bc1b166bb2008e2a002ff3107755f4)
-on April 7, 2025.
+from [AlexsLemonade/ScPCA-manuscript@ad8f835](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/ad8f835f986ebad3b6d0c9717572e9b0603a40ca)
+on April 8, 2025.
 </em></small>
 
 
@@ -1012,15 +1012,15 @@ The heatmap shown is from library `SCPCL000498` [@doi:10.1016/j.devcel.2022.04.0
 <!-- Figure 5 -->
 ![**Consensus cell type annotations in Brain and CNS tumors.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_5.png?sanitize=true){#fig:fig5 tag="5" width="7in"}
 
-A. Dot plot showing expression of cell-type-specific marker genes across all libraries from brain and central nervous system (CNS) tumors.
+A. Dot plot showing expression of cell-type-specific marker genes across all libraries from brain and central nervous system (CNS) tumors, excluding multiplexed libraries.
 Expression is shown for each broad cell type annotation, where each broad cell type annotation is a collection of similar consensus cell type annotations.
 The y-axis displays the broad consensus cell type observed across libraries, with the total number of cells indicated in parentheses.
 The x-axis displays marker genes, determined by `CellMarker2.0` [@doi:10.1093/nar/gkac947], used for consensus cell type validation for each cell type shown along the top annotation bar.
 Dots are colored by mean gene expression across libraries and sized proportionally to the percent of libraries they are observed in, out of all cells with the same broad cell type annotation in brain and CNS tumor libraries.
 
-B. Barplot showing the percentage of each broad consensus cell type annotation across libraries of brain and CNS tumors, separated into high-grade (left panel) and low-grade (right panel) glioma diagnoses.
+B. Barplot showing the percentage of each broad consensus cell type annotation across libraries of brain and CNS tumors, separated into high-grade (left panel) and low-grade (right panel) glioma diagnoses for non-multiplexed libraries.
 
-C. Barplot showing all consensus cell types classified as immune cells across libraries of brain and CNS tumors, separated into high-grade (left panel) and low-grade (right panel) glioma diagnoses.
+C. Barplot showing all consensus cell types classified as immune cells across libraries of brain and CNS tumors, separated into high-grade (left panel) and low-grade (right panel) glioma diagnoses for non-multiplexed libraries.
 The percentage shown corresponds to the percentage of immune cells classified as the indicated consensus cell type.
 Only libraries comprised of at least 1\% immune cells, based on consensus cell type annotations, are shown.
 Specific consensus cell types for myeloid and lymphocyte immune cells are shown, with all other consensus immune cell types included in "other."
