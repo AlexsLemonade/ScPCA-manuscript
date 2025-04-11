@@ -128,6 +128,21 @@ authors:
       - Childhood Cancer Data Lab, Alex's Lemonade Stand Foundation, Bala Cynwyd, PA, 19004, USA
     funders:
       - Alex's Lemonade Stand Foundation Childhood Cancer Data Lab (CCDL)
+  - github: avrohomgottlieb
+    name: Avrohom M. Gottlieb
+    initials: AMG
+    email: avrohom@ccdatalab.org
+    contributions:
+      - Methodology
+      - Software
+      - Validation
+      - Data curation
+      - Writing - Review & Editing
+      - Resources
+    affiliations:
+      - Childhood Cancer Data Lab, Alex's Lemonade Stand Foundation, Bala Cynwyd, PA, 19004, USA
+    funders:
+      - Alex's Lemonade Stand Foundation Childhood Cancer Data Lab (CCDL)
   - github: kurtwheeler
     name: Kurt G. Wheeler
     initials: KGW
