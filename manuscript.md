@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2025-04-08'
+date-meta: '2025-04-11'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -35,11 +35,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2025-04-08" />
-  <meta name="citation_publication_date" content="2025-04-08" />
-  <meta property="article:published_time" content="2025-04-08" />
-  <meta name="dc.modified" content="2025-04-08T15:27:41+00:00" />
-  <meta property="article:modified_time" content="2025-04-08T15:27:41+00:00" />
+  <meta name="dc.date" content="2025-04-11" />
+  <meta name="citation_publication_date" content="2025-04-11" />
+  <meta property="article:published_time" content="2025-04-11" />
+  <meta name="dc.modified" content="2025-04-11T19:34:38+00:00" />
+  <meta property="article:modified_time" content="2025-04-11T19:34:38+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -91,9 +91,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/ad8f835f986ebad3b6d0c9717572e9b0603a40ca/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/ad8f835f986ebad3b6d0c9717572e9b0603a40ca/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/ad8f835f986ebad3b6d0c9717572e9b0603a40ca/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/4031fd50519e4a36739887566a22cb43f45e9b74/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/4031fd50519e4a36739887566a22cb43f45e9b74/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/4031fd50519e4a36739887566a22cb43f45e9b74/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -115,10 +115,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/ad8f835f986ebad3b6d0c9717572e9b0603a40ca/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/4031fd50519e4a36739887566a22cb43f45e9b74/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@ad8f835](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/ad8f835f986ebad3b6d0c9717572e9b0603a40ca)
-on April 8, 2025.
+from [AlexsLemonade/ScPCA-manuscript@4031fd5](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/4031fd50519e4a36739887566a22cb43f45e9b74)
+on April 11, 2025.
 </em></small>
 
 
@@ -865,9 +865,12 @@ In particular, the format of the provided `AnnData` objects was designed to be m
 Additionally, users can choose to download a merged `SingleCellExperiment` or `AnnData` object containing all gene expression data and metadata from all samples in a project.
 This is helpful for analyzing multiple samples simultaneously and performing analyses such as differential gene expression or gene set enrichment.
 
-To provide users with cell type annotations, we used two automated methods, `SingleR` and `CellAssign`, which use public references.
+
+To provide users with cell type annotations, we used two automated methods, `SingleR` and `CellAssign`, which use publicly available references.
+We then used the correspondence between methods to derive ontology-aware consensus cell type labels. 
+In addition to providing a consistent labeling scheme across samples in the ScPCA Portal, these consensus cell type labels may be particularly helpful for annotating populations of normal cells, which are represented in the underlying `SingleR` and `CellAssign` references, that may be present in tumor samples.
 As the publicly available references we used do not contain tumor cells but only normal cells, we recognize that the annotations we provide are limited.
-Despite these limitations, these methods can provide a good starting point for users, particularly in helping to annotate populations of normal cells that may be present, as normal cells are represented in the reference.
+Despite these limitations, the annotations provide a good starting point for further downstream analysis.
 
 We also introduced our open-source and efficient workflow for uniformly processing datasets available on the Portal, `scpca-nf`, which is available to the entire research community.
 In one command, `scpca-nf` can process raw data from various sequencing types, turning FASTQ files into processed `SingleCellExperiment` or `AnnData` objects ready for downstream analyses.
@@ -879,9 +882,13 @@ Many samples on the Portal have additional sequencing data, including correspond
 Samples with CITE-seq have additional information about cell-surface protein expression in individual cells, which can help determine cell types and correlate RNA to protein expression [@doi:10.1038/nmeth.4380].
 Spatial transcriptomics data on the Portal are not single-cell resolution, making it hard to identify cell types and spatial patterns from the spatial data alone.
 By providing matching single-cell RNA-seq, users can implement analysis tools, like those that use single-cell RNA-seq to deconvolute spatial data, to gain more insights about the spatial data [@doi:10.1038/s41467-023-37168-7].
+
 Similarly, users can gain more insight from bulk RNA-seq data available on the Portal by integrating with single-cell RNA-seq data from the same sample [@doi:10.1093/bioinformatics/bty019; @doi:10.1186/s13059-023-03016-6].
 The single-cell RNA-seq data available on the Portal can also be used to deconvolute existing bulk RNA-seq datasets, allowing researchers to infer abundance of different cell types or cell states in bulk RNA-seq data.
-Data available on the ScPCA Portal can be used to re-analyze any existing pediatric cancer datasets with bulk RNA-seq, such as the Pediatric Brain Tumor Atlas [@doi:10.1016/j.neo.2022.100846; @doi:10.1016/j.xgen.2023.100340]. 
+Our analysis of this data showed that while expression is generally consistent between matched bulk RNA-seq and single-cell/nuclei libraries in the Portal (Figure {@fig:fig6}A, Figure {@fig:figS8}A), there are potential differences in cell type composition between modalities that may reflect technological differences in sample and library preparation.
+Such multimodal comparisons that the ScPCA Portal enables reveal biological and/or technical signal that would otherwise not be apparent from one sequencing modality alone.
+
+Data available on the ScPCA Portal can further be used for external data analyses, for example to support re-analyzing any existing pediatric cancer datasets with bulk RNA-seq, such as the Pediatric Brain Tumor Atlas [@doi:10.1016/j.neo.2022.100846; @doi:10.1016/j.xgen.2023.100340].
 This allows researchers to glean more insight from previously published data without obtaining fresh samples, saving time and money.
 
 
