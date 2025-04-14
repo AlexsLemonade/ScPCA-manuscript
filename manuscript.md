@@ -39,8 +39,8 @@ header-includes: |
   <meta name="dc.date" content="2025-04-14" />
   <meta name="citation_publication_date" content="2025-04-14" />
   <meta property="article:published_time" content="2025-04-14" />
-  <meta name="dc.modified" content="2025-04-14T13:05:03+00:00" />
-  <meta property="article:modified_time" content="2025-04-14T13:05:03+00:00" />
+  <meta name="dc.modified" content="2025-04-14T18:22:20+00:00" />
+  <meta property="article:modified_time" content="2025-04-14T18:22:20+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/f55dfb225d49e2f925c95cd5b2caab0621b26611/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/f55dfb225d49e2f925c95cd5b2caab0621b26611/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/f55dfb225d49e2f925c95cd5b2caab0621b26611/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/4fc8094ad8fe2298af340e55e66404645b4f1208/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/4fc8094ad8fe2298af340e55e66404645b4f1208/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/4fc8094ad8fe2298af340e55e66404645b4f1208/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,9 +118,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/f55dfb225d49e2f925c95cd5b2caab0621b26611/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/4fc8094ad8fe2298af340e55e66404645b4f1208/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@f55dfb2](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/f55dfb225d49e2f925c95cd5b2caab0621b26611)
+from [AlexsLemonade/ScPCA-manuscript@4fc8094](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/4fc8094ad8fe2298af340e55e66404645b4f1208)
 on April 14, 2025.
 </em></small>
 
@@ -958,7 +958,7 @@ This work was funded through the Alex's Lemonade Stand Foundation Childhood Canc
 
 ## Declarations of Interest
 
-AGH, JAS, SJS, DSM, DVP, NI, AY, KGW, CJB, JO, and JNT are or were employees of Alex's Lemonade Stand Foundation, a sponsor of this research.
+AGH, JAS, SJS, DSM, DVP, NI, AY, AMG, KGW, CJB, JO, and JNT are or were employees of Alex's Lemonade Stand Foundation, a sponsor of this research.
 
 
 ## Figure Titles and Legends {.page_break_before}
