@@ -5,6 +5,7 @@ al
 alevin
 ALSF
 AnnData
+astrocytes
 ATAC
 barcode
 barcodes
@@ -39,6 +40,7 @@ genomic
 genotype
 genotypes
 github
+glial
 glioma
 gliomas
 granulocyte
@@ -68,8 +70,12 @@ manubot
 Marioni
 microarray
 microenvironment
+microenvironments
 microglia
+microvascular
+modality's
 MONDO
+monocytes
 mortem
 multimodal
 myeloid
@@ -77,15 +83,19 @@ NCBI
 NCBITaxon
 Nextflow
 orcid
+osteosarcoma
+osteosarcomas
 overrepresented
 overrepresentation
 parallelizing
 PATO
 PCA
+pericyte
 permalink
 pmc
 pmcid
 pmid
+prevalently
 pseudobulk
 pseudocount
 pubmed
@@ -99,6 +109,7 @@ SingleCellExperiment
 SingleR
 SRA
 strikethrough
+stromal
 subdiagnosis
 submitters
 subprocess
@@ -119,6 +130,7 @@ unicode
 unspliced
 Visium
 wikidata
+Wilms
 xenografts
 AGH
 JAS
