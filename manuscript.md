@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2025-04-11'
+date-meta: '2025-04-14'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -18,6 +18,7 @@ author-meta:
 - Deepashree Venkatesh Prasad
 - Nozomi Ichihara
 - Arkadii Yakovets
+- Avrohom M. Gottlieb
 - Kurt G. Wheeler
 - Chante J. Bethell
 - Steven M. Foltz
@@ -35,11 +36,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2025-04-11" />
-  <meta name="citation_publication_date" content="2025-04-11" />
-  <meta property="article:published_time" content="2025-04-11" />
-  <meta name="dc.modified" content="2025-04-11T19:34:38+00:00" />
-  <meta property="article:modified_time" content="2025-04-11T19:34:38+00:00" />
+  <meta name="dc.date" content="2025-04-14" />
+  <meta name="citation_publication_date" content="2025-04-14" />
+  <meta property="article:published_time" content="2025-04-14" />
+  <meta name="dc.modified" content="2025-04-14T12:48:08+00:00" />
+  <meta property="article:modified_time" content="2025-04-14T12:48:08+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -64,6 +65,8 @@ header-includes: |
   <meta name="citation_author" content="Nozomi Ichihara" />
   <meta name="citation_author_institution" content="Childhood Cancer Data Lab, Alex&#39;s Lemonade Stand Foundation, Bala Cynwyd, PA, 19004, USA" />
   <meta name="citation_author" content="Arkadii Yakovets" />
+  <meta name="citation_author_institution" content="Childhood Cancer Data Lab, Alex&#39;s Lemonade Stand Foundation, Bala Cynwyd, PA, 19004, USA" />
+  <meta name="citation_author" content="Avrohom M. Gottlieb" />
   <meta name="citation_author_institution" content="Childhood Cancer Data Lab, Alex&#39;s Lemonade Stand Foundation, Bala Cynwyd, PA, 19004, USA" />
   <meta name="citation_author" content="Kurt G. Wheeler" />
   <meta name="citation_author_institution" content="Childhood Cancer Data Lab, Alex&#39;s Lemonade Stand Foundation, Bala Cynwyd, PA, 19004, USA" />
@@ -91,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/4031fd50519e4a36739887566a22cb43f45e9b74/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/4031fd50519e4a36739887566a22cb43f45e9b74/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/4031fd50519e4a36739887566a22cb43f45e9b74/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/7088b16ac59ba1d780959458c29ecee4ee8132a6/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/7088b16ac59ba1d780959458c29ecee4ee8132a6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/7088b16ac59ba1d780959458c29ecee4ee8132a6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -115,10 +118,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/4031fd50519e4a36739887566a22cb43f45e9b74/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/7088b16ac59ba1d780959458c29ecee4ee8132a6/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@4031fd5](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/4031fd50519e4a36739887566a22cb43f45e9b74)
-on April 11, 2025.
+from [AlexsLemonade/ScPCA-manuscript@7088b16](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/7088b16ac59ba1d780959458c29ecee4ee8132a6)
+on April 14, 2025.
 </em></small>
 
 
@@ -201,6 +204,16 @@ on April 11, 2025.
   <br>
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [arkid15r](https://github.com/arkid15r)
+    <br>
+  <small>
+     Childhood Cancer Data Lab, Alex's Lemonade Stand Foundation, Bala Cynwyd, PA, 19004, USA
+     · Funded by Alex's Lemonade Stand Foundation Childhood Cancer Data Lab (CCDL)
+  </small>
+
++ **Avrohom M. Gottlieb**
+  <br>
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [avrohomgottlieb](https://github.com/avrohomgottlieb)
     <br>
   <small>
      Childhood Cancer Data Lab, Alex's Lemonade Stand Foundation, Bala Cynwyd, PA, 19004, USA
@@ -910,6 +923,7 @@ This work was funded through the Alex's Lemonade Stand Foundation Childhood Canc
 |Deepashree Venkatesh Prasad|Methodology, Software, Validation, Visualization, Writing - Review & Editing|
 |Nozomi Ichihara|Methodology, Software, Writing - Review & Editing|
 |Arkadii Yakovets|Methodology, Software, Validation, Data curation, Resources, Writing - Review & Editing|
+|Avrohom M. Gottlieb|Methodology, Software, Validation, Data curation, Writing - Review & Editing, Resources|
 |Kurt G. Wheeler|Methodology, Software, Validation, Data curation, Resources, Writing - Review & Editing|
 |Chante J. Bethell|Software, Validation, Writing - Review & Editing|
 |Steven M. Foltz|Writing - Review & Editing|
