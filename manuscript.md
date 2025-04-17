@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2025-04-16'
+date-meta: '2025-04-17'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -36,11 +36,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2025-04-16" />
-  <meta name="citation_publication_date" content="2025-04-16" />
-  <meta property="article:published_time" content="2025-04-16" />
-  <meta name="dc.modified" content="2025-04-16T19:57:19+00:00" />
-  <meta property="article:modified_time" content="2025-04-16T19:57:19+00:00" />
+  <meta name="dc.date" content="2025-04-17" />
+  <meta name="citation_publication_date" content="2025-04-17" />
+  <meta property="article:published_time" content="2025-04-17" />
+  <meta name="dc.modified" content="2025-04-17T18:09:23+00:00" />
+  <meta property="article:modified_time" content="2025-04-17T18:09:23+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/d48bb4e681398befef895bcf7bbe8d8720bd0447/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/d48bb4e681398befef895bcf7bbe8d8720bd0447/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/d48bb4e681398befef895bcf7bbe8d8720bd0447/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/9430773364c8310a7898019219dd1192d0676c30/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/9430773364c8310a7898019219dd1192d0676c30/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/9430773364c8310a7898019219dd1192d0676c30/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,10 +118,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/d48bb4e681398befef895bcf7bbe8d8720bd0447/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/9430773364c8310a7898019219dd1192d0676c30/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@d48bb4e](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/d48bb4e681398befef895bcf7bbe8d8720bd0447)
-on April 16, 2025.
+from [AlexsLemonade/ScPCA-manuscript@9430773](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/9430773364c8310a7898019219dd1192d0676c30)
+on April 17, 2025.
 </em></small>
 
 
@@ -1038,6 +1038,7 @@ D. Example of UMAPs as shown in the merged summary report.
 A grid of UMAPs is shown for each library in the merged object, with cells in the library of interest shown in red and all other cells belonging to other libraries shown in gray.
 The UMAP is constructed from the merged object such that all libraries contribute an equal weight, but no batch correction was performed.
 The libraries pictured are a subset of libraries in the ScPCA project `SCPCP000003`.
+For this figure specifically, the merged UMAP was constructed from a merged object containing only these four libraries, but the merged object and summary report on the ScPCA Portal for `SCPCP000003` contain all of this project's libraries.
 <br><br>
 
 <!-- Figure 4 -->
@@ -1221,6 +1222,7 @@ Dots are colored by mean gene expression across libraries and sized proportional
 
 Barplots of the percentage of cells annotated as each broad consensus cell type annotation across all libraries from Leukemia (A), Sarcoma (B), and Other solid tumors (C) diagnosis groups.
 Within each panel, libraries are shown grouped by diagnosis.
+Each column represents the distribution of cell types within a single library.
 <br><br>
 
 <!-- Figure S8 -->
