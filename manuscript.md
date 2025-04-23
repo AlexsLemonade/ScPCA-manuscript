@@ -39,8 +39,8 @@ header-includes: |
   <meta name="dc.date" content="2025-04-23" />
   <meta name="citation_publication_date" content="2025-04-23" />
   <meta property="article:published_time" content="2025-04-23" />
-  <meta name="dc.modified" content="2025-04-23T21:06:16+00:00" />
-  <meta property="article:modified_time" content="2025-04-23T21:06:16+00:00" />
+  <meta name="dc.modified" content="2025-04-23T21:22:01+00:00" />
+  <meta property="article:modified_time" content="2025-04-23T21:22:01+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/5b170f1ceb79dbf0f64efd7716d725b6d7f8d213/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/5b170f1ceb79dbf0f64efd7716d725b6d7f8d213/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/5b170f1ceb79dbf0f64efd7716d725b6d7f8d213/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/f8862d1a263839a8dea806c8f9a19d9bfc4a7476/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/f8862d1a263839a8dea806c8f9a19d9bfc4a7476/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/f8862d1a263839a8dea806c8f9a19d9bfc4a7476/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,9 +118,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/5b170f1ceb79dbf0f64efd7716d725b6d7f8d213/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/f8862d1a263839a8dea806c8f9a19d9bfc4a7476/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@5b170f1](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/5b170f1ceb79dbf0f64efd7716d725b6d7f8d213)
+from [AlexsLemonade/ScPCA-manuscript@f8862d1](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/f8862d1a263839a8dea806c8f9a19d9bfc4a7476)
 on April 23, 2025.
 </em></small>
 
@@ -444,7 +444,7 @@ All files containing `SingleCellExperiment` objects and associated `altExp` obje
 
 If a library contains associated ADT data, the QC report output by `scpca-nf` will include an additional section with a summary of ADT-related statistics, such as how many cells express each ADT, and ADT-specific diagnostic plots (Figure {@fig:figS2}B-D).
 As mentioned above, `scpca-nf` uses `DropletUtils::cleanTagCounts()` to calculate QC statistics for each cell using ADT expression but does not filter any cells from the object.
-We include plots summarizing the potential effects of removing of low-quality cells based on RNA and ADT counts in the QC report (Figure {@fig:figS2}B).
+We include plots summarizing the potential effects of removing low-quality cells based on RNA and ADT counts in the QC report (Figure {@fig:figS2}B).
 The first quadrant indicates which cells would be kept if the object was filtered using both RNA and ADT quality measures.
 The other facets highlight which cells would be removed if filtering was done using only RNA counts, only ADT counts, or both.
 The top four ADTs with the most variable expression are also identified and visualized using density plots to show the normalized ADT expression across all cells (Figure {@fig:figS2}C) and UMAPs – calculated from RNA data – with cells colored by ADT expression (Figure {@fig:figS2}D).
@@ -561,7 +561,7 @@ If `CellAssign` cannot find a likely cell type from the marker gene matrix, it d
 Because we annotate cells from tumor samples using references containing only normal cells, we anticipate that many cells, particularly the tumor cells, may not have an exact match; reporting this to the end user is valuable.
 Indeed, when applying `CellAssign` to tumor samples with our chosen reference, we observed that many of the cells were unassigned.
 We included an example in Figure {@fig:figS5}A where unassigned cell types are labeled with `Unknown`.
-When comparing annotations obtained from `CellAssign` to `SingleR` annotations and submitter-provided annotations, we noticed the labels for non-tumor cells were similar between `CellAssign`, `SingleR`, and submitter annotations, while the tumor cells were not assigned using `CellAssign` (Figure {@fig:figS5}B).
+When comparing annotations obtained from `CellAssign` and `SingleR` annotations to submitter-provided annotations, we noticed the labels for non-tumor cells were similar between `CellAssign`, `SingleR`, and submitter annotations, while the tumor cells were not assigned using `CellAssign` (Figure {@fig:figS5}B).
 
 ### Adding cell type annotations to the ScPCA Portal
 
@@ -599,12 +599,12 @@ The results from both comparisons are displayed in a stacked heatmap available i
 
 `SingleR` and `CellAssign` use different references and distinct computational approaches to label cells.
 We expect cells with the same or similar cell type labels using both methods will likely be more accurately annotated.
-Because of this, we assigned consensus cell type labels when we observed agreement between the two automated methods.
+Because of this, `scpca-nf` assigns consensus cell type labels when agreement between the two automated methods is observed.
 To account for different levels of granularity in reference datasets, we employed an ontology-based approach to assign a consensus cell type label.
 Specifically, the consensus cell type annotation is equivalent to the latest common ancestor (LCA) [@url:https://rdrr.io/bioc/ontoProc/man/findCommonAncestors.html] shared between the two predicted cell types.
-To ensure specificity in our consensus labels, cells were only assigned a consensus cell type if the identified LCA had no more than 170 descendant terms, with a few exceptions (see Methods for more details).
+To ensure specificity in the consensus labels, cells were only assigned a consensus cell type if the identified LCA had no more than 170 descendant terms, with a few exceptions (see Materials and Methods for more details).
 This threshold was chosen to exclude overly general cell ontology terms, such as lymphocyte, while retaining meaningful classifications like T cell and B cell.
-After assigning all consensus cell types, we looked at the expression of cell-type specific marker genes across all cells to validate our assignments (Figure {@fig:fig5}A, Figure {@fig:figS6}).
+After assigning all consensus cell types, we looked at the expression of cell-type specific marker genes across all cells to validate the assignments (Figure {@fig:fig5}A, Figure {@fig:figS6}).
 
 The addition of the consensus cell type label provides a harmonized cell type annotation for all 700 samples in the ScPCA Portal, making it easy for users to perform downstream analyses across multiple samples.
 Consensus annotations can be particularly useful when examining samples from multiple projects submitted by different investigators.
@@ -632,7 +632,7 @@ Across all projects, we observed an expected positive relationship between bulk 
 We next performed an overrepresentation analysis to probe for differences in gene expression that might suggest differences in cell type composition and/or abundance between modalities.
 To this end, we calculated the per-gene median of each project's model residuals and identified outliers, where "positive outliers" are genes with higher bulk RNA-seq expression than predicted from pseudobulk expression, and conversely "negative outliers" are genes with lower bulk RNA-seq expression than predicted from pseudobulk expression.
 Using marker gene sets associated with consensus cell types, we calculated the odds ratio in each direction as: the odds a cell type marker gene is present in the given outlier direction compared to other genes.
-Following permutation testing and P-value correction to control the FDR at $5%$, we indeed found that several cell type marker gene sets had higher, but never lower, bulk RNA-seq expression than expected (Figure {@fig:fig6}B, Figure {@fig:figS8}B).
+Following permutation testing and P-value correction to control the FDR at 5\%, we indeed found that several cell type marker gene sets had higher, but never lower, bulk RNA-seq expression than expected (Figure {@fig:fig6}B, Figure {@fig:figS8}B).
 
 In brain and CNS tumors, we nearly exclusively identified stromal (e.g., endothelial and extracellular matrix secreting cells) and/or neuronal cell types (e.g., glial cells and astrocytes), all of which are known to be prevalent non-immune cells in glioma tumor microenvironments [@doi:10.3389/fimmu.2023.1227126; @doi:10.3389/fphar.2024.1355242], as overrepresented in bulk (Figure {@fig:fig6}B).
 The only exception to this was monocytes being overrepresented in bulk for `SCPCP000009` (brain and CNS tumors), which was sequenced at the single-nuclei level while projects `SCPCP000001` (high-grade gliomas) and `SCPCP000002` (low-grade gliomas) were sequenced at the single-cell level.
@@ -656,7 +656,7 @@ A detailed summary with the total number of samples and libraries collected for 
 
 ### Metadata
 
-Submitters were required to submit the age, sex, organism, diagnosis, subdiagnosis (if applicable), and tissue of origin for each sample.
+Submitters were required to submit the age, sex, organism, diagnosis, subdiagnosis (if applicable), disease timing (e.g., initial diagnosis) and tissue of origin for each sample.
 The submitted metadata was standardized across projects, including converting all ages to years, removing abbreviations used in diagnosis, subdiagnosis, or tissue of origin, and using standard values across projects as much as possible for diagnosis, subdiagnosis, disease timing, and tissue of origin.
 For example, all samples obtained at diagnosis were assigned the value `Initial diagnosis` for disease timing.
 
@@ -774,7 +774,7 @@ If cell types were obtained from the submitter of the dataset, the submitter-pro
 To prepare the references used for assigning cell types, we developed a separate workflow, `build-celltype-index.nf`, within `scpca-nf`.
 For `SingleR`, we used the `BlueprintEncodeData` from the `celldex` package [@doi:10.3324/haematol.2013.094243; @doi:10.1038/nature11247] to train the `SingleR` classification model with `SingleR::trainSingleR()`.
 In the main `scpca-nf` workflow, this model and the processed `SingleCellExperiment` object were input to `SingleR::classifySingleR()`.
-The `SingleR` output of cell type annotations and a score matrix for each cell and all possible cell types were added to the processed `SingleCellExperiment` object output.
+The `SingleR` output of cell type annotations and a score matrix for each cell and all possible cell types were added to the processed `SingleCellExperiment` object.
 To evaluate confidence in `SingleR` cell type assignments, we also calculated a delta median statistic for each cell by subtracting the median cell type score from the score associated with the assigned cell type [@url:https://bioconductor.org/books/release/SingleRBook/annotation-diagnostics.html#based-on-the-deltas-across-cells].
 
 For `CellAssign`, marker gene references were created using the marker gene lists available on `PanglaoDB` [@doi:10.1093/database/baz046].
@@ -784,7 +784,7 @@ For example, we created a reference containing bone, connective tissue, smooth m
 
 Given the processed `SingleCellExperiment` object and organ-specific reference, `scvi.external.CellAssign` was used in the main `scpca-nf` workflow to train the model and predict the assigned cell type.
 For each cell, `CellAssign` calculates a probability of assignment to each cell type in the reference.
-The probability matrix and a prediction based on the most probable cell type were added as cell type annotations to the processed `SingleCellExperiment` object output.
+The probability matrix and a prediction based on the most probable cell type were added as cell type annotations to the processed `SingleCellExperiment` object.
 
 #### Assigning consensus cell types
 
@@ -800,7 +800,7 @@ The only exception to this rule was if the terms shared two LCAs, one of which w
 
 2. The LCA had fewer than 170 descendants, or was either `neuron` or `epithelial cell`.
 
-We also excluded the following non-specific LCA terms: `bone cell`, `lining cell`, `blood cell`, `progenitor cell`, and `supporting cell`. 
+If the LCA was one of the following non-specific LCA terms, no consensus cell type is assigned: `bone cell`, `lining cell`, `blood cell`, `progenitor cell`, and `supporting cell`. 
 
 The consensus cell type assignments, including both the Cell Ontology term and the associated human-readable name, are available in the processed `SingleCellExperiment` objects. 
 
@@ -982,10 +982,11 @@ A. Overview of `scpca-nf`, the primary workflow for processing single-cell and s
 Mapping is first performed with `alevin-fry` to generate a gene by cell count matrix, which is read into `R` and converted into a `SingleCellExperiment` (`SCE`) object.
 This `SCE` object is exported as the `Unfiltered SCE Object` before further post-processing.
 Next, empty droplets are filtered out, and the resulting `SCE` is exported as the `Filtered SCE Object`.
-The filtered object undergoes additional post-processing, including removing low-quality cells, normalizing counts, and performing dimension reduction including principal components analysis and UMAP calculation.
+The filtered object undergoes additional post-processing, including removing low-quality cells, normalizing counts, and performing dimension reduction with principal components analysis and UMAP.
 The object undergoes cell type annotation and is exported as the `Processed SCE Object`.
 A summary QC report and a supplemental cell type report are prepared and exported.
 Finally, all `SCE` files are converted to `AnnData` format and exported.
+
 Panels B-G show example figures that appear in the summary QC report, shown here for `SCPCL000001`, as follows [@doi:10.1093/neuonc/noad207].
 
 B. The total UMI count for each cell in the `Unfiltered SCE Object`, ordered by rank.
@@ -1011,14 +1012,14 @@ In the actual summary QC report, the top 12 most highly variable genes are shown
 ![**ScPCA Portal project download file structure and merged object workflow.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_3.png?sanitize=true){#fig:fig3 tag="3" width="7in"}
 
 A. File download structure for an ScPCA Portal project download in `SingleCellExperiment` (`SCE`) format.
-The download folder is named according to both the project ID and the date it was downloaded.
+The download folder is named according to the project ID, data format, and the date it was downloaded.
 Download folders contain one folder for each sample ID, each containing the three versions (unfiltered, filtered, and processed) of the expression data as well as the summary QC report and cell type report all named according to the ScPCA library ID.
 The `single_cell_metadata.tsv` file contains sample metadata for all samples included in the download.
 The `README.md` file provides information about the contents of each download file, additional contact and citation information, and terms of use for data downloaded from the ScPCA Portal.
 The files `bulk_quant.tsv` and `bulk_metadata.tsv` are only present for projects that also have bulk RNA-Seq data and contain, respectively, a gene by sample matrix of raw gene expression as quantified by `salmon`, and associated metadata for all samples with bulk RNA-Seq data.
 
 B. File download structure for an ScPCA Portal merged project download in `SCE` format.
-The download folder is named according to both the project ID and the date it was downloaded.
+The download folder is named according to the project ID, data format, and the date it was downloaded.
 Download folders contain a single merged object containing all samples in the given project as well as a summary report briefly detailing the contents of the merged object.
 All summary QC and cell type reports for each individual library are also provided in the `individual_reports` folder arranged by their sample ID.
 As in panel (A), additional files `single_cell_metadata.tsv`, `bulk_quant.tsv`, `bulk_metadata.tsv`, and `README.md` are also included.
@@ -1040,7 +1041,8 @@ For this figure specifically, the merged UMAP was constructed from a merged obje
 A. Expanded view of the process for adding cell type annotations within `scpca-nf`, as introduced in Figure {@fig:fig2}A.
 Cell type annotation is performed on the `Processed SCE Object`.
 A `celldex` [@doi:10.1038/s41590-018-0276-y] reference dataset with ontology labels is used as input for annotation with `SingleR` [@doi:10.1038/s41590-018-0276-y], and a list of marker genes compiled from `PanglaoDB` [@doi:10.1093/database/baz046] is used as input for annotation with `CellAssign` [@doi:10.1038/s41592-019-0529-1].
-Results from cell type annotation are then added to the `Processed SCE Object`, and a cell type summary report with information about reference sources, comparisons among cell type annotation methods, and diagnostic plots is created.
+Results from these automated cell type annotation methods and a consensus cell type annotation are then added to the `Processed SCE Object`.
+A cell type summary report with information about reference sources, comparisons among cell type annotation methods, and diagnostic plots is created.
 Although not shown in this panel, cell type annotations are also included in the `Processed AnnData Object` created from the `Processed SCE Object` (Figure {@fig:fig2}A).
 
 B. Example heatmap as shown in the cell type summary report comparing annotations with `SingleR` and `CellAssign`.
@@ -1131,7 +1133,7 @@ Distributions reflect broad agreement between platforms in the total number of g
 <!-- Figure S2 -->
 ![**Processing additional single-cell modalities in `scpca-nf`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_s2.png?sanitize=true){#fig:figS2 tag="S2" width="7in"}
 
-A. Overview of the `scpca-nf` workflow for processing libraries with CITE-seq or antibody-derived tag (ADT) derived data.
+A. Overview of the `scpca-nf` workflow for processing libraries with CITE-seq or antibody-derived tag (ADT) data.
 The workflow mirrors that shown in Figure {@fig:fig2}A with several differences accounting for the presence of ADT data.
 First, both an RNA and ADT FASTQ file are required as input to `alevin-fry`, along with a TSV file containing information about ADT barcodes.
 The gene by cell and ADT by cell count matrices are produced and read into `R` to create a `SingleCellExperiment` (SCE) object.
