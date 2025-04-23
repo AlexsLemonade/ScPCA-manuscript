@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2025-04-17'
+date-meta: '2025-04-23'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -36,11 +36,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2025-04-17" />
-  <meta name="citation_publication_date" content="2025-04-17" />
-  <meta property="article:published_time" content="2025-04-17" />
-  <meta name="dc.modified" content="2025-04-17T18:09:23+00:00" />
-  <meta property="article:modified_time" content="2025-04-17T18:09:23+00:00" />
+  <meta name="dc.date" content="2025-04-23" />
+  <meta name="citation_publication_date" content="2025-04-23" />
+  <meta property="article:published_time" content="2025-04-23" />
+  <meta name="dc.modified" content="2025-04-23T21:06:16+00:00" />
+  <meta property="article:modified_time" content="2025-04-23T21:06:16+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/9430773364c8310a7898019219dd1192d0676c30/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/9430773364c8310a7898019219dd1192d0676c30/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/9430773364c8310a7898019219dd1192d0676c30/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/5b170f1ceb79dbf0f64efd7716d725b6d7f8d213/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/5b170f1ceb79dbf0f64efd7716d725b6d7f8d213/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/5b170f1ceb79dbf0f64efd7716d725b6d7f8d213/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,10 +118,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/9430773364c8310a7898019219dd1192d0676c30/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/5b170f1ceb79dbf0f64efd7716d725b6d7f8d213/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@9430773](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/9430773364c8310a7898019219dd1192d0676c30)
-on April 17, 2025.
+from [AlexsLemonade/ScPCA-manuscript@5b170f1](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/5b170f1ceb79dbf0f64efd7716d725b6d7f8d213)
+on April 23, 2025.
 </em></small>
 
 
@@ -301,18 +301,11 @@ Jaclyn N. Taroni \<jaclyn.taroni@ccdatalab.org\>.
 ## Abstract {.page_break_before}
 
 The Single-cell Pediatric Cancer Atlas (ScPCA) Portal (<https://scpca.alexslemonade.org/>) is a data resource for uniformly processed single-cell and single-nuclei RNA sequencing (RNA-seq) data and de-identified metadata from pediatric tumor samples.
-Originally comprised of data from 10 projects funded by Alex’s Lemonade Stand Foundation, the Portal currently contains summarized gene expression data for 700 samples from 55 types of cancers from ALSF-funded and community-contributed datasets.
-In addition to gene expression data from single-cell and single-nuclei RNA-seq, the Portal holds data obtained from bulk RNA-seq, spatial transcriptomics, and feature barcoding methods, such as CITE-seq and cell hashing.
-
-ScPCA data are available for download as `SingleCellExperiment` or `AnnData` objects and are ready for downstream analyses.
-Objects include raw counts and normalized gene expression data, PCA and UMAP coordinates, and automated cell type annotations.
-Additionally, all downloads include two summary reports for each library: a quality control report summarizing sample statistics and displaying visualizations of cell metrics and a cell type annotation report with comparisons among cell type annotation methods and diagnostic plots to assess annotation quality.
-Merged `SingleCellExperiment` and `AnnData` objects containing all gene expression data and metadata for all samples in an ScPCA project are also available for download.
-These objects are useful when performing analysis on multiple samples simultaneously.
-Comprehensive documentation about data processing and the contents of files on the Portal, including a guide to getting started working with an ScPCA dataset, can be found at <http://scpca.readthedocs.io>.
-
-All data on the Portal were uniformly processed using `scpca-nf`, an open-source and efficient Nextflow workflow that uses `alevin-fry` to quantify all single-cell and single-nuclei RNA-seq data, any associated CITE-seq or cell hash data, spatial transcriptomics data, and bulk RNA-seq.
-Any pediatric cancer-relevant data sets processed with `scpca-nf` are eligible for inclusion on the ScPCA Portal, enabling continuous growth of the ScPCA Portal to help pediatric cancer researchers spend less time finding and processing data and more time answering their pressing research questions.
+Originally comprised of data from 10 projects funded by Alex’s Lemonade Stand Foundation (ALSF), the Portal currently contains summarized gene expression data for over 700 samples across 55 cancer types from ALSF-funded and community-contributed datasets.
+Downloads include gene expression data as `SingleCellExperiment` or `AnnData` objects containing raw and normalized counts, PCA and UMAP coordinates, and automated cell type annotations, along with summary reports.
+Some samples have additional data from bulk RNA-seq, spatial transcriptomics, and/or feature barcoding (e.g., CITE-seq and cell hashing) included in the download.
+All data on the Portal were uniformly processed using `scpca-nf`, an open-source and efficient Nextflow workflow that uses `alevin-fry` to quantify gene expression.
+Comprehensive documentation, including descriptions of file contents and a guide to getting started, is available at <http://scpca.readthedocs.io>. 
 
 
 ## Introduction
