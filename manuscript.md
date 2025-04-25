@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2025-04-23'
+date-meta: '2025-04-25'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -36,11 +36,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2025-04-23" />
-  <meta name="citation_publication_date" content="2025-04-23" />
-  <meta property="article:published_time" content="2025-04-23" />
-  <meta name="dc.modified" content="2025-04-23T21:22:01+00:00" />
-  <meta property="article:modified_time" content="2025-04-23T21:22:01+00:00" />
+  <meta name="dc.date" content="2025-04-25" />
+  <meta name="citation_publication_date" content="2025-04-25" />
+  <meta property="article:published_time" content="2025-04-25" />
+  <meta name="dc.modified" content="2025-04-25T14:19:42+00:00" />
+  <meta property="article:modified_time" content="2025-04-25T14:19:42+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/f8862d1a263839a8dea806c8f9a19d9bfc4a7476/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/f8862d1a263839a8dea806c8f9a19d9bfc4a7476/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/f8862d1a263839a8dea806c8f9a19d9bfc4a7476/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2fdbc571cb9634ad14b741ee5196e494f767faaf/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2fdbc571cb9634ad14b741ee5196e494f767faaf/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2fdbc571cb9634ad14b741ee5196e494f767faaf/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,10 +118,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/f8862d1a263839a8dea806c8f9a19d9bfc4a7476/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/2fdbc571cb9634ad14b741ee5196e494f767faaf/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@f8862d1](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/f8862d1a263839a8dea806c8f9a19d9bfc4a7476)
-on April 23, 2025.
+from [AlexsLemonade/ScPCA-manuscript@2fdbc57](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/2fdbc571cb9634ad14b741ee5196e494f767faaf)
+on April 25, 2025.
 </em></small>
 
 
@@ -327,7 +327,7 @@ Pediatric cancer is much less common than adult cancer, so the number of availab
 Thus, it is imperative to provide harmonized data from pediatric tumors to all pediatric cancer researchers [@doi:10.1186/s13040-018-0190-8].
 To address this unmet need, Alex's Lemonade Stand Foundation and the Childhood Cancer Data Lab developed and maintain the Single-cell Pediatric Cancer Atlas (ScPCA) Portal (<https://scpca.alexslemonade.org/>), an open-source data resource for single-cell and single-nuclei RNA-seq data of pediatric tumors.
 
-The ScPCA Portal holds uniformly processed summarized gene expression from 10x Genomics droplet-based single-cell and single-nuclei RNA-seq for 700 samples from a diverse set of 55 types of pediatric cancers.
+The ScPCA Portal holds uniformly processed summarized gene expression from 10x Genomics droplet-based single-cell and single-nuclei RNA-seq for over 700 samples from a diverse set of 55 types of pediatric cancers.
 Originally comprised of data from ten projects funded by Alex's Lemonade Stand Foundation, the Portal has since expanded to include data contributed by pediatric cancer research community members.
 In addition to gene expression data from single-cell and single-nuclei RNA-seq, the Portal includes data obtained from bulk RNA-seq, spatial transcriptomics, and feature barcoding methods, such as CITE-seq and cell hashing.
 All data provided on the portal are available in formats ready for downstream analysis with common workflow ecosystems such as `SingleCellExperiment` objects used by `R/Bioconductor`[@doi:10.1038/s41592-019-0654-x] or `AnnData` objects used by `Scanpy` and related Python modules [@doi:10.1186/s13059-017-1382-0].
@@ -358,7 +358,7 @@ In addition to providing a human-readable value for the submitted metadata, we a
 Submitted metadata was mapped to associated ontology term identifiers obtained from HsapDv (age) [@url:https://www.ebi.ac.uk/ols4/ontologies/hsapdv], PATO (sex) [@doi:10.1093/bib/bbx035; @url:https://www.ebi.ac.uk/ols4/ontologies/pato], NCBI taxonomy (organism) [@doi:10.1093/database/baaa062; @url:https://www.ncbi.nlm.nih.gov/taxonomy], MONDO (disease) [@doi:10.1101/2022.04.13.22273750; @url:https://www.ebi.ac.uk/ols4/ontologies/mondo], UBERON (tissue) [@doi:10.1186/2041-1480-5-21; @doi:10.1186/gb-2012-13-1-r5; @url:https://www.ebi.ac.uk/ols4/ontologies/uberon], and Hancestro (ethnicity, if applicable) [@doi:10.1186/s13059-018-1396-2; @url:https://www.ebi.ac.uk/ols4/ontologies/hancestro].
 By providing these ontology term identifiers for each sample, users have access to standardized metadata terms that facilitate comparisons among datasets within the Portal as well as to data from other research projects.
 
-The Portal contains data from 700 samples and 55 tumor types [@doi:10.1016/j.devcel.2022.04.003; @doi:10.21203/rs.3.rs-2517703/v1; @doi:10.21203/rs.3.rs-2517758/v1; @doi:10.1038/nature23647; @doi:10.1038/s41467-021-24781-7; @doi:10.1093/neuonc/noad207; @doi:10.1101/2023.12.26.573390].
+The Portal contains data from over 700 samples and 55 tumor types [@doi:10.1016/j.devcel.2022.04.003; @doi:10.21203/rs.3.rs-2517703/v1; @doi:10.21203/rs.3.rs-2517758/v1; @doi:10.1038/nature23647; @doi:10.1038/s41467-021-24781-7; @doi:10.1093/neuonc/noad207; @doi:10.1101/2023.12.26.573390].
 <!-- TODO: Update numbers -->
 Figure {@fig:fig1}A summarizes all samples from patient tumors and patient-derived xenografts currently available on the Portal.
 The total number of samples for each diagnosis is shown, along with the proportion of samples from each disease stage within a diagnosis group.
@@ -369,14 +369,15 @@ Along with the patient tumors, the Portal contains a small number of human tumor
 
 Each of the available samples contains summarized gene expression data from either single-cell or single-nuclei RNA sequencing.
 However, some samples also include additional data, such as quantified expression data from tagging cells with antibody-derived tags (ADT), such as CITE-seq antibodies [@doi:10.1038/nmeth.4380], or multiplexing samples with hashtag oligonucleotides (HTO) [@doi:10.1186/s13059-018-1603-1] prior to sequencing.
-Out of the 518 samples, 96 have associated CITE-seq data, and 19 have associated multiplexing data.
+Out of the 704 samples, 95 have associated CITE-seq data, and 35 have associated multiplexing data.
 In some cases, multiple libraries from the same sample were collected for additional sequencing, either for bulk RNA-seq or spatial transcriptomics.
-Specifically, 118 samples on the Portal were sequenced using bulk RNA-seq and 94 samples were sequenced using spatial transcriptomics.
+<!--Bulk total comes from 176 represented in Fig1B and 6 samples that are bulk only-->
+Specifically, 182 samples on the Portal were sequenced using bulk RNA-seq and 38 samples were sequenced using spatial transcriptomics.
 A summary of the number of samples with each additional modality is shown in Figure {@fig:fig1}B, and a detailed summary of the total samples with each sequencing method broken down by project is available in Table S1.
 
 Samples on the Portal are organized by project, where each project is a collection of similar samples from an individual lab.
 Users can filter projects based on diagnosis, included modalities (e.g., CITE-seq, bulk RNA-seq), 10x Genomics kit version (e.g., 10Xv2, 10Xv3), and whether or not a project includes samples derived from patient-derived xenografts or cell lines.
-The project card displays an abstract, the total number of samples included, a list of diagnoses for all samples included in the Project, and links to any external information associated with the project, such as publications and links to external data, such as SRA or GEO (Figure {@fig:fig1}C).
+The project card displays an abstract, the total number of samples included, a list of diagnoses for all samples included in the Project, and links to any external information associated with the project, such as publications and links to external data sources like SRA or GEO (Figure {@fig:fig1}C).
 The project card also indicates the type(s) of sequencing performed, including the 10x Genomics kit version, the suspension type (cell or nucleus), and if additional sequencing is present, like bulk RNA-seq or multiplexing.
 
 ## Uniform processing of data available on the ScPCA Portal
@@ -884,7 +885,7 @@ All original code was developed within the following repositories and is publicl
 ## Discussion
 
 Here, we introduced the ScPCA Portal, a downloadable collection of uniformly processed, summarized single-cell and single-nuclei RNA-seq data and de-identified metadata from pediatric tumor samples.
-The Portal includes 700 samples from 55 tumor types, making this the most comprehensive collection of publicly available single-cell RNA-seq datasets from pediatric tumor samples to our knowledge.
+The Portal includes over 700 samples from 55 tumor types, making this the most comprehensive collection of publicly available single-cell RNA-seq datasets from pediatric tumor samples to our knowledge.
 Summarized data are available at three different processing stages: unfiltered, filtered, or processed objects, permitting users to choose to start from a processed object or perform their own processing, such as filtering and normalization.
 Processed objects containing normalized gene expression data, reduced dimensionality results from PCA and UMAP, and cell type annotations are provided to save researchers time and allow users to skip straight to downstream analysis, such as identifying marker genes or exploring genes of interest.
 Standardized metadata, containing human-readable values for all fields and ontology term identifiers for a subset of metadata fields, is included in a separate metadata file and the data objects for all samples.
@@ -960,13 +961,15 @@ AGH, JAS, SJS, DSM, DVP, NI, AY, AMG, KGW, CJB, JO, and JNT are or were employee
 ![**Overview of ScPCA Portal contents.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_1.png?sanitize=true){#fig:fig1 tag="1" width="7in"}
 
 A. Barplots showing sample counts across four main cancer groupings in the ScPCA Portal, with each bar displaying the number of samples for each cancer type.
-Each bar is shaded based on the number of samples with each disease timing, and total sample counts for each cancer type are shown to the right of each bar.
+Each bar is colored based on the number of samples with the indicated disease timing, and total sample counts for each cancer type are shown to the right of each bar.
 
 B. Barplot showing sample counts across types of modalities present in the ScPCA Portal.
 All samples in the portal are shown under the "All Samples" heading.
 Samples under the "Samples with additional modalities" heading represent a subset of the total samples with the given additional modality.
 Colors shown for each additional modality indicate the suspension type used, either single-cell or single-nuclei RNA-seq.
-For example, 75 single-cell samples and 67 single-nuclei samples have accompanying Bulk RNA-seq data.
+For example, 75 single-cell samples and 101 single-nuclei samples have accompanying bulk RNA-seq data.
+Two samples were sequenced using both single-cell and single-nuclei suspensions so are included in the count for both "Single-cell" and "Single-nuclei" groups. 
+Samples that were sequenced with either bulk RNA-seq or spatial transcriptomics and do not have accompanying single-cell or single-nuclei RNA-seq data are not represented in the total counts. 
 
 C. Example of a project card as displayed on the "Browse" page of the ScPCA Portal.
 This project card is associated with project `SCPCP000009` [@doi:10.21203/rs.3.rs-2517703/v1; @doi:10.21203/rs.3.rs-2517758/v1].
