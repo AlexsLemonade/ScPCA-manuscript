@@ -39,8 +39,8 @@ header-includes: |
   <meta name="dc.date" content="2025-04-25" />
   <meta name="citation_publication_date" content="2025-04-25" />
   <meta property="article:published_time" content="2025-04-25" />
-  <meta name="dc.modified" content="2025-04-25T14:19:42+00:00" />
-  <meta property="article:modified_time" content="2025-04-25T14:19:42+00:00" />
+  <meta name="dc.modified" content="2025-04-25T16:57:16+00:00" />
+  <meta property="article:modified_time" content="2025-04-25T16:57:16+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2fdbc571cb9634ad14b741ee5196e494f767faaf/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2fdbc571cb9634ad14b741ee5196e494f767faaf/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2fdbc571cb9634ad14b741ee5196e494f767faaf/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/16acc0a783a5644d4b15d3989fb17bc8dba09c1e/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/16acc0a783a5644d4b15d3989fb17bc8dba09c1e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/16acc0a783a5644d4b15d3989fb17bc8dba09c1e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,9 +118,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/2fdbc571cb9634ad14b741ee5196e494f767faaf/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/16acc0a783a5644d4b15d3989fb17bc8dba09c1e/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@2fdbc57](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/2fdbc571cb9634ad14b741ee5196e494f767faaf)
+from [AlexsLemonade/ScPCA-manuscript@16acc0a](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/16acc0a783a5644d4b15d3989fb17bc8dba09c1e)
 on April 25, 2025.
 </em></small>
 
@@ -305,33 +305,33 @@ Originally comprised of data from 10 projects funded by Alex’s Lemonade Stand 
 Downloads include gene expression data as `SingleCellExperiment` or `AnnData` objects containing raw and normalized counts, PCA and UMAP coordinates, and automated cell type annotations, along with summary reports.
 Some samples have additional data from bulk RNA-seq, spatial transcriptomics, and/or feature barcoding (e.g., CITE-seq and cell hashing) included in the download.
 All data on the Portal were uniformly processed using `scpca-nf`, an open-source and efficient Nextflow workflow that uses `alevin-fry` to quantify gene expression.
-Comprehensive documentation, including descriptions of file contents and a guide to getting started, is available at <http://scpca.readthedocs.io>. 
+Comprehensive documentation, including descriptions of file contents and a guide to getting started, is available at <https://scpca.readthedocs.io>.
 
 
 ## Introduction
 
-Since the introduction of single-cell RNA-seq technology, the number of studies that employ single-cell RNA-seq has grown rapidly [@doi:10.1038/nprot.2017.149].
-Unlike its predecessor, bulk RNA-seq, which averages the expression profiles of all cells within a sample, single-cell technology quantifies gene expression in individual cells.
+The number of studies employing single-cell RNA-seq has grown rapidly since this technology was introduced [@doi:10.1038/nprot.2017.149].
+Unlike its predecessor bulk RNA-seq, which averages the expression profiles of all cells within a sample, single-cell technology quantifies gene expression in individual cells.
 Tumors are known to be transcriptionally heterogeneous, so many studies have highlighted the importance of using single-cell RNA-seq in studying tumor samples [@doi:10.1101/gr.190595.115].
-Researchers can use single-cell RNA-seq of samples obtained from patient tumors to analyze and identify individual cell populations that may play important roles in tumor growth, resistance, and metastasis [@doi:10.1126/science.1254257].
+Researchers can use single-cell RNA-seq data of samples obtained from patient tumors to analyze and identify individual cell populations that may play important roles in tumor growth, resistance, and metastasis [@doi:10.1126/science.1254257].
 Additionally, single-cell RNA-seq data provides insight into how tumor cells interact with normal cells in the tumor microenvironment [@10.1038/s41588-022-01141-9].
 
 With the growing number of single-cell RNA-seq datasets, efforts have emerged to create central, harmonized sources for datasets.
 Harmonized data resources allow researchers to leverage more samples from various biological contexts to complete their analysis and elucidate previously unknown similarities across samples and disease types.
-The Human Cell Atlas (HCA) and Human Tumor Atlas Network (HTAN) are two of many such examples.
+The Human Cell Atlas (HCA) and Human Tumor Atlas Network (HTAN) are two of many such resources.
 The HCA, which aims to use single-cell genomics to provide a comprehensive map of all cell types in the human body [@doi:10.7554/eLife.27041], contains uniformly processed single-cell RNA-seq data obtained from normal tissue with few samples derived from diseased tissue.
 The HTAN also hosts a collection of genomic data collected from tumors across multiple cancer types, including single-cell RNA-seq [@doi:10.1016/j.cell.2020.03.053].
 
-Existing resources have focused on making large quantities of harmonized data from normal tissue or adult tumor samples publicly available, but there are considerably fewer efforts to harmonize and distribute data from pediatric tumors.
+While existing resources have focused on making large quantities of harmonized data from normal tissue or adult tumor samples publicly available, there are considerably fewer efforts to harmonize and distribute data from pediatric tumors.
 Pediatric cancer is much less common than adult cancer, so the number of available samples from pediatric tumors is smaller compared to the number of adult tumors [@url:https://www.cancer.gov/types/childhood-cancers/child-adolescent-cancers-fact-sheet#how-do-cancers-in-adolescents-and-young-adults-differ-from-those-in-younger-children] and access to data from pediatric tumors is often limited.
 Thus, it is imperative to provide harmonized data from pediatric tumors to all pediatric cancer researchers [@doi:10.1186/s13040-018-0190-8].
-To address this unmet need, Alex's Lemonade Stand Foundation and the Childhood Cancer Data Lab developed and maintain the Single-cell Pediatric Cancer Atlas (ScPCA) Portal (<https://scpca.alexslemonade.org/>), an open-source data resource for single-cell and single-nuclei RNA-seq data of pediatric tumors.
+To address this unmet need, Alex's Lemonade Stand Foundation and the Childhood Cancer Data Lab developed and maintain the Single-cell Pediatric Cancer Atlas (ScPCA) Portal (<https://scpca.alexslemonade.org/>), an open-source data resource for single-cell and single-nuclei RNA-seq data of pediatric tumor samples.
 
 The ScPCA Portal holds uniformly processed summarized gene expression from 10x Genomics droplet-based single-cell and single-nuclei RNA-seq for over 700 samples from a diverse set of 55 types of pediatric cancers.
-Originally comprised of data from ten projects funded by Alex's Lemonade Stand Foundation, the Portal has since expanded to include data contributed by pediatric cancer research community members.
+Originally comprised of data from 10 projects funded by Alex's Lemonade Stand Foundation, the Portal has since expanded to include data contributed by pediatric cancer research community members.
 In addition to gene expression data from single-cell and single-nuclei RNA-seq, the Portal includes data obtained from bulk RNA-seq, spatial transcriptomics, and feature barcoding methods, such as CITE-seq and cell hashing.
 All data provided on the portal are available in formats ready for downstream analysis with common workflow ecosystems such as `SingleCellExperiment` objects used by `R/Bioconductor`[@doi:10.1038/s41592-019-0654-x] or `AnnData` objects used by `Scanpy` and related Python modules [@doi:10.1186/s13059-017-1382-0].
-Downloaded objects contain normalized gene expression counts, dimensionality reduction results, and cell type annotations.
+Downloaded objects contain both raw and normalized gene expression counts, dimensionality reduction results, and cell type annotations.
 
 To ensure that all current and future data on the Portal are uniformly processed, we created `scpca-nf`, an open-source Nextflow [@doi:10.1038/nbt.3820] pipeline (<https://github.com/AlexsLemonade/scpca-nf>).
 Using a consistent pipeline for all data increases transparency and allows users to perform analysis across multiple samples and projects without having to do any re-processing.
@@ -348,15 +348,15 @@ The ScPCA Portal advances pediatric cancer research by accelerating researchers'
 
 ## The Single-cell Pediatric Cancer Atlas Portal
 
-In March of 2022, the Childhood Cancer Data Lab launched the Single-cell Pediatric Cancer Atlas (ScPCA) Portal to make uniformly processed, summarized single-cell and single-nuclei RNA-seq data and de-identified metadata from pediatric tumor samples available for download.
+In March of 2022, the Childhood Cancer Data Lab launched the Single-cell Pediatric Cancer Atlas (ScPCA) Portal to make uniformly processed, summarized single-cell and single-nuclei RNA-seq data and de-identified metadata from pediatric tumor samples openly available for download by the research community.
 Data available on the Portal was obtained using two different mechanisms: raw data was accepted from ALSF-funded investigators and processed using our open-source pipeline `scpca-nf`, or investigators processed their raw data using `scpca-nf` and submitted the output for inclusion on the Portal.
 
 All samples on the Portal include a core set of metadata obtained from investigators, including age, sex, diagnosis, subdiagnosis (if applicable), tissue location, and disease stage.
-Some investigators submitted additional metadata, such as treatment and tumor stage, which can also be found on the Portal.
-All submitted metadata was standardized to maintain consistency across projects before adding to the Portal.
+Some samples include additional metadata, such as treatment or tumor stage, if provided by the investigators.
+We standardized all provided metadata to maintain consistency across projects before adding it to the Portal.
 In addition to providing a human-readable value for the submitted metadata, we also provide ontology term identifiers, if applicable.
 Submitted metadata was mapped to associated ontology term identifiers obtained from HsapDv (age) [@url:https://www.ebi.ac.uk/ols4/ontologies/hsapdv], PATO (sex) [@doi:10.1093/bib/bbx035; @url:https://www.ebi.ac.uk/ols4/ontologies/pato], NCBI taxonomy (organism) [@doi:10.1093/database/baaa062; @url:https://www.ncbi.nlm.nih.gov/taxonomy], MONDO (disease) [@doi:10.1101/2022.04.13.22273750; @url:https://www.ebi.ac.uk/ols4/ontologies/mondo], UBERON (tissue) [@doi:10.1186/2041-1480-5-21; @doi:10.1186/gb-2012-13-1-r5; @url:https://www.ebi.ac.uk/ols4/ontologies/uberon], and Hancestro (ethnicity, if applicable) [@doi:10.1186/s13059-018-1396-2; @url:https://www.ebi.ac.uk/ols4/ontologies/hancestro].
-By providing these ontology term identifiers for each sample, users have access to standardized metadata terms that facilitate comparisons among datasets within the Portal as well as to data from other research projects.
+These ontology term identifiers offer standardized metadata terms that facilitate comparisons among datasets within the Portal as well as to data from other research projects.
 
 The Portal contains data from over 700 samples and 55 tumor types [@doi:10.1016/j.devcel.2022.04.003; @doi:10.21203/rs.3.rs-2517703/v1; @doi:10.21203/rs.3.rs-2517758/v1; @doi:10.1038/nature23647; @doi:10.1038/s41467-021-24781-7; @doi:10.1093/neuonc/noad207; @doi:10.1101/2023.12.26.573390].
 <!-- TODO: Update numbers -->
@@ -371,14 +371,13 @@ Each of the available samples contains summarized gene expression data from eith
 However, some samples also include additional data, such as quantified expression data from tagging cells with antibody-derived tags (ADT), such as CITE-seq antibodies [@doi:10.1038/nmeth.4380], or multiplexing samples with hashtag oligonucleotides (HTO) [@doi:10.1186/s13059-018-1603-1] prior to sequencing.
 Out of the 704 samples, 95 have associated CITE-seq data, and 35 have associated multiplexing data.
 In some cases, multiple libraries from the same sample were collected for additional sequencing, either for bulk RNA-seq or spatial transcriptomics.
-<!--Bulk total comes from 176 represented in Fig1B and 6 samples that are bulk only-->
 Specifically, 182 samples on the Portal were sequenced using bulk RNA-seq and 38 samples were sequenced using spatial transcriptomics.
 A summary of the number of samples with each additional modality is shown in Figure {@fig:fig1}B, and a detailed summary of the total samples with each sequencing method broken down by project is available in Table S1.
 
 Samples on the Portal are organized by project, where each project is a collection of similar samples from an individual lab.
 Users can filter projects based on diagnosis, included modalities (e.g., CITE-seq, bulk RNA-seq), 10x Genomics kit version (e.g., 10Xv2, 10Xv3), and whether or not a project includes samples derived from patient-derived xenografts or cell lines.
-The project card displays an abstract, the total number of samples included, a list of diagnoses for all samples included in the Project, and links to any external information associated with the project, such as publications and links to external data sources like SRA or GEO (Figure {@fig:fig1}C).
-The project card also indicates the type(s) of sequencing performed, including the 10x Genomics kit version, the suspension type (cell or nucleus), and if additional sequencing is present, like bulk RNA-seq or multiplexing.
+The project card displays an abstract, the total number of samples included, a list of diagnoses for all samples included in the Project, and links to any external information associated with the project, such as publications and links to external data, such as SRA or GEO (Figure {@fig:fig1}C).
+The project card also indicates the type(s) of sequencing performed, including the 10x Genomics kit version, the suspension type (cell or nucleus), if additional sequencing is present, like bulk RNA-seq, or if the samples have been multiplexed using cell hashing.
 
 ## Uniform processing of data available on the ScPCA Portal
 
@@ -394,11 +393,10 @@ When building `scpca-nf`, we sought a fast and memory-efficient tool for gene ex
 We expected many users of the Portal to have their own single-cell or single-nuclei data processed with Cell Ranger [@doi:10.1038/ncomms14049; @url:https://www.10xgenomics.com/support/software/cell-ranger/latest], due to its popularity.
 Thus, selecting a tool with comparable results to Cell Ranger was also desirable.
 In comparing `alevin-fry` [@doi:10.1038/s41592-022-01408-3] to Cell Ranger, we found `alevin-fry` had a lower run time and memory usage (Figure {@fig:figS1}A), while retaining comparable mean gene expression for all genes (Figure {@fig:figS1}B), total UMIs per cell (Figure {@fig:figS1}C), and total genes detected per cell (Figure {@fig:figS1}D).
-(All analyses comparing gene expression quantification tools are available in a public analysis repository [@url:https://github.com/AlexsLemonade/alsf-scpca].)
+(All analyses comparing gene expression quantification tools are available in a public analysis repository: <https://github.com/AlexsLemonade/alsf-scpca>.)
 Based on these results, we elected to use `salmon alevin` and `alevin-fry` [@doi:10.1038/s41592-022-01408-3] in `scpca-nf` to quantify gene expression data.
 
-`scpca-nf` takes FASTQ files as input (Figure {@fig:fig2}A).
-Reads are aligned using the selective alignment option in `salmon alevin` to an index with transcripts corresponding to spliced cDNA and intronic regions, denoted by `alevin-fry` as a `splici` index.
+Taking FASTQ files as input, `scpca-nf` aligns reads using the selective alignment option in `salmon alevin` to an index with transcripts corresponding to spliced cDNA and intronic regions, denoted by `alevin-fry` as a `splici` index (Figure {@fig:fig2}A).
 The output from `alevin-fry` includes a gene by cell count matrix for all barcodes identified, even those that may not contain true cells.
 This unfiltered counts matrix is stored in a `SingleCellExperiment` object [@doi:10.1038/s41592-019-0654-x] and output from the workflow as a file with the suffix `_unfiltered.rds`.
 <!-- JAS: I tend to think we should remove the file names and extensions from the Results: they make sense to me in methods but seem a bit deep in the weeds for this section. I simplified them a bit, so I am happier now. Leaving this comment for later reviewers. -->
@@ -407,7 +405,7 @@ This unfiltered counts matrix is stored in a `SingleCellExperiment` object [@doi
 The unfiltered gene by cell counts matrices are filtered to remove any barcodes that are not likely to contain cells using `DropletUtils::emptyDropsCellRanger()`[@doi:10.1186/s13059-019-1662-y], and all cells that pass are saved in a `SingleCellExperiment` object and a file with the suffix `_filtered.rds`.
 Low-quality cells are identified and removed with `miQC` [@doi:10.1371/journal.pcbi.1009290], which jointly models the proportion of mitochondrial reads and detected genes per cell and calculates a probability that each cell is compromised.
 The remaining cells' counts are normalized [@doi:10.1186/s13059-016-0947-7], and reduced-dimension representations are calculated using both principal component analysis (PCA) and uniform manifold approximation and projection (UMAP) [@arxiv:1802.03426].
-Finally, cell types are classified using two automated methods, `SingleR` [@doi:10.1038/s41590-018-0276-y] and `CellAssign` [@doi:10.1038/s41592-019-0529-1].
+Finally, cell types are classified using two automated methods, `SingleR` [@doi:10.1038/s41590-018-0276-y] and `CellAssign` [@doi:10.1038/s41592-019-0529-1], and an ontology-aware consensus cell type is derived from these automated labels where possible.
 The results from this analysis are stored in a processed `SingleCellExperiment` object saved to a file with the suffix `_processed.rds`.
 
 To make downloading from the Portal convenient for R and Python users, downloads are available as either `SingleCellExperiment` or `AnnData`[@doi:10.1101/2021.12.16.473007] objects.
@@ -432,12 +430,13 @@ The output from `alevin-fry` is the unfiltered ADT by cell counts matrix.
 The ADT by cell counts matrix is read into R alongside the gene by cell counts matrix and saved as an alternative experiment (`altExp`) within the main `SingleCellExperiment` object containing the unfiltered RNA counts.
 This `SingleCellExperiment` object containing both RNA and ADT counts is output from the workflow to a file with the suffix `_unfiltered.rds`.
 
-`scpca-nf` does not filter any cells based on ADT expression or remove cells with low-quality ADT expression.
 Any cells removed after filtering empty droplets based on the unfiltered RNA counts matrix are also removed from the ADT counts matrix.
-The workflow calculates QC statistics for ADT counts using `DropletUtils::cleanTagCounts()` that are stored alongside the ADT by cell counts matrix in the filtered `SingleCellExperiment` object.
+`scpca-nf` does not filter any cells based on ADT expression or remove cells with low-quality ADT expression.
+Instead, the workflow calculates QC statistics for ADT counts using `DropletUtils::cleanTagCounts()` and stores them alongside the ADT by cell counts matrix in the filtered `SingleCellExperiment` object.
+Users can use these statistics to filter based on ADT counts before proceeding to downstream analyses if they choose.
 The `SingleCellExperiment` object containing the filtered RNA and ADT counts matrix and associated ADT QC statistics is saved to a file with the suffix `_filtered.rds`.
 
-The ADT by cell counts matrix is normalized by first determining the ambient profile and then using that profile to calculate median size factors with `scuttle::computeMedianFactors()` [@doi:10.18129/B9.bioc.scuttle; @url:https://bioconductor.org/books/3.16/OSCA.advanced/integrating-with-protein-abundance.html#cite-seq-median-norm].
+The ADT by cell counts matrix is normalized first by determining the ambient profile and then using that profile to calculate median size factors with `scuttle::computeMedianFactors()` [@doi:10.18129/B9.bioc.scuttle; @url:https://bioconductor.org/books/3.16/OSCA.advanced/integrating-with-protein-abundance.html#cite-seq-median-norm].
 We skip normalization for cells with low-quality ADT expression, as indicated by `DropletUtils::cleanTagCounts()`.
 Although `scpca-nf` normalizes ADT counts, the workflow does not perform any dimensionality reduction of ADT data; only the RNA counts data are used as input for dimensionality reduction.
 The normalized ADT data are saved as an `altExp` within the processed `SingleCellExperiment` containing the normalized RNA data and is output to a file with the suffix `_processed.rds`.
@@ -448,7 +447,7 @@ As mentioned above, `scpca-nf` uses `DropletUtils::cleanTagCounts()` to calculat
 We include plots summarizing the potential effects of removing low-quality cells based on RNA and ADT counts in the QC report (Figure {@fig:figS2}B).
 The first quadrant indicates which cells would be kept if the object was filtered using both RNA and ADT quality measures.
 The other facets highlight which cells would be removed if filtering was done using only RNA counts, only ADT counts, or both.
-The top four ADTs with the most variable expression are also identified and visualized using density plots to show the normalized ADT expression across all cells (Figure {@fig:figS2}C) and UMAPs – calculated from RNA data – with cells colored by ADT expression (Figure {@fig:figS2}D).
+The top four ADTs with the most variable expression are also identified and visualized using density plots to show the normalized ADT expression across all cells (Figure {@fig:figS2}C) and UMAPs – calculated from RNA expression data – with cells colored by ADT expression (Figure {@fig:figS2}D).
 
 ### Multiplexed libraries
 
@@ -471,7 +470,7 @@ No additional plots are produced, but a table summarizing the results from all t
 
 ### Bulk and spatial transcriptomics
 
-Some samples also included data from bulk RNA-seq and/or spatial transcriptomics libraries.
+Some samples also include data from bulk RNA-seq and/or spatial transcriptomics libraries.
 Both of these additional sequencing methods are supported by `scpca-nf`.
 To quantify bulk RNA-seq data, `scpca-nf` takes bulk FASTQ files as input, trims reads using `fastp` [@doi:10.1093/bioinformatics/bty560], and then aligns and quantifies reads with `salmon` (Figure {@fig:figS3}A) [@doi:10.1038/nmeth.4197].
 The output is a single TSV file with the gene by sample counts matrix for all samples in a given ScPCA project.
@@ -487,7 +486,7 @@ The output includes the spot by gene matrix along with a summary report produced
 ⚠️ JNT thinks this level of repetition of facts covered in earlier sections is good.
 See what you think during your review.
 -->
-On the Portal, users can select to download data from individual samples or all data from an entire ScPCA project.
+On the Portal, users can either download data from individual samples or all data from an entire ScPCA project.
 When downloading data for an entire project, users can choose between receiving the individual files for each sample (default) or one file containing the gene expression data and metadata for all samples in the project as a merged object.
 Users also have the option to choose their desired format and receive the data as `SingleCellExperiment` (`.rds`) or `AnnData` (`.h5ad`) objects.
 
@@ -496,14 +495,14 @@ Each sample folder contains all three object types (unfiltered, filtered, and pr
 The objects house the summarized gene expression data and associated metadata for the library indicated in the filename.
 
 All project downloads include a metadata file, `single_cell_metadata.tsv`, containing relevant metadata for all samples, and a `README.md` with information about the contents of each download, contact and citation information, and terms of use for data downloaded from the Portal (Figure {@fig:fig3}A-B).
-If the ScPCA project includes samples with bulk RNA-seq, two additional files are included: a gene by sample counts matrix (`bulk_quant.tsv`) with the quantified gene expression data for all samples in the project, and a metadata file (`bulk_metadata.tsv`).
+If the ScPCA project includes samples with bulk RNA-seq, two additional files are included: a gene by sample counts matrix (`_bulk_quant.tsv`) with the quantified gene expression data for all samples in the project, and a metadata file (`_bulk_metadata.tsv`).
 
 ### Merged objects
 
 Providing data for all samples within a single file facilitates performing joint gene-level analyses, such as differential expression or gene set enrichment analyses, on multiple samples simultaneously.
 Therefore, we provide a single, merged object for each project containing all raw and normalized gene expression data and metadata for all single-cell and single-nuclei RNA-seq libraries within a given ScPCA project.
 We provide merged objects for all projects in the Portal except for those with multiplexing, due to potential ambiguity in identifying samples across multiplexed libraries.
-The data in the merged object has simply been combined without further processing; no batch-corrected or integrated data are included.
+No further processing besides merging the object is performed; batch-correction is not performed, and integrated data is not provided.
 If downloading data from an ScPCA project as a single, merged file, the download will include a single `.rds` or `.h5ad` file, a summary report for the merged object, and a folder with all individual QC and cell type reports for each library found in the merged object (Figure {@fig:fig3}B).
 
 To build the merged objects, we created an additional stand-alone workflow for merging the output from `scpca-nf`, `merge.nf` (Figure {@fig:fig3}C).
@@ -543,7 +542,7 @@ These consensus cell type assignments can be found in all processed `SingleCellE
 For some ScPCA projects, submitters provided their own curated cell type annotations, including annotation of tumor cells and disease-specific cell states.
 These submitter-provided annotations can be found in all `SingleCellExperiment` and `AnnData` objects (unfiltered, filtered, and processed).
 
-### Choosing cell typing methods and references
+### Choosing cell typing references
 
 `SingleR` is a reference-based annotation method that requires an existing bulk or single-cell RNA-seq dataset with annotations.
 To identify an appropriate reference to use with `SingleR`, we annotated a small number of samples across multiple disease types with all human-specific references available in the `celldex` package [@doi:10.1038/s41590-018-0276-y].
@@ -552,7 +551,8 @@ We calculated the delta median statistic for each cell in the dataset by subtrac
 The delta median statistic helps evaluate how confident `SingleR` is in assigning each cell to a specific cell type, where low delta median values indicate ambiguous assignments and high delta median values indicate confident assignments [@url:https://bioconductor.org/books/release/SingleRBook/annotation-diagnostics.html#based-on-the-deltas-across-cells].
 <!-- TODO: ⚠️ For review - What do you think of the next sentence? -->
 Using this measure, we found that the `BlueprintEncodeData` reference [@doi:10.3324/haematol.2013.094243; @doi:10.1038/nature11247], which includes a variety of normal cell types, tended to perform better than or at least similarly to other references across samples from different disease types (Figure {@fig:figS4}).
-Based on these findings, we used the `BlueprintEncodeData` reference to annotate cells from all libraries on the Portal, as using a single reference is potentially valuable for cross-project analyses.
+Based on these findings, we used the `BlueprintEncodeData` reference to annotate cells from all libraries on the Portal.
+Use of a consistent reference also supports cross-project analyses.
 
 In contrast, `CellAssign` is a marker-gene-based annotation method that requires a binary matrix with all cell types and all associated marker genes as the reference.
 We used the list of marker genes available as part of `PanglaoDB` [@doi:10.1093/database/baz046] to construct organ-specific marker gene matrices with marker genes from all cell types listed for the specified organ.
@@ -560,7 +560,7 @@ Since many cancers may have infiltrating immune cells, all immune cells were als
 For each ScPCA project, we provided the organ-specific marker gene matrix relevant to the disease and tissue type from which the sample was obtained (e.g., for brain tumors, we used a brain-specific marker gene matrix with all brain and immune cell types).
 If `CellAssign` cannot find a likely cell type from the marker gene matrix, it does not assign a cell type.
 Because we annotate cells from tumor samples using references containing only normal cells, we anticipate that many cells, particularly the tumor cells, may not have an exact match; reporting this to the end user is valuable.
-Indeed, when applying `CellAssign` to tumor samples with our chosen reference, we observed that many of the cells were unassigned.
+Indeed, when applying `CellAssign` to tumor samples with our chosen reference, we observed that many cells were unassigned.
 We included an example in Figure {@fig:figS5}A where unassigned cell types are labeled with `Unknown`.
 When comparing annotations obtained from `CellAssign` and `SingleR` annotations to submitter-provided annotations, we noticed the labels for non-tumor cells were similar between `CellAssign`, `SingleR`, and submitter annotations, while the tumor cells were not assigned using `CellAssign` (Figure {@fig:figS5}B).
 
@@ -569,8 +569,8 @@ When comparing annotations obtained from `CellAssign` and `SingleR` annotations 
 `scpca-nf` adds cell type annotations from `SingleR` and `CellAssign` to all processed `SingleCellExperiment` objects (Figure {@fig:fig4}A).
 This requires two additional reference files as input to the workflow: a classification model built from a reference dataset for `SingleR` and a marker gene by cell type matrix for `CellAssign`.
 `SingleR::trainSingleR()` was used to build a classification model from the provided `BlueprintEncodeData` dataset and create the required `SingleR` input for `scpca-nf`.
-The classification model and processed `SingleCellExperiment` were used as input for `SingleR::classifySingleR()`, resulting in annotations for all cells and an associated score matrix.
-The score matrix containing a score for all cells and each possible cell type and the assigned cell types are added to the processed `SingleCellExperiment` object output by `scpca-nf`.
+The classification model and processed `SingleCellExperiment` were input to `SingleR::classifySingleR()`, resulting in annotations for all cells and an associated matrix with per-cell scores for all possible cell type labels.
+The score matrix and the assigned cell types are added to the processed `SingleCellExperiment` object output by `scpca-nf`.
 Simultaneously, processed `SingleCellExperiment` objects are converted to `AnnData` objects for classification with `CellAssign`.
 `CellAssign` uses the converted `AnnData` object and the marker gene matrix to train a model and predict the most likely cell type from the possible cell types in the marker gene matrix.
 The prediction matrix, which contains a probability that each cell is one of each possible cell types, and the assigned cell types are added to the processed `SingleCellExperiment` object output by `scpca-nf`.
@@ -600,16 +600,16 @@ The results from both comparisons are displayed in a stacked heatmap available i
 
 `SingleR` and `CellAssign` use different references and distinct computational approaches to label cells.
 We expect cells with the same or similar cell type labels using both methods will likely be more accurately annotated.
-Because of this, `scpca-nf` assigns consensus cell type labels when agreement between the two automated methods is observed.
+`scpca-nf` therefore assigns consensus cell type labels when the two automated methods agree.
 To account for different levels of granularity in reference datasets, we employed an ontology-based approach to assign a consensus cell type label.
 Specifically, the consensus cell type annotation is equivalent to the latest common ancestor (LCA) [@url:https://rdrr.io/bioc/ontoProc/man/findCommonAncestors.html] shared between the two predicted cell types.
 To ensure specificity in the consensus labels, cells were only assigned a consensus cell type if the identified LCA had no more than 170 descendant terms, with a few exceptions (see Materials and Methods for more details).
 This threshold was chosen to exclude overly general cell ontology terms, such as lymphocyte, while retaining meaningful classifications like T cell and B cell.
 After assigning all consensus cell types, we looked at the expression of cell-type specific marker genes across all cells to validate the assignments (Figure {@fig:fig5}A, Figure {@fig:figS6}).
 
-The addition of the consensus cell type label provides a harmonized cell type annotation for all 700 samples in the ScPCA Portal, making it easy for users to perform downstream analyses across multiple samples.
+The addition of the consensus cell type label provides a harmonized cell type annotation for all samples in the ScPCA Portal, facilitating downstream analyses across multiple samples.
 Consensus annotations can be particularly useful when examining samples from multiple projects submitted by different investigators.
-The availability of uniformly processed gene expression data with provided consensus annotations makes it easy to analyze and draw conclusions across a large set of samples.
+The availability of uniformly processed gene expression data with provided consensus annotations supports analyzing and drawing conclusions across a large set of samples.
 For example, we show the distribution of cell types observed in all high-grade and low-grade glioma samples in Figure {@fig:fig5}B, which originate from six different projects and four different investigators.
 Here, we can identify similar cell types across all glioma samples, but the composition of cell types present in each sample is heterogeneous.
 
@@ -621,22 +621,22 @@ A summary of all the consensus cell types observed in all other ScPCA samples ca
 
 ## Analysis of bulk RNA-seq
 
-Several projects in the ScPCA Portal quantified many samples' expression both at the bulk and single-cell/nuclei  level.
-Previous research has suggested that, compared to bulk RNA-seq, single-cell/nuclei RNA-seq may fail to capture certain cell types [@doi:10.1038/s41587-020-0465-8], for example due to technical aspects of library preparation.
-We therefore sought to ask whether we could identify differences in biological signal between these two modalities that may suggest distinct cell type distributions.
-For this analysis, we specifically focused on ScPCA projects with solid tumors, considering only non-multiplexed samples with both sequencing modalities and excluding low-quality single-cell/nuclei libraries.
+Several projects in the ScPCA Portal contain bulk RNA-seq data in addition to single-cell/nuclei RNA-seq data.
+Previous research has suggested that, compared to bulk RNA-seq, single-cell/nuclei RNA-seq technologies may fail to capture certain cell types [@doi:10.1038/s41587-020-0465-8], for example due to technical aspects of library preparation.
+We therefore asked whether we could identify differences in biological signal between these two modalities that may suggest distinct cell type distributions.
+For this analysis, we specifically focused on ScPCA projects with solid tumors, considered only non-multiplexed samples with both sequencing modalities, and excluded low-quality single-cell/nuclei libraries.
 In total, we analyzed 97 samples across five projects: `SCPCP00001`, `SCPCP000002`, `SCPCP000006`, `SCPCP000009`, and `SCPCP000017`.
 Projects `SCPCP000001` and `SCPCP000002` comprise high- and low-grade gliomas, respectively, and were sequenced at the bulk and single-cell levels, and `SCPCP000006`, `SCPCP000009`, and `SCPCP000017` comprise Wilms tumors, CNS tumors, and osteosarcomas, respectively, and were sequenced at the bulk and single-nuclei levels.
 As described in Materials and Methods, we derived pseudobulk expression matrices for each single-cell/nuclei library, and we compared their expression to bulk using a series of linear models (one per ScPCA project) predicting bulk from pseudobulk expression with a random effect controlling for sample (Figure {@fig:fig6}A, Figure {@fig:figS8}A).
-Across all projects, we observed an expected positive relationship between bulk and pseudobulk expression.
+Across all projects, we observed a positive relationship between bulk and pseudobulk expression, consistent with our expectations.
 
 We next performed an overrepresentation analysis to probe for differences in gene expression that might suggest differences in cell type composition and/or abundance between modalities.
-To this end, we calculated the per-gene median of each project's model residuals and identified outliers, where "positive outliers" are genes with higher bulk RNA-seq expression than predicted from pseudobulk expression, and conversely "negative outliers" are genes with lower bulk RNA-seq expression than predicted from pseudobulk expression.
-Using marker gene sets associated with consensus cell types, we calculated the odds ratio in each direction as: the odds a cell type marker gene is present in the given outlier direction compared to other genes.
+To this end, we calculated the per-gene median of each project's model residuals and identified outliers, where "positive outliers" are genes with higher bulk RNA-seq expression than expected from pseudobulk expression, and conversely "negative outliers" are genes with lower bulk RNA-seq expression than expected from pseudobulk expression.
+Using marker gene sets associated with consensus cell types, we calculated the odds ratio in each direction as the odds a cell type marker gene is present in the given outlier direction compared to other genes.
 Following permutation testing and P-value correction to control the FDR at 5\%, we indeed found that several cell type marker gene sets had higher, but never lower, bulk RNA-seq expression than expected (Figure {@fig:fig6}B, Figure {@fig:figS8}B).
 
-In brain and CNS tumors, we nearly exclusively identified stromal (e.g., endothelial and extracellular matrix secreting cells) and/or neuronal cell types (e.g., glial cells and astrocytes), all of which are known to be prevalent non-immune cells in glioma tumor microenvironments [@doi:10.3389/fimmu.2023.1227126; @doi:10.3389/fphar.2024.1355242], as overrepresented in bulk (Figure {@fig:fig6}B).
-The only exception to this was monocytes being overrepresented in bulk for `SCPCP000009` (brain and CNS tumors), which was sequenced at the single-nuclei level while projects `SCPCP000001` (high-grade gliomas) and `SCPCP000002` (low-grade gliomas) were sequenced at the single-cell level.
+In brain and CNS tumors, the marker genes overrepresented in bulk RNA-seq expression corresponded nearly exclusively to stromal (e.g., endothelial and extracellular matrix secreting cells) and/or neuronal cell types (e.g., glial cells and astrocytes), all of which are known to be prevalent non-immune cells in glioma tumor microenvironments [@doi:10.3389/fimmu.2023.1227126; @doi:10.3389/fphar.2024.1355242] (Figure {@fig:fig6}B).
+The only exceptions were monocyte marker genes being overrepresented in bulk RNA-seq expression for `SCPCP000009` (brain and CNS tumors), which was sequenced at the single-nuclei level while projects `SCPCP000001` (high-grade gliomas) and `SCPCP000002` (low-grade gliomas) were sequenced at the single-cell level.
 This difference may reflect that single-cell approaches have increased sensitivity to detect immune cells relative to single-nuclei approaches [@doi:10.4132/jptm.2022.12.19].
 
 Given that our consensus cell type analysis identified a variety of immune cells from high- and low-grade gliomas (Figure {@fig:fig5}), these results suggest that non-immune cells may have been lost during single-cell library preparation.
@@ -899,7 +899,7 @@ This is helpful for analyzing multiple samples simultaneously and performing ana
 
 
 To provide users with cell type annotations, we used two automated methods, `SingleR` and `CellAssign`, which use publicly available references.
-We then used the correspondence between methods to derive ontology-aware consensus cell type labels. 
+We then used the correspondence between methods to derive ontology-aware consensus cell type labels.
 In addition to providing a consistent labeling scheme across samples in the ScPCA Portal, these consensus cell type labels may be particularly helpful for annotating populations of normal cells, which are represented in the underlying `SingleR` and `CellAssign` references, that may be present in tumor samples.
 As the publicly available references we used do not contain tumor cells but only normal cells, we recognize that the annotations we provide are limited.
 Despite these limitations, the annotations provide a good starting point for further downstream analysis.
@@ -968,8 +968,8 @@ All samples in the portal are shown under the "All Samples" heading.
 Samples under the "Samples with additional modalities" heading represent a subset of the total samples with the given additional modality.
 Colors shown for each additional modality indicate the suspension type used, either single-cell or single-nuclei RNA-seq.
 For example, 75 single-cell samples and 101 single-nuclei samples have accompanying bulk RNA-seq data.
-Two samples were sequenced using both single-cell and single-nuclei suspensions so are included in the count for both "Single-cell" and "Single-nuclei" groups. 
-Samples that were sequenced with either bulk RNA-seq or spatial transcriptomics and do not have accompanying single-cell or single-nuclei RNA-seq data are not represented in the total counts. 
+Two samples were sequenced using both single-cell and single-nuclei suspensions so are included in the count for both "Single-cell" and "Single-nuclei" groups.
+Samples that were sequenced with either bulk RNA-seq or spatial transcriptomics and do not have accompanying single-cell or single-nuclei RNA-seq data are not represented in the total counts.
 
 C. Example of a project card as displayed on the "Browse" page of the ScPCA Portal.
 This project card is associated with project `SCPCP000009` [@doi:10.21203/rs.3.rs-2517703/v1; @doi:10.21203/rs.3.rs-2517758/v1].
@@ -1019,13 +1019,13 @@ The download folder is named according to the project ID, data format, and the d
 Download folders contain one folder for each sample ID, each containing the three versions (unfiltered, filtered, and processed) of the expression data as well as the summary QC report and cell type report all named according to the ScPCA library ID.
 The `single_cell_metadata.tsv` file contains sample metadata for all samples included in the download.
 The `README.md` file provides information about the contents of each download file, additional contact and citation information, and terms of use for data downloaded from the ScPCA Portal.
-The files `bulk_quant.tsv` and `bulk_metadata.tsv` are only present for projects that also have bulk RNA-Seq data and contain, respectively, a gene by sample matrix of raw gene expression as quantified by `salmon`, and associated metadata for all samples with bulk RNA-Seq data.
+The files `_bulk_quant.tsv` and `_bulk_metadata.tsv` are only present for projects that also have bulk RNA-Seq data and contain, respectively, a gene by sample matrix of raw gene expression as quantified by `salmon`, and associated metadata for all samples with bulk RNA-Seq data.
 
 B. File download structure for an ScPCA Portal merged project download in `SCE` format.
 The download folder is named according to the project ID, data format, and the date it was downloaded.
 Download folders contain a single merged object containing all samples in the given project as well as a summary report briefly detailing the contents of the merged object.
 All summary QC and cell type reports for each individual library are also provided in the `individual_reports` folder arranged by their sample ID.
-As in panel (A), additional files `single_cell_metadata.tsv`, `bulk_quant.tsv`, `bulk_metadata.tsv`, and `README.md` are also included.
+As in panel (A), additional files `single_cell_metadata.tsv`, `_bulk_quant.tsv`, `_bulk_metadata.tsv`, and `README.md` are also included.
 
 C. Overview of the merged workflow.
 Processed `SCE` objects associated with a given project are merged into a single object, including ADT counts from CITE-seq data if present, and a merged summary report is generated.
