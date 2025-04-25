@@ -75,6 +75,7 @@ microglia
 microvascular
 modality's
 MONDO
+monocyte
 monocytes
 mortem
 multimodal
