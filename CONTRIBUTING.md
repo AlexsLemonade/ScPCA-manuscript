@@ -33,5 +33,6 @@ Here are some examples of acceptable uses of passive voice:
 
 * When using the phrase "et al.", write it in plain text as shown here (not in italics)
 * When updating manuscript numbers based on Portal changes, refer to these tables for the most up-to-date numbers: https://github.com/AlexsLemonade/scpca-paper-figures/tree/main/manuscript-numbers
+  * Further, numbers should be written with a lowercase `n`, e.g. "n = 100"
 * Ensure the `scpca-paper-figures` repository tag is up-to-date in [`content/100.figure-table-legends.md`](./content/100.figure-table-legends.md)
 
