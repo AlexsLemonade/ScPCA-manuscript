@@ -3,6 +3,8 @@ doi:10.1038/nprot.2017.149	doi:10.1038/nprot.2017.149	doi:10.1038/nprot.2017.149
 doi:10.1101/gr.190595.115	doi:10.1101/gr.190595.115	doi:10.1101/gr.190595.115	e6vwOccq
 doi:10.1126/science.1254257	doi:10.1126/science.1254257	doi:10.1126/science.1254257	CK2iL88z
 10.1038/s41588-022-01141-9	10.1038/s41588-022-01141-9	doi:10.1038/s41588-022-01141-9	10Z0RGQgO
+doi:10.1101/2021.04.05.438318	doi:10.1101/2021.04.05.438318	doi:10.1101/2021.04.05.438318	115InIIhW
+doi:10.1101/2023.10.30.563174	doi:10.1101/2023.10.30.563174	doi:10.1101/2023.10.30.563174	WrWip7GV
 doi:10.7554/eLife.27041	doi:10.7554/eLife.27041	doi:10.7554/elife.27041	vk9ZInF3
 doi:10.1016/j.cell.2020.03.053	doi:10.1016/j.cell.2020.03.053	doi:10.1016/j.cell.2020.03.053	udPM4KR1
 url:https://www.cancer.gov/types/childhood-cancers/child-adolescent-cancers-fact-sheet#how-do-cancers-in-adolescents-and-young-adults-differ-from-those-in-younger-children	url:https://www.cancer.gov/types/childhood-cancers/child-adolescent-cancers-fact-sheet#how-do-cancers-in-adolescents-and-young-adults-differ-from-those-in-younger-children	url:https://www.cancer.gov/types/childhood-cancers/child-adolescent-cancers-fact-sheet#how-do-cancers-in-adolescents-and-young-adults-differ-from-those-in-younger-children	Hqoq5ZTI
@@ -52,7 +54,6 @@ url:https://bioconductor.org/books/release/SingleRBook/annotation-diagnostics.ht
 doi:10.3324/haematol.2013.094243	doi:10.3324/haematol.2013.094243	doi:10.3324/haematol.2013.094243	MzCvXTgB
 doi:10.1038/nature11247	doi:10.1038/nature11247	doi:10.1038/nature11247	15J98V2qM
 doi:10.1093/database/baz046	doi:10.1093/database/baz046	doi:10.1093/database/baz046	T3PlZ3Vh
-url:https://rdrr.io/bioc/ontoProc/man/findCommonAncestors.html	url:https://rdrr.io/bioc/ontoProc/man/findCommonAncestors.html	url:https://rdrr.io/bioc/ontoProc/man/findCommonAncestors.html	17SbnOJiL
 doi:10.1038/s41698-024-00717-4	doi:10.1038/s41698-024-00717-4	doi:10.1038/s41698-024-00717-4	yxJiICJJ
 doi:10.1093/noajnl/vdad009	doi:10.1093/noajnl/vdad009	doi:10.1093/noajnl/vdad009	9U8b91g7
 doi:10.1038/s41587-020-0465-8	doi:10.1038/s41587-020-0465-8	doi:10.1038/s41587-020-0465-8	Vz4pQdwU
@@ -68,13 +69,13 @@ doi:10.1101/2021.05.05.442755	doi:10.1101/2021.05.05.442755	doi:10.1101/2021.05.
 doi:10.1093/gigascience/giab008	doi:10.1093/gigascience/giab008	doi:10.1093/gigascience/giab008	eyOvxHVn
 doi:10.1093/bioinformatics/btab358	doi:10.1093/bioinformatics/btab358	doi:10.1093/bioinformatics/btab358	wd1cI6xh
 url:https://www.ebi.ac.uk/ols4/ontologies/cl	url:https://www.ebi.ac.uk/ols4/ontologies/cl	url:https://www.ebi.ac.uk/ols4/ontologies/cl	wBFzn1br
+doi:10.18129/B9.bioc.ontoProc	doi:10.18129/B9.bioc.ontoProc	doi:10.18129/b9.bioc.ontoproc	kFdlYl7L
 doi:10.1093/nar/gkac947	doi:10.1093/nar/gkac947	doi:10.1093/nar/gkac947	MclvBVPD
+doi:10.1038/nbt.4091	doi:10.1038/nbt.4091	doi:10.1038/nbt.4091	kILCvszy
 doi:10.18129/B9.bioc.zellkonverter	doi:10.18129/B9.bioc.zellkonverter	doi:10.18129/b9.bioc.zellkonverter	11dH4UgRF
 doi:10.1186/s13059-014-0550-8	doi:10.1186/s13059-014-0550-8	doi:10.1186/s13059-014-0550-8	w9AOzBMw
 doi:10.18637/jss.v067.i01	doi:10.18637/jss.v067.i01	doi:10.18637/jss.v067.i01	AUoV0xkq
 doi:10.1111/j.2517-6161.1995.tb02031.x	doi:10.1111/j.2517-6161.1995.tb02031.x	doi:10.1111/j.2517-6161.1995.tb02031.x	UeFCwwR7
-doi:10.1101/2021.04.05.438318	doi:10.1101/2021.04.05.438318	doi:10.1101/2021.04.05.438318	115InIIhW
-doi:10.1101/2023.10.30.563174	doi:10.1101/2023.10.30.563174	doi:10.1101/2023.10.30.563174	WrWip7GV
 https://cellxgene.cziscience.com/	https://cellxgene.cziscience.com/	url:https://cellxgene.cziscience.com/	7NobF7Ei
 doi:10.1093/bioinformatics/btab503	doi:10.1093/bioinformatics/btab503	doi:10.1093/bioinformatics/btab503	xCP3BjTw
 https://cells.ucsc.edu/	https://cells.ucsc.edu/	url:https://cells.ucsc.edu/	VKaQa2Z3
