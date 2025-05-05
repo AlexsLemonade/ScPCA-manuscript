@@ -1,6 +1,6 @@
 ---
 title: "The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors"
-date: null  # Defaults to date generated, but can specify like '2022-10-31'.
+date: null # Defaults to date generated, but can specify like '2022-10-31'.
 keywords:
   - single-cell RNA-seq
   - single-nuclei RNA-seq
