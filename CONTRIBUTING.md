@@ -1,7 +1,7 @@
 # Contribution guidelines for the ScPCA Manuscript
 
 This manuscript is written using the Manubot framework.
-Please see [`USAGE.md`](USAGE.md) for information on how writing manuscripts with Manubot. to use the Manubot platform for writing the manuscript.
+Please see [`USAGE.md`](USAGE.md) for information on how to write manuscripts with Manubot.
 
 ## Manuscript style
 
