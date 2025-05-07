@@ -66,8 +66,8 @@
   <meta name="dc.date" content="2025-05-07" />
   <meta name="citation_publication_date" content="2025-05-07" />
   <meta property="article:published_time" content="2025-05-07" />
-  <meta name="dc.modified" content="2025-05-07T19:16:45+00:00" />
-  <meta property="article:modified_time" content="2025-05-07T19:16:45+00:00" />
+  <meta name="dc.modified" content="2025-05-07T19:20:57+00:00" />
+  <meta property="article:modified_time" content="2025-05-07T19:20:57+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -121,9 +121,9 @@
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/7277128f560a5d09235739269e5cdd19f6c01bd9/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/7277128f560a5d09235739269e5cdd19f6c01bd9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/7277128f560a5d09235739269e5cdd19f6c01bd9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/45b9b222442c7668bb2827ab0dbb8da93a04f310/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/45b9b222442c7668bb2827ab0dbb8da93a04f310/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/45b9b222442c7668bb2827ab0dbb8da93a04f310/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -140,9 +140,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/7277128f560a5d09235739269e5cdd19f6c01bd9/">permalink</a>)
+(<a href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/45b9b222442c7668bb2827ab0dbb8da93a04f310/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/AlexsLemonade/ScPCA-manuscript/tree/7277128f560a5d09235739269e5cdd19f6c01bd9">AlexsLemonade/ScPCA-manuscript@7277128</a>
+from <a href="https://github.com/AlexsLemonade/ScPCA-manuscript/tree/45b9b222442c7668bb2827ab0dbb8da93a04f310">AlexsLemonade/ScPCA-manuscript@45b9b22</a>
 on May 7, 2025.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -506,11 +506,12 @@ However, there is notable heterogeneity even within HGG and LGG subtypes (Figure
 A summary of all the consensus cell types observed in all other ScPCA samples can be found in Figure <a href="#fig:figS7">S7</a>.</p>
 <h2 id="analysis-of-bulk-rna-seq">Analysis of bulk RNA-seq</h2>
 <p>Several projects in the ScPCA Portal contain bulk RNA-seq data in addition to single-cell/nuclei RNA-seq data.
-Previous research has suggested that, compared to bulk RNA-seq, single-cell/nuclei RNA-seq technologies may fail to capture certain cell types <span class="citation" data-cites="Vz4pQdwU">[<a href="#ref-Vz4pQdwU" role="doc-biblioref">58</a>]</span>, for example due to technical aspects of library preparation.
+Previous research has suggested that, compared to bulk RNA-seq, single-cell/nuclei RNA-seq technologies may fail to capture certain cell types <span class="citation" data-cites="Vz4pQdwU">[<a href="#ref-Vz4pQdwU" role="doc-biblioref">58</a>]</span>, for example, due to technical aspects of library preparation.
 We therefore asked whether we could identify differences in biological signal between these two modalities that may suggest distinct cell type distributions.
-For this analysis, we specifically focused on ScPCA projects with solid tumors, considered only non-multiplexed samples with both sequencing modalities, and excluded low-quality single-cell/nuclei libraries.
-In total, we analyzed 97 samples across five projects: <code>SCPCP00001</code>, <code>SCPCP000002</code>, <code>SCPCP000006</code>, <code>SCPCP000009</code>, and <code>SCPCP000017</code>.
-Projects <code>SCPCP000001</code> and <code>SCPCP000002</code> comprise high- and low-grade gliomas, respectively, and were sequenced at the bulk and single-cell levels, and <code>SCPCP000006</code>, <code>SCPCP000009</code>, and <code>SCPCP000017</code> comprise Wilms tumors, CNS tumors, and osteosarcomas, respectively, and were sequenced at the bulk and single-nuclei levels.
+We specifically focused on ScPCA projects with solid tumors, considering only samples with both sequencing modalities, and excluded low-quality single-cell/nuclei libraries and multiplexed samples.
+We analyzed 97 samples across five projects: <code>SCPCP00001</code>, <code>SCPCP000002</code>, <code>SCPCP000006</code>, <code>SCPCP000009</code>, and <code>SCPCP000017</code>.
+Projects <code>SCPCP000001</code> and <code>SCPCP000002</code> comprise high- and low-grade gliomas, respectively, and were sequenced at the bulk and single-cell levels.
+<code>SCPCP000006</code>, <code>SCPCP000009</code>, and <code>SCPCP000017</code> comprise Wilms tumors, CNS tumors, and osteosarcomas, respectively, and were sequenced at the bulk and single-nuclei levels.
 As described in Materials and Methods, we derived pseudobulk expression matrices for each single-cell/nuclei library, and we compared their expression to bulk using a series of linear models (one per ScPCA project) predicting bulk from pseudobulk expression with a random effect controlling for sample (Figure <a href="#fig:fig6">6</a>A, Figure <a href="#fig:figS8">S8</a>A).
 Across all projects, we observed a positive relationship between bulk and pseudobulk expression, consistent with our expectations.</p>
 <p>We next performed an overrepresentation analysis to probe for differences in gene expression that might suggest differences in cell type composition and/or abundance between modalities.
@@ -518,12 +519,12 @@ To this end, we calculated the per-gene median of each project’s model residua
 Using marker gene sets associated with consensus cell types, we calculated the odds ratio in each direction as the odds a cell type marker gene is present in the given outlier direction compared to other genes.
 Following permutation testing and P-value correction to control the FDR at 5%, we indeed found that several cell type marker gene sets had higher, but never lower, bulk RNA-seq expression than expected (Figure <a href="#fig:fig6">6</a>B, Figure <a href="#fig:figS8">S8</a>B).</p>
 <p>In brain and CNS tumors, the marker genes overrepresented in bulk RNA-seq expression corresponded nearly exclusively to stromal (e.g., endothelial and extracellular matrix secreting cells) and/or neuronal cell types (e.g., glial cells and astrocytes), all of which are known to be prevalent non-immune cells in glioma tumor microenvironments <span class="citation" data-cites="2x15P0J5 DR9mGrXH">[<a href="#ref-2x15P0J5" role="doc-biblioref">59</a>,<a href="#ref-DR9mGrXH" role="doc-biblioref">60</a>]</span> (Figure <a href="#fig:fig6">6</a>B).
-The only exceptions were monocyte marker genes being overrepresented in bulk RNA-seq expression for <code>SCPCP000009</code> (brain and CNS tumors), which was sequenced at the single-nuclei level while projects <code>SCPCP000001</code> (high-grade gliomas) and <code>SCPCP000002</code> (low-grade gliomas) were sequenced at the single-cell level.
-This difference may reflect that single-cell approaches have increased sensitivity to detect immune cells relative to single-nuclei approaches <span class="citation" data-cites="1AegtXQtf">[<a href="#ref-1AegtXQtf" role="doc-biblioref">61</a>]</span>.</p>
-<p>Given that our consensus cell type analysis identified a variety of immune cells from high- and low-grade gliomas (Figure <a href="#fig:fig5">5</a>), these results suggest that non-immune cells may have been lost during single-cell library preparation.
+The only exceptions were monocyte marker genes being overrepresented in bulk RNA-seq expression for <code>SCPCP000009</code> (brain and CNS tumors), which was sequenced at the single-nuclei level, while projects <code>SCPCP000001</code> (high-grade gliomas) and <code>SCPCP000002</code> (low-grade gliomas) were sequenced at the single-cell level.
+This difference may reflect the increased sensitivity of single-cell approaches to detecting immune cells relative to single-nuclei approaches <span class="citation" data-cites="1AegtXQtf">[<a href="#ref-1AegtXQtf" role="doc-biblioref">61</a>]</span>.</p>
+<p>Given that our consensus cell type analysis identified various immune cells from high- and low-grade gliomas (Figure <a href="#fig:fig5">5</a>), these results suggest that non-immune cells may have been lost during single-cell library preparation.
 Indeed, several of these overrepresented bulk cell types for <code>SCPCP000001</code> and <code>SCPCP000002</code> were not among the single-cell consensus cell types themselves (<code>SCPCP000001</code>: “blood vessel endothelial cell”, “extracellular matrix secreting cell”, “glial cell”, “pericyte”; <code>SCPCP000002</code>: “blood vessel endothelial cell”, “extracellular matrix secreting cell”, “microvascular endothelial cell”), further emphasizing the potential loss of these cell types in the single-cell data.
 By contrast, we uncovered a variety of both immune and non-immune cell types overrepresented in bulk RNA-seq <code>SCPCP000017</code> (osteosarcoma; Figure <a href="#fig:figS8">S8</a>B), which may reflect inherent challenges in dissociating bone tissue <span class="citation" data-cites="cnXjUoU1">[<a href="#ref-cnXjUoU1" role="doc-biblioref">62</a>]</span>.
-Taken together, these results show that, while bulk and single-cell/nuclei expression is indeed highly correlated, cell type differences may still be present between modalities, potentially driven by cell-type-specific loss in single-cell experiments.</p>
+These results show that, while bulk and single-cell/nuclei expression is indeed highly correlated, cell type differences may still be present between modalities, potentially driven by cell-type-specific loss in single-cell experiments.</p>
 <h2 id="materials-and-methods">Materials and Methods</h2>
 <h3 id="data-generation-and-processing">Data generation and processing</h3>
 <p>Raw data and metadata were generated and compiled by each lab and institution contributing to the Portal.
