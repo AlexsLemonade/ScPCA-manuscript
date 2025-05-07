@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2025-05-05'
+date-meta: '2025-05-07'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -36,11 +36,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2025-05-05" />
-  <meta name="citation_publication_date" content="2025-05-05" />
-  <meta property="article:published_time" content="2025-05-05" />
-  <meta name="dc.modified" content="2025-05-05T21:16:57+00:00" />
-  <meta property="article:modified_time" content="2025-05-05T21:16:57+00:00" />
+  <meta name="dc.date" content="2025-05-07" />
+  <meta name="citation_publication_date" content="2025-05-07" />
+  <meta property="article:published_time" content="2025-05-07" />
+  <meta name="dc.modified" content="2025-05-07T14:20:53+00:00" />
+  <meta property="article:modified_time" content="2025-05-07T14:20:53+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/3cc9faf02ea9402cacc4decf02b72422a9db597b/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/3cc9faf02ea9402cacc4decf02b72422a9db597b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/3cc9faf02ea9402cacc4decf02b72422a9db597b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/04301f4ba0cd3fcdebd41f547aacc10aabeb7742/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/04301f4ba0cd3fcdebd41f547aacc10aabeb7742/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/04301f4ba0cd3fcdebd41f547aacc10aabeb7742/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,10 +118,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/3cc9faf02ea9402cacc4decf02b72422a9db597b/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/04301f4ba0cd3fcdebd41f547aacc10aabeb7742/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@3cc9faf](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/3cc9faf02ea9402cacc4decf02b72422a9db597b)
-on May 5, 2025.
+from [AlexsLemonade/ScPCA-manuscript@04301f4](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/04301f4ba0cd3fcdebd41f547aacc10aabeb7742)
+on May 7, 2025.
 </em></small>
 
 
@@ -951,7 +951,7 @@ AGH, JAS, SJS, DSM, DVP, NI, AY, AMG, KGW, CJB, JO, and JNT are or were employee
 ## Figure Titles and Legends {.page_break_before}
 
 <!-- Figure 1 -->
-![**Overview of ScPCA Portal contents.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_1.png?sanitize=true){#fig:fig1 tag="1" width="7in"}
+![**Overview of ScPCA Portal contents.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_1.png?sanitize=true){#fig:fig1 tag="1" width="7in"}
 
 A. Barplots showing sample counts across four main cancer groupings in the ScPCA Portal, with each bar displaying the number of samples for each cancer type.
 Each bar is colored based on the number of samples with the indicated disease timing, and total sample counts for each cancer type are shown to the right of each bar.
@@ -972,7 +972,7 @@ Where available, submitter-provided citation information, as well as other datab
 
 
 <!-- Figure 2 -->
-![**Overview of the `scpca-nf` workflow.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_2.png?sanitize=true){#fig:fig2 tag="2" width="7in"}
+![**Overview of the `scpca-nf` workflow.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_2.png?sanitize=true){#fig:fig2 tag="2" width="7in"}
 
 A. Overview of `scpca-nf`, the primary workflow for processing single-cell and single-nuclei RNA-seq data for the ScPCA Portal.
 Mapping is first performed with `alevin-fry` to generate a gene-by-cell count matrix, which is read into `R` and converted into a `SingleCellExperiment` (`SCE`) object.
@@ -1005,7 +1005,7 @@ In the actual summary QC report, the top 12 most highly variable genes are shown
 
 
 <!-- Figure 3 -->
-![**ScPCA Portal project download file structure and merged object workflow.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_3.png?sanitize=true){#fig:fig3 tag="3" width="7in"}
+![**ScPCA Portal project download file structure and merged object workflow.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_3.png?sanitize=true){#fig:fig3 tag="3" width="7in"}
 
 A. File download structure for an ScPCA Portal project download in `SingleCellExperiment` (`SCE`) format.
 The download folder is named according to the project ID, data format, and the date it was downloaded.
@@ -1032,7 +1032,7 @@ For this figure specifically, the merged UMAP was constructed from a merged obje
 <br><br>
 
 <!-- Figure 4 -->
-![**Cell type annotation in `scpca-nf`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_4.png?sanitize=true){#fig:fig4 tag="4" width="7in"}
+![**Cell type annotation in `scpca-nf`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_4.png?sanitize=true){#fig:fig4 tag="4" width="7in"}
 
 A. Expanded view of the process for adding cell type annotations within `scpca-nf`, as introduced in Figure {@fig:fig2}A.
 Cell type annotation is performed on the `Processed SCE Object`.
@@ -1048,7 +1048,7 @@ The heatmap shown is from library `SCPCL000498` [@doi:10.1016/j.devcel.2022.04.0
 <br><br>
 
 <!-- Figure 5 -->
-![**Consensus cell type annotations in Brain and CNS tumors.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_5.png?sanitize=true){#fig:fig5 tag="5" width="7in"}
+![**Consensus cell type annotations in Brain and CNS tumors.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_5.png?sanitize=true){#fig:fig5 tag="5" width="7in"}
 
 A. Dot plot showing expression of cell-type-specific marker genes across all libraries from brain and central nervous system (CNS) tumors, excluding multiplexed libraries.
 Expression is shown for each broad cell type annotation, where each broad cell type annotation is a collection of similar consensus cell type annotations.
@@ -1066,7 +1066,7 @@ Notably, granulocytes are also included in "other" because only 1 granulocyte wa
 <br><br>
 
 <!-- Figure 6 -->
-![**Comparison of bulk and pseudobulk modalities.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_6.png?sanitize=true){#fig:fig6 tag="6" width="7in"}
+![**Comparison of bulk and pseudobulk modalities.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_6.png?sanitize=true){#fig:fig6 tag="6" width="7in"}
 
 A. Scatter plots colored by point density of `DESeq2`-transformed and normalized bulk RNA-seq expression compared to pseudobulk expression from single-cell/nuclei RNA-seq.
 Samples with RNA-seq for both bulk and single-cell/nuclei modalities, excluding multiplexed samples, from ScPCA projects comprising brain and central nervous system tumors are shown, with the number of samples considered per project shown in parentheses.
@@ -1106,7 +1106,7 @@ The reference includes marker genes for all cell types present in each organ.
 <br><br>
 
 <!-- Figure S1 -->
-![**Results from benchmarking `alevin-fry` and `CellRanger` performance.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_s1.png?sanitize=true){#fig:figS1 tag="S1" width="7in"}
+![**Results from benchmarking `alevin-fry` and `CellRanger` performance.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_s1.png?sanitize=true){#fig:figS1 tag="S1" width="7in"}
 
 Each panel compares metrics for six representative ScPCA libraries, including three single-cell and three single-nuclei suspensions, obtained from processing libraries with both `alevin-fry` and `CellRanger`.
 
@@ -1127,7 +1127,7 @@ Distributions reflect broad agreement between platforms in the total number of g
 <br><br>
 
 <!-- Figure S2 -->
-![**Processing additional single-cell modalities in `scpca-nf`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_s2.png?sanitize=true){#fig:figS2 tag="S2" width="7in"}
+![**Processing additional single-cell modalities in `scpca-nf`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_s2.png?sanitize=true){#fig:figS2 tag="S2" width="7in"}
 
 A. Overview of the `scpca-nf` workflow for processing libraries with CITE-seq or antibody-derived tag (ADT) data.
 The workflow mirrors that shown in Figure {@fig:fig2}A with several differences accounting for the presence of ADT data.
@@ -1161,7 +1161,7 @@ Third, only `SCE` files are provided for multiplexed libraries; no corresponding
 <br><br>
 
 <!-- Figure S3 -->
-![**Processing other sequencing modalities with `scpca-nf`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_s3.png?sanitize=true){#fig:figS3 tag="S3" width="7in"}
+![**Processing other sequencing modalities with `scpca-nf`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_s3.png?sanitize=true){#fig:figS3 tag="S3" width="7in"}
 
 A. Overview of the bulk RNA-Seq workflow.
 A set of FASTQ files from libraries sequenced with bulk RNA-seq are provided as input.
@@ -1174,7 +1174,7 @@ The workflow directly returns the results from running `spaceranger` without any
 <br><br>
 
 <!--Figure S4-->
-![**Evaluation of references available in the celldex package for use with SingleR.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_s4.png?sanitize=true){#fig:figS4 tag="S4" width="7in"}
+![**Evaluation of references available in the celldex package for use with SingleR.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_s4.png?sanitize=true){#fig:figS4 tag="S4" width="7in"}
 
 `SingleR` was used to annotate ScPCA libraries using four different human-specific references from the `celldex` package.
 Libraries represent three different diagnosis groups in the ScPCA Portal - Brain and CNS, Leukemia, and Sarcoma -  as indicated in the labels for the individual panels.
@@ -1185,7 +1185,7 @@ Red diamonds represent the median delta median score for all cells with high-qua
 <br><br>
 
 <!--Figure S5-->
-![**Cell type annotation with `CellAssign`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_s5.png?sanitize=true){#fig:figS5 tag="S5" height="10in"}
+![**Cell type annotation with `CellAssign`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_s5.png?sanitize=true){#fig:figS5 tag="S5" height="10in"}
 
 Both plots in this figure are examples of plots that display results from annotating cells with `CellAssign` that can be found in the cell type summary report, shown here for library `SCPCL000498` [@doi:10.1016/j.devcel.2022.04.003].
 
@@ -1199,7 +1199,7 @@ Heatmap cells are colored by the Jaccard similarity index.
 A value of 1 means that there is complete overlap between which cells are annotated with the two labels being compared, and a value of 0 means that there is no overlap between which cells are annotated with the two labels being compared.
 
 <!-- Figure S6 -->
-![**Consensus cell type annotation gene expression in other diagnosis groups.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_s6.png?sanitize=true){#fig:figS6 tag="S6" width="9in"}
+![**Consensus cell type annotation gene expression in other diagnosis groups.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_s6.png?sanitize=true){#fig:figS6 tag="S6" width="9in"}
 
 Dot plots showing expression of cell-type-specific marker genes across all libraries from Leukemia (A), Sarcoma (B), and Other solid tumors (C) diagnosis groups.
 Expression is shown for each broad cell type annotation, where each broad cell type annotation is a collection of similar consensus cell type annotations.
@@ -1209,7 +1209,7 @@ Dots are colored by mean gene expression across libraries and sized proportional
 <br><br>
 
 <!-- Figure S7 -->
-![***Consensus cell type annotation distributions in other diagnosis groups.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_s7.png?sanitize=true){#fig:figS7 tag="S7" width="7in"}
+![***Consensus cell type annotation distributions in other diagnosis groups.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_s7.png?sanitize=true){#fig:figS7 tag="S7" width="7in"}
 
 Barplots of the percentage of cells annotated as each broad consensus cell type annotation across all libraries from Leukemia (A), Sarcoma (B), and Other solid tumors (C) diagnosis groups.
 Within each panel, libraries are shown grouped by diagnosis.
@@ -1217,7 +1217,7 @@ Each column represents the distribution of cell types within a single library.
 <br><br>
 
 <!-- Figure S8 -->
-![**Comparison of bulk and pseudobulk modalities for additional projects.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_s8.png?sanitize=true){#fig:figS8 tag="S8" width="7in"}
+![**Comparison of bulk and pseudobulk modalities for additional projects.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_s8.png?sanitize=true){#fig:figS8 tag="S8" width="7in"}
 
 A. Scatter plots colored by point density of `DESeq2`-transformed and normalized bulk RNA-seq expression compared to pseudobulk expression from single-nuclei RNA-seq.
 Projects with RNA-seq for both bulk and single-cell/nuclei modalities that are not displayed in Figure {@fig:fig6}A are shown.
