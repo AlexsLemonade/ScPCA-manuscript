@@ -39,8 +39,8 @@ header-includes: |
   <meta name="dc.date" content="2025-05-07" />
   <meta name="citation_publication_date" content="2025-05-07" />
   <meta property="article:published_time" content="2025-05-07" />
-  <meta name="dc.modified" content="2025-05-07T18:52:33+00:00" />
-  <meta property="article:modified_time" content="2025-05-07T18:52:33+00:00" />
+  <meta name="dc.modified" content="2025-05-07T19:16:45+00:00" />
+  <meta property="article:modified_time" content="2025-05-07T19:16:45+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/25b9724b84ccce1eea33bb35f428e281e84851d6/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/25b9724b84ccce1eea33bb35f428e281e84851d6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/25b9724b84ccce1eea33bb35f428e281e84851d6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/7277128f560a5d09235739269e5cdd19f6c01bd9/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/7277128f560a5d09235739269e5cdd19f6c01bd9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/7277128f560a5d09235739269e5cdd19f6c01bd9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,9 +118,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/25b9724b84ccce1eea33bb35f428e281e84851d6/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/7277128f560a5d09235739269e5cdd19f6c01bd9/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@25b9724](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/25b9724b84ccce1eea33bb35f428e281e84851d6)
+from [AlexsLemonade/ScPCA-manuscript@7277128](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/7277128f560a5d09235739269e5cdd19f6c01bd9)
 on May 7, 2025.
 </em></small>
 
@@ -493,14 +493,11 @@ Figure {@fig:fig3}D shows an example of this plot with a subset of libraries fro
 
 Assigning cell type labels to single-cell and single-nuclei RNA-seq data is often an essential step in analysis.
 Cell type annotation requires knowledge of the expected cell types in a dataset and associated gene expression patterns for each cell type, which may be available in other public databases or individual publications.
-Automated cell type annotation methods leveraging public databases are an excellent initial step in the labeling process, as they can be applied consistently and transparently across all samples in a data set.
-As such, we include cell type annotations determined using two different automated methods, `SingleR` [@doi:10.1038/s41590-018-0276-y] and `CellAssign` [@doi:10.1038/s41592-019-0529-1], in all processed `SingleCellExperiment` and `AnnData` objects available for download on the Portal, saving users analysis time.
+Automated cell type annotation methods leveraging public databases are an excellent initial step in the labeling process, as they can be applied consistently and transparently across all samples in a dataset.
+As such, we include cell type annotations determined using two different automated methods, `SingleR` [@doi:10.1038/s41590-018-0276-y] and `CellAssign` [@doi:10.1038/s41592-019-0529-1], in all processed `SingleCellExperiment` and `AnnData` objects.
 
-Annotating cell types with automated methods like `SingleR` and `CellAssign` requires the use of previously annotated reference data.
-For `SingleR`, this can be in the form of an annotated gene expression dataset from a microarray, bulk RNA-seq, or single-cell RNA-seq experiment.
-`CellAssign` requires a matrix of cell types and expected marker genes.
-Most public annotated reference datasets that can be used with these methods – including those we use for the Portal – are derived from normal tissue, making accurately annotating tumor datasets particularly difficult.
-Comparing the two methods and observing consistent cell type annotations across methods can indicate higher confidence in the provided labels, so we created a set of ontology-aware rules to assign consensus cell type labels based on the agreement between `SingleR` and `CellAssign`.
+Most public annotated reference datasets that can be used with `SingleR` and `CellAssign` – including those we use for the Portal – are derived from normal tissue, making accurately annotating tumor datasets particularly difficult.
+Observing consistent cell type annotations across methods can indicate higher confidence in the provided labels, so we created a set of ontology-aware rules to assign consensus cell type labels based on the methods' agreement.
 These consensus cell type assignments can be found in all processed `SingleCellExperiment` and `AnnData` objects on the Portal.
 
 For some ScPCA projects, submitters provided their own curated cell type annotations, including annotation of tumor cells and disease-specific cell states.
@@ -524,55 +521,43 @@ Since many cancers may have infiltrating immune cells, all immune cells were als
 For each ScPCA project, we used the organ-specific marker gene matrix that most closely matched the tissue type from which the sample was obtained (e.g., for brain tumors, we used a brain-specific marker gene matrix with all brain and immune cell types).
 If `CellAssign` cannot find a likely cell type from the marker gene matrix, it does not assign a cell type.
 Because we annotate cells from tumor samples using references containing only normal cells, we anticipate that many cells, particularly the tumor cells, will not have a suitable cell type match in the reference.
-Indeed, when applying `CellAssign` to tumor samples with our chosen reference, we observed that many cells were unassigned.
-We included an example in Figure {@fig:figS5}A where unassigned cell types are labeled with `Unknown`.
+Indeed, when applying `CellAssign` to tumor samples with our chosen reference, we observed that many cells were labeled as `Unknown` (Figure {@fig:figS5}A).
 When comparing annotations obtained from `CellAssign` and `SingleR` annotations to submitter-provided annotations, we noticed the labels for non-tumor cells were similar between `CellAssign`, `SingleR`, and submitter annotations, while the tumor cells were not assigned using `CellAssign` (Figure {@fig:figS5}B).
 
 ### Adding cell type annotations to the ScPCA Portal
 
 `scpca-nf` adds cell type annotations from `SingleR` and `CellAssign` to all processed `SingleCellExperiment` objects (Figure {@fig:fig4}A).
 This requires two additional reference files as input to the workflow: a classification model built from a reference dataset for `SingleR` and a marker gene matrix for `CellAssign`.
-`SingleR::trainSingleR()` was used to build a classification model from the provided `BlueprintEncodeData` dataset and create the required `SingleR` input for `scpca-nf`.
-The classification model and processed `SingleCellExperiment` were input to `SingleR::classifySingleR()`, resulting in annotations for all cells and an associated matrix with per-cell scores for all possible cell type labels.
-The `SingleR` score matrix and the assigned cell types are added to each processed object output by `scpca-nf`.
-Simultaneously, processed `SingleCellExperiment` objects are converted to `AnnData` objects for classification with `CellAssign`.
-`CellAssign` uses the converted `AnnData` object and the marker gene matrix to train a model and predict the most likely cell type from the possible cell types in the marker gene matrix.
-The `CellAssign` prediction matrix, which contains a probability that each cell is one of each possible cell types, and the assigned cell types are added to the processed objects output by `scpca-nf`.
+We include assigned cell type labels and additional output from each method – the `SingleR` score matrix and the `CellAssign` prediction matrix, which contains a probability that a cell is of a cell type – to each processed object available from the Portal.
 
-An additional cell type report with information about reference sources, comparisons among cell type annotation methods, and diagnostic plots is also output by `scpca-nf`.
+We also produce an additional cell type report with information about reference sources, comparisons among cell type annotation methods, and diagnostic plots.
 Tables summarizing the number of cells assigned to each cell type for each method are shown alongside UMAPs coloring cells by the assigned cell type.
-The concordance of cell type annotations assigned between both methods can indicate higher confidence in the provided annotations.
-We therefore used the Jaccard similarity index to compare annotations between the two methods, as well as submitter-provided annotations, if available.
-This index is calculated between pairs of cell type labels from each method and ranges from 0-1, where values close to 1 indicate high agreement and a high proportion of overlapping cells and values close to 0 indicate a low proportion of overlapping cells.
-The Jaccard similarity index is displayed in a heatmap, an example of which is shown in Figure {@fig:fig4}B.
+We calculate the Jaccard index between pairs of cell type labels to compare annotations between the two methods and display it in a heatmap (an example is shown in Figure {@fig:fig4}B).
+Jaccard index values close to 1 indicate high agreement and a high proportion of overlapping cells, which may indicate higher confidence predictions.
 
-The report also includes a diagnostic plot evaluating the confidence of cell type annotations determined by each method.
+The report also includes diagnostic plots for each method.
 To evaluate confidence in `SingleR` cell type annotations, the delta median statistic is calculated by subtracting the median score from the score associated with the assigned cell type label [@url:https://bioconductor.org/books/release/SingleRBook/annotation-diagnostics.html#based-on-the-deltas-across-cells].
-The distribution of delta median values for each cell type is shown in the cell type report, where a higher delta median statistic for a cell indicates higher confidence in the final cell type annotation.
-`CellAssign` calculates the probability that each cell belongs to each possible cell type provided in the reference, and the cell type label with the highest probability is assigned as the cell type for that cell.
-<!-- TODO: What exactly do we mean by reliable labels? Labels that are appropriate for the dataset -->
-These values range from 0 to 1, with larger values indicating greater confidence in a given cell type label, so we expect more confident labels to have most values close to 1.
-A plot displaying the distribution of all probabilities for each cell type is included in the cell type report.
+The cell type report shows the distribution of delta median values for each cell type. 
+A higher delta median statistic for a cell generally indicates higher confidence in the final cell type annotation.
+We also display the distribution of all probabilities calculated by `CellAssign`; more confident labels are expected to have many values close to 1.
 
-If the submitter provided cell types, the submitter annotations are compared to the annotations from both `SingleR` and `CellAssign`.
-A summary of this comparison is included in the cell type report along with a table summarizing the submitter cell type annotations and a UMAP plot where each cell is colored by the submitter annotation.
-The Jaccard similarity index is calculated for all pairs of cell type labels in submitter annotations and `SingleR` annotations and in submitter annotations and `CellAssign` annotations.
+If the submitter provided cell type annotations, the cell type report also includes a table summarizing the submitter cell type annotations, a UMAP plot in which each cell is colored by the submitter annotation, and a comparison of the submitter annotations to the automated cell typing results from `SingleR` and `CellAssign`.
+The Jaccard index is calculated for all pairs of cell type labels in submitter annotations and `SingleR` annotations, and in submitter annotations and `CellAssign` annotations.
 The results from both comparisons are displayed in a stacked heatmap available in the report, an example of which is shown in Figure {@fig:figS5}B.
 
 ### Assigning consensus cell types
 
 `SingleR` and `CellAssign` use different references and distinct computational approaches to label cells.
-We expect cells with the same or similar cell type labels using both methods will likely be more accurately annotated.
+We expect cells with the same or similar cell type labels from both methods to be more accurately annotated.
 `scpca-nf` therefore assigns consensus cell type labels when the two automated methods agree.
 To account for different levels of granularity in reference datasets, we employed an ontology-based approach to assign a consensus cell type label.
-Specifically, the consensus cell type annotation is equivalent to the latest common ancestor (LCA) shared between the two predicted cell types.
-To ensure specificity in the consensus labels, cells were only assigned a consensus cell type if the identified LCA had no more than 170 descendant terms, with a few exceptions (see Materials and Methods for more details).
+Specifically, the consensus cell type annotation is equivalent to the latest common ancestor (LCA) in Cell Ontology [@doi:10.1186/s13326-016-0088-7; @doi:10.1186/1471-2105-12-6; @doi: 10.1186/gb-2005-6-2-r21] shared between the two predicted cell types.
+To ensure specificity in the consensus labels, cells were only assigned a consensus cell type if the identified LCA had no more than 170 descendant terms, with a few exceptions (see Methods for more details).
 This threshold was chosen to exclude overly general cell ontology terms, such as lymphocyte, while retaining meaningful classifications like T cell and B cell.
-After assigning all consensus cell types, we looked at the expression of cell-type specific marker genes across all cells to validate the assignments (Figure {@fig:fig5}A, Figure {@fig:figS6}).
+After assigning all consensus cell types, we looked at the expression of cell-type-specific marker genes across all cells to validate the assignments (Figure {@fig:fig5}A, Figure {@fig:figS6}).
 
 The consensus cell type labels provide harmonized cell type annotations for all samples in the ScPCA Portal, facilitating downstream analyses across multiple samples.
 Consensus annotations can be particularly useful when examining samples from multiple projects submitted by different investigators.
-The availability of uniformly processed gene expression data with provided consensus annotations supports analyzing and drawing conclusions across a large set of samples.
 For example, we show the distribution of cell types observed in all high-grade and low-grade glioma samples in Figure {@fig:fig5}B, which originate from six different projects and four different investigators.
 Here, we can identify similar cell types across all glioma samples, but the composition of cell types present in each sample is heterogeneous.
 
