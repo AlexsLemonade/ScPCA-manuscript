@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2025-05-07'
+date-meta: '2025-05-08'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -36,11 +36,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2025-05-07" />
-  <meta name="citation_publication_date" content="2025-05-07" />
-  <meta property="article:published_time" content="2025-05-07" />
-  <meta name="dc.modified" content="2025-05-07T19:44:29+00:00" />
-  <meta property="article:modified_time" content="2025-05-07T19:44:29+00:00" />
+  <meta name="dc.date" content="2025-05-08" />
+  <meta name="citation_publication_date" content="2025-05-08" />
+  <meta property="article:published_time" content="2025-05-08" />
+  <meta name="dc.modified" content="2025-05-08T13:33:13+00:00" />
+  <meta property="article:modified_time" content="2025-05-08T13:33:13+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/dbca76b3a1e6a530caa0fb93e0918e4f584a5e74/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/dbca76b3a1e6a530caa0fb93e0918e4f584a5e74/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/dbca76b3a1e6a530caa0fb93e0918e4f584a5e74/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/4b78eb2fa7f09a31b36a2b21e0af1cb9700c838f/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/4b78eb2fa7f09a31b36a2b21e0af1cb9700c838f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/4b78eb2fa7f09a31b36a2b21e0af1cb9700c838f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,10 +118,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/dbca76b3a1e6a530caa0fb93e0918e4f584a5e74/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/4b78eb2fa7f09a31b36a2b21e0af1cb9700c838f/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@dbca76b](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/dbca76b3a1e6a530caa0fb93e0918e4f584a5e74)
-on May 7, 2025.
+from [AlexsLemonade/ScPCA-manuscript@4b78eb2](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/4b78eb2fa7f09a31b36a2b21e0af1cb9700c838f)
+on May 8, 2025.
 </em></small>
 
 
@@ -413,7 +413,7 @@ All downloads from the Portal include a quality control (QC) report with a summa
 A knee plot displaying total UMI counts for all droplets (i.e., including empty droplets) indicates the effects of the empty droplet filtering (Figure {@fig:fig2}B).
 For each cell that remains after filtering empty droplets, the number of total UMIs, genes detected, and mitochondrial reads are calculated and summarized in a scatter plot (Figure {@fig:fig2}C).
 We include plots showing the `miQC` model and which cells are kept and removed after filtering with `miQC` (Figure {@fig:fig2}D-E).
-A UMAP plot with cells colored by the total number of genes detected and a faceted UMAP plot where cells are colored by the expression of a set of highly variable genes are also provided (Figure {@fig:fig2}F-G).
+We also provide a UMAP plot with cells colored by the total number of genes detected and a faceted UMAP plot where cells are colored by the expression of a set of highly variable genes (Figure {@fig:fig2}F-G).
 
 ## Processing samples with additional modalities
 
@@ -553,7 +553,7 @@ We expect cells with the same or similar cell type labels from both methods to b
 To account for different levels of granularity in reference datasets, we employed an ontology-based approach to assign a consensus cell type label.
 Specifically, the consensus cell type annotation is equivalent to the latest common ancestor (LCA) in Cell Ontology [@doi:10.1186/s13326-016-0088-7; @doi:10.1186/1471-2105-12-6; @doi: 10.1186/gb-2005-6-2-r21] shared between the two predicted cell types.
 To ensure specificity in the consensus labels, cells were only assigned a consensus cell type if the identified LCA had no more than 170 descendant terms, with a few exceptions (see Methods for more details).
-This threshold was chosen to exclude overly general cell ontology terms, such as lymphocyte, while retaining meaningful classifications like T cell and B cell.
+We chose this threshold to exclude overly general cell ontology terms, such as lymphocyte, while retaining meaningful classifications like T cell and B cell.
 After assigning all consensus cell types, we looked at the expression of cell-type-specific marker genes across all cells to validate the assignments (Figure {@fig:fig5}A, Figure {@fig:figS6}).
 
 The consensus cell type labels provide harmonized cell type annotations for all samples in the ScPCA Portal, facilitating downstream analyses across multiple samples.
@@ -576,7 +576,7 @@ We specifically focused on ScPCA projects with solid tumors, considering only sa
 We analyzed 97 samples across five projects: `SCPCP00001`, `SCPCP000002`, `SCPCP000006`, `SCPCP000009`, and `SCPCP000017`.
 Projects `SCPCP000001` and `SCPCP000002` comprise high- and low-grade gliomas, respectively, and were sequenced at the bulk and single-cell levels.
 `SCPCP000006`, `SCPCP000009`, and `SCPCP000017` comprise Wilms tumors, CNS tumors, and osteosarcomas, respectively, and were sequenced at the bulk and single-nuclei levels.
-As described in Materials and Methods, we derived pseudobulk expression matrices for each single-cell/nuclei library, and we compared their expression to bulk using a series of linear models (one per ScPCA project) predicting bulk from pseudobulk expression with a random effect controlling for sample (Figure {@fig:fig6}A, Figure {@fig:figS8}A).
+As described in the Methods, we derived pseudobulk expression matrices for each single-cell/nuclei library, and we compared their expression to bulk using a series of linear models (one per ScPCA project) predicting bulk from pseudobulk expression with a random effect controlling for sample (Figure {@fig:fig6}A, Figure {@fig:figS8}A).
 Across all projects, we observed a positive relationship between bulk and pseudobulk expression, consistent with our expectations.
 
 We next performed an overrepresentation analysis to probe for differences in gene expression that might suggest differences in cell type composition and/or abundance between modalities.
@@ -594,7 +594,7 @@ By contrast, we uncovered a variety of both immune and non-immune cell types ove
 These results show that, while bulk and single-cell/nuclei expression is indeed highly correlated, cell type differences may still be present between modalities, potentially driven by cell-type-specific loss in single-cell experiments.
 
 
-## Materials and Methods
+## Methods
 
 ### Data generation and processing
 
@@ -639,7 +639,7 @@ The `quant` step was run using the `cr-like-em` resolution strategy for feature 
 ### Post alevin-fry processing of single-cell and single-nuclei RNA-seq data
 
 The output from running `alevin-fry` includes a gene-by-cell counts matrix, with reads from both spliced and unspliced reads for all potential cell barcodes.
-This output is read into R to create a `SingleCellExperiment` using `fishpond::load_fry()`.
+The gene-by-cell counts matrix is read into R to create a `SingleCellExperiment` using `fishpond::load_fry()`.
 The resulting `SingleCellExperiment` contains a `counts` assay with a gene-by-cell counts matrix where all spliced and unspliced reads for a given gene are totaled together.
 We also include a `spliced` assay that contains a gene-by-cell counts matrix with only spliced reads.
 These matrices include all potential cells, including empty droplets, and are provided for all Portal downloads in the unfiltered objects saved as `.rds` files with the `_unfiltered.rds` suffix.
@@ -671,7 +671,7 @@ Any cells removed after filtering empty droplets were also removed from the ADT 
 ### Processing ADT expression data from CITE-seq
 
 The ADT count matrix stored in the unfiltered object was used to calculate an ambient profile with `DropletUtils::ambientProfileEmpty()`.
-This ambient profile was used to calculate quality-control statistics with `DropletUtils::cleanTagCounts()` for all cells remaining after removing empty droplets.
+The ambient profile was used to calculate quality-control statistics with `DropletUtils::cleanTagCounts()` for all cells remaining after removing empty droplets.
 Any negative or isotype controls were taken into account when calculating QC statistics.
 Cells with a high level of ambient contamination or negative/isotype controls were flagged as having low-quality ADT expression, but we did not remove any cells based on ADT quality from the object.
 The filtered and processed objects contain the results from running `DropletUtils::cleanTagCounts()`.
