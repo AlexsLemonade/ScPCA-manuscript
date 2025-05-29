@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2025-05-12'
+date-meta: '2025-05-29'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -36,11 +36,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2025-05-12" />
-  <meta name="citation_publication_date" content="2025-05-12" />
-  <meta property="article:published_time" content="2025-05-12" />
-  <meta name="dc.modified" content="2025-05-12T16:45:15+00:00" />
-  <meta property="article:modified_time" content="2025-05-12T16:45:15+00:00" />
+  <meta name="dc.date" content="2025-05-29" />
+  <meta name="citation_publication_date" content="2025-05-29" />
+  <meta property="article:published_time" content="2025-05-29" />
+  <meta name="dc.modified" content="2025-05-29T14:21:44+00:00" />
+  <meta property="article:modified_time" content="2025-05-29T14:21:44+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/87c7f1b3a2aa604e1ba8cc0169f4ca46e111ce29/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/87c7f1b3a2aa604e1ba8cc0169f4ca46e111ce29/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/87c7f1b3a2aa604e1ba8cc0169f4ca46e111ce29/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/073f9233dda0d85be366d64a1fb82e3a6c4281e0/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/073f9233dda0d85be366d64a1fb82e3a6c4281e0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/073f9233dda0d85be366d64a1fb82e3a6c4281e0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,10 +118,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/87c7f1b3a2aa604e1ba8cc0169f4ca46e111ce29/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/073f9233dda0d85be366d64a1fb82e3a6c4281e0/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@87c7f1b](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/87c7f1b3a2aa604e1ba8cc0169f4ca46e111ce29)
-on May 12, 2025.
+from [AlexsLemonade/ScPCA-manuscript@073f923](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/073f9233dda0d85be366d64a1fb82e3a6c4281e0)
+on May 29, 2025.
 </em></small>
 
 
@@ -624,6 +624,12 @@ In an effort to ensure sample metadata for ScPCA are compatible with CZI's CELLx
 | Ethnicity (if applicable)  | If the submitter provided ethnicity, the associated Hancestro term [@doi:10.1186/s13059-018-1396-2; @url:https://www.ebi.ac.uk/ols4/ontologies/hancestro]. If ethnicity is unavailable, `unknown` is used. |
 
 Table: Assignment of metadata fields to ontology terms. {#tbl:metadata}
+
+### Ethics statement
+
+For ALSF-funded datasets comprised of human subjects data, Institutional Review Boards (IRB) or research ethics boards at grantee institutions approved the research or determined it was exempt.
+For community-contributed datasets containing summarized data and de-identified metadata from human subjects, submitting institutions certified that all approvals and consents were obtained or listed the IRB protocol in transfer agreements.
+ALSF-funded xenograft datasets were approved by the grantee institution's Institutional Animal Care and Use Committee.
 
 ### Processing single-cell and single-nuclei RNA-seq data with alevin-fry
 
