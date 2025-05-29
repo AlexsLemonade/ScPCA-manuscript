@@ -58,6 +58,7 @@ HTAN
 HTO
 HTOs
 intronic
+IRB
 isbn
 isotype
 Jaccard
@@ -132,6 +133,7 @@ unspliced
 Visium
 wikidata
 Wilms
+xenograft
 xenografts
 AGH
 JAS
