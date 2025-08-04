@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2025-05-29'
+date-meta: '2025-08-04'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -36,11 +36,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2025-05-29" />
-  <meta name="citation_publication_date" content="2025-05-29" />
-  <meta property="article:published_time" content="2025-05-29" />
-  <meta name="dc.modified" content="2025-05-29T14:21:44+00:00" />
-  <meta property="article:modified_time" content="2025-05-29T14:21:44+00:00" />
+  <meta name="dc.date" content="2025-08-04" />
+  <meta name="citation_publication_date" content="2025-08-04" />
+  <meta property="article:published_time" content="2025-08-04" />
+  <meta name="dc.modified" content="2025-08-04T17:48:24+00:00" />
+  <meta property="article:modified_time" content="2025-08-04T17:48:24+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/073f9233dda0d85be366d64a1fb82e3a6c4281e0/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/073f9233dda0d85be366d64a1fb82e3a6c4281e0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/073f9233dda0d85be366d64a1fb82e3a6c4281e0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/122f0dcf879da65b426ecbf57a4912e3a28fdf50/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/122f0dcf879da65b426ecbf57a4912e3a28fdf50/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/122f0dcf879da65b426ecbf57a4912e3a28fdf50/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,10 +118,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/073f9233dda0d85be366d64a1fb82e3a6c4281e0/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/122f0dcf879da65b426ecbf57a4912e3a28fdf50/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@073f923](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/073f9233dda0d85be366d64a1fb82e3a6c4281e0)
-on May 29, 2025.
+from [AlexsLemonade/ScPCA-manuscript@122f0dc](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/122f0dcf879da65b426ecbf57a4912e3a28fdf50)
+on August 4, 2025.
 </em></small>
 
 
@@ -326,13 +326,14 @@ The HTAN also hosts a collection of genomic data collected from tumors across mu
 While existing resources have focused on making large quantities of harmonized data from normal tissue or adult tumor samples publicly available, there are considerably fewer efforts to harmonize and distribute data from pediatric tumors.
 Pediatric cancer is much less common than adult cancer, so the number of available samples from pediatric tumors is smaller compared to the number of adult tumors [@url:https://www.cancer.gov/types/childhood-cancers/child-adolescent-cancers-fact-sheet#how-do-cancers-in-adolescents-and-young-adults-differ-from-those-in-younger-children] and access to data from pediatric tumors is often limited.
 Thus, it is imperative to provide harmonized data from pediatric tumors to all pediatric cancer researchers [@doi:10.1186/s13040-018-0190-8].
-To address this unmet need, Alex's Lemonade Stand Foundation and the Childhood Cancer Data Lab developed and maintain the Single-cell Pediatric Cancer Atlas (ScPCA) Portal (<https://scpca.alexslemonade.org/>), an open-source data resource for single-cell and single-nuclei RNA-seq data of pediatric tumor samples.
+To address this unmet need, Alex's Lemonade Stand Foundation and the Childhood Cancer Data Lab developed and maintain the Single-cell Pediatric Cancer Atlas (ScPCA) Portal (<https://scpca.alexslemonade.org/>), a data resource for single-cell and single-nuclei RNA-seq data of pediatric tumor samples.
 
 The ScPCA Portal holds uniformly processed summarized gene expression from 10x Genomics droplet-based single-cell and single-nuclei RNA-seq for over 700 samples from a diverse set of 55 types of pediatric cancers.
 Originally comprised of data from 10 projects funded by Alex's Lemonade Stand Foundation, the Portal has since expanded to include data contributed by pediatric cancer research community members.
 In addition to gene expression data from single-cell and single-nuclei RNA-seq, the Portal includes data obtained from bulk RNA-seq, spatial transcriptomics, and feature barcoding methods such as CITE-seq and cell hashing.
 All data on the Portal are available in formats ready for downstream analysis with common workflow ecosystems, such as `SingleCellExperiment` objects used by `R/Bioconductor`[@doi:10.1038/s41592-019-0654-x] or `AnnData` objects used by `Scanpy` and related Python modules [@doi:10.1186/s13059-017-1382-0].
 Downloaded objects contain both raw and normalized gene expression counts, dimensionality reduction results, and cell type annotations.
+Over 750 unique downloaders have accessed the Portal since its launch.
 
 To ensure that all current and future data on the Portal are uniformly processed, we created `scpca-nf`, an open-source Nextflow [@doi:10.1038/nbt.3820] pipeline (<https://github.com/AlexsLemonade/scpca-nf>).
 Using a consistent pipeline for all data increases transparency and allows users to perform analysis across multiple samples and projects without having to do any re-processing.
@@ -353,7 +354,7 @@ In March of 2022, the Childhood Cancer Data Lab launched the Single-cell Pediatr
 Data available on the Portal was obtained using two different mechanisms: raw data was accepted from ALSF-funded investigators and processed using our open-source pipeline `scpca-nf`, or investigators processed their raw data using `scpca-nf` and submitted the output for inclusion on the Portal.
 
 All samples on the Portal include a core set of metadata obtained from investigators, including age, sex, diagnosis, subdiagnosis (if applicable), tissue location, and disease stage.
-Some samples include additional metadata, such as treatment or tumor stage, if provided by the investigators.
+The majority of projects include additional metadata, such as treatment or tumor stage, if provided by submitters.
 We standardized all provided metadata to maintain consistency across projects before adding it to the Portal.
 In addition to providing a human-readable value for the submitted metadata, we also provide ontology term identifiers, if applicable.
 Submitted metadata was mapped to associated ontology term identifiers obtained from HsapDv (age) [@url:https://www.ebi.ac.uk/ols4/ontologies/hsapdv], PATO (sex) [@doi:10.1093/bib/bbx035; @url:https://www.ebi.ac.uk/ols4/ontologies/pato], NCBI taxonomy (organism) [@doi:10.1093/database/baaa062; @url:https://www.ncbi.nlm.nih.gov/taxonomy], MONDO (disease) [@doi:10.1101/2022.04.13.22273750; @url:https://www.ebi.ac.uk/ols4/ontologies/mondo], UBERON (tissue) [@doi:10.1186/2041-1480-5-21; @doi:10.1186/gb-2012-13-1-r5; @url:https://www.ebi.ac.uk/ols4/ontologies/uberon], and Hancestro (ethnicity, if applicable) [@doi:10.1186/s13059-018-1396-2; @url:https://www.ebi.ac.uk/ols4/ontologies/hancestro].
@@ -370,6 +371,7 @@ Along with the patient tumors, the Portal contains a small number of human tumor
 
 Each of the available samples contains summarized gene expression data from either single-cell or single-nuclei RNA sequencing.
 However, some samples also include additional data, such as CITE-seq quantification of cell-surface protein levels with antibody-derived tags (ADT) [@doi:10.1038/nmeth.4380], or hashtag oligonucleotide (HTO) quantification for samples multiplexed prior to sequencing [@doi:10.1186/s13059-018-1603-1].
+Raw FASTQ files are not available for download from the Portal, but we direct users to where they can access the raw FASTQ files via links to external repositories, such as the Database of Genotypes and Phenotypes (dbGaP) [@doi:10.1038/ng1007-1181; @doi:10.1093/nar/gkt1211], when available.
 Out of the 704 samples, 95 have associated CITE-seq data, and 35 have associated multiplexing data.
 In some cases, multiple libraries from the same sample were collected for additional assays, either for bulk RNA-seq (n = 182) or spatial transcriptomics (n = 38).
 A summary of the number of samples with each additional modality is shown in Figure {@fig:fig1}B, and a detailed summary of the total samples with each sequencing method broken down by project is available in Table S1.
@@ -382,7 +384,7 @@ The project card also indicates the type(s) of sequencing performed, including t
 ## Uniform processing of data available on the ScPCA Portal
 
 We developed [`scpca-nf`](https://github.com/AlexsLemonade/scpca-nf), an open-source and efficient Nextflow [@doi:10.1038/nbt.3820] workflow for quantifying single-cell and single-nuclei RNA-seq data and processed all data available on the Portal with it.
-Using Nextflow as the backbone for the `scpca-nf` workflow ensures both reproducibility and portability.
+Nextflow is a workflow management system that allows users to execute multi-step and long-running bioinformatics processes in a portable and reproducible manner [@doi:10.1186/s13059-025-03673-9].
 All dependencies for the workflow are handled automatically, as each process in the workflow is run in a Docker container.
 Nextflow is compatible with various computing environments, including high-performance computing clusters and cloud-based computing, allowing users to run the workflow in their preferred environment.
 Setup requires organizing input files and updating a single configuration file for the computing environment after installing Nextflow and either Docker or Singularity.
@@ -399,6 +401,7 @@ Taking FASTQ files as input, `scpca-nf` aligns reads using the selective alignme
 The output from `alevin-fry` includes a gene-by-cell count matrix for all barcodes identified, even those that may not contain true cells.
 
 `scpca-nf` performs filtering of empty droplets, removal of low-quality cells, normalization, dimensionality reduction, and cell type annotation (Figure {@fig:fig2}A).
+We elected to use the Bioconductor ecosystem [@doi:10.1186/gb-2004-5-10-r80; @doi:10.1038/nmeth.3252] for filtering, normalization, and dimensionality reduction because of its rich documentation, wide use in the community, and ability to produce relatively small file sizes.
 The unfiltered gene-by-cell counts matrices are filtered to remove any barcodes that are not likely to contain cells using `DropletUtils::emptyDropsCellRanger()`[@doi:10.1186/s13059-019-1662-y].
 Low-quality cells are identified and removed with `miQC` [@doi:10.1371/journal.pcbi.1009290], which jointly models the proportion of mitochondrial reads and detected genes per cell and calculates a probability that each cell is compromised.
 The remaining cells' counts are normalized [@doi:10.1186/s13059-016-0947-7], and reduced-dimension representations are calculated using both principal component analysis (PCA) and uniform manifold approximation and projection (UMAP) [@arxiv:1802.03426].
@@ -475,6 +478,7 @@ If the ScPCA project includes samples with bulk RNA-seq, two additional files ar
 
 Providing data for all samples within a single file facilitates performing joint gene-level analyses, such as differential expression or gene set enrichment analyses, on multiple samples simultaneously.
 Therefore, we provide a single, merged object for each project containing all raw and normalized gene expression data and metadata for all single-cell and single-nuclei RNA-seq libraries within a given ScPCA project (with some exceptions as described in the Methods).
+Merged objects are not batch-corrected or integrated, so users can perform their own batch correction or integration as needed to suit their experimental designs.
 If downloading data from an ScPCA project as a single, merged file, the download will include a single `.rds` or `.h5ad` file, a summary report for the merged object, and a folder with all individual QC and cell type reports for each library found in the merged object (Figure {@fig:fig3}B).
 
 To build the merged objects, we created an additional stand-alone workflow for merging the output from `scpca-nf`, `merge.nf` (Figure {@fig:fig3}C).
@@ -537,7 +541,7 @@ Jaccard index values close to 1 indicate high agreement and a high proportion of
 
 The report also includes diagnostic plots for each method.
 To evaluate confidence in `SingleR` cell type annotations, the delta median statistic is calculated by subtracting the median score from the score associated with the assigned cell type label [@url:https://bioconductor.org/books/release/SingleRBook/annotation-diagnostics.html#based-on-the-deltas-across-cells].
-The cell type report shows the distribution of delta median values for each cell type. 
+The cell type report shows the distribution of delta median values for each cell type.
 A higher delta median statistic for a cell generally indicates higher confidence in the final cell type annotation.
 We also display the distribution of all probabilities calculated by `CellAssign`; more confident labels are expected to have many values close to 1.
 
@@ -624,6 +628,8 @@ In an effort to ensure sample metadata for ScPCA are compatible with CZI's CELLx
 | Ethnicity (if applicable)  | If the submitter provided ethnicity, the associated Hancestro term [@doi:10.1186/s13059-018-1396-2; @url:https://www.ebi.ac.uk/ols4/ontologies/hancestro]. If ethnicity is unavailable, `unknown` is used. |
 
 Table: Assignment of metadata fields to ontology terms. {#tbl:metadata}
+
+The majority (82.6%) of projects on the Portal have additional metadata fields, such as the presence or absence of treatment, tumor grade, or whether a sample was obtained from a primary tumor or metastasis.
 
 ### Ethics statement
 
