@@ -39,8 +39,8 @@ header-includes: |
   <meta name="dc.date" content="2025-08-04" />
   <meta name="citation_publication_date" content="2025-08-04" />
   <meta property="article:published_time" content="2025-08-04" />
-  <meta name="dc.modified" content="2025-08-04T17:48:24+00:00" />
-  <meta property="article:modified_time" content="2025-08-04T17:48:24+00:00" />
+  <meta name="dc.modified" content="2025-08-04T18:49:54+00:00" />
+  <meta property="article:modified_time" content="2025-08-04T18:49:54+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/122f0dcf879da65b426ecbf57a4912e3a28fdf50/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/122f0dcf879da65b426ecbf57a4912e3a28fdf50/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/122f0dcf879da65b426ecbf57a4912e3a28fdf50/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/aff23b05de9e0749d9b1922d643c697f1b911a29/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/aff23b05de9e0749d9b1922d643c697f1b911a29/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/aff23b05de9e0749d9b1922d643c697f1b911a29/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,9 +118,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/122f0dcf879da65b426ecbf57a4912e3a28fdf50/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/aff23b05de9e0749d9b1922d643c697f1b911a29/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@122f0dc](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/122f0dcf879da65b426ecbf57a4912e3a28fdf50)
+from [AlexsLemonade/ScPCA-manuscript@aff23b0](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/aff23b05de9e0749d9b1922d643c697f1b911a29)
 on August 4, 2025.
 </em></small>
 
@@ -1083,7 +1083,11 @@ The reference includes marker genes for all cell types present in each organ.
 <!-- Figure S1 -->
 ![**Results from benchmarking `alevin-fry` and `CellRanger` performance.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_s1.png?sanitize=true){#fig:figS1 tag="S1" width="7in"}
 
-Each panel compares metrics for six representative ScPCA libraries, including three single-cell and three single-nuclei suspensions, obtained from processing libraries with both `alevin-fry` and `CellRanger`.
+Each panel compares metrics for six ScPCA libraries, including three single-cell and three single-nuclei suspensions, obtained from processing libraries with `salmon alevin` and `alevin-fry` or `CellRanger`.
+Results shown were generated with `CellRanger v6.1.2` using default parameters for single-cell libraries and use of the `--include_introns` flag to include intronic reads for single-nuclei libraries. 
+All libraries were processed with `salmon alevin v1.5.2` and `alevin-fry v0.4.1` using an index containing both spliced and unspliced cDNA as mentioned in the Methods. 
+The libraries used for benchmarking were randomly chosen. 
+
 
 A. Runtime in minutes (top row) and peak memory in GB (bottom row) for six ScPCA libraries processed with `alevin-fry` and `CellRanger`.
 Processing with `alevin-fry` was consistently faster and more memory-efficient compared to processing with `CellRanger`.
