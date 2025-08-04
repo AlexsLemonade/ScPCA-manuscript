@@ -112,7 +112,7 @@ NCBITaxon
 Nextflow
 Nozomi
 nozomione
-O’Malley
+O'Malley
 OMalley
 orcid
 osteosarcoma
