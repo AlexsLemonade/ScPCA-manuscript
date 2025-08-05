@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2025-08-04'
+date-meta: '2025-08-05'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -36,11 +36,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2025-08-04" />
-  <meta name="citation_publication_date" content="2025-08-04" />
-  <meta property="article:published_time" content="2025-08-04" />
-  <meta name="dc.modified" content="2025-08-04T18:49:54+00:00" />
-  <meta property="article:modified_time" content="2025-08-04T18:49:54+00:00" />
+  <meta name="dc.date" content="2025-08-05" />
+  <meta name="citation_publication_date" content="2025-08-05" />
+  <meta property="article:published_time" content="2025-08-05" />
+  <meta name="dc.modified" content="2025-08-05T17:25:27+00:00" />
+  <meta property="article:modified_time" content="2025-08-05T17:25:27+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/aff23b05de9e0749d9b1922d643c697f1b911a29/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/aff23b05de9e0749d9b1922d643c697f1b911a29/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/aff23b05de9e0749d9b1922d643c697f1b911a29/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/01e05de7b450e60c7f138c8c159ae8b1104c282d/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/01e05de7b450e60c7f138c8c159ae8b1104c282d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/01e05de7b450e60c7f138c8c159ae8b1104c282d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,10 +118,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/aff23b05de9e0749d9b1922d643c697f1b911a29/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/01e05de7b450e60c7f138c8c159ae8b1104c282d/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@aff23b0](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/aff23b05de9e0749d9b1922d643c697f1b911a29)
-on August 4, 2025.
+from [AlexsLemonade/ScPCA-manuscript@01e05de](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/01e05de7b450e60c7f138c8c159ae8b1104c282d)
+on August 5, 2025.
 </em></small>
 
 
@@ -659,12 +659,17 @@ These matrices include all potential cells, including empty droplets, and are pr
 Each droplet was tested for deviation from the ambient RNA profile using `DropletUtils::emptyDropsCellRanger()` [@doi:10.1186/s13059-019-1662-y; @doi:10.1101/2021.05.05.442755] and those with an FDR ≤ 0.01 were retained as likely cells.
 If a library did not have a sufficient number of droplets and `DropletUtils::emptyDropsCellRanger()` failed, cells with fewer than 100 UMIs were removed.
 Gene expression data for any cells that remain after filtering are provided in the filtered objects saved as `.rds` files with the `_filtered.rds` suffix.
+These filtered objects additionally contain results from doublet detection performed with `scDblFinder::scDblFinder()` [@doi:10.12688/f1000research.73600.2], including each cell's predicted class ("singlet" or "doublet") as well as the associated doublet score.
+However, predicted doublets were not filtered out; users can instead use these `scDblFinder` results to filter doublets as needed for their specific analysis needs.
 
-In addition to removing empty droplets, `scpca-nf` also removes cells that are likely to be compromised by damage or low-quality sequencing.
+Following removal of empty droplets, `scpca-nf` proceeds to remove cells that are likely to be compromised by damage or low-quality sequencing.
 `miQC` was used to calculate the posterior probability that each cell is compromised [@doi:10.1371/journal.pcbi.1009290].
 Any cells with a probability of being compromised greater than 0.75 and fewer than 200 genes detected were removed before further processing.
 The gene expression counts from the remaining cells were log-normalized using the deconvolution method from Lun, Bach, and Marioni [@doi:10.1186/s13059-016-0947-7].
-`scran::modelGeneVar()` was used to model gene variance from the log-normalized counts and `scran::getTopHVGs()` was used to select the top 2000 high-variance genes.
+Briefly, `scran::quickCluster()` was used to derive cell clusters on which to calculate sum factors with `scran::computeSumFactors()`, which are in turn used during normalization with `scuttle::logNormCounts()`.
+If this deconvolution-based approach failed for any reason, only `scuttle::logNormCounts()` was used for normalization.
+
+Next, `scran::modelGeneVar()` was used to model gene variance from the log-normalized counts and `scran::getTopHVGs()` was used to select the top 2000 high-variance genes.
 These were used as input to calculate the top 50 principal components using `scater::runPCA()`.
 Finally, UMAP embeddings were calculated from the principal components with `scater::runUMAP()`.
 The raw and log-normalized counts, list of 2000 high-variance genes, principal components, and UMAP embeddings are all stored in the processed objects saved as `.rds` files with the `_processed.rds` suffix.
