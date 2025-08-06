@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2025-08-05'
+date-meta: '2025-08-06'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -36,11 +36,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2025-08-05" />
-  <meta name="citation_publication_date" content="2025-08-05" />
-  <meta property="article:published_time" content="2025-08-05" />
-  <meta name="dc.modified" content="2025-08-05T17:25:27+00:00" />
-  <meta property="article:modified_time" content="2025-08-05T17:25:27+00:00" />
+  <meta name="dc.date" content="2025-08-06" />
+  <meta name="citation_publication_date" content="2025-08-06" />
+  <meta property="article:published_time" content="2025-08-06" />
+  <meta name="dc.modified" content="2025-08-06T20:25:12+00:00" />
+  <meta property="article:modified_time" content="2025-08-06T20:25:12+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/01e05de7b450e60c7f138c8c159ae8b1104c282d/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/01e05de7b450e60c7f138c8c159ae8b1104c282d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/01e05de7b450e60c7f138c8c159ae8b1104c282d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c612f57dabce9ce9402d5d567a39164904755c0f/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c612f57dabce9ce9402d5d567a39164904755c0f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c612f57dabce9ce9402d5d567a39164904755c0f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,10 +118,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/01e05de7b450e60c7f138c8c159ae8b1104c282d/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/c612f57dabce9ce9402d5d567a39164904755c0f/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@01e05de](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/01e05de7b450e60c7f138c8c159ae8b1104c282d)
-on August 5, 2025.
+from [AlexsLemonade/ScPCA-manuscript@c612f57](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/c612f57dabce9ce9402d5d567a39164904755c0f)
+on August 6, 2025.
 </em></small>
 
 
@@ -690,15 +690,17 @@ Any cells removed after filtering empty droplets were also removed from the ADT 
 The ADT count matrix stored in the unfiltered object was used to calculate an ambient profile with `DropletUtils::ambientProfileEmpty()`.
 The ambient profile was used to calculate quality-control statistics with `DropletUtils::cleanTagCounts()` for all cells remaining after removing empty droplets.
 Any negative or isotype controls were taken into account when calculating QC statistics.
-Cells with a high level of ambient contamination or negative/isotype controls were flagged as having low-quality ADT expression, but we did not remove any cells based on ADT quality from the object.
-The filtered and processed objects contain the results from running `DropletUtils::cleanTagCounts()`.
+This function flags cells as low-quality if they either have very high levels of ambient contamination and/or negative/isotype controls (if present), or lack ambient expression altogether, which may indicate failed capture.
+However, we did not remove any cells based on ADT quality because that would remove those cells from the `SingleCellExperiment` object, regardless of the quality of the RNA expression.
+Instead, the filtered and processed objects contain the results from running `DropletUtils::cleanTagCounts()`, which users can leverage for filtering as desired.
 
-ADT count data were then normalized by calculating median size factors using the ambient profile with `scuttle::computeMedianFactors()`.
+ADT count data were then normalized using `scuttle::computeMedianFactors()`, which calculates a per-cell size factor as the median ratio of the cell's counts to the background profile previously calculated with `DropletUtils::ambientProfileEmpty()`.
+We then used these factors to normalize ADT counts with `scuttle::logNormCounts()`.
 If median-based normalization failed for any reason, ADT counts were log-transformed after adding a pseudocount of 1.
-Normalized counts are only available for any cells that would be retained after ADT filtering, and any cells that would be filtered out based on `DropletUtils::cleanTagCounts()` are assigned `NA`.
+We only performed normalization on cells that would be retained after ADT filtering; we assigned `NA` normalized counts to any cells that would be filtered out based on `DropletUtils::cleanTagCounts()`.
 The normalized ADT data are available in the `altExp` of the processed object.
 Although `scpca-nf` normalizes ADT counts, the workflow does not perform any dimensionality reduction of ADT data; only the RNA counts data are used as input for dimensionality reduction.
-
+Additionally, note that we did not perform background subtraction on the ADT counts, but we provide the ambient profile calculated with `DropletUtils::ambientProfileEmpty()`, which users can employ to perform global de-noising as needed.
 During conversion to `AnnData` objects, the modalities are exported as separate RNA (`_rna.h5ad`) and ADT (`_adt.h5ad`) objects.
 
 ### Processing HTO data from multiplexed libraries
