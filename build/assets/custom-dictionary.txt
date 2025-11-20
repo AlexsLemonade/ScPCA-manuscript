@@ -71,6 +71,7 @@ GRCh
 Hancestro
 HCA
 heatmap
+Heimberg
 hematopoietic
 hexamer
 HGG
