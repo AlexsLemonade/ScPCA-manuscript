@@ -30,6 +30,7 @@ celldex
 CELLxGENE
 cgreene
 Chante
+CNV
 curation
 customizations
 Cynwyd
@@ -75,6 +76,7 @@ Heimberg
 hematopoietic
 hexamer
 HGG
+HMM
 Hochberg
 HsapDv
 HTAN
