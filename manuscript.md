@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2025-08-12'
+date-meta: '2025-11-24'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -36,11 +36,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2025-08-12" />
-  <meta name="citation_publication_date" content="2025-08-12" />
-  <meta property="article:published_time" content="2025-08-12" />
-  <meta name="dc.modified" content="2025-08-12T14:52:03+00:00" />
-  <meta property="article:modified_time" content="2025-08-12T14:52:03+00:00" />
+  <meta name="dc.date" content="2025-11-24" />
+  <meta name="citation_publication_date" content="2025-11-24" />
+  <meta property="article:published_time" content="2025-11-24" />
+  <meta name="dc.modified" content="2025-11-24T15:24:19+00:00" />
+  <meta property="article:modified_time" content="2025-11-24T15:24:19+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/35fba9925040989b6802d282e1c6b3325a6d81d3/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/35fba9925040989b6802d282e1c6b3325a6d81d3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/35fba9925040989b6802d282e1c6b3325a6d81d3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/12b30e7d38b1538850f58baf4e9bb1fc2181d2c4/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/12b30e7d38b1538850f58baf4e9bb1fc2181d2c4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/12b30e7d38b1538850f58baf4e9bb1fc2181d2c4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,10 +118,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/35fba9925040989b6802d282e1c6b3325a6d81d3/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/12b30e7d38b1538850f58baf4e9bb1fc2181d2c4/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@35fba99](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/35fba9925040989b6802d282e1c6b3325a6d81d3)
-on August 12, 2025.
+from [AlexsLemonade/ScPCA-manuscript@12b30e7](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/12b30e7d38b1538850f58baf4e9bb1fc2181d2c4)
+on November 24, 2025.
 </em></small>
 
 
@@ -744,7 +744,7 @@ In addition to using the default parameters for `salmon quant`, we applied the `
 
 ### Cell type annotation
 
-Cell type labels determined by both `SingleR` [@doi:10.1038/s41590-018-0276-y] and `CellAssign` [@doi:10.1038/s41592-019-0529-1] were added to processed `SingleCellExperiment` objects.
+Cell type labels determined by `SingleR` [@doi:10.1038/s41590-018-0276-y], `CellAssign` [@doi:10.1038/s41592-019-0529-1], and `SCimilarity` [@doi:10.1038/s41586-024-08411-y] were added to processed `SingleCellExperiment` objects.
 If cell types were obtained from the submitter of the dataset, the submitter-provided annotations were incorporated into all `SingleCellExperiment` objects (unfiltered, filtered, and processed).
 
 To prepare the references used for assigning cell types, we developed a separate workflow, `build-celltype-index.nf`, within `scpca-nf`.
@@ -762,20 +762,26 @@ Given the processed `SingleCellExperiment` object and organ-specific reference, 
 For each cell, `CellAssign` calculates a probability of assignment to each cell type in the reference.
 The probability matrix and a prediction based on the most probable cell type were added as cell type annotations to the processed `SingleCellExperiment` object.
 
+For `SCimilarity`, the foundation model described in Heimberg et al. [@doi:10.1038/s41586-024-08411-y] containing 7.3 million cells from various normal and diseased tissues was obtained from Zenodo (<https://zenodo.org/records/10685499>) and used to annotate cells in all samples.
+The assigned cell type label and the distance of the query cell to the closest cell in the model were added to the processed `SingleCellExperiment` object.
+
 #### Assigning consensus cell types
 
-Cell type labels obtained from `SingleR` and `CellAssign` were then used to assign an ontology-aware consensus cell type label.
+Cell type labels obtained from `SingleR`, `CellAssign`, and `SCimilarity` were then used to assign an ontology-aware consensus cell type label.
 We first assigned each of the cell types present in the `PanglaoDB` [@doi:10.1093/database/baz046] reference used with `CellAssign` to an appropriate Cell Ontology term [@url:https://www.ebi.ac.uk/ols4/ontologies/cl].
-For cell types available in the `BlueprintEncodeData` reference used with `SingleR`, we used the provided Cell Ontology terms.
+For cell types available in the `BlueprintEncodeData` reference used with `SingleR` and the foundation model used with `SCimilarity`, we used the provided Cell Ontology terms.
 
-We then created a reference table containing all possible combinations of cell types assigned using `SingleR` and `CellAssign` and identified the latest common ancestor (LCA) using `ontoProc::findCommonAncestors()` [@doi:10.18129/B9.bioc.ontoProc] between the two cell type terms.
-The LCA was then used as the consensus cell type label if the following criteria were met, otherwise no consensus cell type was assigned:
+We then created a reference table containing all possible combinations of cell types assigned using `SingleR`, `CellAssign`, and `SCimilarity`. 
+Consensus cell types are assigned if two of the three annotations share a latest common ancestor (LCA), identified using `ontoProc::findCommonAncestors()` [@doi:10.18129/B9.bioc.ontoProc], that meets the following criteria. 
+Otherwise, no consensus cell type is assigned, and the cell is labeled as "Unknown".
 
-1. The terms shared only one distinct LCA.
-There was one exception to this rule: If the terms shared two LCAs and one was `hematopoietic precursor cell`, then `hematopoietic precursor cell` was used as the consensus label.
-1. The LCA had fewer than 170 descendants, or was either `neuron` or `epithelial cell`.
+1. The terms share at least 1 LCA that either has fewer than 170 descendants or is one of `neuron`, `epithelial cell`, `columnar/cuboidal epithelial cell` or `endo-epithelial cell`.
 
-If the LCA was one of the following non-specific LCA terms, no consensus cell type was assigned: `bone cell`, `lining cell`, `blood cell`, `progenitor cell`, and `supporting cell`.
+2. If more than 1 LCA is shared between two terms, then the LCA with the fewest descendants is kept and all others are discarded.
+
+3. If the LCA has fewer than 170 descendants and is one of the following non-specific LCA terms, no consensus cell type is assigned: `bone cell`, `lining cell`, `blood cell`, `progenitor cell`, `supporting cell`, `biogenic amine secreting cell`, `protein secreting cell`, `extracellular matrix secreting cell`, `serotonin secreting cell`, `peptide hormone secreting cell`, `exocrine cell`, `sensory receptor cell`, or `interstitial cell`. 
+
+If more than one LCA is identified as a possible consensus cell type, meaning there is agreement among all three methods, the LCA with the fewest descendants is used as the consensus cell type. 
 
 The consensus cell type assignments, including both the Cell Ontology term and the associated human-readable name, are available in processed object files on the Portal.
 
