@@ -39,8 +39,8 @@ header-includes: |
   <meta name="dc.date" content="2025-11-24" />
   <meta name="citation_publication_date" content="2025-11-24" />
   <meta property="article:published_time" content="2025-11-24" />
-  <meta name="dc.modified" content="2025-11-24T15:24:19+00:00" />
-  <meta property="article:modified_time" content="2025-11-24T15:24:19+00:00" />
+  <meta name="dc.modified" content="2025-11-24T17:35:19+00:00" />
+  <meta property="article:modified_time" content="2025-11-24T17:35:19+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/12b30e7d38b1538850f58baf4e9bb1fc2181d2c4/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/12b30e7d38b1538850f58baf4e9bb1fc2181d2c4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/12b30e7d38b1538850f58baf4e9bb1fc2181d2c4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/11d9661575d08c6a3287292b1583ec8f290910e2/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/11d9661575d08c6a3287292b1583ec8f290910e2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/11d9661575d08c6a3287292b1583ec8f290910e2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,9 +118,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/12b30e7d38b1538850f58baf4e9bb1fc2181d2c4/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/11d9661575d08c6a3287292b1583ec8f290910e2/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@12b30e7](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/12b30e7d38b1538850f58baf4e9bb1fc2181d2c4)
+from [AlexsLemonade/ScPCA-manuscript@11d9661](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/11d9661575d08c6a3287292b1583ec8f290910e2)
 on November 24, 2025.
 </em></small>
 
@@ -788,6 +788,14 @@ The consensus cell type assignments, including both the Cell Ontology term and t
 Consensus cell type assignments were evaluated by looking at marker gene expression in a set of cell-type specific marker genes.
 Marker genes were obtained from the list of Human cell markers on `CellMarker2.0` [@doi:10.1093/nar/gkac947].
 We considered only those that are specific to a single cell type, with the exception of hematopoietic precursor cells, which express genes found in other, more differentiated immune cells.
+
+### Copy-number variation inference
+
+We used `inferCNV` [@url:https://github.com/broadinstitute/inferCNV] with the `i6` HMM to quantify copy-number variation (CNV) events for each library, for each chromosome arm.
+We designated a set of normal consensus cell types to use for each library's normal reference based on the given sample's diagnosis.
+All libraries were processed with `inferCNV` except: i) libraries without assigned consensus cell types, ii) libraries with fewer than 100 normal reference cells, and iii) libraries from non-cancerous samples.
+We calculated the total CNVs per cell using the feature output from the `i6` HMM by summing CNV calls across all chromosome arms. 
+
 
 ### Generating merged data
 
