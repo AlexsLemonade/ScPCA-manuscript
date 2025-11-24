@@ -39,8 +39,8 @@ header-includes: |
   <meta name="dc.date" content="2025-11-24" />
   <meta name="citation_publication_date" content="2025-11-24" />
   <meta property="article:published_time" content="2025-11-24" />
-  <meta name="dc.modified" content="2025-11-24T17:35:19+00:00" />
-  <meta property="article:modified_time" content="2025-11-24T17:35:19+00:00" />
+  <meta name="dc.modified" content="2025-11-24T18:15:36+00:00" />
+  <meta property="article:modified_time" content="2025-11-24T18:15:36+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/11d9661575d08c6a3287292b1583ec8f290910e2/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/11d9661575d08c6a3287292b1583ec8f290910e2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/11d9661575d08c6a3287292b1583ec8f290910e2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/19ad8ac3409386172e11f706ff2251d302617744/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/19ad8ac3409386172e11f706ff2251d302617744/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/19ad8ac3409386172e11f706ff2251d302617744/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,9 +118,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/11d9661575d08c6a3287292b1583ec8f290910e2/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/19ad8ac3409386172e11f706ff2251d302617744/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@11d9661](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/11d9661575d08c6a3287292b1583ec8f290910e2)
+from [AlexsLemonade/ScPCA-manuscript@19ad8ac](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/19ad8ac3409386172e11f706ff2251d302617744)
 on November 24, 2025.
 </em></small>
 
@@ -788,6 +788,15 @@ The consensus cell type assignments, including both the Cell Ontology term and t
 Consensus cell type assignments were evaluated by looking at marker gene expression in a set of cell-type specific marker genes.
 Marker genes were obtained from the list of Human cell markers on `CellMarker2.0` [@doi:10.1093/nar/gkac947].
 We considered only those that are specific to a single cell type, with the exception of hematopoietic precursor cells, which express genes found in other, more differentiated immune cells.
+
+#### Cell types annotated as part of the OpenScPCA Project
+
+As part of the ongoing OpenScPCA project [@url:https://openscpca.readthedocs.io], cell types for each project are manually annotated to label disease-specific cell types or cell states. 
+After annotations for all samples in a given project have been validated, they are added to all `SingleCellExperiment` objects (unfiltered, filtered, and processed) for that project on the Portal.
+To date, cell types have been assigned and validated for `SCPCP000004` (Neuroblastoma) and `SCPCP000015` (Ewing sarcoma).
+The approaches for cell type annotation were originally developed in the `OpenScPCA-analysis` GitHub repository [@url:https://github.com/AlexsLemonade/OpenScPCA-analysis] in the `cell-type-neuroblastoma-04` and `cell-type-ewings` analysis modules, respectively. 
+These analysis modules provide full information on the specific approaches used for annotation. 
+The cell type annotations included in the ScPCA Portal were subsequently generated in corresponding Nextflow modules in the `OpenScPCA-nf` GitHub repository [@url:https://github.com/AlexsLemonade/OpenScPCA-nf].
 
 ### Copy-number variation inference
 
