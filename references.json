@@ -5911,6 +5911,258 @@
   },
   {
     "publisher": "Cold Spring Harbor Laboratory",
+    "abstract": "<jats:title>SUMMARY</jats:title><jats:p>Neuroblastoma is a pediatric cancer arising from the developing sympathoadrenal lineage with complex inter- and intra-tumoral heterogeneity. To chart this complexity, we generated a comprehensive cell atlas of 55 neuroblastoma patient tumors, collected from two pediatric cancer institutions, spanning a range of clinical, genetic, and histologic features. Our atlas combines single-cell/nucleus RNA-seq (sc/scRNA-seq), bulk RNA-seq, whole exome sequencing, DNA methylation profiling, spatial transcriptomics, and two spatial proteomic methods. Sc/snRNA-seq revealed three malignant cell states with features of sympathoadrenal lineage development. All of the neuroblastomas had malignant cells that resembled sympathoblasts and the more differentiated adrenergic cells. A subset of tumors had malignant cells in a mesenchymal cell state with molecular features of Schwann cell precursors. DNA methylation profiles defined four groupings of patients, which differ in the degree of malignant cell heterogeneity and clinical outcomes. Using spatial proteomics, we found that neuroblastomas are spatially compartmentalized, with malignant tumor cells sequestered away from immune cells. Finally, we identify spatially restricted signaling patterns in immune cells from spatial transcriptomics. To facilitate the visualization and analysis of our atlas as a resource for further research in neuroblastoma, single cell, and spatial-omics, all data are shared through the Human Tumor Atlas Network Data Commons at<jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"http://www.humantumoratlas.org\">www.humantumoratlas.org</jats:ext-link>.</jats:p>",
+    "DOI": "10.1101/2024.01.07.574538",
+    "type": "manuscript",
+    "source": "Crossref",
+    "title": "A spatial cell atlas of neuroblastoma reveals developmental, epigenetic and spatial axis of tumor heterogeneity",
+    "author": [
+      {
+        "given": "Anand G.",
+        "family": "Patel"
+      },
+      {
+        "given": "Orr",
+        "family": "Ashenberg"
+      },
+      {
+        "given": "Natalie B.",
+        "family": "Collins"
+      },
+      {
+        "given": "Åsa",
+        "family": "Segerstolpe"
+      },
+      {
+        "given": "Sizun",
+        "family": "Jiang"
+      },
+      {
+        "given": "Michal",
+        "family": "Slyper"
+      },
+      {
+        "given": "Xin",
+        "family": "Huang"
+      },
+      {
+        "given": "Chiara",
+        "family": "Caraccio"
+      },
+      {
+        "given": "Hongjian",
+        "family": "Jin"
+      },
+      {
+        "given": "Heather",
+        "family": "Sheppard"
+      },
+      {
+        "given": "Ke",
+        "family": "Xu"
+      },
+      {
+        "given": "Ti-Cheng",
+        "family": "Chang"
+      },
+      {
+        "given": "Brent A.",
+        "family": "Orr"
+      },
+      {
+        "given": "Abbas",
+        "family": "Shirinifard"
+      },
+      {
+        "given": "Richard H.",
+        "family": "Chapple"
+      },
+      {
+        "given": "Amber",
+        "family": "Shen"
+      },
+      {
+        "given": "Michael R.",
+        "family": "Clay"
+      },
+      {
+        "given": "Ruth G.",
+        "family": "Tatevossian"
+      },
+      {
+        "given": "Colleen",
+        "family": "Reilly"
+      },
+      {
+        "given": "Jaimin",
+        "family": "Patel"
+      },
+      {
+        "given": "Marybeth",
+        "family": "Lupo"
+      },
+      {
+        "given": "Cynthia",
+        "family": "Cline"
+      },
+      {
+        "given": "Danielle",
+        "family": "Dionne"
+      },
+      {
+        "given": "Caroline B.M.",
+        "family": "Porter"
+      },
+      {
+        "given": "Julia",
+        "family": "Waldman"
+      },
+      {
+        "given": "Yunhao",
+        "family": "Bai"
+      },
+      {
+        "given": "Bokai",
+        "family": "Zhu"
+      },
+      {
+        "given": "Irving",
+        "family": "Barrera"
+      },
+      {
+        "given": "Evan",
+        "family": "Murray"
+      },
+      {
+        "given": "Sébastien",
+        "family": "Vigneau"
+      },
+      {
+        "given": "Sara",
+        "family": "Napolitano"
+      },
+      {
+        "given": "Isaac",
+        "family": "Wakiro"
+      },
+      {
+        "given": "Jingyi",
+        "family": "Wu"
+      },
+      {
+        "given": "Grace",
+        "family": "Grimaldi"
+      },
+      {
+        "given": "Laura",
+        "family": "Dellostritto"
+      },
+      {
+        "given": "Karla",
+        "family": "Helvie"
+      },
+      {
+        "given": "Asaf",
+        "family": "Rotem"
+      },
+      {
+        "given": "Ana",
+        "family": "Lako"
+      },
+      {
+        "given": "Nicole",
+        "family": "Cullen"
+      },
+      {
+        "given": "Kathleen L.",
+        "family": "Pfaff"
+      },
+      {
+        "given": "Åsa",
+        "family": "Karlström"
+      },
+      {
+        "given": "Judit",
+        "family": "Jané-Valbuena"
+      },
+      {
+        "given": "Ellen",
+        "family": "Todres"
+      },
+      {
+        "given": "Aaron",
+        "family": "Thorner"
+      },
+      {
+        "given": "Paul",
+        "family": "Geeleher"
+      },
+      {
+        "given": "Scott J.",
+        "family": "Rodig"
+      },
+      {
+        "given": "Xin",
+        "family": "Zhou"
+      },
+      {
+        "given": "Elizabeth",
+        "family": "Stewart"
+      },
+      {
+        "given": "Bruce E.",
+        "family": "Johnson"
+      },
+      {
+        "given": "Gang",
+        "family": "Wu"
+      },
+      {
+        "given": "Fei",
+        "family": "Chen"
+      },
+      {
+        "given": "Jiyang",
+        "family": "Yu"
+      },
+      {
+        "given": "Yury",
+        "family": "Goltsev"
+      },
+      {
+        "given": "Garry P.",
+        "family": "Nolan"
+      },
+      {
+        "given": "Orit",
+        "family": "Rozenblatt-Rosen"
+      },
+      {
+        "given": "Aviv",
+        "family": "Regev"
+      },
+      {
+        "given": "Michael A.",
+        "family": "Dyer"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          1,
+          7
+        ]
+      ]
+    },
+    "URL": "https://doi.org/hbfc75",
+    "PMCID": "PMC10802404",
+    "PMID": "38260392",
+    "id": "TSJacwEL",
+    "note": "This CSL Item was generated by Manubot v0.5.6 from its persistent identifier (standard_id).\nstandard_id: doi:10.1101/2024.01.07.574538"
+  },
+  {
+    "publisher": "Cold Spring Harbor Laboratory",
     "issue": "10",
     "abstract": "<jats:p>A revolution in cellular measurement technology is under way: For the first time, we have the ability to monitor global gene regulation in thousands of individual cells in a single experiment. Such experiments will allow us to discover new cell types and states and trace their developmental origins. They overcome fundamental limitations inherent in measurements of bulk cell population that have frustrated efforts to resolve cellular states. Single-cell genomics and proteomics enable not only precise characterization of cell state, but also provide a stunningly high-resolution view of transitions between states. These measurements may finally make explicit the metaphor that C.H. Waddington posed nearly 60 years ago to explain cellular plasticity: Cells are residents of a vast “landscape” of possible states, over which they travel during development and in disease. Single-cell technology helps not only locate cells on this landscape, but illuminates the molecular mechanisms that shape the landscape itself. However, single-cell genomics is a field in its infancy, with many experimental and computational advances needed to fully realize its full potential.</jats:p>",
     "DOI": "10.1101/gr.190595.115",
@@ -7028,6 +7280,127 @@
   {
     "publisher": "Springer Science and Business Media LLC",
     "issue": "1",
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec>\n                    <jats:title>Background</jats:title>\n                    <jats:p>Neuroblastoma is a common pediatric cancer, where preclinical studies suggest that a mesenchymal-like gene expression program contributes to chemotherapy resistance. However, clinical outcomes remain poor, implying we need a better understanding of the relationship between patient tumor heterogeneity and preclinical models.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>Here, we generate single-cell RNA-seq maps of neuroblastoma cell lines, patient-derived xenograft models (PDX), and a genetically engineered mouse model (GEMM). We develop an unsupervised machine learning approach (“automatic consensus nonnegative matrix factorization” (acNMF)) to compare the gene expression programs found in preclinical models to a large cohort of patient tumors. We confirm a weakly expressed, mesenchymal-like program in otherwise adrenergic cancer cells in some pre-treated high-risk patient tumors, but this appears distinct from the presumptive drug-resistance mesenchymal programs evident in cell lines. Surprisingly, however, this weak-mesenchymal-like program is maintained in PDX and could be chemotherapy-induced in our GEMM after only 24 h, suggesting an uncharacterized therapy-escape mechanism.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusions</jats:title>\n                    <jats:p>Collectively, our findings improve the understanding of how neuroblastoma patient tumor heterogeneity is reflected in preclinical models, provides a comprehensive integrated resource, and a generalizable set of computational methodologies for the joint analysis of clinical and pre-clinical single-cell RNA-seq datasets.</jats:p>\n                  </jats:sec>",
+    "DOI": "10.1186/s13059-024-03309-4",
+    "type": "article-journal",
+    "source": "Crossref",
+    "title": "An integrated single-cell RNA-seq map of human neuroblastoma tumors and preclinical models uncovers divergent mesenchymal-like gene expression programs",
+    "volume": "25",
+    "author": [
+      {
+        "given": "Richard H.",
+        "family": "Chapple"
+      },
+      {
+        "given": "Xueying",
+        "family": "Liu"
+      },
+      {
+        "given": "Sivaraman",
+        "family": "Natarajan"
+      },
+      {
+        "given": "Margaret I. M.",
+        "family": "Alexander"
+      },
+      {
+        "given": "Yuna",
+        "family": "Kim"
+      },
+      {
+        "given": "Anand G.",
+        "family": "Patel"
+      },
+      {
+        "given": "Christy W.",
+        "family": "LaFlamme"
+      },
+      {
+        "given": "Min",
+        "family": "Pan"
+      },
+      {
+        "given": "William C.",
+        "family": "Wright"
+      },
+      {
+        "given": "Hyeong-Min",
+        "family": "Lee"
+      },
+      {
+        "given": "Yinwen",
+        "family": "Zhang"
+      },
+      {
+        "given": "Meifen",
+        "family": "Lu"
+      },
+      {
+        "given": "Selene C.",
+        "family": "Koo"
+      },
+      {
+        "given": "Courtney",
+        "family": "Long"
+      },
+      {
+        "given": "John",
+        "family": "Harper"
+      },
+      {
+        "given": "Chandra",
+        "family": "Savage"
+      },
+      {
+        "given": "Melissa D.",
+        "family": "Johnson"
+      },
+      {
+        "given": "Thomas",
+        "family": "Confer"
+      },
+      {
+        "given": "Walter J.",
+        "family": "Akers"
+      },
+      {
+        "given": "Michael A.",
+        "family": "Dyer"
+      },
+      {
+        "given": "Heather",
+        "family": "Sheppard"
+      },
+      {
+        "given": "John",
+        "family": "Easton"
+      },
+      {
+        "given": "Paul",
+        "family": "Geeleher"
+      }
+    ],
+    "container-title": "Genome Biology",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          6,
+          19
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gtz8h5",
+    "container-title-short": "Genome Biol",
+    "PMCID": "PMC11186099",
+    "PMID": "38898465",
+    "id": "1G3mGXjU5",
+    "note": "This CSL Item was generated by Manubot v0.5.6 from its persistent identifier (standard_id).\nstandard_id: doi:10.1186/s13059-024-03309-4"
+  },
+  {
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
     "DOI": "10.1186/s13059-025-03673-9",
     "type": "article-journal",
     "source": "Crossref",
@@ -8109,8 +8482,8 @@
       "date-parts": [
         [
           "2025",
-          11,
-          24
+          12,
+          11
         ]
       ]
     },
@@ -8134,8 +8507,8 @@
       "date-parts": [
         [
           "2025",
-          11,
-          24
+          12,
+          11
         ]
       ]
     },
@@ -8152,8 +8525,8 @@
       "date-parts": [
         [
           "2025",
-          11,
-          24
+          12,
+          11
         ]
       ]
     },
@@ -8173,8 +8546,8 @@
       "date-parts": [
         [
           "2025",
-          11,
-          24
+          12,
+          11
         ]
       ]
     },
@@ -8202,8 +8575,8 @@
       "date-parts": [
         [
           "2025",
-          11,
-          24
+          12,
+          11
         ]
       ]
     },
@@ -8231,8 +8604,8 @@
       "date-parts": [
         [
           "2025",
-          11,
-          24
+          12,
+          11
         ]
       ]
     },
@@ -8240,8 +8613,8 @@
       "date-parts": [
         [
           "2025",
-          11,
-          14
+          12,
+          9
         ]
       ]
     }
@@ -8264,8 +8637,8 @@
       "date-parts": [
         [
           "2025",
-          11,
-          24
+          12,
+          11
         ]
       ]
     },
@@ -8283,8 +8656,8 @@
       "date-parts": [
         [
           "2025",
-          11,
-          24
+          12,
+          11
         ]
       ]
     },
@@ -8302,8 +8675,8 @@
       "date-parts": [
         [
           "2025",
-          11,
-          24
+          12,
+          11
         ]
       ]
     },
@@ -8321,8 +8694,8 @@
       "date-parts": [
         [
           "2025",
-          11,
-          24
+          12,
+          11
         ]
       ]
     },
@@ -8347,8 +8720,8 @@
       "date-parts": [
         [
           "2025",
-          11,
-          24
+          12,
+          11
         ]
       ]
     },
@@ -8399,8 +8772,8 @@
       "date-parts": [
         [
           "2025",
-          11,
-          24
+          12,
+          11
         ]
       ]
     },
@@ -8415,8 +8788,8 @@
       "date-parts": [
         [
           "2025",
-          11,
-          24
+          12,
+          11
         ]
       ]
     },
