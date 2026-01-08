@@ -39,8 +39,8 @@ header-includes: |
   <meta name="dc.date" content="2026-01-08" />
   <meta name="citation_publication_date" content="2026-01-08" />
   <meta property="article:published_time" content="2026-01-08" />
-  <meta name="dc.modified" content="2026-01-08T21:33:52+00:00" />
-  <meta property="article:modified_time" content="2026-01-08T21:33:52+00:00" />
+  <meta name="dc.modified" content="2026-01-08T21:47:24+00:00" />
+  <meta property="article:modified_time" content="2026-01-08T21:47:24+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2985d540dbc3bdbae75172f7ecb79a625ce8676d/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2985d540dbc3bdbae75172f7ecb79a625ce8676d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2985d540dbc3bdbae75172f7ecb79a625ce8676d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/6b4543425334b3cd6f398644708146ed0d24f285/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/6b4543425334b3cd6f398644708146ed0d24f285/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/6b4543425334b3cd6f398644708146ed0d24f285/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,9 +118,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/2985d540dbc3bdbae75172f7ecb79a625ce8676d/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/6b4543425334b3cd6f398644708146ed0d24f285/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@2985d54](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/2985d540dbc3bdbae75172f7ecb79a625ce8676d)
+from [AlexsLemonade/ScPCA-manuscript@6b45434](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/6b4543425334b3cd6f398644708146ed0d24f285)
 on January 8, 2026.
 </em></small>
 
@@ -970,7 +970,7 @@ For example, 75 single-cell samples and 101 single-nuclei samples have accompany
 Two samples were sequenced using both single-cell and single-nuclei suspensions so are included in the count for both "Single-cell" and "Single-nuclei" groups.
 Samples that were sequenced with either bulk RNA-seq or spatial transcriptomics and do not have accompanying single-cell or single-nuclei RNA-seq data are not represented in the total counts.
 
-C. Example of a project card as displayed on the "Browse" page of the ScPCA Portal and a "Visualize" view for a library within that project, colored by consensus cell type annotation..
+C. Example of a project card as displayed on the "Browse" page of the ScPCA Portal and a "Visualize" view for a library within that project, colored by consensus cell type annotation.
 This project card and visualized sample are from project `SCPCP000004` [@doi:10.1101/2024.01.07.574538; @doi:10.1186/s13059-024-03309-4].
 Project cards include information about the number of samples, technologies and modalities, additional sample metadata information, submitter-provided diagnoses, and a submitter-provided abstract.
 Where available, submitter-provided citation information, as well as other databases where this data has been deposited, are also provided.
@@ -1037,9 +1037,16 @@ Results from these automated cell type annotation methods and a consensus cell t
 A cell type summary report with information about reference sources, comparisons among cell type annotation methods, and diagnostic plots is created.
 Although not shown in this panel, cell type annotations are also included in the `Processed AnnData Object` created from the `Processed SCE Object` (Figure {@fig:fig2}A).
 
-B. <TODO>: https://github.com/AlexsLemonade/ScPCA-manuscript/issues/222
+B. Diagram of ontology-aware consensus cell type annotation performed in `scpca-nf`.
+We perform pairwise comparisons among cell type annotations made by `SingleR`, `CellAssign`, and `SCimilarity`.
+For each comparison, we identify the cell types' latest common ancestor based on the Cell Ontology. 
+We then identify the consensus cell type as the latest common ancestor with the fewest descendants. 
 
-C. <TODO>: https://github.com/AlexsLemonade/ScPCA-manuscript/issues/222
+C. Example heatmap as shown in the cell type summary report comparing the consensus cell type annotations to automated annotations assigned by `SingleR`, `CellAssign`, and `SCimilarity`. 
+Heatmap cells are colored by the Jaccard similarity index. 
+A value of 1 means that there is complete overlap between which cells are annotated with the two labels being compared, and a value of 0 means that there is no overlap between which cells are annotated with the two labels being compared. 
+The heatmap shown is for library `SCPCL000001`. 
+For this figure specifically, the heatmap shows only the top seven consensus cell type annotations with at least three cells, but the heatmap in the cell type summary report shows all cell types.
 <br><br>
 
 
