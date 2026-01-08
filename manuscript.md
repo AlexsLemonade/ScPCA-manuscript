@@ -39,8 +39,8 @@ header-includes: |
   <meta name="dc.date" content="2026-01-08" />
   <meta name="citation_publication_date" content="2026-01-08" />
   <meta property="article:published_time" content="2026-01-08" />
-  <meta name="dc.modified" content="2026-01-08T14:15:50+00:00" />
-  <meta property="article:modified_time" content="2026-01-08T14:15:50+00:00" />
+  <meta name="dc.modified" content="2026-01-08T20:09:19+00:00" />
+  <meta property="article:modified_time" content="2026-01-08T20:09:19+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/d9172bfdf0790c60e9e190cbd7357d696212a486/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/d9172bfdf0790c60e9e190cbd7357d696212a486/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/d9172bfdf0790c60e9e190cbd7357d696212a486/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/8a40219a1153d7ffbb0ba09b649e3b69c028e2da/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/8a40219a1153d7ffbb0ba09b649e3b69c028e2da/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/8a40219a1153d7ffbb0ba09b649e3b69c028e2da/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,9 +118,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/d9172bfdf0790c60e9e190cbd7357d696212a486/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/8a40219a1153d7ffbb0ba09b649e3b69c028e2da/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@d9172bf](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/d9172bfdf0790c60e9e190cbd7357d696212a486)
+from [AlexsLemonade/ScPCA-manuscript@8a40219](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/8a40219a1153d7ffbb0ba09b649e3b69c028e2da)
 on January 8, 2026.
 </em></small>
 
@@ -986,7 +986,7 @@ Mapping is first performed with `alevin-fry` to generate a gene-by-cell count ma
 This `SCE` object is exported as the `Unfiltered SCE Object` before further post-processing.
 Next, empty droplets are filtered out, and the resulting `SCE` is exported as the `Filtered SCE Object`.
 The filtered object undergoes additional post-processing, including removing low-quality cells, normalizing counts, and performing dimension reduction with principal components analysis and UMAP.
-The object undergoes cell type annotation and is exported as the `Processed SCE Object`.
+The object undergoes cell type annotation and CNV inference and is exported as the `Processed SCE Object`.
 A summary QC report and a supplemental cell type report are prepared and exported.
 Finally, all `SCE` files are converted to `AnnData` format and exported.
 
@@ -1008,24 +1008,36 @@ F. UMAP embeddings of log-normalized RNA expression values where each cell is co
 
 G. UMAP embeddings of log-normalized RNA expression values for the top four most variable genes, colored by the given gene's expression.
 In the actual summary QC report, the top 12 most highly variable genes are shown.
+
+H. File download structure for an ScPCA Portal project download in `SingleCellExperiment` (`SCE`) format.
+The download folder is named according to the project ID, data format, and the date it was downloaded.
+Download folders contain a folder for all single-cell data, `_single-cell`.
+This folder contains a folder for each sample ID, each containing the three versions (unfiltered, filtered, and processed) of the expression data as well as the summary QC report and cell type report all named according to the ScPCA library ID.
+The `single-cell_metadata.tsv` file contains sample metadata for all samples included in the download.
+The `README.md` file provides information about the contents of each download file, additional contact and citation information, and terms of use for data downloaded from the ScPCA Portal.
+The folder `_bulk` is only present for projects that also have bulk RNA-Seq data.
+It contains a gene-by-sample matrix of raw gene expression as quantified by `salmon` and associated metadata for all samples with bulk RNA-Seq data.
+
+I. File download structure for an ScPCA Portal merged project download in `SCE` format.
+The download folder is named according to the project ID, data format, and the date it was downloaded.
+Download folders contain a folder for all single-cell data, `_single-cell_merged`.
+This folder contains a single merged object containing all samples in the given project and a summary report briefly detailing the contents of the merged object.
+All summary QC and cell type reports for each individual library are also provided in the `individual_reports` folder arranged by their sample ID.
+As in panel (H), additional files `single-cell_metadata.tsv`, `_bulk_quant.tsv`, `_bulk_metadata.tsv`, and `README.md` are also included.
 <br><br>
 
 
 <!-- Figure 3 -->
 ![**ScPCA Portal project download file structure and merged object workflow.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_3.png?sanitize=true){#fig:fig3 tag="3" width="7in"}
 
-A. File download structure for an ScPCA Portal project download in `SingleCellExperiment` (`SCE`) format.
-The download folder is named according to the project ID, data format, and the date it was downloaded.
-Download folders contain one folder for each sample ID, each containing the three versions (unfiltered, filtered, and processed) of the expression data as well as the summary QC report and cell type report all named according to the ScPCA library ID.
-The `single_cell_metadata.tsv` file contains sample metadata for all samples included in the download.
-The `README.md` file provides information about the contents of each download file, additional contact and citation information, and terms of use for data downloaded from the ScPCA Portal.
-The files `_bulk_quant.tsv` and `_bulk_metadata.tsv` are only present for projects that also have bulk RNA-Seq data and contain, respectively, a gene-by-sample matrix of raw gene expression as quantified by `salmon`, and associated metadata for all samples with bulk RNA-Seq data.
+A. Expanded view of the process for adding cell type annotations within `scpca-nf`, as introduced in Figure {@fig:fig2}A.
+Cell type annotation is performed on the `Processed SCE Object`.
+A `celldex` [@doi:10.1038/s41590-018-0276-y] reference dataset with ontology labels is used as input for annotation with `SingleR` [@doi:10.1038/s41590-018-0276-y], a list of marker genes compiled from `PanglaoDB` [@doi:10.1093/database/baz046] is used as input for annotation with `CellAssign` [@doi:10.1038/s41592-019-0529-1], and the `SCimilarity` foundation model is used as input for annotation with `SCimilarity` [@doi:10.1038/s41586-024-08411-y].
+Results from these automated cell type annotation methods and a consensus cell type annotation are then added to the `Processed SCE Object`.
+A cell type summary report with information about reference sources, comparisons among cell type annotation methods, and diagnostic plots is created.
+Although not shown in this panel, cell type annotations are also included in the `Processed AnnData Object` created from the `Processed SCE Object` (Figure {@fig:fig2}A).
 
-B. File download structure for an ScPCA Portal merged project download in `SCE` format.
-The download folder is named according to the project ID, data format, and the date it was downloaded.
-Download folders contain a single merged object containing all samples in the given project as well as a summary report briefly detailing the contents of the merged object.
-All summary QC and cell type reports for each individual library are also provided in the `individual_reports` folder arranged by their sample ID.
-As in panel (A), additional files `single_cell_metadata.tsv`, `_bulk_quant.tsv`, `_bulk_metadata.tsv`, and `README.md` are also included.
+B. <TODO>: https://github.com/AlexsLemonade/ScPCA-manuscript/issues/222
 
 C. Overview of the merged workflow.
 Processed `SCE` objects associated with a given project are merged into a single object, including ADT counts from CITE-seq data if present, and a merged summary report is generated.
@@ -1041,12 +1053,7 @@ For this figure specifically, the merged UMAP was constructed from a merged obje
 <!-- Figure 4 -->
 ![**Cell type annotation in `scpca-nf`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_4.png?sanitize=true){#fig:fig4 tag="4" width="7in"}
 
-A. Expanded view of the process for adding cell type annotations within `scpca-nf`, as introduced in Figure {@fig:fig2}A.
-Cell type annotation is performed on the `Processed SCE Object`.
-A `celldex` [@doi:10.1038/s41590-018-0276-y] reference dataset with ontology labels is used as input for annotation with `SingleR` [@doi:10.1038/s41590-018-0276-y], and a list of marker genes compiled from `PanglaoDB` [@doi:10.1093/database/baz046] is used as input for annotation with `CellAssign` [@doi:10.1038/s41592-019-0529-1].
-Results from these automated cell type annotation methods and a consensus cell type annotation are then added to the `Processed SCE Object`.
-A cell type summary report with information about reference sources, comparisons among cell type annotation methods, and diagnostic plots is created.
-Although not shown in this panel, cell type annotations are also included in the `Processed AnnData Object` created from the `Processed SCE Object` (Figure {@fig:fig2}A).
+A. <TODO>: replacement incoming as part of https://github.com/AlexsLemonade/ScPCA-manuscript/issues/224
 
 B. Example heatmap as shown in the cell type summary report comparing annotations with `SingleR` and `CellAssign`.
 Heatmap cells are colored by the Jaccard similarity index.
@@ -1078,12 +1085,12 @@ Notably, granulocytes are also included in "other" because only 1 granulocyte wa
 A. Scatter plots colored by point density of `DESeq2`-transformed and normalized bulk RNA-seq expression compared to pseudobulk expression from single-cell/nuclei RNA-seq.
 Samples with RNA-seq for both bulk and single-cell/nuclei modalities, excluding multiplexed samples, from ScPCA projects comprising brain and central nervous system tumors are shown, with the number of samples considered per project shown in parentheses.
 The regression line is also shown for each project.
-Results from additional projects are shown in Figure {@fig:figS8}A.
+Results from additional projects are shown in Figure {@fig:figS7}A.
 
 B. Odds ratios from overrepresentation analysis for the same samples shown in panel A, colored by FDR-corrected significance.
 Each odds ratio represents the odds that marker genes for the given cell type were overrepresented in bulk RNA-seq when compared to single-cell/nuclei RNA-seq, relative to other genes.
 A total of 36 consensus cell types were evaluated for each project shown here.
-Results from additional projects are shown in Figure {@fig:figS8}B.
+Results from additional projects are shown in Figure {@fig:figS7}B.
 
 ## Supplementary Figures and Tables {.page_break_before}
 
@@ -1195,22 +1202,9 @@ Each black point represents a cell, where closed circles denote cells with high-
 Red diamonds represent the median delta median score for all cells with high-quality annotations in that library.
 <br><br>
 
-<!--Figure S5-->
-![**Cell type annotation with `CellAssign`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_s5.png?sanitize=true){#fig:figS5 tag="S5" height="10in"}
 
-Both plots in this figure are examples of plots that display results from annotating cells with `CellAssign` that can be found in the cell type summary report, shown here for library `SCPCL000498` [@doi:10.1016/j.devcel.2022.04.003].
-
-A. A grid of UMAPs is shown for each cell type annotated using `CellAssign`, with the cell type of interest shown in color and all other cells belonging to other cell types shown in gray.
-The top four cell types with the greatest number of assigned cells are shown, while all other cells are grouped together and labeled with `All remaining cell types`.
-Any cells that are unable to be assigned by `CellAssign` are labeled with `Unknown cell type`.
-
-B. This example heatmap from the cell type summary report compares submitter-provided annotations to annotations with `SingleR` and `CellAssign`.
-This heatmap is only shown in the cell type summary report if submitters provided cell type annotations.
-Heatmap cells are colored by the Jaccard similarity index.
-A value of 1 means that there is complete overlap between which cells are annotated with the two labels being compared, and a value of 0 means that there is no overlap between which cells are annotated with the two labels being compared.
-
-<!-- Figure S6 -->
-![**Consensus cell type annotation gene expression in other diagnosis groups.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_s6.png?sanitize=true){#fig:figS6 tag="S6" width="9in"}
+<!-- Figure S5 -->
+![**Consensus cell type annotation gene expression in other diagnosis groups.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_s6.png?sanitize=true){#fig:figS5 tag="S5" width="9in"}
 
 Dot plots showing expression of cell-type-specific marker genes across all libraries from Leukemia (A), Sarcoma (B), and Other solid tumors (C) diagnosis groups.
 Expression is shown for each broad cell type annotation, where each broad cell type annotation is a collection of similar consensus cell type annotations.
@@ -1219,16 +1213,16 @@ The x-axis displays marker genes, determined by `CellMarker2.0` [@doi:10.1093/na
 Dots are colored by mean gene expression across libraries and sized proportionally to the percent of libraries they are observed in, out of all cells with the same broad cell type annotation in the given diagnosis.
 <br><br>
 
-<!-- Figure S7 -->
-![***Consensus cell type annotation distributions in other diagnosis groups.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_s7.png?sanitize=true){#fig:figS7 tag="S7" width="7in"}
+<!-- Figure S6 -->
+![***Consensus cell type annotation distributions in other diagnosis groups.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_s7.png?sanitize=true){#fig:figS6 tag="S6" width="7in"}
 
 Barplots of the percentage of cells annotated as each broad consensus cell type annotation across all libraries from Leukemia (A), Sarcoma (B), and Other solid tumors (C) diagnosis groups.
 Within each panel, libraries are shown grouped by diagnosis.
 Each column represents the distribution of cell types within a single library.
 <br><br>
 
-<!-- Figure S8 -->
-![**Comparison of bulk and pseudobulk modalities for additional projects.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_s8.png?sanitize=true){#fig:figS8 tag="S8" width="7in"}
+<!-- Figure S7 -->
+![**Comparison of bulk and pseudobulk modalities for additional projects.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_s8.png?sanitize=true){#fig:figS7 tag="S7" width="7in"}
 
 A. Scatter plots colored by point density of `DESeq2`-transformed and normalized bulk RNA-seq expression compared to pseudobulk expression from single-nuclei RNA-seq.
 Projects with RNA-seq for both bulk and single-cell/nuclei modalities that are not displayed in Figure {@fig:fig6}A are shown.
