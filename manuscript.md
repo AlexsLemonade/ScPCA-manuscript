@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2025-12-11'
+date-meta: '2026-01-08'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -36,11 +36,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2025-12-11" />
-  <meta name="citation_publication_date" content="2025-12-11" />
-  <meta property="article:published_time" content="2025-12-11" />
-  <meta name="dc.modified" content="2025-12-11T22:01:35+00:00" />
-  <meta property="article:modified_time" content="2025-12-11T22:01:35+00:00" />
+  <meta name="dc.date" content="2026-01-08" />
+  <meta name="citation_publication_date" content="2026-01-08" />
+  <meta property="article:published_time" content="2026-01-08" />
+  <meta name="dc.modified" content="2026-01-08T14:15:50+00:00" />
+  <meta property="article:modified_time" content="2026-01-08T14:15:50+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a9196b7a73f5ff86eb83ec4d75abea7ceefe40f4/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a9196b7a73f5ff86eb83ec4d75abea7ceefe40f4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a9196b7a73f5ff86eb83ec4d75abea7ceefe40f4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/d9172bfdf0790c60e9e190cbd7357d696212a486/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/d9172bfdf0790c60e9e190cbd7357d696212a486/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/d9172bfdf0790c60e9e190cbd7357d696212a486/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,10 +118,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/a9196b7a73f5ff86eb83ec4d75abea7ceefe40f4/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/d9172bfdf0790c60e9e190cbd7357d696212a486/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@a9196b7](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/a9196b7a73f5ff86eb83ec4d75abea7ceefe40f4)
-on December 11, 2025.
+from [AlexsLemonade/ScPCA-manuscript@d9172bf](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/d9172bfdf0790c60e9e190cbd7357d696212a486)
+on January 8, 2026.
 </em></small>
 
 
@@ -333,7 +333,7 @@ Originally comprised of data from 10 projects funded by Alex's Lemonade Stand Fo
 In addition to gene expression data from single-cell and single-nuclei RNA-seq, the Portal includes data obtained from bulk RNA-seq, spatial transcriptomics, and feature barcoding methods such as CITE-seq and cell hashing.
 All data on the Portal are available in formats ready for downstream analysis with common workflow ecosystems, such as `SingleCellExperiment` objects used by `R/Bioconductor`[@doi:10.1038/s41592-019-0654-x] or `AnnData` objects used by `Scanpy` and related Python modules [@doi:10.1186/s13059-017-1382-0].
 Downloaded objects contain both raw and normalized gene expression counts, dimensionality reduction results, and cell type annotations.
-Over 750 unique downloaders have accessed the Portal since its launch.
+As of January 2026, over 900 unique downloaders have accessed the Portal since its launch.
 
 To ensure that all current and future data on the Portal are uniformly processed, we created `scpca-nf`, an open-source Nextflow [@doi:10.1038/nbt.3820] pipeline (<https://github.com/AlexsLemonade/scpca-nf>).
 Using a consistent pipeline for all data increases transparency and allows users to perform analysis across multiple samples and projects without having to do any re-processing.
@@ -405,7 +405,7 @@ We elected to use the Bioconductor ecosystem [@doi:10.1186/gb-2004-5-10-r80; @do
 The unfiltered gene-by-cell counts matrices are filtered to remove any barcodes that are not likely to contain cells using `DropletUtils::emptyDropsCellRanger()`[@doi:10.1186/s13059-019-1662-y].
 Low-quality cells are identified and removed with `miQC` [@doi:10.1371/journal.pcbi.1009290], which jointly models the proportion of mitochondrial reads and detected genes per cell and calculates a probability that each cell is compromised.
 The remaining cells' counts are normalized [@doi:10.1186/s13059-016-0947-7], and reduced-dimension representations are calculated using both principal component analysis (PCA) and uniform manifold approximation and projection (UMAP) [@arxiv:1802.03426].
-Finally, cell types are classified using two automated methods, `SingleR` [@doi:10.1038/s41590-018-0276-y] and `CellAssign` [@doi:10.1038/s41592-019-0529-1].
+Finally, cell types are classified using three automated methods: `SingleR` [@doi:10.1038/s41590-018-0276-y], `CellAssign` [@doi:10.1038/s41592-019-0529-1], and `SCimilarity` [@doi:10.1038/s41586-024-08411-y].
 
 To make downloading from the Portal convenient for R and Python users, downloads are available as either `SingleCellExperiment` or `AnnData`[@doi:10.1101/2021.12.16.473007] objects.
 The workflow outputs a `SingleCellExperiment` object (saved as an `.rds` file) containing the fully processed results, including the dimension reduction results and cell type annotations, as well as objects containing the unfiltered and the empty droplet filtered gene-by-cell matrices.
@@ -463,15 +463,16 @@ The output includes the spot-by-gene matrix along with a summary report produced
 
 ## Downloading projects from the ScPCA Portal
 
-On the Portal, users can either download data from individual samples or all data from an entire ScPCA project.
+On the Portal, users can download data from individual samples or all data from an entire ScPCA project.
 When downloading data for an entire project, users can choose between receiving the individual files for each sample (default) or one file containing the gene expression data and metadata for all samples in the project as a merged object.
 Users also have the option to choose their desired format and receive the data as `SingleCellExperiment` (`.rds`) or `AnnData` (`.h5ad`) objects.
+As of January 2026, users of the web interface can generate custom datasets by selecting specific samples from multiple projects to include in a single download.
 
-For downloads with samples as individual files, the download folder will include a sub-folder for each sample in the project (Figure {@fig:fig3}A).
+For downloads with samples as individual files, the download folder will include a sub-folder for each sample in the project (Figure {@fig:fig2}H).
 Each sample folder contains all three object types (unfiltered, filtered, and processed) in the requested file format and the QC and cell type summary report for all libraries from the given sample.
 The objects house the summarized gene expression data and associated metadata for the library indicated in the filename.
 
-All project downloads include a metadata file, `single_cell_metadata.tsv`, containing relevant metadata for all samples, and a `README.md` with information about the contents of each download, contact and citation information, and terms of use for data downloaded from the Portal (Figure {@fig:fig3}A-B).
+All project downloads include a metadata file, `single_cell_metadata.tsv`, containing relevant metadata for all samples, and a `README.md` with information about the contents of each download, contact and citation information, and terms of use for data downloaded from the Portal (Figure {@fig:fig2}H-I).
 If the ScPCA project includes samples with bulk RNA-seq, two additional files are included: a gene-by-sample counts matrix (`_bulk_quant.tsv`) with the quantified gene expression data for all samples in the project, and a metadata file (`_bulk_metadata.tsv`).
 
 ### Merged objects
@@ -479,9 +480,9 @@ If the ScPCA project includes samples with bulk RNA-seq, two additional files ar
 Providing data for all samples within a single file facilitates performing joint gene-level analyses, such as differential expression or gene set enrichment analyses, on multiple samples simultaneously.
 Therefore, we provide a single, merged object for each project containing all raw and normalized gene expression data and metadata for all single-cell and single-nuclei RNA-seq libraries within a given ScPCA project (with some exceptions as described in the Methods).
 Merged objects are not batch-corrected or integrated, so users can perform their own batch correction or integration as needed to suit their experimental designs.
-If downloading data from an ScPCA project as a single, merged file, the download will include a single `.rds` or `.h5ad` file, a summary report for the merged object, and a folder with all individual QC and cell type reports for each library found in the merged object (Figure {@fig:fig3}B).
+If downloading data from an ScPCA project as a single, merged file, the download will include a single `.rds` or `.h5ad` file, a summary report for the merged object, and a folder with all individual QC and cell type reports for each library found in the merged object (Figure {@fig:fig2}I).
 
-To build the merged objects, we created an additional stand-alone workflow for merging the output from `scpca-nf`, `merge.nf` (Figure {@fig:fig3}C).
+To build the merged objects, we created an additional stand-alone workflow for merging the output from `scpca-nf`, `merge.nf` (Figure {@fig:figS3}C).
 `merge.nf` takes the processed `SingleCellExperiment` objects for all single-cell and single-nuclei libraries in a given ScPCA project as input and produces a single merged gene-by-cell counts matrix containing all cells from all libraries.
 No batch correction or integration is performed when creating the merged object.
 Where possible, library-, cell- and gene-specific metadata found in the individual processed `SingleCellExperiment` objects are also merged.
@@ -491,7 +492,7 @@ If additional modalities are present, these are similarly merged and included in
 All merged `SingleCellExperiment` objects are converted to `AnnData` objects and exported as `.h5ad` files.
 
 `merge.nf` outputs a summary report for each merged object, which includes a set of tables summarizing the types of samples and libraries included in the project, such as types of diagnosis, and a faceted UMAP showing all cells from all libraries.
-Figure {@fig:fig3}D shows an example of this plot with a subset of libraries from an ScPCA project.
+Figure {@fig:figS3}D shows an example of this plot with a subset of libraries from an ScPCA project.
 
 ## Annotating cell types
 
