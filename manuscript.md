@@ -39,8 +39,8 @@ header-includes: |
   <meta name="dc.date" content="2026-01-08" />
   <meta name="citation_publication_date" content="2026-01-08" />
   <meta property="article:published_time" content="2026-01-08" />
-  <meta name="dc.modified" content="2026-01-08T20:09:19+00:00" />
-  <meta property="article:modified_time" content="2026-01-08T20:09:19+00:00" />
+  <meta name="dc.modified" content="2026-01-08T21:33:52+00:00" />
+  <meta property="article:modified_time" content="2026-01-08T21:33:52+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/8a40219a1153d7ffbb0ba09b649e3b69c028e2da/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/8a40219a1153d7ffbb0ba09b649e3b69c028e2da/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/8a40219a1153d7ffbb0ba09b649e3b69c028e2da/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2985d540dbc3bdbae75172f7ecb79a625ce8676d/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2985d540dbc3bdbae75172f7ecb79a625ce8676d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2985d540dbc3bdbae75172f7ecb79a625ce8676d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,9 +118,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/8a40219a1153d7ffbb0ba09b649e3b69c028e2da/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/2985d540dbc3bdbae75172f7ecb79a625ce8676d/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@8a40219](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/8a40219a1153d7ffbb0ba09b649e3b69c028e2da)
+from [AlexsLemonade/ScPCA-manuscript@2985d54](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/2985d540dbc3bdbae75172f7ecb79a625ce8676d)
 on January 8, 2026.
 </em></small>
 
@@ -1039,36 +1039,19 @@ Although not shown in this panel, cell type annotations are also included in the
 
 B. <TODO>: https://github.com/AlexsLemonade/ScPCA-manuscript/issues/222
 
-C. Overview of the merged workflow.
-Processed `SCE` objects associated with a given project are merged into a single object, including ADT counts from CITE-seq data if present, and a merged summary report is generated.
-Merged objects are available for download either in `SCE` or `AnnData` format.
-
-D. Example of UMAPs as shown in the merged summary report.
-A grid of UMAPs is shown for each library in the merged object, with cells in the library of interest shown in red and cells belonging to other libraries shown in gray.
-The UMAP is constructed from the merged object such that all libraries contribute an equal weight, but no batch correction was performed.
-The libraries pictured are a subset of libraries in the ScPCA project `SCPCP000003`.
-For this figure specifically, the merged UMAP was constructed from a merged object containing only these four libraries, but the merged object and summary report on the ScPCA Portal for `SCPCP000003` contain all of this project's libraries.
+C. <TODO>: https://github.com/AlexsLemonade/ScPCA-manuscript/issues/222
 <br><br>
+
 
 <!-- Figure 4 -->
-![**Cell type annotation in `scpca-nf`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_4.png?sanitize=true){#fig:fig4 tag="4" width="7in"}
-
-A. <TODO>: replacement incoming as part of https://github.com/AlexsLemonade/ScPCA-manuscript/issues/224
-
-B. Example heatmap as shown in the cell type summary report comparing annotations with `SingleR` and `CellAssign`.
-Heatmap cells are colored by the Jaccard similarity index.
-A value of 1 means that there is complete overlap between which cells are annotated with the two labels being compared, and a value of 0 means that there is no overlap between which cells are annotated with the two labels being compared.
-The heatmap shown is from library `SCPCL000498` [@doi:10.1016/j.devcel.2022.04.003].
-<br><br>
-
-<!-- Figure 5 -->
-![**Consensus cell type annotations in Brain and CNS tumors.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_5.png?sanitize=true){#fig:fig5 tag="5" width="7in"}
+![**Consensus cell type annotations in Brain and CNS tumors.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_5.png?sanitize=true){#fig:fig4 tag="4" width="7in"}
 
 A. Dot plot showing expression of cell-type-specific marker genes across all libraries from brain and central nervous system (CNS) tumors, excluding multiplexed libraries.
 Expression is shown for each broad cell type annotation, where each broad cell type annotation is a collection of similar consensus cell type annotations.
 The y-axis displays the broad consensus cell type observed across libraries, with the total number of cells indicated in parentheses.
 The x-axis displays marker genes, determined by `CellMarker2.0` [@doi:10.1093/nar/gkac947], used for consensus cell type validation for each cell type shown along the top annotation bar.
 Dots are colored by mean gene expression across libraries and sized proportionally to the percent of libraries they are observed in, out of all cells with the same broad cell type annotation in brain and CNS tumor libraries.
+A maximum of 10 cell type marker genes are shown for each broad cell type annotation.
 
 B. Barplot showing the percentage of each broad consensus cell type annotation across libraries of brain and CNS tumors, separated into high-grade (left panel) and low-grade (right panel) glioma diagnoses for non-multiplexed libraries.
 
@@ -1077,7 +1060,12 @@ The percentage shown corresponds to the percentage of immune cells classified as
 Only libraries comprised of at least 1\% immune cells, based on consensus cell type annotations, are shown.
 Specific consensus cell types for myeloid and lymphocyte immune cells are shown, with all other consensus immune cell types included in "other."
 Notably, granulocytes are also included in "other" because only 1 granulocyte was present in all libraries shown (specifically, `SCPCL000793`).
+
+D. <TODO>: https://github.com/AlexsLemonade/ScPCA-manuscript/issues/223
 <br><br>
+
+<!-- Figure 5 -->
+<<!-- TODO: Write this legend. https://github.com/AlexsLemonade/ScPCA-manuscript/issues/220 -->
 
 <!-- Figure 6 -->
 ![**Comparison of bulk and pseudobulk modalities.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_6.png?sanitize=true){#fig:fig6 tag="6" width="7in"}
@@ -1189,9 +1177,20 @@ The quantified gene expression files output from `salmon` are then grouped by Sc
 B. Overview of the spatial transcriptomics workflow.
 The FASTQ file and tissue image for a given library are provided as input to `spaceranger`.
 The workflow directly returns the results from running `spaceranger` without any further processing.
+
+C. Overview of the merged workflow.
+Processed `SCE` objects associated with a given project are merged into a single object, including ADT counts from CITE-seq data if present, and a merged summary report is generated.
+Merged objects are available for download either in `SCE` or `AnnData` format.
+
+D. Example of UMAPs as shown in the merged summary report.
+A grid of UMAPs is shown for each library in the merged object, with cells in the library of interest shown in red and cells belonging to other libraries shown in gray.
+The UMAP is constructed from the merged object such that all libraries contribute an equal weight, but no batch correction was performed.
+The libraries pictured are a subset of libraries in the ScPCA project `SCPCP000003`.
+For this figure specifically, the merged UMAP was constructed from a merged object containing only these four libraries, but the merged object and summary report on the ScPCA Portal for `SCPCP000003` contain all of this project's libraries.
 <br><br>
 
 <!--Figure S4-->
+<!-- TODO: Rewrite this legend. https://github.com/AlexsLemonade/ScPCA-manuscript/issues/221 -->
 ![**Evaluation of references available in the celldex package for use with SingleR.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_s4.png?sanitize=true){#fig:figS4 tag="S4" width="7in"}
 
 `SingleR` was used to annotate ScPCA libraries using four different human-specific references from the `celldex` package.
