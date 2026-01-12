@@ -39,8 +39,8 @@ header-includes: |
   <meta name="dc.date" content="2026-01-12" />
   <meta name="citation_publication_date" content="2026-01-12" />
   <meta property="article:published_time" content="2026-01-12" />
-  <meta name="dc.modified" content="2026-01-12T15:26:27+00:00" />
-  <meta property="article:modified_time" content="2026-01-12T15:26:27+00:00" />
+  <meta name="dc.modified" content="2026-01-12T17:36:06+00:00" />
+  <meta property="article:modified_time" content="2026-01-12T17:36:06+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b1c33b66c9af9872764cc2bcc51c415ae603a657/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b1c33b66c9af9872764cc2bcc51c415ae603a657/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b1c33b66c9af9872764cc2bcc51c415ae603a657/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/d1a3a258870f80ad61148e0bfb7d0ceff3658437/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/d1a3a258870f80ad61148e0bfb7d0ceff3658437/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/d1a3a258870f80ad61148e0bfb7d0ceff3658437/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,9 +118,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/b1c33b66c9af9872764cc2bcc51c415ae603a657/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/d1a3a258870f80ad61148e0bfb7d0ceff3658437/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@b1c33b6](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/b1c33b66c9af9872764cc2bcc51c415ae603a657)
+from [AlexsLemonade/ScPCA-manuscript@d1a3a25](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/d1a3a258870f80ad61148e0bfb7d0ceff3658437)
 on January 12, 2026.
 </em></small>
 
@@ -1045,11 +1045,35 @@ Only libraries comprised of at least 1\% immune cells, based on consensus cell t
 Specific consensus cell types for myeloid and lymphocyte immune cells are shown, with all other consensus immune cell types included in "other."
 Notably, granulocytes are also included in "other" because only 1 granulocyte was present in all libraries shown (specifically, `SCPCL000793`).
 
-D. <TODO>: https://github.com/AlexsLemonade/ScPCA-manuscript/issues/223
+D. Dot plot showing expression of cell-type-specific marker genes across all non-multiplexed libraries from brain and CNS tumors, considering only immune cells. 
+Expression is shown for each consensus cell type annotation.
+The y-axis displays the consensus cell type observed across libraries, with the total number of cells indicated in parentheses.
+The x-axis displays marker genes, determined by `CellMarker2.0` [@doi:10.1093/nar/gkac947], used for consensus cell type validation for each cell type shown along the top annotation bar.
+Marker genes for `lymphocyte of B lineage`, `mature T cell`, `mature alpha-beta T cell`, `myeloid leukocyte`, and `tissue-resident macrophage` were not available in `CellMarker2.0`, so they are not included on the x-axis.
+Dots are colored by mean gene expression across libraries and sized proportionally to the percent of libraries they are observed in, out of all cells with the same consensus cell type annotation in brain and CNS tumor libraries.
+A maximum of 10 cell type marker genes are shown for each consensus cell type annotation.
 <br><br>
 
 <!-- Figure 5 -->
-<<!-- TODO: Write this legend. https://github.com/AlexsLemonade/ScPCA-manuscript/issues/220 -->
+![**Cell type annotation and CNV inference on neuroblastoma samples.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_5.png?sanitize=true){#fig:fig5 tag="5" width="7in"}
+
+A. UMAP highlighting cell type annotations made with the OpenScPCA Project, collapsed into broad annotation groups, for all libraries in the neuroblastoma-only ScPCA Project `SCPCP000004` (N = 42).
+The UMAP was constructed from the merged `SCPCP000004` object such that all libraries contribute an equal weight, but no batch correction was performed.
+
+B. UMAP highlighting total per-cell CNV events as calculated with `InferCNV` [@url:https://github.com/broadinstitute/inferCNV] for all libraries in the neuroblastoma-only ScPCA Project `SCPCP000004` (N = 42).
+The UMAP was constructed from the merged `SCPCP000004` object such that all libraries contribute an equal weight, but no batch correction was performed.
+The total per-cell CNV values were calculated by summing the total number of chromosome arms with a CNV event, as estimated by the `i6` HMM in `InferCNV`.
+Gray cells are from libraries excluded from `InferCNV` inference because they did not contain enough normal cells to define the `InferCNV` reference baseline.
+
+C. Heatmap displaying per-cell CNV events across chromosomes with canonical neuroblastoma alterations [@doi:10.1038/nrdp.2016.78; @doi:10.1016/j.celrep.2024.114804; @doi:10.1158/2159-8290.CD-14-0622] for a single library, `SCPCL000130`.
+Each cell in `SCPCL000130` is represented by two adjacent rows, the first indicating the presence or absence of a gain and the second indicating the presence or absence of a loss.  
+The heatmap is grouped by chromosome arm and OpenScPCA Project cell type annotation, where "normal" cells comprise all characterized non-malignant cells.
+This library exhibits strong signatures of canonical neuroblastoma alterations including `1p` loss, `11q` loss, and `17q` gain. 
+
+D. Example ridge plot as shown in the summary QC report showing per-cell total CNV distributions across the top seven consensus cell type annotations.
+All additional consensus cell types are shown with the "all remaining cell types" category.
+The ridge plot shown is for library `SCPCL000130`. 
+
 
 <!-- Figure 6 -->
 ![**Comparison of bulk and pseudobulk modalities.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_6.png?sanitize=true){#fig:fig6 tag="6" width="7in"}
@@ -1168,21 +1192,23 @@ Merged objects are available for download either in `SCE` or `AnnData` format.
 
 D. Example of UMAPs as shown in the merged summary report.
 A grid of UMAPs is shown for each library in the merged object, with cells in the library of interest shown in red and cells belonging to other libraries shown in gray.
-The UMAP is constructed from the merged object such that all libraries contribute an equal weight, but no batch correction was performed.
+The UMAP was constructed from the merged object such that all libraries contribute an equal weight, but no batch correction was performed.
 The libraries pictured are a subset of libraries in the ScPCA project `SCPCP000003`.
 For this figure specifically, the merged UMAP was constructed from a merged object containing only these four libraries, but the merged object and summary report on the ScPCA Portal for `SCPCP000003` contain all of this project's libraries.
 <br><br>
 
 <!--Figure S4-->
-<!-- TODO: Rewrite this legend. https://github.com/AlexsLemonade/ScPCA-manuscript/issues/221 -->
-![**Evaluation of references available in the celldex package for use with SingleR.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_s4.png?sanitize=true){#fig:figS4 tag="S4" width="7in"}
+![**Ontology-aware consensus cell type assignment provides harmonized labels for cells.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/main/figures/compiled_figures/pngs/figure_s4.png?sanitize=true){#fig:figS4 tag="S4" width="7in"}
 
-`SingleR` was used to annotate ScPCA libraries using four different human-specific references from the `celldex` package.
-Libraries represent three different diagnosis groups in the ScPCA Portal - Brain and CNS, Leukemia, and Sarcoma -  as indicated in the labels for the individual panels.
-The distribution of the delta median statistic, calculated for each cell by subtracting the median delta score from the score of the annotated cell type label, is shown on the y-axis, while the `celldex` reference used is shown on the x-axis.
-Higher values indicate a higher quality cell type annotation, although there is no absolute scale for these values.
-Each black point represents a cell, where closed circles denote cells with high-quality annotations and open circles denote cells with low-quality annotations, as assessed by `SingleR`.
-Red diamonds represent the median delta median score for all cells with high-quality annotations in that library.
+A. UMAP highlighting cells annotated as types of T cells with `SingleR`, `CellAssign`, `SCimilarity` as well as the associated consensus cell types for the library `SCPCL000049`.
+All other cells are shown in gray. 
+This UMAP specifically shows the top three T cell types for each cell type assignment, with remaining T cell types grouped together as "Other T cells."
+
+B. UMAP showing the top seven consensus cell types in `SCPCL0000049`.
+All additional consensus cell types are included in the "All remaining cell types" category.
+
+C. UMAP showing total per-cell CNV events for `SCPCL0000049`.
+The total per-cell CNV values were calculated by summing the total number of chromosome arms with a CNV event, as estimated by the `i6` HMM in `InferCNV` [@url:https://github.com/broadinstitute/inferCNV].
 <br><br>
 
 
