@@ -39,8 +39,8 @@ header-includes: |
   <meta name="dc.date" content="2026-01-12" />
   <meta name="citation_publication_date" content="2026-01-12" />
   <meta property="article:published_time" content="2026-01-12" />
-  <meta name="dc.modified" content="2026-01-12T17:36:06+00:00" />
-  <meta property="article:modified_time" content="2026-01-12T17:36:06+00:00" />
+  <meta name="dc.modified" content="2026-01-12T17:59:23+00:00" />
+  <meta property="article:modified_time" content="2026-01-12T17:59:23+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/d1a3a258870f80ad61148e0bfb7d0ceff3658437/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/d1a3a258870f80ad61148e0bfb7d0ceff3658437/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/d1a3a258870f80ad61148e0bfb7d0ceff3658437/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/fae3f10ff241bf5530095c5a43b91723fd7756bc/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/fae3f10ff241bf5530095c5a43b91723fd7756bc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/fae3f10ff241bf5530095c5a43b91723fd7756bc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,9 +118,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/d1a3a258870f80ad61148e0bfb7d0ceff3658437/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/fae3f10ff241bf5530095c5a43b91723fd7756bc/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@d1a3a25](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/d1a3a258870f80ad61148e0bfb7d0ceff3658437)
+from [AlexsLemonade/ScPCA-manuscript@fae3f10](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/fae3f10ff241bf5530095c5a43b91723fd7756bc)
 on January 12, 2026.
 </em></small>
 
@@ -874,10 +874,16 @@ Providing data as `AnnData` objects also means users can easily integrate ScPCA 
 In particular, the format of the provided `AnnData` objects was designed to be mostly compliant with the requirements of CZI CELLxGENE [@doi:10.1101/2021.04.05.438318; @doi:10.1101/2023.10.30.563174; @{https://cellxgene.cziscience.com/}], but these objects can also be used with UCSC Cell Browser [@doi:10.1093/bioinformatics/btab503; @{https://cells.ucsc.edu/}] or Kana [@doi:10.1101/2022.03.02.482701; @{https://www.kanaverse.org/kana/}].
 Additionally, users can download a merged `SingleCellExperiment` or `AnnData` object containing all gene expression data and metadata from all samples in a project, which supports multi-sample analyses such as differential gene expression or gene set enrichment.
 
-To provide users with cell type annotations, we used two automated methods, `SingleR` and `CellAssign`, which use publicly available references.
-We then used the correspondence between methods to derive ontology-aware consensus cell type labels.
-A limitation of our annotation approach is that the references we used do not contain tumor cells; therefore, tumor cells are likely poorly assigned.
-However, the consensus cell type labels provide a consistent labeling scheme across samples and may be beneficial for annotating populations of normal cells that may be present in tumor samples.
+To provide users with cell type annotations, we used three automated methods: `SingleR`, `CellAssign`, and `SCimilarity`.
+The first two approaches use publicly available references, while the third uses a foundation model to label cells.
+We then used the correspondence among these three methods to derive ontology-aware consensus cell type labels, thereby providing a consistent labeling scheme across samples that may support annotating populations of normal cells that may be present in tumor samples.
+A limitation of this approach is that neither of the references used for `SingleR` or `CellAssign` considered tumor cells; therefore, tumor cells are likely poorly assigned.
+To help circumvent this limitation, we have additionally provided CNV estimates, as inferred with `InferCNV`, for the majority of libraries in the Portal. 
+Joint information from consensus cell type annotations and CNV estimates may support researchers to identify and interrogate tumor cells, in particular for diagnoses where copy number alterations are common such as neuroblastoma (Figure {@fig:fig5D}) or osteosarcoma.
+
+Beyond the automated and consensus cell type annotations, two projects (`SCPCP000004` comprised of neuroblastoma samples, and `SCPCP000015` comprised of Ewing sarcoma samples) include an additional set of cell type annotations from the ongoing OpenScPCA project [@url:https://openscpca.readthedocs.io].
+Unlike annotations made within the `scpca-nf` pipeline, these labels do include formal identification of normal vs. tumor cells. 
+Moving forward, we will continue to expand the set of projects on the Portal with OpenScPCA cell type annotations, thereby enriching the Portal with high-quality, well-documented annotations that support scientific discovery and reuse by the research community.
 
 Many samples on the Portal have additional sequencing data, including corresponding ADT data from CITE-seq, cell hashing data, bulk RNA-seq, or spatial transcriptomics. 
 This enables users to gather more information about a single sample than they could from single-cell/nuclei RNA-seq alone.
