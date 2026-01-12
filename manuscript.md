@@ -39,8 +39,8 @@ header-includes: |
   <meta name="dc.date" content="2026-01-12" />
   <meta name="citation_publication_date" content="2026-01-12" />
   <meta property="article:published_time" content="2026-01-12" />
-  <meta name="dc.modified" content="2026-01-12T17:59:23+00:00" />
-  <meta property="article:modified_time" content="2026-01-12T17:59:23+00:00" />
+  <meta name="dc.modified" content="2026-01-12T19:49:35+00:00" />
+  <meta property="article:modified_time" content="2026-01-12T19:49:35+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/fae3f10ff241bf5530095c5a43b91723fd7756bc/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/fae3f10ff241bf5530095c5a43b91723fd7756bc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/fae3f10ff241bf5530095c5a43b91723fd7756bc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/0d5913b9256ff4a452929c68030d05ab8f71b2ea/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/0d5913b9256ff4a452929c68030d05ab8f71b2ea/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/0d5913b9256ff4a452929c68030d05ab8f71b2ea/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,9 +118,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/fae3f10ff241bf5530095c5a43b91723fd7756bc/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/0d5913b9256ff4a452929c68030d05ab8f71b2ea/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@fae3f10](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/fae3f10ff241bf5530095c5a43b91723fd7756bc)
+from [AlexsLemonade/ScPCA-manuscript@0d5913b](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/0d5913b9256ff4a452929c68030d05ab8f71b2ea)
 on January 12, 2026.
 </em></small>
 
@@ -962,7 +962,7 @@ The visualization employs the UCSC Cell Browser [@doi:10.1093/bioinformatics/bta
 
 
 <!-- Figure 2 -->
-![**Overview of the `scpca-nf` workflow.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_2.png?sanitize=true){#fig:fig2 tag="2" width="7in"}
+![**Overview of the `scpca-nf` workflow and download file structures.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_2.png?sanitize=true){#fig:fig2 tag="2" width="7in"}
 
 A. Overview of `scpca-nf`, the primary workflow for processing single-cell and single-nuclei RNA-seq data for the ScPCA Portal.
 Mapping is first performed with `alevin-fry` to generate a gene-by-cell count matrix, which is read into `R` and converted into a `SingleCellExperiment` (`SCE`) object.
@@ -1011,7 +1011,7 @@ As in panel (H), additional files `single-cell_metadata.tsv`, `_bulk_quant.tsv`,
 
 
 <!-- Figure 3 -->
-![**ScPCA Portal project download file structure and merged object workflow.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_3.png?sanitize=true){#fig:fig3 tag="3" width="7in"}
+![**Consensus cell type annotation in `scpca-nf`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_3.png?sanitize=true){#fig:fig3 tag="3" width="7in"}
 
 A. Expanded view of the process for adding cell type annotations within `scpca-nf`, as introduced in Figure {@fig:fig2}A.
 Cell type annotation is performed on the `Processed SCE Object`.
@@ -1181,7 +1181,7 @@ Third, only `SCE` files are provided for multiplexed libraries; no corresponding
 <br><br>
 
 <!-- Figure S3 -->
-![**Processing other sequencing modalities with `scpca-nf`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_s3.png?sanitize=true){#fig:figS3 tag="S3" width="7in"}
+![**Processing other sequencing modalities and merging objects with `scpca-nf`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.1.1/figures/compiled_figures/pngs/figure_s3.png?sanitize=true){#fig:figS3 tag="S3" width="7in"}
 
 A. Overview of the bulk RNA-Seq workflow.
 A set of FASTQ files from libraries sequenced with bulk RNA-seq are provided as input.
