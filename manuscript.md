@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2026-01-12'
+date-meta: '2026-01-13'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -36,11 +36,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2026-01-12" />
-  <meta name="citation_publication_date" content="2026-01-12" />
-  <meta property="article:published_time" content="2026-01-12" />
-  <meta name="dc.modified" content="2026-01-12T19:49:35+00:00" />
-  <meta property="article:modified_time" content="2026-01-12T19:49:35+00:00" />
+  <meta name="dc.date" content="2026-01-13" />
+  <meta name="citation_publication_date" content="2026-01-13" />
+  <meta property="article:published_time" content="2026-01-13" />
+  <meta name="dc.modified" content="2026-01-13T14:04:23+00:00" />
+  <meta property="article:modified_time" content="2026-01-13T14:04:23+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/0d5913b9256ff4a452929c68030d05ab8f71b2ea/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/0d5913b9256ff4a452929c68030d05ab8f71b2ea/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/0d5913b9256ff4a452929c68030d05ab8f71b2ea/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/7e4d9053d8d1d2619806ef331d98138dededdac8/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/7e4d9053d8d1d2619806ef331d98138dededdac8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/7e4d9053d8d1d2619806ef331d98138dededdac8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,10 +118,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/0d5913b9256ff4a452929c68030d05ab8f71b2ea/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/7e4d9053d8d1d2619806ef331d98138dededdac8/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@0d5913b](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/0d5913b9256ff4a452929c68030d05ab8f71b2ea)
-on January 12, 2026.
+from [AlexsLemonade/ScPCA-manuscript@7e4d905](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/7e4d9053d8d1d2619806ef331d98138dededdac8)
+on January 13, 2026.
 </em></small>
 
 
@@ -540,6 +540,32 @@ Focusing on the immune infiltrate in glioma samples reveals that most immune cel
 However, there is notable heterogeneity even within HGG and LGG subtypes (Figure {@fig:fig4}C).
 Figure {@fig:fig4}D shows the expression of cell-type specific markers for all immune cell types, validating the assignment of various immune cell types with consensus cell types.
 A summary of all the consensus cell types observed in all other ScPCA samples can be found in Figure {@fig:figS6}.
+
+
+### Augmenting cell type annotations for malignant cell identification
+
+Because the consensus annotations were derived from automated methods that do not specifically consider tumor cell states, they provide limited information for distinguishing malignant from normal cells. 
+We therefore sought complementary avenues to increase the value of cell type annotations with information that can be leveraged for this purpose.
+
+In parallel to developing the ScPCA Portal, we launched the OpenScPCA project [@url: https://openscpca.readthedocs.io], an open-science collaborative initiative to further characterize and analyze Portal data. 
+Thus far, we have added manual cell type annotations for two projects, `SCPCP000004` (neuroblastoma) and `SCPCP000015` (Ewing sarcoma), to the Portal based on analyses performed in the OpenScPCA project.
+Figure {@fig:fig5}A displays, for example, a UMAP of all libraries in `SCPCP000004` highlighting this project's OpenScPCA annotations which were derived using the `NBAtlas` dataset as reference [@doi:10.1016/j.celrep.2024.114804].
+Unlike the consensus cell type annotations, the OpenScPCA project annotations distinguish between normal and malignant cells and contain far fewer uncharacterized cells. 
+Indeed, for `SCPCP000004`, the consensus cell type procedure labeled only ~43% of cells, but the OpenScPCA project labeled ~91% of cells, thereby adding substantial value to the data.
+Note that the Portal's summary cell type report will include comparisons between annotations made in `scpca-nf` to OpenScPCA annotations for relevant libraries.
+
+In an effort to identify potential malignant cells across all samples in the Portal, we included a step in the `scpca-nf` pipeline to run `InferCNV` [@url:https://github.com/broadinstitute/inferCNV] to quantify copy-number alterations (Figure {@fig:fig2}A).
+The estimates complement the consensus cell types by providing a proxy for a cell's malignant status, such that cells with high levels of CNV are more likely to be tumor than normal cells.
+Indeed, there is broad correspondence between malignant cells (Figure {@fig:fig5}A) and the total per-cell CNV across libraries in `SCPCP000004` (Figure {@fig:fig5}B); malignant cells tend to have higher levels of CNV, whereas normal cells tend to have lower levels of CNV.
+We probed this relationship further within a single neuroblastoma library, `SCPCL000130`, finding clear signatures of canonical neuroblastoma CNV events such as `1q` loss, `11q` gain, and `17p` loss [@doi:10.1038/nrdp.2016.78; @doi:10.1016/j.celrep.2024.114804; @doi:10.1158/2159-8290.CD-14-0622] within malignant cells (Figure {@fig:fig5}C).
+By contrast, normal cells show very few CNV events, consistent with their annotations. 
+Most intriguingly, unknown cells show CNV event signatures more similar to the malignant cells than to the normal cells, suggesting many of these cells may indeed be malignant. 
+
+We also see traces of this relationship even when looking at the consensus cell types in conjunction with CNV events.
+In Figure {@fig:fig5}D, we show the distributions of per-cell total CNV events for the most commonly-observed consensus cell types in the neuroblastoma library `SCPCL000130`.
+Here, Unknown and neuron cells have distinctly higher total CNV values compared to other cell types, suggesting that they are likely to be malignant cells.
+We see similar patterns for the ganglioglioma library `SCPCL000049` (Figure {@fig:figS4}B-C), where consensus T cells have low total CNV values, while other cell types including oligodendrocyte precursor cells, neuron associated cells, and Unknown cells have much higher total CNV values. 
+As such, joint information from consensus cell type annotations and `InferCNV` results may be used to identify malignant cells across libraries in the Portal, including those which do not yet have associated OpenScPCA project annotations.
 
 ## Analysis of bulk RNA-seq
 
