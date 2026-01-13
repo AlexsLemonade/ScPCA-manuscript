@@ -37,6 +37,7 @@ doi:10.1038/nmeth.4380	doi:10.1038/nmeth.4380	doi:10.1038/nmeth.4380	abp5rbw2
 doi:10.1186/s13059-018-1603-1	doi:10.1186/s13059-018-1603-1	doi:10.1186/s13059-018-1603-1	FZrs73Vp
 doi:10.1038/ng1007-1181	doi:10.1038/ng1007-1181	doi:10.1038/ng1007-1181	KJZDQL86
 doi:10.1093/nar/gkt1211	doi:10.1093/nar/gkt1211	doi:10.1093/nar/gkt1211	rimDkf3e
+doi:10.1093/bioinformatics/btab503	doi:10.1093/bioinformatics/btab503	doi:10.1093/bioinformatics/btab503	xCP3BjTw
 doi:10.1186/s13059-025-03673-9	doi:10.1186/s13059-025-03673-9	doi:10.1186/s13059-025-03673-9	PEJE3BAs
 doi:10.1038/ncomms14049	doi:10.1038/ncomms14049	doi:10.1038/ncomms14049	1CuNC7bWt
 url:https://www.10xgenomics.com/support/software/cell-ranger/latest	url:https://www.10xgenomics.com/support/software/cell-ranger/latest	url:https://www.10xgenomics.com/support/software/cell-ranger/latest	87PPOPmp
@@ -57,10 +58,10 @@ doi:10.1038/nmeth.4197	doi:10.1038/nmeth.4197	doi:10.1038/nmeth.4197	vrqQcFyx
 url:https://www.10xgenomics.com/support/software/space-ranger/latest	url:https://www.10xgenomics.com/support/software/space-ranger/latest	url:https://www.10xgenomics.com/support/software/space-ranger/latest	xo912CsO
 doi:10.1186/s13326-016-0088-7	doi:10.1186/s13326-016-0088-7	doi:10.1186/s13326-016-0088-7	17U3pGEjv
 doi:10.1186/1471-2105-12-6	doi:10.1186/1471-2105-12-6	doi:10.1186/1471-2105-12-6	gAysgnsS
-doi	doi	doi	FSDqKxd0
+doi:10.1186/gb-2005-6-2-r21	doi:10.1186/gb-2005-6-2-r21	doi:10.1186/gb-2005-6-2-r21	1CCBSogYG
 doi:10.1038/s41698-024-00717-4	doi:10.1038/s41698-024-00717-4	doi:10.1038/s41698-024-00717-4	yxJiICJJ
 doi:10.1093/noajnl/vdad009	doi:10.1093/noajnl/vdad009	doi:10.1093/noajnl/vdad009	9U8b91g7
-url	url	url	u0DlQJir
+url:https://openscpca.readthedocs.io	url:https://openscpca.readthedocs.io	url:https://openscpca.readthedocs.io	xW9vfui5
 doi:10.1016/j.celrep.2024.114804	doi:10.1016/j.celrep.2024.114804	doi:10.1016/j.celrep.2024.114804	sGIqMPJO
 url:https://github.com/broadinstitute/inferCNV	url:https://github.com/broadinstitute/inferCNV	url:https://github.com/broadinstitute/inferCNV	b9hQbZOR
 doi:10.1038/nrdp.2016.78	doi:10.1038/nrdp.2016.78	doi:10.1038/nrdp.2016.78	11NujsTQW
@@ -85,7 +86,6 @@ doi:10.1093/database/baz046	doi:10.1093/database/baz046	doi:10.1093/database/baz
 url:https://www.ebi.ac.uk/ols4/ontologies/cl	url:https://www.ebi.ac.uk/ols4/ontologies/cl	url:https://www.ebi.ac.uk/ols4/ontologies/cl	wBFzn1br
 doi:10.18129/B9.bioc.ontoProc	doi:10.18129/B9.bioc.ontoProc	doi:10.18129/b9.bioc.ontoproc	kFdlYl7L
 doi:10.1093/nar/gkac947	doi:10.1093/nar/gkac947	doi:10.1093/nar/gkac947	MclvBVPD
-url:https://openscpca.readthedocs.io	url:https://openscpca.readthedocs.io	url:https://openscpca.readthedocs.io	xW9vfui5
 url:https://github.com/AlexsLemonade/OpenScPCA-analysis	url:https://github.com/AlexsLemonade/OpenScPCA-analysis	url:https://github.com/AlexsLemonade/OpenScPCA-analysis	ckn7Y4Ch
 url:https://github.com/AlexsLemonade/OpenScPCA-nf	url:https://github.com/AlexsLemonade/OpenScPCA-nf	url:https://github.com/AlexsLemonade/OpenScPCA-nf	tDa8M4VA
 doi:10.1038/nbt.4091	doi:10.1038/nbt.4091	doi:10.1038/nbt.4091	kILCvszy
@@ -94,7 +94,6 @@ doi:10.1186/s13059-014-0550-8	doi:10.1186/s13059-014-0550-8	doi:10.1186/s13059-0
 doi:10.18637/jss.v067.i01	doi:10.18637/jss.v067.i01	doi:10.18637/jss.v067.i01	AUoV0xkq
 doi:10.1111/j.2517-6161.1995.tb02031.x	doi:10.1111/j.2517-6161.1995.tb02031.x	doi:10.1111/j.2517-6161.1995.tb02031.x	UeFCwwR7
 https://cellxgene.cziscience.com/	https://cellxgene.cziscience.com/	url:https://cellxgene.cziscience.com/	7NobF7Ei
-doi:10.1093/bioinformatics/btab503	doi:10.1093/bioinformatics/btab503	doi:10.1093/bioinformatics/btab503	xCP3BjTw
 https://cells.ucsc.edu/	https://cells.ucsc.edu/	url:https://cells.ucsc.edu/	VKaQa2Z3
 doi:10.1101/2022.03.02.482701	doi:10.1101/2022.03.02.482701	doi:10.1101/2022.03.02.482701	1DswCJYT0
 https://www.kanaverse.org/kana/	https://www.kanaverse.org/kana/	url:https://www.kanaverse.org/kana/	1FzXrvESX
