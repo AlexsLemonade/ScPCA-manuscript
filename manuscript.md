@@ -39,8 +39,8 @@ header-includes: |
   <meta name="dc.date" content="2026-01-13" />
   <meta name="citation_publication_date" content="2026-01-13" />
   <meta property="article:published_time" content="2026-01-13" />
-  <meta name="dc.modified" content="2026-01-13T15:33:55+00:00" />
-  <meta property="article:modified_time" content="2026-01-13T15:33:55+00:00" />
+  <meta name="dc.modified" content="2026-01-13T19:30:31+00:00" />
+  <meta property="article:modified_time" content="2026-01-13T19:30:31+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/47a02063ba60a2bc1e3ebbad076885942c3d5329/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/47a02063ba60a2bc1e3ebbad076885942c3d5329/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/47a02063ba60a2bc1e3ebbad076885942c3d5329/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/fc476093423e3f8d2d07a9147e56c59f01d80387/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/fc476093423e3f8d2d07a9147e56c59f01d80387/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/fc476093423e3f8d2d07a9147e56c59f01d80387/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,9 +118,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/47a02063ba60a2bc1e3ebbad076885942c3d5329/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/fc476093423e3f8d2d07a9147e56c59f01d80387/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@47a0206](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/47a02063ba60a2bc1e3ebbad076885942c3d5329)
+from [AlexsLemonade/ScPCA-manuscript@fc47609](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/fc476093423e3f8d2d07a9147e56c59f01d80387)
 on January 13, 2026.
 </em></small>
 
@@ -325,6 +325,7 @@ The HTAN also hosts a collection of genomic data collected from tumors across mu
 
 While existing resources have focused on making large quantities of harmonized data from normal tissue or adult tumor samples publicly available, there are considerably fewer efforts to harmonize and distribute data from pediatric tumors.
 Pediatric cancer is much less common than adult cancer, so the number of available samples from pediatric tumors is smaller compared to the number of adult tumors [@url:https://www.cancer.gov/types/childhood-cancers/child-adolescent-cancers-fact-sheet#how-do-cancers-in-adolescents-and-young-adults-differ-from-those-in-younger-children] and access to data from pediatric tumors is often limited.
+Recently, Xu and colleagues highlighted the lack of standardization of pediatric cancer single-cell data as a barrier to reuse and their attempt to create an atlas [@doi:10.1002/cti2.70033].
 Thus, it is imperative to provide harmonized data from pediatric tumors to all pediatric cancer researchers [@doi:10.1186/s13040-018-0190-8].
 To address this unmet need, Alex's Lemonade Stand Foundation and the Childhood Cancer Data Lab developed and maintain the Single-cell Pediatric Cancer Atlas (ScPCA) Portal (<https://scpca.alexslemonade.org/>), a data resource for single-cell and single-nuclei RNA-seq data of pediatric tumor samples.
 
@@ -411,6 +412,7 @@ To make downloading from the Portal convenient for R and Python users, downloads
 The workflow outputs a `SingleCellExperiment` object (saved as an `.rds` file) containing the fully processed results, including the dimension reduction results and cell type annotations, as well as objects containing the unfiltered and the empty droplet filtered gene-by-cell matrices.
 `scpca-nf` also converts all `SingleCellExperiment` objects to `AnnData` objects, which are saved as `.h5ad` files (Figure {@fig:fig2}A).
 Downloads contain the unfiltered, filtered, and processed objects from `scpca-nf` to allow users to choose to perform their own filtering and normalization or to start their analysis from a processed object.
+Providing unfiltered raw counts is consistent with the recommendations for sharing pediatric cancer single-cell data to maximize reusability in Xu et al. [@doi:10.1002/cti2.70033].
 
 All downloads from the Portal include a quality control (QC) report with a summary of processing information (e.g., `alevin-fry` version), library statistics (e.g., the total number of cells), and a collection of diagnostic plots for each library (Figure {@fig:fig2}B-G).
 A knee plot displaying total UMI counts for all droplets (i.e., including empty droplets) indicates the effects of the empty droplet filtering (Figure {@fig:fig2}B).
@@ -888,7 +890,7 @@ All original code was developed within the following repositories and is publicl
 
 The ScPCA Portal is a downloadable collection of uniformly processed, summarized single-cell and single-nuclei RNA-seq data and de-identified metadata from pediatric tumor samples.
 The Portal includes over 700 samples from 55 tumor types, making this the most comprehensive collection of publicly available single-cell RNA-seq datasets from pediatric tumor samples to our knowledge.
-Summarized data are available at three different processing stages: unfiltered, filtered, or processed objects. 
+Summarized data are available at three different processing stages: unfiltered, filtered, or processed objects.
 Users can choose to start from a processed object or perform their own processing, such as filtering and normalization.
 Processed objects containing normalized gene expression data, reduced dimensionality results from PCA and UMAP, and cell type annotations.
 Standardized metadata, containing human-readable values for all fields and ontology term identifiers for a subset of metadata fields, is included in a separate metadata file and the data objects for all samples.
@@ -911,7 +913,7 @@ Beyond the automated and consensus cell type annotations, two projects (`SCPCP00
 Unlike annotations made within the `scpca-nf` pipeline, these labels do include formal identification of normal vs. tumor cells. 
 Moving forward, we will continue to expand the set of projects on the Portal with OpenScPCA cell type annotations, thereby enriching the Portal with high-quality, well-documented annotations that support scientific discovery and reuse by the research community.
 
-Many samples on the Portal have additional sequencing data, including corresponding ADT data from CITE-seq, cell hashing data, bulk RNA-seq, or spatial transcriptomics. 
+Many samples on the Portal have additional sequencing data, including corresponding ADT data from CITE-seq, cell hashing data, bulk RNA-seq, or spatial transcriptomics.
 This enables users to gather more information about a single sample than they could from single-cell/nuclei RNA-seq alone.
 Samples with CITE-seq have additional information about cell-surface protein expression in individual cells, which can help determine cell types and correlate RNA to protein expression [@doi:10.1038/nmeth.4380].
 Spatial transcriptomics data on the Portal are not single-cell resolution, making it hard to identify cell types and spatial patterns from the spatial data alone.
