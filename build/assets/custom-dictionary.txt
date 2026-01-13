@@ -58,6 +58,7 @@ eq
 et
 FASTQ
 Foltz
+ganglioglioma
 GC
 genomic
 genotype
@@ -117,6 +118,7 @@ Nextflow
 neuroblastoma
 Nozomi
 nozomione
+oligodendrocyte
 O'Malley
 OMalley
 openscpca
@@ -171,6 +173,7 @@ UMAP
 UMAPs
 UMI
 UMIs
+uncharacterized
 unicode
 unspliced
 UTHealth
