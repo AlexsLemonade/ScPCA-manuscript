@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2026-01-13'
+date-meta: '2026-01-14'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -36,11 +36,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2026-01-13" />
-  <meta name="citation_publication_date" content="2026-01-13" />
-  <meta property="article:published_time" content="2026-01-13" />
-  <meta name="dc.modified" content="2026-01-13T20:13:27+00:00" />
-  <meta property="article:modified_time" content="2026-01-13T20:13:27+00:00" />
+  <meta name="dc.date" content="2026-01-14" />
+  <meta name="citation_publication_date" content="2026-01-14" />
+  <meta property="article:published_time" content="2026-01-14" />
+  <meta name="dc.modified" content="2026-01-14T14:06:48+00:00" />
+  <meta property="article:modified_time" content="2026-01-14T14:06:48+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/fc8a374e4ce67f28602bc86f2bcea565cec30391/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/fc8a374e4ce67f28602bc86f2bcea565cec30391/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/fc8a374e4ce67f28602bc86f2bcea565cec30391/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/1df1d70c647a805341c3f089971874521ed7b788/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/1df1d70c647a805341c3f089971874521ed7b788/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/1df1d70c647a805341c3f089971874521ed7b788/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,10 +118,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/fc8a374e4ce67f28602bc86f2bcea565cec30391/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/1df1d70c647a805341c3f089971874521ed7b788/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@fc8a374](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/fc8a374e4ce67f28602bc86f2bcea565cec30391)
-on January 13, 2026.
+from [AlexsLemonade/ScPCA-manuscript@1df1d70](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/1df1d70c647a805341c3f089971874521ed7b788)
+on January 14, 2026.
 </em></small>
 
 
@@ -425,45 +425,22 @@ We also provide a UMAP plot with cells colored by the total number of genes dete
 
 ## Processing samples with additional modalities
 
-`scpca-nf` includes modules for processing samples with sequencing modalities beyond single-cell or single-nuclei RNA-seq data: corresponding ADT or CITE-seq data [@doi:10.1038/nmeth.4380], multiplexed data via cell hashing [@doi:10.1186/s13059-018-1603-1], spatial transcriptomics, or bulk RNA-seq.
+`scpca-nf` includes modules for processing samples with sequencing modalities beyond single-cell or single-nuclei RNA-seq such as CITE-seq (ADT) [@doi:10.1038/nmeth.4380], multiplexed (cell hashing) [@doi:10.1186/s13059-018-1603-1], spatial transcriptomics, or bulk RNA-seq.
 
-### Antibody-derived tags
+To process ADT libraries, the ADT reads are quantified using `salmon alevin` and `alevin-fry` (Figure {@fig:figS2}A).
+The workflow performs ADT-by-cell counts matrix normalization (see Methods for details), and calculates QC statistics that users can employ for additional filtering before performing downstream analyses.
+For these ADT libraries, the QC report will include an additional section with a summary of ADT-related statistics, and ADT-specific diagnostic and exploratory plots (Figure {@fig:figS2}B-D).
 
-To process ADT libraries, the ADT FASTQ files are quantified using `salmon alevin` and `alevin-fry` (Figure {@fig:figS2}A).
-The output from `alevin-fry` is the unfiltered ADT-by-cell counts matrix.
-The ADT-by-cell counts matrix is read into R alongside the gene-by-cell counts matrix and saved as an alternative experiment (`altExp`) within the main `SingleCellExperiment` object containing the unfiltered RNA counts.
-The workflow performs ADT-by-cell counts matrix normalization (see Methods for details), but no filtering based on ADT expression or quality is performed.
-Instead, we report QC statistics that users can employ for additional filtering before performing downstream analyses.
+For multiplexed libraries, the HTO FASTQ files are quantified using `salmon alevin` and `alevin-fry` (Figure {@fig:figS2}E).
+Although `scpca-nf` quantifies the HTO data and includes an HTO-by-cell counts matrix in all objects, final demultiplexing is not performed.
+Instead, `scpca-nf` applies multiple demultiplexing methods, including demultiplexing with `DropletUtils::hashedDrops()` [@doi:10.18129/B9.bioc.DropletUtils] and `Seurat::HTODemux()` [@doi:10.1186/s13059-018-1603-1].
+When bulk RNA-seq data from constituent samples are available, genetic demultiplexing [@doi:10.1093/gigascience/giab062] is also performed.
+The results from all available demultiplexing methods are saved in the filtered and processed `SingleCellExperiment` objects, and HTO-specific library statistics are included in the QC report.
 
-If a library contains ADT data, the QC report will include an additional section with a summary of ADT-related statistics, such as how many cells express each ADT, and ADT-specific diagnostic plots (Figure {@fig:figS2}B-D).
-We include plots summarizing the potential effects of removing low-quality cells based on RNA and ADT counts in the QC report (Figure {@fig:figS2}B).
-The first quadrant indicates which cells would be kept if the object were filtered using both RNA and ADT quality measures.
-The other facets highlight which cells would be removed if filtering were done using only RNA counts, only ADT counts, or both.
-The top four ADTs with the most variable expression are also identified and visualized using density plots to show the normalized ADT expression across all cells (Figure {@fig:figS2}C) and UMAPs – calculated from RNA expression data – with cells colored by ADT expression (Figure {@fig:figS2}D).
-
-### Multiplexed libraries
-
-To process multiplexed libraries, the HTO FASTQ files are quantified using `salmon alevin` and `alevin-fry` (Figure {@fig:figS2}C).
-As with ADT data, the HTO-by-cell counts matrix produced by `alevin-fry` is saved as an `altExp` within the main `SingleCellExperiment` object.
-
-Although `scpca-nf` quantifies the HTO data and includes an HTO-by-cell counts matrix in all objects, `scpca-nf` does not demultiplex the samples into one sample per library.
-Instead, `scpca-nf` applies multiple demultiplexing methods, including demultiplexing with `DropletUtils::hashedDrops()` [@doi:10.18129/B9.bioc.DropletUtils], demultiplexing with `Seurat::HTODemux()` [@doi:10.1186/s13059-018-1603-1], and genetic demultiplexing when bulk RNA-seq data are available.
-`scpca-nf` uses the genetic demultiplexing method described in Weber et al. [@doi:10.1093/gigascience/giab062], which uses bulk RNA-seq as a reference for the expected genotypes found in each single-cell RNA-seq sample.
-The results from all available demultiplexing methods are saved in the filtered and processed `SingleCellExperiment` objects.
-
-If a library has associated HTO data, an additional section is included in the `scpca-nf` QC report.
-This section summarizes HTO-specific library statistics, such as how many cells express each HTO.
-No additional plots are produced, but a table summarizing the results from all three demultiplexing methods is included.
-
-### Bulk and spatial transcriptomics
-
-Some samples also include data from bulk RNA-seq and/or spatial transcriptomics libraries.
-Both of these additional sequencing methods are supported by `scpca-nf`.
-To quantify bulk RNA-seq data, `scpca-nf` takes bulk FASTQ files as input, trims reads using `fastp` [@doi:10.1093/bioinformatics/bty560], and then aligns and quantifies reads with `salmon` (Figure {@fig:figS3}A) [@doi:10.1038/nmeth.4197].
+With bulk RNA-seq data, `scpca-nf` trims reads using `fastp` [@doi:10.1093/bioinformatics/bty560] and quantifies expression with `salmon` (Figure {@fig:figS3}A) [@doi:10.1038/nmeth.4197].
 The output is a single TSV file with the gene-by-sample counts matrix for all samples in a given ScPCA project.
 
-To quantify spatial transcriptomics data, `scpca-nf` takes the RNA FASTQ and slide image as input (Figure {@fig:figS3}B).
-As `alevin-fry` does not yet fully support spatial transcriptomics data, `scpca-nf` uses Space Ranger to quantify all spatial transcriptomics data [@url:https://www.10xgenomics.com/support/software/space-ranger/latest].
+Spatial transcriptomics data is processed with Space Ranger [@url:https://www.10xgenomics.com/support/software/space-ranger/latest] to quantify expression and process slide images (Figure {@fig:figS3}B).
 The output includes the spot-by-gene matrix along with a summary report produced by Space Ranger.
 
 ## Downloading projects from the ScPCA Portal

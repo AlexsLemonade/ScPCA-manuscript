@@ -18,7 +18,7 @@
   <meta name="author" content="Jennifer O’Malley" />
   <meta name="author" content="Casey S. Greene" />
   <meta name="author" content="Jaclyn N. Taroni" />
-  <meta name="dcterms.date" content="2026-01-13" />
+  <meta name="dcterms.date" content="2026-01-14" />
   <meta name="keywords" content="single-cell RNA-seq, single-nuclei RNA-seq, pediatric cancer, resource, Nextflow, open science, reproducibility" />
   <title>The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors</title>
   <style>
@@ -63,11 +63,11 @@
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2026-01-13" />
-  <meta name="citation_publication_date" content="2026-01-13" />
-  <meta property="article:published_time" content="2026-01-13" />
-  <meta name="dc.modified" content="2026-01-13T20:13:27+00:00" />
-  <meta property="article:modified_time" content="2026-01-13T20:13:27+00:00" />
+  <meta name="dc.date" content="2026-01-14" />
+  <meta name="citation_publication_date" content="2026-01-14" />
+  <meta property="article:published_time" content="2026-01-14" />
+  <meta name="dc.modified" content="2026-01-14T14:06:48+00:00" />
+  <meta property="article:modified_time" content="2026-01-14T14:06:48+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -121,9 +121,9 @@
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/fc8a374e4ce67f28602bc86f2bcea565cec30391/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/fc8a374e4ce67f28602bc86f2bcea565cec30391/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/fc8a374e4ce67f28602bc86f2bcea565cec30391/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/1df1d70c647a805341c3f089971874521ed7b788/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/1df1d70c647a805341c3f089971874521ed7b788/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/1df1d70c647a805341c3f089971874521ed7b788/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -140,10 +140,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/fc8a374e4ce67f28602bc86f2bcea565cec30391/">permalink</a>)
+(<a href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/1df1d70c647a805341c3f089971874521ed7b788/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/AlexsLemonade/ScPCA-manuscript/tree/fc8a374e4ce67f28602bc86f2bcea565cec30391">AlexsLemonade/ScPCA-manuscript@fc8a374</a>
-on January 13, 2026.
+from <a href="https://github.com/AlexsLemonade/ScPCA-manuscript/tree/1df1d70c647a805341c3f089971874521ed7b788">AlexsLemonade/ScPCA-manuscript@1df1d70</a>
+on January 14, 2026.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -397,35 +397,18 @@ For each cell that remains after filtering empty droplets, the number of total U
 We include plots showing the <code>miQC</code> model and which cells are kept and removed after filtering with <code>miQC</code> (Figure <a href="#fig:fig2">2</a>D-E).
 We also provide a UMAP plot with cells colored by the total number of genes detected and a faceted UMAP plot where cells are colored by the expression of a set of highly variable genes (Figure <a href="#fig:fig2">2</a>F-G).</p>
 <h2 id="processing-samples-with-additional-modalities">Processing samples with additional modalities</h2>
-<p><code>scpca-nf</code> includes modules for processing samples with sequencing modalities beyond single-cell or single-nuclei RNA-seq data: corresponding ADT or CITE-seq data <span class="citation" data-cites="abp5rbw2">[<a href="#ref-abp5rbw2" role="doc-biblioref">35</a>]</span>, multiplexed data via cell hashing <span class="citation" data-cites="FZrs73Vp">[<a href="#ref-FZrs73Vp" role="doc-biblioref">36</a>]</span>, spatial transcriptomics, or bulk RNA-seq.</p>
-<h3 id="antibody-derived-tags">Antibody-derived tags</h3>
-<p>To process ADT libraries, the ADT FASTQ files are quantified using <code>salmon alevin</code> and <code>alevin-fry</code> (Figure <a href="#fig:figS2">S2</a>A).
-The output from <code>alevin-fry</code> is the unfiltered ADT-by-cell counts matrix.
-The ADT-by-cell counts matrix is read into R alongside the gene-by-cell counts matrix and saved as an alternative experiment (<code>altExp</code>) within the main <code>SingleCellExperiment</code> object containing the unfiltered RNA counts.
-The workflow performs ADT-by-cell counts matrix normalization (see Methods for details), but no filtering based on ADT expression or quality is performed.
-Instead, we report QC statistics that users can employ for additional filtering before performing downstream analyses.</p>
-<p>If a library contains ADT data, the QC report will include an additional section with a summary of ADT-related statistics, such as how many cells express each ADT, and ADT-specific diagnostic plots (Figure <a href="#fig:figS2">S2</a>B-D).
-We include plots summarizing the potential effects of removing low-quality cells based on RNA and ADT counts in the QC report (Figure <a href="#fig:figS2">S2</a>B).
-The first quadrant indicates which cells would be kept if the object were filtered using both RNA and ADT quality measures.
-The other facets highlight which cells would be removed if filtering were done using only RNA counts, only ADT counts, or both.
-The top four ADTs with the most variable expression are also identified and visualized using density plots to show the normalized ADT expression across all cells (Figure <a href="#fig:figS2">S2</a>C) and UMAPs – calculated from RNA expression data – with cells colored by ADT expression (Figure <a href="#fig:figS2">S2</a>D).</p>
-<h3 id="multiplexed-libraries">Multiplexed libraries</h3>
-<p>To process multiplexed libraries, the HTO FASTQ files are quantified using <code>salmon alevin</code> and <code>alevin-fry</code> (Figure <a href="#fig:figS2">S2</a>C).
-As with ADT data, the HTO-by-cell counts matrix produced by <code>alevin-fry</code> is saved as an <code>altExp</code> within the main <code>SingleCellExperiment</code> object.</p>
-<p>Although <code>scpca-nf</code> quantifies the HTO data and includes an HTO-by-cell counts matrix in all objects, <code>scpca-nf</code> does not demultiplex the samples into one sample per library.
-Instead, <code>scpca-nf</code> applies multiple demultiplexing methods, including demultiplexing with <code>DropletUtils::hashedDrops()</code> <span class="citation" data-cites="NqZ0Pm2u">[<a href="#ref-NqZ0Pm2u" role="doc-biblioref">53</a>]</span>, demultiplexing with <code>Seurat::HTODemux()</code> <span class="citation" data-cites="FZrs73Vp">[<a href="#ref-FZrs73Vp" role="doc-biblioref">36</a>]</span>, and genetic demultiplexing when bulk RNA-seq data are available.
-<code>scpca-nf</code> uses the genetic demultiplexing method described in Weber et al. <span class="citation" data-cites="zLp25QYu">[<a href="#ref-zLp25QYu" role="doc-biblioref">54</a>]</span>, which uses bulk RNA-seq as a reference for the expected genotypes found in each single-cell RNA-seq sample.
-The results from all available demultiplexing methods are saved in the filtered and processed <code>SingleCellExperiment</code> objects.</p>
-<p>If a library has associated HTO data, an additional section is included in the <code>scpca-nf</code> QC report.
-This section summarizes HTO-specific library statistics, such as how many cells express each HTO.
-No additional plots are produced, but a table summarizing the results from all three demultiplexing methods is included.</p>
-<h3 id="bulk-and-spatial-transcriptomics">Bulk and spatial transcriptomics</h3>
-<p>Some samples also include data from bulk RNA-seq and/or spatial transcriptomics libraries.
-Both of these additional sequencing methods are supported by <code>scpca-nf</code>.
-To quantify bulk RNA-seq data, <code>scpca-nf</code> takes bulk FASTQ files as input, trims reads using <code>fastp</code> <span class="citation" data-cites="pt9vlq4w">[<a href="#ref-pt9vlq4w" role="doc-biblioref">55</a>]</span>, and then aligns and quantifies reads with <code>salmon</code> (Figure <a href="#fig:figS3">S3</a>A) <span class="citation" data-cites="vrqQcFyx">[<a href="#ref-vrqQcFyx" role="doc-biblioref">56</a>]</span>.
+<p><code>scpca-nf</code> includes modules for processing samples with sequencing modalities beyond single-cell or single-nuclei RNA-seq such as CITE-seq (ADT) <span class="citation" data-cites="abp5rbw2">[<a href="#ref-abp5rbw2" role="doc-biblioref">35</a>]</span>, multiplexed (cell hashing) <span class="citation" data-cites="FZrs73Vp">[<a href="#ref-FZrs73Vp" role="doc-biblioref">36</a>]</span>, spatial transcriptomics, or bulk RNA-seq.</p>
+<p>To process ADT libraries, the ADT reads are quantified using <code>salmon alevin</code> and <code>alevin-fry</code> (Figure <a href="#fig:figS2">S2</a>A).
+The workflow performs ADT-by-cell counts matrix normalization (see Methods for details), and calculates QC statistics that users can employ for additional filtering before performing downstream analyses.
+For these ADT libraries, the QC report will include an additional section with a summary of ADT-related statistics, and ADT-specific diagnostic and exploratory plots (Figure <a href="#fig:figS2">S2</a>B-D).</p>
+<p>For multiplexed libraries, the HTO FASTQ files are quantified using <code>salmon alevin</code> and <code>alevin-fry</code> (Figure <a href="#fig:figS2">S2</a>E).
+Although <code>scpca-nf</code> quantifies the HTO data and includes an HTO-by-cell counts matrix in all objects, final demultiplexing is not performed.
+Instead, <code>scpca-nf</code> applies multiple demultiplexing methods, including demultiplexing with <code>DropletUtils::hashedDrops()</code> <span class="citation" data-cites="NqZ0Pm2u">[<a href="#ref-NqZ0Pm2u" role="doc-biblioref">53</a>]</span> and <code>Seurat::HTODemux()</code> <span class="citation" data-cites="FZrs73Vp">[<a href="#ref-FZrs73Vp" role="doc-biblioref">36</a>]</span>.
+When bulk RNA-seq data from constituent samples are available, genetic demultiplexing <span class="citation" data-cites="zLp25QYu">[<a href="#ref-zLp25QYu" role="doc-biblioref">54</a>]</span> is also performed.
+The results from all available demultiplexing methods are saved in the filtered and processed <code>SingleCellExperiment</code> objects, and HTO-specific library statistics are included in the QC report.</p>
+<p>With bulk RNA-seq data, <code>scpca-nf</code> trims reads using <code>fastp</code> <span class="citation" data-cites="pt9vlq4w">[<a href="#ref-pt9vlq4w" role="doc-biblioref">55</a>]</span> and quantifies expression with <code>salmon</code> (Figure <a href="#fig:figS3">S3</a>A) <span class="citation" data-cites="vrqQcFyx">[<a href="#ref-vrqQcFyx" role="doc-biblioref">56</a>]</span>.
 The output is a single TSV file with the gene-by-sample counts matrix for all samples in a given ScPCA project.</p>
-<p>To quantify spatial transcriptomics data, <code>scpca-nf</code> takes the RNA FASTQ and slide image as input (Figure <a href="#fig:figS3">S3</a>B).
-As <code>alevin-fry</code> does not yet fully support spatial transcriptomics data, <code>scpca-nf</code> uses Space Ranger to quantify all spatial transcriptomics data <span class="citation" data-cites="xo912CsO">[<a href="#ref-xo912CsO" role="doc-biblioref">57</a>]</span>.
+<p>Spatial transcriptomics data is processed with Space Ranger <span class="citation" data-cites="xo912CsO">[<a href="#ref-xo912CsO" role="doc-biblioref">57</a>]</span> to quantify expression and process slide images (Figure <a href="#fig:figS3">S3</a>B).
 The output includes the spot-by-gene matrix along with a summary report produced by Space Ranger.</p>
 <h2 id="downloading-projects-from-the-scpca-portal">Downloading projects from the ScPCA Portal</h2>
 <p>On the Portal, users can download data from individual samples or all data from an entire ScPCA project.
@@ -1512,10 +1495,10 @@ Mutations</strong> <div class="csl-block">Franck Tirode, Didier Surdez, Xiaotu M
 <div class="csl-left-margin">103. </div><div class="csl-right-inline"><strong>OpenPBTA: The Open Pediatric Brain Tumor Atlas</strong> <div class="csl-block">Joshua A Shapiro, Krutika S Gaonkar, Stephanie J Spielman, Candace L Savonen, Chante J Bethell, Run Jin, Komal S Rathi, Yuankun Zhu, Laura E Egolf, Bailey K Farrow, … Jaclyn N Taroni</div> <em>Cell Genomics</em> (2023-07) <a href="https://doi.org/gr92p6">https://doi.org/gr92p6</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.xgen.2023.100340">10.1016/j.xgen.2023.100340</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37492101">37492101</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10363844">PMC10363844</a></div></div>
 </div>
 <div id="ref-TSJacwEL" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">104. </div><div class="csl-right-inline"><strong>A spatial cell atlas of neuroblastoma reveals developmental, epigenetic and spatial axis of tumor heterogeneity</strong> <div class="csl-block">Anand G Patel, Orr Ashenberg, Natalie B Collins, Åsa Segerstolpe, Sizun Jiang, Michal Slyper, Xin Huang, Chiara Caraccio, Hongjian Jin, Heather Sheppard, … Michael A Dyer</div> <em>Cold Spring Harbor Laboratory</em> (2024-01-07) <a href="https://doi.org/hbfc75">https://doi.org/hbfc75</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2024.01.07.574538">10.1101/2024.01.07.574538</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/38260392">38260392</a></div></div>
+<div class="csl-left-margin">104. </div><div class="csl-right-inline"><strong>A spatial cell atlas of neuroblastoma reveals developmental, epigenetic and spatial axis of tumor heterogeneity</strong> <div class="csl-block">Anand G Patel, Orr Ashenberg, Natalie B Collins, Åsa Segerstolpe, Sizun Jiang, Michal Slyper, Xin Huang, Chiara Caraccio, Hongjian Jin, Heather Sheppard, … Michael A Dyer</div> <em>Cold Spring Harbor Laboratory</em> (2024-01-07) <a href="https://doi.org/hbfc75">https://doi.org/hbfc75</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2024.01.07.574538">10.1101/2024.01.07.574538</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/38260392">38260392</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10802404">PMC10802404</a></div></div>
 </div>
 <div id="ref-1G3mGXjU5" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">105. </div><div class="csl-right-inline"><strong>An integrated single-cell RNA-seq map of human neuroblastoma tumors and preclinical models uncovers divergent mesenchymal-like gene expression programs</strong> <div class="csl-block">Richard H Chapple, Xueying Liu, Sivaraman Natarajan, Margaret IM Alexander, Yuna Kim, Anand G Patel, Christy W LaFlamme, Min Pan, William C Wright, Hyeong-Min Lee, … Paul Geeleher</div> <em>Genome Biology</em> (2024-06-19) <a href="https://doi.org/gtz8h5">https://doi.org/gtz8h5</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s13059-024-03309-4">10.1186/s13059-024-03309-4</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/38898465">38898465</a></div></div>
+<div class="csl-left-margin">105. </div><div class="csl-right-inline"><strong>An integrated single-cell RNA-seq map of human neuroblastoma tumors and preclinical models uncovers divergent mesenchymal-like gene expression programs</strong> <div class="csl-block">Richard H Chapple, Xueying Liu, Sivaraman Natarajan, Margaret IM Alexander, Yuna Kim, Anand G Patel, Christy W LaFlamme, Min Pan, William C Wright, Hyeong-Min Lee, … Paul Geeleher</div> <em>Genome Biology</em> (2024-06-19) <a href="https://doi.org/gtz8h5">https://doi.org/gtz8h5</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s13059-024-03309-4">10.1186/s13059-024-03309-4</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/38898465">38898465</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11186099">PMC11186099</a></div></div>
 </div>
 </div>
 <!-- default theme -->
