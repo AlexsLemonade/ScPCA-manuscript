@@ -66,8 +66,8 @@
   <meta name="dc.date" content="2026-01-14" />
   <meta name="citation_publication_date" content="2026-01-14" />
   <meta property="article:published_time" content="2026-01-14" />
-  <meta name="dc.modified" content="2026-01-14T14:06:48+00:00" />
-  <meta property="article:modified_time" content="2026-01-14T14:06:48+00:00" />
+  <meta name="dc.modified" content="2026-01-14T15:23:23+00:00" />
+  <meta property="article:modified_time" content="2026-01-14T15:23:23+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -121,9 +121,9 @@
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/1df1d70c647a805341c3f089971874521ed7b788/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/1df1d70c647a805341c3f089971874521ed7b788/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/1df1d70c647a805341c3f089971874521ed7b788/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/72bf4fd7d0d4d9963ac6159e4dd5e40be3d39483/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/72bf4fd7d0d4d9963ac6159e4dd5e40be3d39483/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/72bf4fd7d0d4d9963ac6159e4dd5e40be3d39483/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -140,9 +140,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/1df1d70c647a805341c3f089971874521ed7b788/">permalink</a>)
+(<a href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/72bf4fd7d0d4d9963ac6159e4dd5e40be3d39483/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/AlexsLemonade/ScPCA-manuscript/tree/1df1d70c647a805341c3f089971874521ed7b788">AlexsLemonade/ScPCA-manuscript@1df1d70</a>
+from <a href="https://github.com/AlexsLemonade/ScPCA-manuscript/tree/72bf4fd7d0d4d9963ac6159e4dd5e40be3d39483">AlexsLemonade/ScPCA-manuscript@72bf4fd</a>
 on January 14, 2026.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -422,20 +422,11 @@ The objects house the summarized gene expression data and associated metadata fo
 <p>All project downloads include a metadata file, <code>single_cell_metadata.tsv</code>, containing relevant metadata for all samples, and a <code>README.md</code> with information about the contents of each download, contact and citation information, and terms of use for data downloaded from the Portal (Figure <a href="#fig:fig2">2</a>H-I).
 If the ScPCA project includes samples with bulk RNA-seq, two additional files are included: a gene-by-sample counts matrix (<code>_bulk_quant.tsv</code>) with the quantified gene expression data for all samples in the project, and a metadata file (<code>_bulk_metadata.tsv</code>).</p>
 <h3 id="merged-objects">Merged objects</h3>
-<p>Providing data for all samples within a single file facilitates performing joint gene-level analyses, such as differential expression or gene set enrichment analyses, on multiple samples simultaneously.
-Therefore, we provide a single, merged object for each project containing all raw and normalized gene expression data and metadata for all single-cell and single-nuclei RNA-seq libraries within a given ScPCA project (with some exceptions as described in the Methods).
-Merged objects are not batch-corrected or integrated, so users can perform their own batch correction or integration as needed to suit their experimental designs.
-If downloading data from an ScPCA project as a single, merged file, the download will include a single <code>.rds</code> or <code>.h5ad</code> file, a summary report for the merged object, and a folder with all individual QC and cell type reports for each library found in the merged object (Figure <a href="#fig:fig2">2</a>I).</p>
-<p>To build the merged objects, we created an additional stand-alone workflow for merging the output from <code>scpca-nf</code>, <code>merge.nf</code> (Figure <a href="#fig:figS3">S3</a>C).
-<code>merge.nf</code> takes the processed <code>SingleCellExperiment</code> objects for all single-cell and single-nuclei libraries in a given ScPCA project as input and produces a single merged gene-by-cell counts matrix containing all cells from all libraries.
-No batch correction or integration is performed when creating the merged object.
-Where possible, library-, cell- and gene-specific metadata found in the individual processed <code>SingleCellExperiment</code> objects are also merged.
-The merged normalized counts matrix is then used to select high-variance genes in a library-aware manner before performing dimensionality reduction with both PCA and UMAP.
-If additional modalities are present, these are similarly merged and included in the output object (see Methods).
-<code>merge.nf</code> outputs the merged and processed object as a <code>SingleCellExperiment</code> object.
-All merged <code>SingleCellExperiment</code> objects are converted to <code>AnnData</code> objects and exported as <code>.h5ad</code> files.</p>
-<p><code>merge.nf</code> outputs a summary report for each merged object, which includes a set of tables summarizing the types of samples and libraries included in the project, such as types of diagnosis, and a faceted UMAP showing all cells from all libraries.
-Figure <a href="#fig:figS3">S3</a>D shows an example of this plot with a subset of libraries from an ScPCA project.</p>
+<p>Combining data from multiple samples within a single file facilitates performing joint gene-level analyses across samples, such as differential expression or gene set enrichment analyses.
+Therefore, we provide a single merged object for each ScPCA project containing all raw and normalized gene expression data and metadata for all single-cell and single-nuclei RNA-seq libraries (with some exceptions as described in the Methods) via our <code>merge.nf</code> workflow (Figure <a href="#fig:figS3">S3</a>C).
+Merged objects are not batch-corrected or integrated, so users can perform their own batch correction or integration as needed to suit their experimental designs.</p>
+<p>When downloading the merged object for an ScPCA project, the download will include a single <code>SingleCellExperiment</code> or <code>AnnData</code> file, a summary report for the merged object, and the individual QC and cell type reports for each individual library (Figure <a href="#fig:fig2">2</a>I).
+The summary report for the merged object includes a faceted UMAP showing all cells from all libraries (Figure <a href="#fig:figS3">S3</a>D) and a set of tables summarizing the metadata for the samples and libraries included in the project.</p>
 <h2 id="annotating-cell-types">Annotating cell types</h2>
 <p>Assigning cell type labels to single-cell and single-nuclei RNA-seq data is often an essential step in analysis.
 Cell type annotation requires knowledge of the expected cell types in a dataset and associated gene expression patterns for each cell type, which may be available in other public databases or individual publications.
