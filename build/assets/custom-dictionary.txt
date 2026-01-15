@@ -22,6 +22,7 @@ benchmarking
 Benjamini
 Bethell
 Bioconductor
+biogenic
 bioinformatics
 cbethell
 CCDL
@@ -32,6 +33,7 @@ cgreene
 Chante
 CNV
 CNVs
+cuboidal
 curation
 customizations
 Cynwyd
@@ -52,10 +54,12 @@ doi
 downloaders
 dvenprasad
 embeddings
+endo
 Ensembl
 envest
 eq
 et
+exocrine
 FASTQ
 Foltz
 ganglioglioma
