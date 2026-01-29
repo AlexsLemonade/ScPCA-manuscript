@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2026-01-24'
+date-meta: '2026-01-29'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -36,11 +36,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2026-01-24" />
-  <meta name="citation_publication_date" content="2026-01-24" />
-  <meta property="article:published_time" content="2026-01-24" />
-  <meta name="dc.modified" content="2026-01-24T00:57:00+00:00" />
-  <meta property="article:modified_time" content="2026-01-24T00:57:00+00:00" />
+  <meta name="dc.date" content="2026-01-29" />
+  <meta name="citation_publication_date" content="2026-01-29" />
+  <meta property="article:published_time" content="2026-01-29" />
+  <meta name="dc.modified" content="2026-01-29T13:57:08+00:00" />
+  <meta property="article:modified_time" content="2026-01-29T13:57:08+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/f02497cfde22655ba7bcb04a7ad850e94b15d0e9/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/f02497cfde22655ba7bcb04a7ad850e94b15d0e9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/f02497cfde22655ba7bcb04a7ad850e94b15d0e9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c0d623355848239780f076541ecb339aadb804b3/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c0d623355848239780f076541ecb339aadb804b3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c0d623355848239780f076541ecb339aadb804b3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,10 +118,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/f02497cfde22655ba7bcb04a7ad850e94b15d0e9/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/c0d623355848239780f076541ecb339aadb804b3/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@f02497c](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/f02497cfde22655ba7bcb04a7ad850e94b15d0e9)
-on January 24, 2026.
+from [AlexsLemonade/ScPCA-manuscript@c0d6233](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/c0d623355848239780f076541ecb339aadb804b3)
+on January 29, 2026.
 </em></small>
 
 
@@ -565,7 +565,7 @@ In brain and CNS tumors, the marker gene sets overrepresented in bulk RNA-seq ex
 In addition, monocyte marker genes were overrepresented in bulk RNA-seq expression for `SCPCP000009` (brain and CNS tumors), which was sequenced at the single-nuclei level, but not in projects `SCPCP000001` (high-grade gliomas) and `SCPCP000002` (low-grade gliomas), which were sequenced at the single-cell level.
 This difference may reflect the increased sensitivity of single-cell approaches to detecting immune cells relative to single-nuclei approaches [@doi:10.4132/jptm.2022.12.19].
 
-Given that our consensus cell type analysis identified various immune cells from high- and low-grade gliomas (Figure {@fig:fig4}), these results suggest that non-immune cells may have been lost during single-cell library preparation.
+Given that our consensus cell type analysis identified various immune cells from high- and low-grade gliomas (Figure {@fig:fig4}C-D), these results suggest that non-immune cells may have been lost during single-cell library preparation.
 Indeed, several of these overrepresented bulk cell types for `SCPCP000001` and `SCPCP000002` are not found in the single-cell consensus cell types annotations (`SCPCP000001`: "blood vessel endothelial cell", "extracellular matrix secreting cell", "pericyte"; `SCPCP000002`: "blood vessel endothelial cell", "extracellular matrix secreting cell", "microvascular endothelial cell"), further emphasizing the potential loss of these cell types in the single-cell data.
 
 By contrast, we uncovered a variety of both immune and non-immune cell types overrepresented in bulk RNA-seq `SCPCP000017` (osteosarcoma; Figure {@fig:figS7}B), all of which were present in the single-nuclei consensus cell types for this project.
@@ -769,7 +769,7 @@ If more than one LCA is identified as a possible consensus cell type, meaning th
 The consensus cell type assignments, including both the Cell Ontology term and the associated human-readable name, are available in processed object files on the Portal.
 
 Consensus cell type assignments were evaluated by looking at marker gene expression in a set of cell-type specific marker genes.
-Marker genes were obtained from the list of Human cell markers on `CellMarker2.0` [@doi:10.1093/nar/gkac947].
+Marker genes were obtained from the list of Human cell markers on `CellMarker 2.0` [@doi:10.1093/nar/gkac947].
 We considered only those that are specific to a single cell type, with the exception of hematopoietic precursor cells, which express genes found in other, more differentiated immune cells.
 
 #### Cell types annotated as part of the OpenScPCA Project
@@ -887,7 +887,7 @@ The first two approaches use publicly available references, while the third uses
 We then used the correspondence among these three methods to derive ontology-aware consensus cell type labels, thereby providing a consistent labeling scheme across samples that may support annotating populations of normal cells that may be present in tumor samples.
 A limitation of this approach is that neither of the references used for `SingleR` or `CellAssign` considered tumor cells; therefore, tumor cells are likely poorly assigned.
 To help circumvent this limitation, we provide CNV estimates from `InferCNV` for the majority of libraries in the Portal.
-Joint information from consensus cell type annotations and CNV estimates may support researchers to identify and interrogate tumor cells, in particular for diagnoses where copy number alterations are common such as neuroblastoma (Figure {@fig:fig5}D) or osteosarcoma.
+Joint information from consensus cell type annotations and CNV estimates may support researchers to identify and interrogate tumor cells, in particular for diagnoses where copy number alterations are common such as neuroblastoma (Figure {@fig:fig5}B-D) or osteosarcoma.
 
 Beyond the automated and consensus cell type annotations, two projects (`SCPCP000004` comprised of neuroblastoma samples, and `SCPCP000015` comprised of Ewing sarcoma samples) include an additional set of cell type annotations from the ongoing OpenScPCA project [@url:https://openscpca.readthedocs.io].
 Unlike annotations made within the `scpca-nf` pipeline, these labels do include formal identification of normal vs. tumor cells.
@@ -903,7 +903,7 @@ Spatial transcriptomics data can be combined with matching single-cell RNA-seq t
 
 Similarly, users can gain more insight from bulk RNA-seq data available on the Portal by integrating with single-cell RNA-seq data from the same sample [@doi:10.1093/bioinformatics/bty019; @doi:10.1186/s13059-023-03016-6].
 The single-cell RNA-seq data available on the Portal can also be used to deconvolute existing bulk RNA-seq datasets, allowing researchers to infer the abundance of different cell types or cell states in bulk RNA-seq data.
-Our analysis of this data showed that while expression is generally consistent between matched bulk RNA-seq and single-cell or single-nuclei libraries in the Portal (Figure {@fig:fig6}A, Figure {@fig:figS7}A), there are potential differences in cell type composition between modalities that may reflect technological differences in sample and library preparation.
+Our analysis of this data showed that while expression is generally consistent between matched bulk RNA-seq and single-cell or single-nuclei libraries in the Portal, there are potential differences in cell type composition between modalities that may reflect technological differences in sample and library preparation (Figure {@fig:fig6}, Figure {@fig:figS7}).
 The ScPCA Portal enables multimodal comparisons that reveal biological and/or technical signals that would otherwise not be apparent from one sequencing modality alone.
 
 We also introduced our open-source and efficient workflow for uniformly processing datasets available on the Portal, `scpca-nf`, which is available to the entire research community.
@@ -1049,9 +1049,10 @@ For this figure specifically, the heatmap shows only the top seven consensus cel
 A. Dot plot showing expression of cell-type-specific marker genes across all libraries from brain and central nervous system (CNS) tumors, excluding multiplexed libraries.
 Expression is shown for each broad cell type annotation, where each broad cell type annotation is a collection of similar consensus cell type annotations.
 The y-axis displays the broad consensus cell type observed across libraries, with the total number of cells indicated in parentheses.
-The x-axis displays marker genes, determined by `CellMarker2.0` [@doi:10.1093/nar/gkac947], used for consensus cell type validation for each cell type shown along the top annotation bar.
+The x-axis displays marker genes, determined by `CellMarker 2.0` [@doi:10.1093/nar/gkac947], used for consensus cell type validation for each cell type shown along the top annotation bar.
 Dots are colored by mean gene expression across libraries and sized proportionally to the percent of libraries they are observed in, out of all cells with the same broad cell type annotation in brain and CNS tumor libraries.
 A maximum of 10 cell type marker genes are shown for each broad cell type annotation.
+Only broad cell type annotations that appear in at least 50 cells across samples in the given diagnosis group are shown.
 
 B. Barplot showing the percentage of each broad consensus cell type annotation across libraries of brain and CNS tumors, separated into high-grade (left panel) and low-grade (right panel) glioma diagnoses for non-multiplexed libraries.
 
@@ -1064,10 +1065,11 @@ Notably, granulocytes are also included in "other" because only 1 granulocyte wa
 D. Dot plot showing expression of cell-type-specific marker genes across all non-multiplexed libraries from brain and CNS tumors, considering only immune cells. 
 Expression is shown for each consensus cell type annotation.
 The y-axis displays the consensus cell type observed across libraries, with the total number of cells indicated in parentheses.
-The x-axis displays marker genes, determined by `CellMarker2.0` [@doi:10.1093/nar/gkac947], used for consensus cell type validation for each cell type shown along the top annotation bar.
-Marker genes for `lymphocyte of B lineage`, `mature T cell`, `mature alpha-beta T cell`, `myeloid leukocyte`, and `tissue-resident macrophage` were not available in `CellMarker2.0`, so they are not included on the x-axis.
+The x-axis displays marker genes, determined by `CellMarker 2.0` [@doi:10.1093/nar/gkac947], used for consensus cell type validation for each cell type shown along the top annotation bar.
 Dots are colored by mean gene expression across libraries and sized proportionally to the percent of libraries they are observed in, out of all cells with the same consensus cell type annotation in brain and CNS tumor libraries.
 A maximum of 10 cell type marker genes are shown for each consensus cell type annotation.
+Only broad cell type annotations that appear in at least 50 cells across samples in the given diagnosis group are shown.
+Cell types without associated marker genes in `CellMarker 2.0` are not shown, including `lymphocyte of B lineage`, `mature T cell`, `mature alpha-beta T cell`, `myeloid leukocyte`, and `tissue-resident macrophage`.
 <br><br>
 
 <!-- Figure 5 -->
@@ -1111,7 +1113,7 @@ Results from additional projects are shown in Figure {@fig:figS7}B.
 This table provides descriptions and sample and library counts for each project in the ScPCA Portal.
 
 `scpca_project_id`: ScPCA project unique identifier.
-`Diagnosis group`: Diagnosis group as shown in Figure {@fig:fig1}.
+`Diagnosis group`: Diagnosis group as shown in Figure {@fig:fig1}A.
 `Diagnoses`: Full set of diagnoses for all samples associated with the project.
 `Total number of samples (S)`: Number of samples associated with the project.
 `Total number of libraries (L)`: Number of libraries associated with the project.
@@ -1234,13 +1236,15 @@ The total per-cell CNV values were calculated by summing the total number of chr
 Dot plots showing expression of cell-type-specific marker genes across all libraries from Leukemia (A), Sarcoma (B), and Other solid tumors (C) diagnosis groups.
 Expression is shown for each broad cell type annotation, where each broad cell type annotation is a collection of similar consensus cell type annotations.
 The y-axis displays the broad consensus cell type observed across libraries, with the total number of cells indicated in parentheses.
-The x-axis displays marker genes, determined by `CellMarker2.0` [@doi:10.1093/nar/gkac947], used for consensus cell type validation for each cell type shown along the top annotation bar.
+The x-axis displays marker genes, determined by `CellMarker 2.0` [@doi:10.1093/nar/gkac947], used for consensus cell type validation for each cell type shown along the top annotation bar.
 Dots are colored by mean gene expression across libraries and sized proportionally to the percent of libraries they are observed in, out of all cells with the same broad cell type annotation in the given diagnosis.
 A maximum of 10 cell type marker genes are shown for each broad cell type annotation.
+Only broad cell type annotations that appear in at least 50 cells across samples in the given diagnosis group are shown.
+Cell types without associated marker genes in `CellMarker 2.0` are not shown, including `pigment cell` for Sarcoma (B) and `pigment cell` and `kidney cell` for Other solid tumors (C).
 <br><br>
 
 <!-- Figure S6 -->
-![***Consensus cell type annotation distributions in other diagnosis groups.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.0/figures/compiled_figures/pngs/figure_s6.png?sanitize=true){#fig:figS6 tag="S6" width="7in"}
+![**Consensus cell type annotation distributions in other diagnosis groups.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.0/figures/compiled_figures/pngs/figure_s6.png?sanitize=true){#fig:figS6 tag="S6" width="7in"}
 
 Barplots of the percentage of cells annotated as each broad consensus cell type annotation across all libraries from Leukemia (A), Sarcoma (B), and Other solid tumors (C) diagnosis groups.
 Within each panel, libraries are shown grouped by diagnosis.
