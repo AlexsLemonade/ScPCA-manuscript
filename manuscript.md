@@ -39,8 +39,8 @@ header-includes: |
   <meta name="dc.date" content="2026-01-29" />
   <meta name="citation_publication_date" content="2026-01-29" />
   <meta property="article:published_time" content="2026-01-29" />
-  <meta name="dc.modified" content="2026-01-29T13:57:08+00:00" />
-  <meta property="article:modified_time" content="2026-01-29T13:57:08+00:00" />
+  <meta name="dc.modified" content="2026-01-29T15:41:05+00:00" />
+  <meta property="article:modified_time" content="2026-01-29T15:41:05+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c0d623355848239780f076541ecb339aadb804b3/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c0d623355848239780f076541ecb339aadb804b3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c0d623355848239780f076541ecb339aadb804b3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b94c7f4b4cb4056afaf4846db925bd65d9846f52/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b94c7f4b4cb4056afaf4846db925bd65d9846f52/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/b94c7f4b4cb4056afaf4846db925bd65d9846f52/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,9 +118,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/c0d623355848239780f076541ecb339aadb804b3/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/b94c7f4b4cb4056afaf4846db925bd65d9846f52/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@c0d6233](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/c0d623355848239780f076541ecb339aadb804b3)
+from [AlexsLemonade/ScPCA-manuscript@b94c7f4](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/b94c7f4b4cb4056afaf4846db925bd65d9846f52)
 on January 29, 2026.
 </em></small>
 
@@ -415,7 +415,7 @@ To make downloading from the Portal convenient for R and Python users, downloads
 The workflow outputs a `SingleCellExperiment` object to an `.rds` file containing the fully processed results, including the dimension reduction results and cell type annotations, as well as objects containing the unfiltered and the empty droplet filtered gene-by-cell matrices.
 `scpca-nf` also converts all `SingleCellExperiment` objects to `AnnData` objects, which are saved as `.h5ad` files (Figure {@fig:fig2}A).
 Downloads contain the unfiltered, filtered, and processed objects from `scpca-nf` to allow users to choose to perform their own filtering and normalization or to start their analysis from a processed object.
-Providing unfiltered raw counts is consistent with the recommendations in Xu et al. [@doi:10.1002/cti2.70033] for sharing pediatric cancer single-cell data to maximize reusability.
+Providing unfiltered raw counts is consistent with the recommendations in Xu et al. [@doi:10.1002/cti2.70033] for maximizing reusability when sharing pediatric cancer single-cell data.
 
 All downloads from the Portal include a quality control (QC) report with a summary of processing information (e.g., `alevin-fry` version), library statistics (e.g., the total number of cells), and a collection of diagnostic plots for each library (Figure {@fig:fig2}B-G).
 A knee plot displaying total UMI counts for all droplets (i.e., including empty droplets) indicates the effects of the empty droplet filtering (Figure {@fig:fig2}B).
@@ -486,7 +486,7 @@ Additionally, most public annotated reference datasets compatible with `SingleR`
 Consistent cell type annotations across methods can indicate higher confidence in the provided labels, so we created a set of ontology-aware rules to assign consensus cell type labels based on the methods' agreement.
 
 `scpca-nf` assigns consensus cell type labels when two of the three automated methods agree.
-Specifically, we perform pairwise comparisons among cell type annotations made by each method and identify the cell types' latest common ancestor (LCA) in Cell Ontology [@doi:10.1186/s13326-016-0088-7; @doi:10.1186/1471-2105-12-6; @doi:10.1186/gb-2005-6-2-r21].
+Specifically, we perform pairwise comparisons among cell type annotations assigned by each method and identify the cell types' latest common ancestor (LCA) in Cell Ontology [@doi:10.1186/s13326-016-0088-7; @doi:10.1186/1471-2105-12-6; @doi:10.1186/gb-2005-6-2-r21].
 The consensus cell type is the LCA term with the fewest descendants (Figure {@fig:fig3}B).
 To ensure specificity in the consensus labels, cells are only assigned a consensus cell type if the identified LCA has no more than 170 descendant terms, with a few exceptions as described in Methods.
 We chose this threshold to exclude overly general cell ontology terms, such as lymphocyte, while retaining meaningful classifications like T cell and B cell.
@@ -515,7 +515,7 @@ Here, we can identify similar cell types across all glioma samples, but the comp
 Previous studies have characterized the glioma immune microenvironment as being predominantly composed of myeloid cells, including microglia and glioma-associated macrophages, with smaller proportions of lymphocytes such as T cells [@doi:10.1038/s41698-024-00717-4; @doi:10.1093/noajnl/vdad009].
 Focusing on the immune infiltrate in glioma samples reveals that most immune cells in ScPCA samples are classified as either myeloid or T cell types.
 However, there is notable heterogeneity even within HGG and LGG subtypes (Figure {@fig:fig4}C).
-Figure {@fig:fig4}D shows the expression of cell-type specific markers for all immune cell types, validating the assignment of various immune cell types within the assigned consensus cell types.
+Figure {@fig:fig4}D shows the expression of cell-type specific markers for more granular immune cell types, validating the assignment of various immune cell types within the assigned consensus cell types.
 A summary of all the consensus cell types observed in all other ScPCA samples can be found in Figure {@fig:figS6}.
 
 
@@ -531,7 +531,7 @@ Unlike the consensus cell type annotations, the OpenScPCA annotations distinguis
 Indeed, for `SCPCP000004`, the consensus cell type procedure labeled only ~43% of cells, but the OpenScPCA project labeled ~91% of cells, more than doubling the number of labeled cells.
 When OpenScPCA annotations are available, the Portal's summary cell type report also includes comparisons between the `scpca-nf` and OpenScPCA annotations.
 
-In an effort to identify potential malignant cells across all samples in the Portal, `scpca-nf` applies `InferCNV` [@url:https://github.com/broadinstitute/inferCNV] to estimate copy-number alterations (Figure {@fig:fig2}A).
+In an effort to identify potential malignant cells across all samples in the Portal, `scpca-nf` applies `InferCNV` [@url:https://github.com/broadinstitute/inferCNV] to estimate copy-number alterations (Figure {@fig:fig2}A) when enough normal cells are present in a library to serve as a reference (see Methods for details).
 The CNV estimates complement the consensus cell types by providing a proxy for a cell's malignant status; cells with high levels of CNV are more likely to be tumor cells.
 Across libraries within `SCPCP000004`, we observe broad correspondence between malignant cell type annotations from OpenScPCA (which does not use CNV information) (Figure {@fig:fig5}A) and the total per-cell CNV (Figure {@fig:fig5}B).
 We probed this relationship further within a single neuroblastoma library, `SCPCL000130`, finding clear signatures of canonical neuroblastoma CNV events such as `1q` loss, `11q` gain, and `17p` loss [@doi:10.1038/nrdp.2016.78; @doi:10.1016/j.celrep.2024.114804; @doi:10.1158/2159-8290.CD-14-0622] within malignant cells (Figure {@fig:fig5}C).
@@ -879,22 +879,22 @@ The availability of processed results and metadata saves time and effort for res
 Data on the Portal is available as either `SingleCellExperiment` or `AnnData` objects so that users can work in R or Python with the downloaded data using common analysis systems such as `Bioconductor` or `Scanpy`, depending on their preference.
 Providing data as `AnnData` objects also means users can easily integrate ScPCA data with data and tools available on other platforms.
 In particular, the format of the provided `AnnData` objects is designed to be mostly compliant with the requirements of CZI CELLxGENE [@doi:10.1101/2021.04.05.438318; @doi:10.1101/2023.10.30.563174; @{https://cellxgene.cziscience.com/}], but these objects can also be used with UCSC Cell Browser [@doi:10.1093/bioinformatics/btab503; @{https://cells.ucsc.edu/}] or Kana [@doi:10.1101/2022.03.02.482701; @{https://www.kanaverse.org/kana/}].
-Data can be downloaded both via the Portal web interface and programmatically using the `ScPCAr` R package, which is a wrapper for the ScPCA Portal API <https://api.scpca.alexslemonade.org/docs/>.
+Data can be downloaded both via the Portal web interface and programmatically using the `ScPCAr` R package, which is a wrapper for the ScPCA Portal API (<https://api.scpca.alexslemonade.org/docs/>).
 Additionally, users can download a merged `SingleCellExperiment` or `AnnData` object containing all gene expression data and metadata from all samples in a project, which supports multi-sample analyses such as differential gene expression or gene set enrichment.
 
 To provide users with cell type annotations, we applied three automated methods: `SingleR`, `CellAssign`, and `SCimilarity`.
 The first two approaches use publicly available references, while the third uses a foundation model to label cells.
 We then used the correspondence among these three methods to derive ontology-aware consensus cell type labels, thereby providing a consistent labeling scheme across samples that may support annotating populations of normal cells that may be present in tumor samples.
-A limitation of this approach is that neither of the references used for `SingleR` or `CellAssign` considered tumor cells; therefore, tumor cells are likely poorly assigned.
-To help circumvent this limitation, we provide CNV estimates from `InferCNV` for the majority of libraries in the Portal.
+A limitation of this approach is that neither of the references used for `SingleR` or `CellAssign` considered tumor cells.
+However, providing consensus labels saves users time and effort and allows them to focus on cell types that are likely to be poorly assigned [@doi:10.1038/s41588-024-01993-3] using our approach, such as tumor cells.
+
+To address the limitations of consensus cell type assignment, we provide CNV estimates from `InferCNV` for approximately half of the libraries in the Portal.
 Joint information from consensus cell type annotations and CNV estimates may support researchers to identify and interrogate tumor cells, in particular for diagnoses where copy number alterations are common such as neuroblastoma (Figure {@fig:fig5}B-D) or osteosarcoma.
 
 Beyond the automated and consensus cell type annotations, two projects (`SCPCP000004` comprised of neuroblastoma samples, and `SCPCP000015` comprised of Ewing sarcoma samples) include an additional set of cell type annotations from the ongoing OpenScPCA project [@url:https://openscpca.readthedocs.io].
-Unlike annotations made within the `scpca-nf` pipeline, these labels do include formal identification of normal vs. tumor cells.
+Unlike annotations made within the `scpca-nf` pipeline, these labels include formal identification of normal vs. tumor cells.
 All of the annotation methods used in OpenScPCA are all fully open-source, enabling transparency, reproducibility, and reuse by the research community.
 Moving forward, we will continue to expand the set of projects on the Portal with cell type annotations from the OpenScPCA project, further enriching the Portal with high-quality, well-documented annotations that support scientific discovery.
-
-
 
 Many samples on the Portal have additional sequencing data, including ADT data from CITE-seq, cell hashing data, bulk RNA-seq, or spatial transcriptomics.
 This enables users to gather more information about a single sample than they could from single-cell or single-nuclei RNA-seq alone.
@@ -1030,15 +1030,16 @@ Results from these automated cell type annotation methods and a consensus cell t
 A cell type summary report with information about reference sources, comparisons among cell type annotation methods, and diagnostic plots is created.
 Although not shown in this panel, cell type annotations are also included in the `Processed AnnData Object` created from the `Processed SCE Object` (Figure {@fig:fig2}A).
 
-B. Diagram of ontology-aware consensus cell type annotation performed in `scpca-nf`.
+B. Diagram of ontology-aware consensus cell type annotation performed in `scpca-nf`, using T cell annotation as an example.
+The numbers in parentheses indicate the number of descendants for each cell type in the Cell Ontology.
 We perform pairwise comparisons among cell type annotations made by `SingleR`, `CellAssign`, and `SCimilarity`.
-For each comparison, we identify the cell types' latest common ancestor based on the Cell Ontology. 
+For each pair of annotations, we identify the annotated cell types' latest common ancestor based on the Cell Ontology.
 We then identify the consensus cell type as the latest common ancestor with the fewest descendants, indicated with the black check mark.
 
-C. Example heatmap as shown in the cell type summary report comparing the consensus cell type annotations to automated annotations assigned by `SingleR`, `CellAssign`, and `SCimilarity`. 
-Heatmap cells are colored by the Jaccard similarity index. 
-A value of 1 means that there is complete overlap between which cells are annotated with the two labels being compared, and a value of 0 means that there is no overlap between which cells are annotated with the two labels being compared. 
-The heatmap shown is for library `SCPCL000001`. 
+C. Example heatmap as shown in the cell type summary report comparing the consensus cell type annotations to automated annotations assigned by `SingleR`, `CellAssign`, and `SCimilarity`.
+Heatmap cells are colored by the Jaccard similarity index.
+A value of 1 means that there is complete overlap between which cells are annotated with the two labels being compared, and a value of 0 means that there is no overlap between which cells are annotated with the two labels being compared.
+The heatmap shown is for library `SCPCL000001`.
 For this figure specifically, the heatmap shows only the top seven consensus cell type annotations with at least three cells, but the heatmap in the cell type summary report shows all cell types.
 <br><br>
 
@@ -1062,7 +1063,7 @@ Only libraries comprised of at least 1\% immune cells, based on consensus cell t
 Specific consensus cell types for myeloid and lymphocyte immune cells are shown, with all other consensus immune cell types included in "other."
 Notably, granulocytes are also included in "other" because only 1 granulocyte was present in all libraries shown (specifically, `SCPCL000793`).
 
-D. Dot plot showing expression of cell-type-specific marker genes across all non-multiplexed libraries from brain and CNS tumors, considering only immune cells. 
+D. Dot plot showing expression of cell-type-specific marker genes across all non-multiplexed libraries from brain and CNS tumors, considering only immune cells.
 Expression is shown for each consensus cell type annotation.
 The y-axis displays the consensus cell type observed across libraries, with the total number of cells indicated in parentheses.
 The x-axis displays marker genes, determined by `CellMarker 2.0` [@doi:10.1093/nar/gkac947], used for consensus cell type validation for each cell type shown along the top annotation bar.
@@ -1084,13 +1085,13 @@ The total per-cell CNV values were calculated by summing the total number of chr
 Gray cells are from libraries excluded from `InferCNV` inference because they did not contain enough normal cells to define the `InferCNV` reference baseline.
 
 C. Heatmap displaying per-cell CNV events across chromosomes with canonical neuroblastoma alterations [@doi:10.1038/nrdp.2016.78; @doi:10.1016/j.celrep.2024.114804; @doi:10.1158/2159-8290.CD-14-0622] for a single library, `SCPCL000130`.
-Each cell in `SCPCL000130` is represented by two adjacent rows, the first indicating the presence or absence of copy-number gain and the second indicating the presence or absence of copy-number loss.  
+Each cell in `SCPCL000130` is represented by two adjacent rows, the first indicating the presence or absence of copy-number gain and the second indicating the presence or absence of copy-number loss.
 The heatmap is grouped by chromosome arm and OpenScPCA Project cell type annotation, where "normal" cells comprise all characterized non-malignant cells.
-This library exhibits strong signatures of canonical neuroblastoma alterations including `1p` loss, `11q` loss, and `17q` gain. 
+This library exhibits strong signatures of canonical neuroblastoma alterations including `1p` loss, `11q` loss, and `17q` gain.
 
 D. Example ridge plot as shown in the summary QC report showing per-cell total CNV distributions across the top seven consensus cell type annotations.
 All additional consensus cell types are shown with the "all remaining cell types" category.
-The ridge plot shown is for library `SCPCL000130`. 
+The ridge plot shown is for library `SCPCL000130`.
 
 
 <!-- Figure 6 -->
@@ -1219,7 +1220,7 @@ For this figure specifically, the merged UMAP was constructed from a merged obje
 ![**Ontology-aware consensus cell type assignment provides harmonized labels for cells.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.0/figures/compiled_figures/pngs/figure_s4.png?sanitize=true){#fig:figS4 tag="S4" width="7in"}
 
 A. UMAP highlighting cells annotated as types of T cells with `SingleR`, `CellAssign`, `SCimilarity` as well as the associated consensus cell types for the library `SCPCL000049`.
-All other cells are shown in gray. 
+All other cells are shown in gray.
 This UMAP specifically shows the top three T cell types for each cell type assignment, with remaining T cell types grouped together as "other T cells."
 
 B. UMAP showing the top seven consensus cell types in `SCPCL0000049`.
