@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2026-01-29'
+date-meta: '2026-02-05'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -36,11 +36,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2026-01-29" />
-  <meta name="citation_publication_date" content="2026-01-29" />
-  <meta property="article:published_time" content="2026-01-29" />
-  <meta name="dc.modified" content="2026-01-29T17:02:42+00:00" />
-  <meta property="article:modified_time" content="2026-01-29T17:02:42+00:00" />
+  <meta name="dc.date" content="2026-02-05" />
+  <meta name="citation_publication_date" content="2026-02-05" />
+  <meta property="article:published_time" content="2026-02-05" />
+  <meta name="dc.modified" content="2026-02-05T16:40:46+00:00" />
+  <meta property="article:modified_time" content="2026-02-05T16:40:46+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/1f6f008c6a29339bc6d9f67b7070b15e623627e4/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/1f6f008c6a29339bc6d9f67b7070b15e623627e4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/1f6f008c6a29339bc6d9f67b7070b15e623627e4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/bbccb3727a58cd6be93785981d98f7cfdb3071e7/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/bbccb3727a58cd6be93785981d98f7cfdb3071e7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/bbccb3727a58cd6be93785981d98f7cfdb3071e7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,10 +118,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/1f6f008c6a29339bc6d9f67b7070b15e623627e4/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/bbccb3727a58cd6be93785981d98f7cfdb3071e7/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@1f6f008](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/1f6f008c6a29339bc6d9f67b7070b15e623627e4)
-on January 29, 2026.
+from [AlexsLemonade/ScPCA-manuscript@bbccb37](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/bbccb3727a58cd6be93785981d98f7cfdb3071e7)
+on February 5, 2026.
 </em></small>
 
 
@@ -1070,7 +1070,7 @@ The x-axis displays marker genes, determined by `CellMarker 2.0` [@doi:10.1093/n
 Dots are colored by mean gene expression across libraries and sized proportionally to the percent of libraries they are observed in, out of all cells with the same consensus cell type annotation in brain and CNS tumor libraries.
 A maximum of 10 cell type marker genes are shown for each consensus cell type annotation.
 Only broad cell type annotations that appear in at least 50 cells across samples in the given diagnosis group are shown.
-Cell types without associated marker genes in `CellMarker 2.0` are not shown, including `lymphocyte of B lineage`, `mature T cell`, `mature alpha-beta T cell`, `myeloid leukocyte`, and `tissue-resident macrophage`.
+Cell types without associated marker genes in `CellMarker 2.0` are not shown, including `lymphocyte of B lineage`, `mature T cell`, `mature alpha-beta T cell`, `alpha-beta T cell`, `myeloid leukocyte`, and `tissue-resident macrophage`.
 <br><br>
 
 <!-- Figure 5 -->
