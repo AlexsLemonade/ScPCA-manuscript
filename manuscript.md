@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2026-02-05'
+date-meta: '2026-02-06'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -36,11 +36,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2026-02-05" />
-  <meta name="citation_publication_date" content="2026-02-05" />
-  <meta property="article:published_time" content="2026-02-05" />
-  <meta name="dc.modified" content="2026-02-05T16:40:46+00:00" />
-  <meta property="article:modified_time" content="2026-02-05T16:40:46+00:00" />
+  <meta name="dc.date" content="2026-02-06" />
+  <meta name="citation_publication_date" content="2026-02-06" />
+  <meta property="article:published_time" content="2026-02-06" />
+  <meta name="dc.modified" content="2026-02-06T17:27:33+00:00" />
+  <meta property="article:modified_time" content="2026-02-06T17:27:33+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/bbccb3727a58cd6be93785981d98f7cfdb3071e7/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/bbccb3727a58cd6be93785981d98f7cfdb3071e7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/bbccb3727a58cd6be93785981d98f7cfdb3071e7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a727cdd572c19854c5f6e7aec63e8ce729b2726d/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a727cdd572c19854c5f6e7aec63e8ce729b2726d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a727cdd572c19854c5f6e7aec63e8ce729b2726d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,10 +118,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/bbccb3727a58cd6be93785981d98f7cfdb3071e7/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/a727cdd572c19854c5f6e7aec63e8ce729b2726d/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@bbccb37](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/bbccb3727a58cd6be93785981d98f7cfdb3071e7)
-on February 5, 2026.
+from [AlexsLemonade/ScPCA-manuscript@a727cdd](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/a727cdd572c19854c5f6e7aec63e8ce729b2726d)
+on February 6, 2026.
 </em></small>
 
 
@@ -1055,13 +1055,13 @@ Dots are colored by mean gene expression across libraries and sized proportional
 A maximum of 10 cell type marker genes are shown for each broad cell type annotation.
 Only broad cell type annotations that appear in at least 50 cells across samples in the given diagnosis group are shown.
 
-B. Barplot showing the percentage of each broad consensus cell type annotation across libraries of brain and CNS tumors, separated into high-grade (left panel) and low-grade (right panel) glioma diagnoses for non-multiplexed libraries.
+B. Barplot showing the percentage of each broad consensus cell type annotation across libraries of brain and CNS tumors, separated into high-grade (top panel) and low-grade (bottom panel) glioma diagnoses for non-multiplexed libraries.
 
-C. Barplot showing all consensus cell types classified as immune cells across libraries of brain and CNS tumors, separated into high-grade (left panel) and low-grade (right panel) glioma diagnoses for non-multiplexed libraries.
+C. Barplot showing all consensus cell types classified as immune cells across libraries of brain and CNS tumors, separated into high-grade (top panel) and low-grade (bottom panel) glioma diagnoses for non-multiplexed libraries.
 The percentage shown corresponds to the percentage of immune cells classified as the indicated consensus cell type.
 Only libraries comprised of at least 1\% immune cells, based on consensus cell type annotations, are shown.
 Specific consensus cell types for myeloid and lymphocyte immune cells are shown, with all other consensus immune cell types included in "other."
-Notably, granulocytes are also included in "other" because only 1 granulocyte was present in all libraries shown (specifically, `SCPCL000793`).
+Any myeloid or lymphocyte immune cell types with fewer than 1000 cells across all libraries are also include in "other".
 
 D. Dot plot showing expression of cell-type-specific marker genes across all non-multiplexed libraries from brain and CNS tumors, considering only immune cells.
 Expression is shown for each consensus cell type annotation.
