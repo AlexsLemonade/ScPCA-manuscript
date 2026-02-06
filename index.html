@@ -66,8 +66,8 @@
   <meta name="dc.date" content="2026-02-06" />
   <meta name="citation_publication_date" content="2026-02-06" />
   <meta property="article:published_time" content="2026-02-06" />
-  <meta name="dc.modified" content="2026-02-06T17:27:33+00:00" />
-  <meta property="article:modified_time" content="2026-02-06T17:27:33+00:00" />
+  <meta name="dc.modified" content="2026-02-06T21:59:04+00:00" />
+  <meta property="article:modified_time" content="2026-02-06T21:59:04+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -121,9 +121,9 @@
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a727cdd572c19854c5f6e7aec63e8ce729b2726d/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a727cdd572c19854c5f6e7aec63e8ce729b2726d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a727cdd572c19854c5f6e7aec63e8ce729b2726d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/6f51971d2b9cf143f789e93571a29727978ee022/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/6f51971d2b9cf143f789e93571a29727978ee022/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/6f51971d2b9cf143f789e93571a29727978ee022/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -140,9 +140,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a727cdd572c19854c5f6e7aec63e8ce729b2726d/">permalink</a>)
+(<a href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/6f51971d2b9cf143f789e93571a29727978ee022/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/AlexsLemonade/ScPCA-manuscript/tree/a727cdd572c19854c5f6e7aec63e8ce729b2726d">AlexsLemonade/ScPCA-manuscript@a727cdd</a>
+from <a href="https://github.com/AlexsLemonade/ScPCA-manuscript/tree/6f51971d2b9cf143f789e93571a29727978ee022">AlexsLemonade/ScPCA-manuscript@6f51971</a>
 on February 6, 2026.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -472,7 +472,7 @@ We therefore sought complementary avenues to increase the value of cell type ann
 Thus far, we have added cell type annotations for two projects, <code>SCPCP000004</code> (neuroblastoma) and <code>SCPCP000015</code> (Ewing sarcoma), to the Portal based on OpenScPCA analyses.
 Figure <a href="#fig:fig5">5</a>A displays, for example, a UMAP of all libraries in <code>SCPCP000004</code> highlighting this project’s OpenScPCA annotations, which were derived using the <code>NBAtlas</code> dataset as a reference <span class="citation" data-cites="sGIqMPJO">[<a href="#ref-sGIqMPJO" role="doc-biblioref">65</a>]</span>.
 Unlike the consensus cell type annotations, the OpenScPCA annotations distinguish between normal and malignant cells and contain far fewer uncharacterized cells.
-Indeed, for <code>SCPCP000004</code>, the consensus cell type procedure labeled only ~43% of cells, but the OpenScPCA project labeled ~91% of cells, more than doubling the number of labeled cells.
+For example, for <code>SCPCP000004</code>, the consensus cell type procedure labeled ~80% of cells, but the OpenScPCA project labeled ~88% of cells.
 When OpenScPCA annotations are available, the Portal’s summary cell type report also includes comparisons between the <code>scpca-nf</code> and OpenScPCA annotations.</p>
 <p>In an effort to identify potential malignant cells across all samples in the Portal, <code>scpca-nf</code> applies <code>InferCNV</code> <span class="citation" data-cites="b9hQbZOR">[<a href="#ref-b9hQbZOR" role="doc-biblioref">52</a>]</span> to estimate copy-number alterations (Figure <a href="#fig:fig2">2</a>A) when enough normal cells are present in a library to serve as a reference (see Methods for details).
 The CNV estimates complement the consensus cell types by providing a proxy for a cell’s malignant status; cells with high levels of CNV are more likely to be tumor cells.
