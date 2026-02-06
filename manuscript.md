@@ -39,8 +39,8 @@ header-includes: |
   <meta name="dc.date" content="2026-02-06" />
   <meta name="citation_publication_date" content="2026-02-06" />
   <meta property="article:published_time" content="2026-02-06" />
-  <meta name="dc.modified" content="2026-02-06T17:27:33+00:00" />
-  <meta property="article:modified_time" content="2026-02-06T17:27:33+00:00" />
+  <meta name="dc.modified" content="2026-02-06T21:59:04+00:00" />
+  <meta property="article:modified_time" content="2026-02-06T21:59:04+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a727cdd572c19854c5f6e7aec63e8ce729b2726d/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a727cdd572c19854c5f6e7aec63e8ce729b2726d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a727cdd572c19854c5f6e7aec63e8ce729b2726d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/6f51971d2b9cf143f789e93571a29727978ee022/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/6f51971d2b9cf143f789e93571a29727978ee022/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/6f51971d2b9cf143f789e93571a29727978ee022/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,9 +118,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/a727cdd572c19854c5f6e7aec63e8ce729b2726d/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/6f51971d2b9cf143f789e93571a29727978ee022/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@a727cdd](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/a727cdd572c19854c5f6e7aec63e8ce729b2726d)
+from [AlexsLemonade/ScPCA-manuscript@6f51971](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/6f51971d2b9cf143f789e93571a29727978ee022)
 on February 6, 2026.
 </em></small>
 
@@ -528,7 +528,7 @@ In parallel to developing the ScPCA Portal, we launched the OpenScPCA project [@
 Thus far, we have added cell type annotations for two projects, `SCPCP000004` (neuroblastoma) and `SCPCP000015` (Ewing sarcoma), to the Portal based on OpenScPCA analyses.
 Figure {@fig:fig5}A displays, for example, a UMAP of all libraries in `SCPCP000004` highlighting this project's OpenScPCA annotations, which were derived using the `NBAtlas` dataset as a reference [@doi:10.1016/j.celrep.2024.114804].
 Unlike the consensus cell type annotations, the OpenScPCA annotations distinguish between normal and malignant cells and contain far fewer uncharacterized cells.
-Indeed, for `SCPCP000004`, the consensus cell type procedure labeled only ~43% of cells, but the OpenScPCA project labeled ~91% of cells, more than doubling the number of labeled cells.
+For example, for `SCPCP000004`, the consensus cell type procedure labeled ~80% of cells, but the OpenScPCA project labeled ~88% of cells.
 When OpenScPCA annotations are available, the Portal's summary cell type report also includes comparisons between the `scpca-nf` and OpenScPCA annotations.
 
 In an effort to identify potential malignant cells across all samples in the Portal, `scpca-nf` applies `InferCNV` [@url:https://github.com/broadinstitute/inferCNV] to estimate copy-number alterations (Figure {@fig:fig2}A) when enough normal cells are present in a library to serve as a reference (see Methods for details).
