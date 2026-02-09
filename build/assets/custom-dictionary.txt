@@ -135,6 +135,7 @@ parallelizing
 PATO
 PCA
 pericyte
+Pericytes
 permalink
 phenotypes
 pmc
