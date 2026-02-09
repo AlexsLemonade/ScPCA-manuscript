@@ -39,8 +39,8 @@ header-includes: |
   <meta name="dc.date" content="2026-02-09" />
   <meta name="citation_publication_date" content="2026-02-09" />
   <meta property="article:published_time" content="2026-02-09" />
-  <meta name="dc.modified" content="2026-02-09T17:50:11+00:00" />
-  <meta property="article:modified_time" content="2026-02-09T17:50:11+00:00" />
+  <meta name="dc.modified" content="2026-02-09T18:32:49+00:00" />
+  <meta property="article:modified_time" content="2026-02-09T18:32:49+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/9e1785c265b7ac019a5f3ab1f0e07963ea1ad985/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/9e1785c265b7ac019a5f3ab1f0e07963ea1ad985/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/9e1785c265b7ac019a5f3ab1f0e07963ea1ad985/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/330a1d7e4a7da290821fb179bec4c99a996d0870/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/330a1d7e4a7da290821fb179bec4c99a996d0870/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/330a1d7e4a7da290821fb179bec4c99a996d0870/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,9 +118,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/9e1785c265b7ac019a5f3ab1f0e07963ea1ad985/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/330a1d7e4a7da290821fb179bec4c99a996d0870/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@9e1785c](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/9e1785c265b7ac019a5f3ab1f0e07963ea1ad985)
+from [AlexsLemonade/ScPCA-manuscript@330a1d7](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/330a1d7e4a7da290821fb179bec4c99a996d0870)
 on February 9, 2026.
 </em></small>
 
@@ -556,21 +556,15 @@ Across all projects, we observed a positive relationship between bulk and pseudo
 
 We next performed an overrepresentation analysis to probe for differences in gene expression that might suggest differences in cell type composition and/or abundance between modalities.
 To this end, we calculated the per-gene median of each project's model residuals and identified outliers, where "positive outliers" are genes with higher bulk RNA-seq expression than expected from pseudobulk expression, and conversely "negative outliers" are genes with lower bulk RNA-seq expression than expected from pseudobulk expression.
-Using marker gene sets associated with consensus cell types, we calculated the odds ratio in each direction as the odds a cell type marker gene is present in the given outlier direction compared to other genes.
+Using cell type marker gene sets from each project's respective `CellAssign` reference, we calculated the odds ratio in each direction as the odds a cell type marker gene is present in the given outlier direction compared to other genes.
 Following permutation testing and P-value correction to control the FDR at 5\%, we found several cell type marker gene sets with higher, but never lower, bulk RNA-seq expression than expected (Figure {@fig:fig6}B, Figure {@fig:figS7}B).
 
-
-In brain and CNS tumors, the marker gene sets overrepresented in bulk RNA-seq expression primarily corresponded to stromal (e.g., endothelial and extracellular matrix secreting cells) and/or neuronal cell types (e.g., glial cells and astrocytes), all of which are known to be prevalent non-immune cells in glioma tumor microenvironments [@doi:10.3389/fimmu.2023.1227126; @doi:10.3389/fphar.2024.1355242] (Figure {@fig:fig6}B).
-<!-- TODO: Clarify this sentence; what is the exception to? What is the result in the gliomas? (Also is this one exception or exceptions plural?) -->
-In addition, monocyte marker genes were overrepresented in bulk RNA-seq expression for `SCPCP000009` (brain and CNS tumors), which was sequenced at the single-nuclei level, but not in projects `SCPCP000001` (high-grade gliomas) and `SCPCP000002` (low-grade gliomas), which were sequenced at the single-cell level.
-This difference may reflect the increased sensitivity of single-cell approaches to detecting immune cells relative to single-nuclei approaches [@doi:10.4132/jptm.2022.12.19].
-
-Given that our consensus cell type analysis identified various immune cells from high- and low-grade gliomas (Figure {@fig:fig4}C-D), these results suggest that non-immune cells may have been lost during single-cell library preparation.
-Indeed, several of these overrepresented bulk cell types for `SCPCP000001` and `SCPCP000002` are not found in the single-cell consensus cell types annotations (`SCPCP000001`: "blood vessel endothelial cell", "extracellular matrix secreting cell", "pericyte"; `SCPCP000002`: "blood vessel endothelial cell", "extracellular matrix secreting cell", "microvascular endothelial cell"), further emphasizing the potential loss of these cell types in the single-cell data.
-
-By contrast, we uncovered a variety of both immune and non-immune cell types overrepresented in bulk RNA-seq `SCPCP000017` (osteosarcoma; Figure {@fig:figS7}B), all of which were present in the single-nuclei consensus cell types for this project.
-This observation may reflect inherent challenges in dissociating bone tissue [@doi:10.1186/s12885-023-10977-1].
-These results show that, while bulk and single-cell or single-nuclei expression is indeed highly correlated, cell type differences may still be present between modalities, potentially driven by cell-type-specific loss in single-cell experiments.
+In brain and CNS tumors, the marker gene sets overrepresented in bulk RNA-seq expression primarily corresponded to stromal (e.g., Endothelial cells and Pericytes) and/or neuronal cell types (e.g., Astrocytes and various types of glial cells), all of which are prevalent non-immune cells in glioma tumor microenvironments [@doi:10.3389/fimmu.2023.1227126; @doi:10.3389/fphar.2024.1355242] (Figure {@fig:fig6}B).
+Interestingly, only Monocytes and neuronal cell types, but no stromal cells, were overrepresented in bulk RNA-seq for `SCPCP000009` (brain and CNS tumors). 
+As `SCPCP000009` was sequenced at the single-nuclei level but `SCPCP000001` (high-grade gliomas) and `SCPCP000002` (low-grade gliomas) were sequenced at the single-cell level, this difference may reflect the increased sensitivity of single-cell approaches to detecting immune cells relative to single-nuclei approaches [@doi:10.4132/jptm.2022.12.19].
+Indeed, the other single-nuclei projects considered here also identified immune cell types as overrepresented in bulk RNA-seq: Monocytes were identified for `SCPCP000006` (Wilms Tumor), and a combination of immune and non-immune cell types were identified for `SCPCP000017` (osteosarcoma; Figure {@fig:figS7}B).
+The diversity of cell types overrepresented in osteosarcoma bulk RNA-seq samples may also reflect inherent challenges in dissociating bone tissue [@doi:10.1186/s12885-023-10977-1].
+In total, we observed that while bulk and single-cell or single-nuclei expression is indeed highly correlated, cell type differences may still be present between modalities potentially influenced by cell-type-specific loss in single-cell experiments.
 
 
 ## Methods
@@ -832,15 +826,14 @@ For each project, we then used the `lme4` R package [@doi:10.18637/jss.v067.i01]
 
 #### Overrepresentation analysis
 
-To ascertain whether certain cell types might be overrepresented in one modality compared to the other, we first identified cell types of interest as the set of all possible consensus cell types for each project.
-We then created a gene set for each consensus cell type using the project's `CellAssign` marker gene reference.
-Because a consensus cell type can encompass multiple cell types in the marker gene reference, we defined each consensus cell type's gene set as the union of all marker genes for each of its constituent reference cell types.
+We next conducted overrepresentation analysis (ORA) to ascertain whether certain cell types might be overrepresented either modality (bulk vs. pseudobulk).
+We specifically tested overrepresentation of the `PanglaoDB` cell type marker gene sets used for each project's respective `CellAssign` reference.
 
-For input to the overrepresentation analysis, we summarized model residuals within each project by taking the median residual for each gene across samples and then transformed these summarized residuals into Z-scores.
+For input to the ORA, we summarized model residuals within each project by taking the median residual for each gene across samples and then transformed these summarized residuals into Z-scores.
 We identified outlier genes as those with Z-scores greater than 2.5 (positive outliers) or less than -2.5 (negative outliers).
 In this case, positive outliers represent genes with comparatively higher expression in the bulk modality, and negative outliers represent genes with comparatively higher expression in the single-cell modality.
 
-For each consensus cell type gene set, we calculated two odds ratios representing whether genes were overrepresented in the positive outliers (enriched in bulk) or negative outliers (enriched in pseudobulk).
+For each set of cell type marker genes, we calculated two odds ratios representing whether genes were overrepresented in the positive outliers (enriched in bulk) or negative outliers (enriched in pseudobulk).
 We calculated P-values for both the bulk and pseudobulk enrichment directions via permutation testing with 10,000 replicates.
 We defined gene sets with significant overrepresentation as those with a false-discovery-rate-corrected P-value ≤ 0.05 [@doi:10.1111/j.2517-6161.1995.tb02031.x].
 
@@ -1104,7 +1097,7 @@ Results from additional projects are shown in Figure {@fig:figS7}A.
 
 B. Odds ratios from overrepresentation analysis for the same samples shown in panel A, colored by FDR-corrected significance.
 Each odds ratio represents the odds that marker genes for the given cell type were overrepresented in bulk RNA-seq when compared to single-cell/nuclei RNA-seq, relative to other genes.
-A total of 36 consensus cell types were evaluated for each project shown here.
+A total of 68 cell types were evaluated for each project shown here.
 Results from additional projects are shown in Figure {@fig:figS7}B.
 
 ## Supplementary Figures and Tables {.page_break_before}
@@ -1263,7 +1256,7 @@ The regression line is also shown for each project.
 
 B. Odds ratios from overrepresentation analysis for the same samples shown in panel A, colored by FDR-corrected significance.
 Each odds ratio represents the odds that marker genes for the given cell type were overrepresented in the bulk modality, relative to other genes.
-31 consensus cell types were evaluated for project `SCPCP000006`, and 37 consensus cell types were evaluated for project `SCPCP000017`.
+44 cell types were evaluated for project `SCPCP000006`, and 50 cell types were evaluated for project `SCPCP000017`.
 
 
 ## References {.page_break_before}
