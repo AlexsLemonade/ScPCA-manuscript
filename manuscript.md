@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2026-02-10'
+date-meta: '2026-05-04'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -36,11 +36,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2026-02-10" />
-  <meta name="citation_publication_date" content="2026-02-10" />
-  <meta property="article:published_time" content="2026-02-10" />
-  <meta name="dc.modified" content="2026-02-10T17:50:52+00:00" />
-  <meta property="article:modified_time" content="2026-02-10T17:50:52+00:00" />
+  <meta name="dc.date" content="2026-05-04" />
+  <meta name="citation_publication_date" content="2026-05-04" />
+  <meta property="article:published_time" content="2026-05-04" />
+  <meta name="dc.modified" content="2026-05-04T20:49:25+00:00" />
+  <meta property="article:modified_time" content="2026-05-04T20:49:25+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -76,7 +76,7 @@ header-includes: |
   <meta name="citation_author_orcid" content="0000-0001-9653-8128" />
   <meta name="citation_author" content="Steven M. Foltz" />
   <meta name="citation_author_institution" content="Childhood Cancer Data Lab, Alex&#39;s Lemonade Stand Foundation, Bala Cynwyd, PA, 19004, USA" />
-  <meta name="citation_author_institution" content="Department of Pediatrics, Division of Oncology, Children&#39;s Hospital of Philadelphia, Philadelphia, PA, 19104, USA" />
+  <meta name="citation_author_institution" content="Translational Research, Multiple Myeloma Research Foundation, Norwalk, CT, 06851, USA" />
   <meta name="citation_author_orcid" content="0000-0002-9526-8194" />
   <meta name="citation_author" content="Jennifer O&#39;Malley" />
   <meta name="citation_author_institution" content="Childhood Cancer Data Lab, Alex&#39;s Lemonade Stand Foundation, Bala Cynwyd, PA, 19004, USA" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/d9f08e191e5991ca162fa0576f23ce76b580e707/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/d9f08e191e5991ca162fa0576f23ce76b580e707/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/d9f08e191e5991ca162fa0576f23ce76b580e707/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2e0de236d4bfd718a0a6a2ed2400477776c0b0b8/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2e0de236d4bfd718a0a6a2ed2400477776c0b0b8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2e0de236d4bfd718a0a6a2ed2400477776c0b0b8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,10 +118,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/d9f08e191e5991ca162fa0576f23ce76b580e707/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/2e0de236d4bfd718a0a6a2ed2400477776c0b0b8/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@d9f08e1](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/d9f08e191e5991ca162fa0576f23ce76b580e707)
-on February 10, 2026.
+from [AlexsLemonade/ScPCA-manuscript@2e0de23](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/2e0de236d4bfd718a0a6a2ed2400477776c0b0b8)
+on May 4, 2026.
 </em></small>
 
 
@@ -250,7 +250,7 @@ on February 10, 2026.
     [envest](https://github.com/envest)
     <br>
   <small>
-     Childhood Cancer Data Lab, Alex's Lemonade Stand Foundation, Bala Cynwyd, PA, 19004, USA; Department of Pediatrics, Division of Oncology, Children's Hospital of Philadelphia, Philadelphia, PA, 19104, USA
+     Childhood Cancer Data Lab, Alex's Lemonade Stand Foundation, Bala Cynwyd, PA, 19004, USA; Translational Research, Multiple Myeloma Research Foundation, Norwalk, CT, 06851, USA
      · Funded by Alex's Lemonade Stand Foundation Childhood Cancer Data Lab (CCDL)
   </small>
 
