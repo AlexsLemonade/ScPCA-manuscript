@@ -39,8 +39,8 @@ header-includes: |
   <meta name="dc.date" content="2026-05-05" />
   <meta name="citation_publication_date" content="2026-05-05" />
   <meta property="article:published_time" content="2026-05-05" />
-  <meta name="dc.modified" content="2026-05-05T14:15:59+00:00" />
-  <meta property="article:modified_time" content="2026-05-05T14:15:59+00:00" />
+  <meta name="dc.modified" content="2026-05-05T19:48:51+00:00" />
+  <meta property="article:modified_time" content="2026-05-05T19:48:51+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/30cb35e66cf1df08ae79b3ef5316e0cdec83c65c/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/30cb35e66cf1df08ae79b3ef5316e0cdec83c65c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/30cb35e66cf1df08ae79b3ef5316e0cdec83c65c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a44d2a1195f85f232f29c442bdca31c84e8c9dfb/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a44d2a1195f85f232f29c442bdca31c84e8c9dfb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a44d2a1195f85f232f29c442bdca31c84e8c9dfb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,9 +118,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/30cb35e66cf1df08ae79b3ef5316e0cdec83c65c/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/a44d2a1195f85f232f29c442bdca31c84e8c9dfb/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@30cb35e](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/30cb35e66cf1df08ae79b3ef5316e0cdec83c65c)
+from [AlexsLemonade/ScPCA-manuscript@a44d2a1](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/a44d2a1195f85f232f29c442bdca31c84e8c9dfb)
 on May 5, 2026.
 </em></small>
 
@@ -571,13 +571,48 @@ In total, we observed that while bulk and single-cell or single-nuclei expressio
 
 ### RESOURCE AVAILABILITY
 
+#### Lead contact
+
+Requests for resources and information regarding resource sharing should be directed to the lead contact, Jaclyn N. Taroni (jaclyn.taroni@ccdatalab.org).
+
+#### Materials availability
+
+This study did not generate any new material resources.
+
+#### Data and code availability
+
+##### Data
+
+All processed RNA-seq data and de-identified metadata described in this study are freely available through the ScPCA Portal at <scpca.alexslemonade.org>, which is designed for long-term open access of single-cell, single-nuclei, and spatial transcriptomics data; data are available as of the date of publication.
+Each project, sample, and library is assigned a stable, unique accession number.
+Raw data (e.g., FASTQ files) are not available for download from the Portal due to the human origins of most samples, which may be subject to controlled-access restrictions. 
+When raw or processed data are also deposited to external sources such as the Database of Genotypes and Phenotypes (dbGaP) or Gene Expression Omnibus (GEO), the project accession numbers are available from the Portal.
+
+All projects included in this publication are available from the ScPCA Portal with the following accession numbers: [SCPCP000001](https://scpca.alexslemonade.org/projects/SCPCP000001), [SCPCP000002](https://scpca.alexslemonade.org/projects/SCPCP000002), [SCPCP000003](https://scpca.alexslemonade.org/projects/SCPCP000003), [SCPCP000004](https://scpca.alexslemonade.org/projects/SCPCP000004), [SCPCP000005](https://scpca.alexslemonade.org/projects/SCPCP000005), [SCPCP000006](https://scpca.alexslemonade.org/projects/SCPCP000006), [SCPCP000007](https://scpca.alexslemonade.org/projects/SCPCP000007), [SCPCP000008](https://scpca.alexslemonade.org/projects/SCPCP000008), [SCPCP000009](https://scpca.alexslemonade.org/projects/SCPCP000009), [SCPCP000010](https://scpca.alexslemonade.org/projects/SCPCP000010), [SCPCP000011](https://scpca.alexslemonade.org/projects/SCPCP000011), [SCPCP000012](https://scpca.alexslemonade.org/projects/SCPCP000012), [SCPCP000013](https://scpca.alexslemonade.org/projects/SCPCP000013), [SCPCP000014](https://scpca.alexslemonade.org/projects/SCPCP000014), [SCPCP000015](https://scpca.alexslemonade.org/projects/SCPCP000015), [SCPCP000016](https://scpca.alexslemonade.org/projects/SCPCP000016), [SCPCP000017](https://scpca.alexslemonade.org/projects/SCPCP000017), [SCPCP000018](https://scpca.alexslemonade.org/projects/SCPCP000018), [SCPCP000020](https://scpca.alexslemonade.org/projects/SCPCP000020), [SCPCP000021](https://scpca.alexslemonade.org/projects/SCPCP000021), [SCPCP000022](https://scpca.alexslemonade.org/projects/SCPCP000022), [SCPCP000023](https://scpca.alexslemonade.org/projects/SCPCP000023), [SCPCP000024](https://scpca.alexslemonade.org/projects/SCPCP000024).
+
+##### Code
+
+- The Nextflow workflow used to process all samples is available on GitHub at <https://github.com/AlexsLemonade/scpca-nf> and is archived at [TODO: Zenodo DOI].
+- The ScPCA Portal code can be found at <https://github.com/AlexsLemonade/scpca-portal> and is archived at [TODO: Zenodo DOI].
+- The benchmarking of tools used to build `scpca-nf` are available at <https://github.com/AlexsLemonade/alsf-scpca/tree/main/analysis> and <https://github.com/AlexsLemonade/sc-data-integration/tree/main/celltype_annotation>, with all repository contents archived at [TODO: Zenodo DOI] and [TODO: Zenodo DOI], respectively.
+- All code for creating reference files for consensus cell type assignment is available at <https://github.com/AlexsLemonade/OpenScPCA-analysis/tree/main/analyses/cell-type-consensus>, and all repository contents are archived at 10.5281/zenodo.18459136.
+- All code to assign OpenScPCA project cell type annotations is available at <https://github.com/AlexsLemonade/OpenScPCA-nf> and is archived at [TODO: Zenodo DOI].
+- All code for the `ScPCAr` package for programmatically downloading data from the Portal can be found at <https://github.com/AlexsLemonade/ScPCAr> and is archived at [TODO: Zenodo DOI].
+- All code for the underlying figures and analyses is available at <https://github.com/AlexsLemonade/scpca-paper-figures> and is archived at [TODO: Zenodo DOI].
+To reproduce the figures in this manuscript, see <https://github.com/AlexsLemonade/scpca-paper-figures/tree/main/reproduce-figures>.
+
+##### Additional information
+
+ScPCA documentation that describes the contents of downloads available from the Portal is available at <https://scpca.readthedocs.io/en/stable/>.
+Any additional information required to reanalyze the data in this study is available from the lead contact upon request.
+
 ### EXPERIMENTAL MODEL AND SUBJECT DETAILS
 
 Data on the ScPCA Portal were generated and compiled by each contributing lab and institution.
-As of May 1, 2026, gene expression data from 704 samples are available. 
+As of May 1, 2026, gene expression data from 704 samples are available.
 This includes 581 human patient samples, 117 samples from patient-derived xenografts, 4 samples from immortalized human cell lines, and 2 samples from cell lines passaged from patient-derived xenografts representing 55 different pediatric cancer types.
 
-#### Metadata 
+#### Metadata
 
 Submitters were required to submit the age, sex, organism, diagnosis, subdiagnosis (if applicable), disease timing (e.g., initial diagnosis) and tissue of origin for each sample.
 The submitted metadata was standardized across projects, including converting all ages to years, removing abbreviations used in diagnosis, subdiagnosis, or tissue of origin, and using standard values across projects as much as possible for diagnosis, subdiagnosis, disease timing, and tissue of origin.
@@ -751,7 +786,7 @@ We also display the distribution of all probabilities calculated by `CellAssign`
 
 For `SCimilarity`, the foundation model described in Heimberg et al. [@doi:10.1038/s41586-024-08411-y] containing 7.3 million cells from various normal and diseased tissues was obtained from Zenodo (<https://zenodo.org/records/10685499>) and used to annotate cells in all samples.
 The assigned cell type label and the distance of the query cell to the closest cell in the model were added to the processed `SingleCellExperiment` object.
-A plot showing the distribution of the distance metric calculated by `SCimilarity` is present in the cell type report. 
+A plot showing the distribution of the distance metric calculated by `SCimilarity` is present in the cell type report.
 Distances larger than 0.05 can indicate that the model is less confident in the prediction.
 
 ##### Assigning consensus cell types
@@ -760,17 +795,17 @@ Cell type labels obtained from `SingleR`, `CellAssign`, and `SCimilarity` were t
 We first assigned each of the cell types present in the `PanglaoDB` [@doi:10.1093/database/baz046] reference used with `CellAssign` to an appropriate Cell Ontology term [@url:https://www.ebi.ac.uk/ols4/ontologies/cl].
 For cell types available in the `BlueprintEncodeData` reference used with `SingleR` and the foundation model used with `SCimilarity`, we used the provided Cell Ontology terms.
 
-We then created a reference table containing all possible combinations of cell types assigned using `SingleR`, `CellAssign`, and `SCimilarity`. 
-Consensus cell types are assigned if two of the three annotations share a latest common ancestor (LCA), identified using `ontoProc::findCommonAncestors()` [@doi:10.18129/B9.bioc.ontoProc], that meets the following criteria. 
+We then created a reference table containing all possible combinations of cell types assigned using `SingleR`, `CellAssign`, and `SCimilarity`.
+Consensus cell types are assigned if two of the three annotations share a latest common ancestor (LCA), identified using `ontoProc::findCommonAncestors()` [@doi:10.18129/B9.bioc.ontoProc], that meets the following criteria.
 Otherwise, no consensus cell type is assigned, and the cell is labeled as "Unknown".
 
 1. The terms share at least 1 LCA that either has fewer than 170 descendants or is one of "neuron", "epithelial cell", "columnar/cuboidal epithelial cell", or "endo-epithelial cell".
 
 2. If more than 1 LCA is shared between two terms, then the LCA with the fewest descendants is kept and all others are discarded.
 
-3. If the LCA has fewer than 170 descendants and is one of the following non-specific LCA terms, no consensus cell type is assigned: "bone cell", "lining cell", "blood cell", "progenitor cell", "supporting cell", "biogenic amine secreting cell", "protein secreting cell", "extracellular matrix secreting cell", "serotonin secreting cell", "peptide hormone secreting cell", "exocrine cell", "sensory receptor cell", or "interstitial cell". 
+3. If the LCA has fewer than 170 descendants and is one of the following non-specific LCA terms, no consensus cell type is assigned: "bone cell", "lining cell", "blood cell", "progenitor cell", "supporting cell", "biogenic amine secreting cell", "protein secreting cell", "extracellular matrix secreting cell", "serotonin secreting cell", "peptide hormone secreting cell", "exocrine cell", "sensory receptor cell", or "interstitial cell".
 
-If more than one LCA is identified as a possible consensus cell type, meaning there is agreement among all three methods, the LCA with the fewest descendants is used as the consensus cell type. 
+If more than one LCA is identified as a possible consensus cell type, meaning there is agreement among all three methods, the LCA with the fewest descendants is used as the consensus cell type.
 
 The consensus cell type assignments, including both the Cell Ontology term and the associated human-readable name, are available in processed object files on the Portal.
 
@@ -780,11 +815,11 @@ We considered only those that are specific to a single cell type, with the excep
 
 ##### Cell types annotated as part of the OpenScPCA Project
 
-As part of the ongoing OpenScPCA project [@url:https://openscpca.readthedocs.io], cell types for each project are manually annotated to label disease-specific cell types or cell states. 
+As part of the ongoing OpenScPCA project [@url:https://openscpca.readthedocs.io], cell types for each project are manually annotated to label disease-specific cell types or cell states.
 After annotations for all samples in a given project have been validated, they are added to all `SingleCellExperiment` objects (unfiltered, filtered, and processed) for that project on the Portal.
 To date, cell types have been assigned and validated for `SCPCP000004` (neuroblastoma) and `SCPCP000015` (Ewing sarcoma).
-The approaches for cell type annotation were originally developed in the `OpenScPCA-analysis` GitHub repository [@url:https://github.com/AlexsLemonade/OpenScPCA-analysis] in the `cell-type-neuroblastoma-04` and `cell-type-ewings` analysis modules, respectively. 
-These analysis modules provide full information on the specific approaches used for annotation. 
+The approaches for cell type annotation were originally developed in the `OpenScPCA-analysis` GitHub repository [@url:https://github.com/AlexsLemonade/OpenScPCA-analysis] in the `cell-type-neuroblastoma-04` and `cell-type-ewings` analysis modules, respectively.
+These analysis modules provide full information on the specific approaches used for annotation.
 The cell type annotations included in the ScPCA Portal were subsequently generated in corresponding Nextflow modules in the `OpenScPCA-nf` GitHub repository [@url:https://github.com/AlexsLemonade/OpenScPCA-nf].
 
 #### Copy-number variation inference
@@ -792,7 +827,7 @@ The cell type annotations included in the ScPCA Portal were subsequently generat
 We used `inferCNV` [@url:https://github.com/broadinstitute/inferCNV] with the `i6` HMM to estimate copy-number variation (CNV) events for each library, for each chromosome arm.
 We designated a set of normal consensus cell types to use for each library's normal reference based on the given sample's diagnosis.
 All libraries were processed with `inferCNV` except: i) libraries without assigned consensus cell types, ii) libraries with fewer than 100 normal reference cells, and iii) libraries from non-cancerous samples.
-We calculated the total CNVs per cell using the feature output from the `i6` HMM by summing CNV calls across all chromosome arms. 
+We calculated the total CNVs per cell using the feature output from the `i6` HMM by summing CNV calls across all chromosome arms.
 
 
 #### Generating merged data
@@ -848,24 +883,6 @@ In this case, positive outliers represent genes with comparatively higher expres
 For each set of cell type marker genes, we calculated two odds ratios representing whether genes were overrepresented in the positive outliers (enriched in bulk) or negative outliers (enriched in pseudobulk).
 We calculated P-values for both the bulk and pseudobulk enrichment directions via permutation testing with 10,000 replicates.
 We defined gene sets with significant overrepresentation as those with a false-discovery-rate-corrected P-value ≤ 0.05 [@doi:10.1111/j.2517-6161.1995.tb02031.x].
-
-
-## Code and data availability
-
-All summarized gene expression data and de-identified metadata are available for download on the ScPCA Portal, <https://scpca.alexslemonade.org/>.
-
-Documentation for the Portal can be found at <https://scpca.readthedocs.io>.
-
-All original code was developed within the following repositories and is publicly available as follows:
-
-- The `scpca-nf` workflow used to process all samples available on the Portal can be found at <https://github.com/AlexsLemonade/scpca-nf>.
-- The Single-cell Pediatric Cancer Atlas Portal code can be found at <https://github.com/AlexsLemonade/scpca-portal>.
-- Benchmarking of tools used to build `scpca-nf` can be found at <https://github.com/AlexsLemonade/alsf-scpca/tree/main/analysis> and <https://github.com/AlexsLemonade/sc-data-integration/tree/main/celltype_annotation>.
-- All code for creating the reference files used for consensus cell type assignment can be found at <https://github.com/AlexsLemonade/OpenScPCA-analysis/tree/main/analyses/cell-type-consensus>.
-- All code to assign OpenScPCA project cell type annotations can be found at <https://github.com/AlexsLemonade/OpenScPCA-nf>.
-- All code for the `ScPCAr` package for programmatically downloading data from the Portal can be found at <https://github.com/AlexsLemonade/ScPCAr>.
-- All code for the underlying figures and analyses can be found at <https://github.com/AlexsLemonade/scpca-paper-figures>.
-- The manuscript can be found at <https://github.com/AlexsLemonade/ScPCA-manuscript>.
 
 
 
