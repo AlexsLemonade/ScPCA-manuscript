@@ -10,8 +10,10 @@ Arkadii
 arkid
 astrocytes
 ATAC
+AUC
 Avrohom
 avrohomgottlieb
+Aynaud
 Bala
 barcode
 barcodes
@@ -148,6 +150,7 @@ pmid
 Prasad
 prevalently
 programmatically
+proliferative
 pseudobulk
 pseudocount
 pubmed
@@ -193,6 +196,7 @@ Venkatesh
 Visium
 wikidata
 Wilms
+Wrenn
 xenograft
 xenografts
 Xu
