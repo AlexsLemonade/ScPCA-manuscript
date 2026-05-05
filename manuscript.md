@@ -39,8 +39,8 @@ header-includes: |
   <meta name="dc.date" content="2026-05-05" />
   <meta name="citation_publication_date" content="2026-05-05" />
   <meta property="article:published_time" content="2026-05-05" />
-  <meta name="dc.modified" content="2026-05-05T19:48:51+00:00" />
-  <meta property="article:modified_time" content="2026-05-05T19:48:51+00:00" />
+  <meta name="dc.modified" content="2026-05-05T22:04:13+00:00" />
+  <meta property="article:modified_time" content="2026-05-05T22:04:13+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a44d2a1195f85f232f29c442bdca31c84e8c9dfb/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a44d2a1195f85f232f29c442bdca31c84e8c9dfb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/a44d2a1195f85f232f29c442bdca31c84e8c9dfb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/580bc142956661ad6b95bd043e2dd108da581e58/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/580bc142956661ad6b95bd043e2dd108da581e58/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/580bc142956661ad6b95bd043e2dd108da581e58/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,9 +118,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/a44d2a1195f85f232f29c442bdca31c84e8c9dfb/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/580bc142956661ad6b95bd043e2dd108da581e58/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@a44d2a1](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/a44d2a1195f85f232f29c442bdca31c84e8c9dfb)
+from [AlexsLemonade/ScPCA-manuscript@580bc14](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/580bc142956661ad6b95bd043e2dd108da581e58)
 on May 5, 2026.
 </em></small>
 
@@ -652,7 +652,6 @@ For spatial transcriptomics, cDNA libraries were generated using the Visium kit 
 All libraries were processed using our open-source pipeline, `scpca-nf`, to produce summarized gene expression data.
 A detailed summary with the total number of samples and libraries collected for each sequencing method broken down by project is available in Table S1.
 
-
 #### Processing single-cell and single-nuclei RNA-seq data with alevin-fry
 
 To quantify RNA-seq gene expression for each cell or nucleus in a library, `scpca-nf` uses `salmon alevin` [@doi:10.1186/s13059-020-02151-8] and `alevin-fry` [@doi:10.1038/s41592-022-01408-3] to generate a gene-by-cell counts matrix.
@@ -778,6 +777,7 @@ Organ-specific references were built using all cell types in a specified organ l
 If a set of disease types in a given project encompassed cells that may be present in multiple organ groups, multiple organs were combined.
 Since many cancers may have infiltrating immune cells, all immune cells were also included in each organ-specific reference.
 For example, we created a reference containing bone, connective tissue, smooth muscle, and immune cells for sarcomas that appear in bone or soft tissue.
+The specific reference information and list of organs included in that reference for a given library is available in the metadata of each processed object.
 
 Given the processed `SingleCellExperiment` object and organ-specific reference, `scvi.external.CellAssign()` was used in the main `scpca-nf` workflow to train the model and predict the assigned cell type.
 For each cell, `CellAssign` calculates a probability of assignment to each cell type in the reference.
@@ -785,6 +785,7 @@ The probability matrix and a prediction based on the most probable cell type wer
 We also display the distribution of all probabilities calculated by `CellAssign` in the cell type report; more confident labels are expected to have many values close to 1.
 
 For `SCimilarity`, the foundation model described in Heimberg et al. [@doi:10.1038/s41586-024-08411-y] containing 7.3 million cells from various normal and diseased tissues was obtained from Zenodo (<https://zenodo.org/records/10685499>) and used to annotate cells in all samples.
+Embeddings were first computed on the processed `AnnData` objects using `scimilarity.get_embeddings()` followed by cell type prediction using `scimilarity.get_predictions_knn()` with `weighting=True`.
 The assigned cell type label and the distance of the query cell to the closest cell in the model were added to the processed `SingleCellExperiment` object.
 A plot showing the distribution of the distance metric calculated by `SCimilarity` is present in the cell type report.
 Distances larger than 0.05 can indicate that the model is less confident in the prediction.
@@ -822,10 +823,24 @@ The approaches for cell type annotation were originally developed in the `OpenSc
 These analysis modules provide full information on the specific approaches used for annotation.
 The cell type annotations included in the ScPCA Portal were subsequently generated in corresponding Nextflow modules in the `OpenScPCA-nf` GitHub repository [@url:https://github.com/AlexsLemonade/OpenScPCA-nf].
 
+For `SCPCP000004` (neuroblastoma), shown in Figure 5, cell type annotation is performed with both `SingleR` [@do:10.1016/j.celrep.2024.114804] and `scANVI/scArches` [@doi:10.1038/s41587-021-01001-7] using the `NBAtlas` from Bonine et al. as a reference [@doi:10.1016/j.celrep.2024.114804]. 
+Final annotations are derived based on agreement between these two methods and the consensus cell types. 
+If `SingleR` and `scANVI/scArches` agree exactly, then that label is used. 
+If `SingleR` and `scANVI/scArches` labels are in same broad family (e.g., T cell and CD4 + T cell) then the broad family label is used (e.g., T cell). 
+If `SingleR` and `scANVI/scArches` disagree and at least one inference agrees with the consensus cell type label then we assign that label. 
+If the consensus cell type is `Unknown` and one of the `SingleR` and/or `scANVI/scArches` labels is one of `Neuroendocrine` and the other is one of `Schwann`, `Stromal other`, or `Fibroblast`, the `Neuroendocrine` label is assigned. 
+
+For `SCPCP000015` (Ewing sarcoma), tumor cells were first identified by running `AUCell` [@doi:10.18129/B9.bioc.AUCell] on a merged object containing all samples with `EWS::FLI1` marker gene sets obtained from `MSigDB` and published literature. 
+Cells with an AUC > 0.4 for the `EWS::FLI1` marker gene set obtained from Aynaud et al. [@doi:10.1016/j.celrep.2020.01.049] and AUC > 0.1 for the `STAEGE_EWING_FAMILY_TUMOR` gene set from `MSigDB` [@doi:0.1158/0008-5472.CAN-03-4059] were classified as `tumor EWS-high`. 
+Cells with an AUC > 0.1 for the `EWS::FLI1` marker gene set obtained from Wrenn et al. [@doi:10.1158/1078-0432.CCR-23-1111] and AUC > 0.05 for the `HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION` gene set from `MSigDB` [@doi:10.1016/j.cels.2015.12.004] were classified as `tumor EWS-low`.
+Cells that met the criteria for `tumor EWS-high` and had mean expression of proliferative markers (`MKI67`, `PCNA`, and `TOP2A`) > 0 were classified as `tumor EWS-high proliferative`.
+For all non-tumor cells, the consensus cell type label was used. 
+
 #### Copy-number variation inference
 
 We used `inferCNV` [@url:https://github.com/broadinstitute/inferCNV] with the `i6` HMM to estimate copy-number variation (CNV) events for each library, for each chromosome arm.
 We designated a set of normal consensus cell types to use for each library's normal reference based on the given sample's diagnosis.
+The list of cell types included in the reference used for `inferCNV` can be found in the metadata of the processed object for a given library.
 All libraries were processed with `inferCNV` except: i) libraries without assigned consensus cell types, ii) libraries with fewer than 100 normal reference cells, and iii) libraries from non-cancerous samples.
 We calculated the total CNVs per cell using the feature output from the `i6` HMM by summing CNV calls across all chromosome arms.
 
