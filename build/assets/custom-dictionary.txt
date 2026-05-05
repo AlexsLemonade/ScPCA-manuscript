@@ -10,8 +10,10 @@ Arkadii
 arkid
 astrocytes
 ATAC
+AUC
 Avrohom
 avrohomgottlieb
+Aynaud
 Bala
 barcode
 barcodes
@@ -24,6 +26,7 @@ Bethell
 Bioconductor
 biogenic
 bioinformatics
+Bonine
 cbethell
 CCDL
 cDNA
@@ -147,6 +150,7 @@ pmid
 Prasad
 prevalently
 programmatically
+proliferative
 pseudobulk
 pseudocount
 pubmed
@@ -192,6 +196,7 @@ Venkatesh
 Visium
 wikidata
 Wilms
+Wrenn
 xenograft
 xenografts
 Xu
