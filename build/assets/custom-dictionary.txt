@@ -116,10 +116,12 @@ monocytes
 mortem
 multimodal
 myeloid
+myeloma
 NCBI
 NCBITaxon
 Nextflow
 neuroblastoma
+Norwalk
 Nozomi
 nozomione
 oligodendrocyte
@@ -132,6 +134,7 @@ osteosarcomas
 overrepresented
 overrepresentation
 parallelizing
+passaged
 PATO
 PCA
 pericyte
@@ -154,6 +157,7 @@ Runtime
 s
 SCE
 ScPCA
+SCPCP
 selectable
 SingleCellExperiment
 SingleR
@@ -172,6 +176,7 @@ Taroni
 tbl
 transcriptionally
 transcriptomics
+translational
 TSV
 UBERON
 UCSC
