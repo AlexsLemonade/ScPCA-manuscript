@@ -10,8 +10,10 @@ Arkadii
 arkid
 astrocytes
 ATAC
+AUC
 Avrohom
 avrohomgottlieb
+Aynaud
 Bala
 barcode
 barcodes
@@ -24,6 +26,7 @@ Bethell
 Bioconductor
 biogenic
 bioinformatics
+Bonine
 cbethell
 CCDL
 cDNA
@@ -117,10 +120,12 @@ monocytes
 mortem
 multimodal
 myeloid
+myeloma
 NCBI
 NCBITaxon
 Nextflow
 neuroblastoma
+Norwalk
 Nozomi
 nozomione
 oligodendrocyte
@@ -146,6 +151,7 @@ pmid
 Prasad
 prevalently
 programmatically
+proliferative
 pseudobulk
 pseudocount
 pubmed
@@ -156,6 +162,7 @@ Runtime
 s
 SCE
 ScPCA
+SCPCP
 selectable
 SingleCellExperiment
 SingleR
@@ -174,6 +181,7 @@ Taroni
 tbl
 transcriptionally
 transcriptomics
+translational
 TSV
 UBERON
 UCSC
@@ -189,6 +197,7 @@ Venkatesh
 Visium
 wikidata
 Wilms
+Wrenn
 xenograft
 xenografts
 Xu
