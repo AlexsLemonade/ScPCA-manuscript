@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/gh-pages) branch hosts the contents of this directory at <https://AlexsLemonade.github.io/ScPCA-manuscript/>.
-The permalink for this webpage version is <https://AlexsLemonade.github.io/ScPCA-manuscript/v/c9998b2dfb69401bc3f9191777556301229fa1e1/>.
+The permalink for this webpage version is <https://AlexsLemonade.github.io/ScPCA-manuscript/v/a4e7f458aaef5228de08bd5aa7a6a0c7509a7d9d/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://AlexsLemonade.github.io/ScPCA-manuscript/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`c9998b2dfb69401bc3f9191777556301229fa1e1`](https://github.com/AlexsLemonade/ScPCA-manuscript/commit/c9998b2dfb69401bc3f9191777556301229fa1e1).
+[`a4e7f458aaef5228de08bd5aa7a6a0c7509a7d9d`](https://github.com/AlexsLemonade/ScPCA-manuscript/commit/a4e7f458aaef5228de08bd5aa7a6a0c7509a7d9d).
