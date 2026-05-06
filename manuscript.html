@@ -18,7 +18,7 @@
   <meta name="author" content="Jennifer O’Malley" />
   <meta name="author" content="Casey S. Greene" />
   <meta name="author" content="Jaclyn N. Taroni" />
-  <meta name="dcterms.date" content="2026-05-05" />
+  <meta name="dcterms.date" content="2026-05-06" />
   <meta name="keywords" content="single-cell RNA-seq, single-nuclei RNA-seq, pediatric cancer, resource, Nextflow, open science, reproducibility" />
   <title>The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors</title>
   <style>
@@ -63,11 +63,11 @@
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2026-05-05" />
-  <meta name="citation_publication_date" content="2026-05-05" />
-  <meta property="article:published_time" content="2026-05-05" />
-  <meta name="dc.modified" content="2026-05-05T22:04:13+00:00" />
-  <meta property="article:modified_time" content="2026-05-05T22:04:13+00:00" />
+  <meta name="dc.date" content="2026-05-06" />
+  <meta name="citation_publication_date" content="2026-05-06" />
+  <meta property="article:published_time" content="2026-05-06" />
+  <meta name="dc.modified" content="2026-05-06T13:35:32+00:00" />
+  <meta property="article:modified_time" content="2026-05-06T13:35:32+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -121,9 +121,9 @@
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/580bc142956661ad6b95bd043e2dd108da581e58/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/580bc142956661ad6b95bd043e2dd108da581e58/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/580bc142956661ad6b95bd043e2dd108da581e58/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c9998b2dfb69401bc3f9191777556301229fa1e1/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c9998b2dfb69401bc3f9191777556301229fa1e1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c9998b2dfb69401bc3f9191777556301229fa1e1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -140,10 +140,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/580bc142956661ad6b95bd043e2dd108da581e58/">permalink</a>)
+(<a href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c9998b2dfb69401bc3f9191777556301229fa1e1/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/AlexsLemonade/ScPCA-manuscript/tree/580bc142956661ad6b95bd043e2dd108da581e58">AlexsLemonade/ScPCA-manuscript@580bc14</a>
-on May 5, 2026.
+from <a href="https://github.com/AlexsLemonade/ScPCA-manuscript/tree/c9998b2dfb69401bc3f9191777556301229fa1e1">AlexsLemonade/ScPCA-manuscript@c9998b2</a>
+on May 6, 2026.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -904,20 +904,19 @@ We also thank Anna Greene for her role in constructing the Single-cell Pediatric
 <figcaption aria-hidden="true"><span>Figure 1:</span> <strong>Overview of ScPCA Portal contents.</strong></figcaption>
 </figure>
 </div>
-<p>A. Barplots showing sample counts across four main cancer groupings in the ScPCA Portal with the total number of samples for each cancer type displayed to the right of each bar.
-Each bar is colored based on the number of samples with the indicated disease timing.</p>
-<p>B. Barplot showing sample counts across types of modalities present in the ScPCA Portal.
-All single-cell or single-nuclei samples in the Portal are shown under the “All Samples” heading.
-Samples under the “Samples with additional modalities” heading represent a subset of the total samples with the given additional modality.
-Colors shown for each additional modality indicate the suspension type used, either single-cell or single-nuclei RNA-seq.
+<p>A. Barplots showing sample counts across four main cancer groupings in the ScPCA Portal with the total number of samples per cancer type displayed.
+Bars are colored by the number of samples with the indicated disease timing.</p>
+<p>B. Barplot showing sample counts across modalities present in the ScPCA Portal.
+All single-cell or single-nuclei samples in the Portal are shown under the “All Samples” heading, a subset of which also have additional modalities as shown under the “Samples with additional modalities” heading.
+As indicated, sample suspensions are either single-cell or single-nuclei.
 For example, 75 single-cell samples and 101 single-nuclei samples have accompanying bulk RNA-seq data.
-Two samples were sequenced using both single-cell and single-nuclei suspensions, so each is included in the count for both “Single-cell” and “Single-nuclei” groups.
-Samples that were sequenced with either bulk RNA-seq or spatial transcriptomics and do not have accompanying single-cell or single-nuclei RNA-seq data are not shown in this figure.</p>
+Note that two samples were sequenced with both single-cell and single-nuclei suspensions.
+Samples with only bulk RNA-seq or spatial transcriptomics modalities are not shown.</p>
 <p>C. Example of a project card as displayed on the “Browse” page of the ScPCA Portal and a “Visualize” view for a library within that project, colored by consensus cell type annotation.
 This project card and visualized sample are from project <code>SCPCP000004</code> <span class="citation" data-cites="TSJacwEL 1G3mGXjU5">[<a href="#ref-TSJacwEL" role="doc-biblioref">111</a>,<a href="#ref-1G3mGXjU5" role="doc-biblioref">112</a>]</span>.
 Project cards include information about the number of samples, technologies and modalities, additional sample metadata information, submitter-provided diagnoses, and a submitter-provided abstract.
-Where available, submitter-provided citation information, as well as other databases where this data has been deposited, are also provided.
-The visualization employs the UCSC Cell Browser <span class="citation" data-cites="xCP3BjTw">[<a href="#ref-xCP3BjTw" role="doc-biblioref">39</a>]</span>, which allows interactive exploration of the UMAP embeddings for each cell, with user-selectable coloring options that include cell types, gene-level expression, and other per-cell annotations created by the <code>scpca-nf</code> workflow.
+Where available, submitter-provided citation information and other databases hosting this data are also provided.
+The visualization employs the UCSC Cell Browser <span class="citation" data-cites="xCP3BjTw">[<a href="#ref-xCP3BjTw" role="doc-biblioref">39</a>]</span>, enabling interactive exploration with user-selectable coloring options for cell types, gene-level expression, and other per-cell annotations created by <code>scpca-nf</code>.
 <br><br><br><br><br></p>
 <!-- Figure 2 -->
 <div id="fig:fig2" class="fignos">
@@ -926,12 +925,11 @@ The visualization employs the UCSC Cell Browser <span class="citation" data-cite
 <figcaption aria-hidden="true"><span>Figure 2:</span> <strong>Overview of the <code>scpca-nf</code> workflow and download file structures.</strong></figcaption>
 </figure>
 </div>
-<p>A. Overview of <code>scpca-nf</code>, the primary workflow for processing single-cell and single-nuclei RNA-seq data for the ScPCA Portal.
-Mapping is first performed with <code>alevin-fry</code> to generate a gene-by-cell count matrix, which is read into <code>R</code> and converted into a <code>SingleCellExperiment</code> (<code>SCE</code>) object.
-This <code>SCE</code> object is exported as the <code>Unfiltered SCE Object</code> before further post-processing.
-Next, empty droplets are filtered out, and the resulting <code>SCE</code> is exported as the <code>Filtered SCE Object</code>.
+<p>A. Overview of <code>scpca-nf</code>, the primary workflow for processing single-cell/nuclei RNA-seq data for the ScPCA Portal.
+Mapping is first performed with <code>alevin-fry</code> to generate a gene-by-cell count matrix, which is read into <code>R</code> and converted into a <code>SingleCellExperiment</code> (<code>SCE</code>) object (<code>Unfiltered SCE Object</code>).
+Next, empty droplets are filtered out (<code>Filtered SCE Object</code>).
 The filtered object undergoes additional post-processing, including removing low-quality cells, normalizing counts, and performing dimension reduction with principal components analysis and UMAP.
-The object undergoes cell type annotation and CNV inference and is exported as the <code>Processed SCE Object</code>.
+The object undergoes cell type annotation and CNV inference (<code>Processed SCE Object</code>).
 A summary QC report and a supplemental cell type report are prepared and exported.
 Finally, all <code>SCE</code> files are converted to <code>AnnData</code> format and exported.</p>
 <p>Panels B-G show abbreviated versions of figures that appear in the summary QC report, shown here for <code>SCPCL000001</code> <span class="citation" data-cites="U3XexzPk">[<a href="#ref-U3XexzPk" role="doc-biblioref">33</a>]</span>, as follows:</p>
@@ -943,22 +941,20 @@ Points are colored by the percentage of mitochondrial reads in the cell.</p>
 Points are colored by the probability that the cell is compromised as determined by <code>miQC</code>.</p>
 <p>E. The percent of mitochondrial reads in each cell against the number of genes detected in each cell.
 Points are colored by whether the cell was kept or removed, as determined by both <code>miQC</code> and a minimum unique gene count cutoff, prior to normalization and dimensionality reduction.</p>
-<p>F. UMAP embeddings of log-normalized RNA expression values where each cell is colored by the number of genes detected.</p>
-<p>G. UMAP embeddings of log-normalized RNA expression values for the top four most variable genes, colored by the given gene’s expression.
+<p>F. UMAP of log-normalized RNA expression colored by the number of genes detected.</p>
+<p>G. UMAP of log-normalized RNA expression for the top four most variable genes, colored by the given gene’s expression.
 In the actual summary QC report, the top 12 most highly variable genes are shown.</p>
 <p>H. File download structure for an ScPCA Portal project download in <code>SingleCellExperiment</code> (<code>SCE</code>) format.
 The download folder is named according to the project ID, data format, and the date it was downloaded.
 Download folders contain a folder for all single-cell data, <code>_single-cell</code>.
-This folder contains a folder for each sample ID, each containing the three versions (unfiltered, filtered, and processed) of the expression data as well as the summary QC report and cell type report all named according to the ScPCA library ID.
+Here, each sample ID has a dedicated folder containing the three processing levels of the expression data, the summary QC report, and cell type report all named according to the ScPCA library ID.
 The <code>single-cell_metadata.tsv</code> file contains sample metadata for all samples included in the download.
 The <code>README.md</code> file provides information about the contents of each download file, additional contact and citation information, and terms of use for data downloaded from the ScPCA Portal.
-The folder <code>_bulk</code> is only present for projects that also have bulk RNA-Seq data.
-It contains a gene-by-sample matrix of raw gene expression as quantified by <code>salmon</code> and associated metadata for all samples with bulk RNA-Seq data.</p>
+The folder <code>_bulk</code> – only present for projects with bulk RNA-Seq data – contains a gene-by-sample matrix of counts quantified by <code>salmon</code> and associated metadata for samples with bulk RNA-Seq data.</p>
 <p>I. File download structure for an ScPCA Portal merged project download in <code>SCE</code> format.
-The download folder is named according to the project ID, data format, and the date it was downloaded.
-Download folders contain a folder for all single-cell data, <code>_single-cell_merged</code>.
-This folder contains a single merged object containing all samples in the given project and a summary report briefly detailing the contents of the merged object.
-All summary QC and cell type reports for each individual library are also provided in the <code>individual_reports</code> folder arranged by their sample ID.
+As in panel H, the download folder is named by project ID, format, and date.
+Download folders contain a folder for all single-cell data, <code>_single-cell_merged</code>, with a single merged object containing all samples in the given project and a summary report detailing the merged object’s contents.
+Summary QC and cell type reports for each library are provided in the <code>individual_reports</code> folder arranged by their library ID.
 As in panel (H), additional files <code>single-cell_metadata.tsv</code>, <code>_bulk_quant.tsv</code>, <code>_bulk_metadata.tsv</code>, and <code>README.md</code> are also included.
 <br><br></p>
 <!-- Figure 3 -->
@@ -968,22 +964,19 @@ As in panel (H), additional files <code>single-cell_metadata.tsv</code>, <code>_
 <figcaption aria-hidden="true"><span>Figure 3:</span> <strong>Consensus cell type annotation in <code>scpca-nf</code>.</strong></figcaption>
 </figure>
 </div>
-<p>A. Expanded view of the process for adding cell type annotations within <code>scpca-nf</code>, as introduced in Figure <a href="#fig:fig2">2</a>A.
+<p>A. Expanded view of cell type annotation process within <code>scpca-nf</code>, as introduced in Figure <a href="#fig:fig2">2</a>A.
 Cell type annotation is performed on the <code>Processed SCE Object</code>.
-A <code>celldex</code> <span class="citation" data-cites="13P6oSrS0">[<a href="#ref-13P6oSrS0" role="doc-biblioref">49</a>]</span> reference dataset with ontology labels is used as input for annotation with <code>SingleR</code> <span class="citation" data-cites="13P6oSrS0">[<a href="#ref-13P6oSrS0" role="doc-biblioref">49</a>]</span>, a list of marker genes compiled from <code>PanglaoDB</code> <span class="citation" data-cites="T3PlZ3Vh">[<a href="#ref-T3PlZ3Vh" role="doc-biblioref">84</a>]</span> is used as input for annotation with <code>CellAssign</code> <span class="citation" data-cites="HES0WO6k">[<a href="#ref-HES0WO6k" role="doc-biblioref">50</a>]</span>, and the <code>SCimilarity</code> foundation model is used as input for annotation with <code>SCimilarity</code> <span class="citation" data-cites="Q9CUgaL0">[<a href="#ref-Q9CUgaL0" role="doc-biblioref">51</a>]</span>.
-Results from these automated cell type annotation methods and a consensus cell type annotation are then added to the <code>Processed SCE Object</code>.
+<code>SingleR</code> <span class="citation" data-cites="13P6oSrS0">[<a href="#ref-13P6oSrS0" role="doc-biblioref">49</a>]</span> annotation uses a <code>celldex</code> <span class="citation" data-cites="13P6oSrS0">[<a href="#ref-13P6oSrS0" role="doc-biblioref">49</a>]</span> reference dataset with ontology labels, <code>CellAssign</code><span class="citation" data-cites="HES0WO6k">[<a href="#ref-HES0WO6k" role="doc-biblioref">50</a>]</span> annotation uses a list of marker genes compiled from <code>PanglaoDB</code> <span class="citation" data-cites="T3PlZ3Vh">[<a href="#ref-T3PlZ3Vh" role="doc-biblioref">84</a>]</span>, and <code>SCimilarity</code> <span class="citation" data-cites="Q9CUgaL0">[<a href="#ref-Q9CUgaL0" role="doc-biblioref">51</a>]</span> annotation uses the <code>SCimilarity</code> foundation model.
+These cell typing results, along with consensus cell type annotations, are then added to the <code>Processed SCE Object</code>.
 A cell type summary report with information about reference sources, comparisons among cell type annotation methods, and diagnostic plots is created.
-Although not shown in this panel, cell type annotations are also included in the <code>Processed AnnData Object</code> created from the <code>Processed SCE Object</code> (Figure <a href="#fig:fig2">2</a>A).</p>
+Note that cell type annotations are also included in the <code>Processed AnnData Object</code> (Figure <a href="#fig:fig2">2</a>A).</p>
 <p>B. Diagram of ontology-aware consensus cell type annotation performed in <code>scpca-nf</code>, using T cell annotation as an example.
 The numbers in parentheses indicate the number of descendants for each cell type in the Cell Ontology.
-We perform pairwise comparisons among cell type annotations made by <code>SingleR</code>, <code>CellAssign</code>, and <code>SCimilarity</code>.
-For each pair of annotations, we identify the annotated cell types’ latest common ancestor based on the Cell Ontology.
-We then identify the consensus cell type as the latest common ancestor with the fewest descendants, indicated with the black check mark.</p>
-<p>C. Example heatmap as shown in the cell type summary report comparing the consensus cell type annotations to automated annotations assigned by <code>SingleR</code>, <code>CellAssign</code>, and <code>SCimilarity</code>.
+Pairwise comparisons are made among annotations, and the consensus cell type is the latest common ancestor in Cell Ontology with the fewest descendants, indicated by the black check mark.</p>
+<p>C. Example heatmap (<code>SCPCL000001</code>) as shown in the cell type summary report comparing the consensus cell type annotations to automated annotations assigned by <code>SingleR</code>, <code>CellAssign</code>, and <code>SCimilarity</code>.
 Heatmap cells are colored by the Jaccard similarity index.
-A value of 1 means that there is complete overlap between which cells are annotated with the two labels being compared, and a value of 0 means that there is no overlap between which cells are annotated with the two labels being compared.
-The heatmap shown is for library <code>SCPCL000001</code>.
-For this figure specifically, the heatmap shows only the top seven consensus cell type annotations with at least three cells, but the heatmap in the cell type summary report shows all cell types.
+A value of 1 indicates complete overlap and 0 indicates no overlap between cells annotated with each label.
+This figure shows only the top seven consensus cell type annotations with at least three cells, but the heatmap in the cell type summary report shows all cell types.
 <br><br></p>
 <!-- Figure 4 -->
 <div id="fig:fig4" class="fignos">
@@ -993,26 +986,21 @@ For this figure specifically, the heatmap shows only the top seven consensus cel
 </figure>
 </div>
 <p>A. Dot plot showing expression of cell-type-specific marker genes across all libraries from brain and central nervous system (CNS) tumors, excluding multiplexed libraries.
-Expression is shown for each broad cell type annotation, where each broad cell type annotation is a collection of similar consensus cell type annotations.
-The y-axis displays the broad consensus cell type observed across libraries, with the total number of cells indicated in parentheses.
-The x-axis displays marker genes, determined by <code>CellMarker 2.0</code> <span class="citation" data-cites="MclvBVPD">[<a href="#ref-MclvBVPD" role="doc-biblioref">87</a>]</span>, used for consensus cell type validation for each cell type shown along the top annotation bar.
+Expression is shown for each broad cell type annotation, each of which represents a collection of similar consensus cell type annotations.
+The y-axis displays broad consensus cell types.
+The x-axis displays marker genes, determined by <code>CellMarker 2.0</code> <span class="citation" data-cites="MclvBVPD">[<a href="#ref-MclvBVPD" role="doc-biblioref">87</a>]</span>, used to validate cell types in the top annotation bar.
 Dots are colored by mean gene expression across libraries and sized proportionally to the percent of libraries they are observed in, out of all cells with the same broad cell type annotation in brain and CNS tumor libraries.
-A maximum of 10 cell type marker genes are shown for each broad cell type annotation.
-Only broad cell type annotations that appear in at least 50 cells across samples in the given diagnosis group are shown.</p>
-<p>B. Barplot showing the percentage of each broad consensus cell type annotation across libraries of brain and CNS tumors, separated into high-grade (top panel) and low-grade (bottom panel) glioma diagnoses for non-multiplexed libraries from patient tissue samples.</p>
-<p>C. Barplot showing all consensus cell types classified as immune cells across libraries of brain and CNS tumors, separated into high-grade (top panel) and low-grade (bottom panel) glioma diagnoses for non-multiplexed libraries.
-The percentage shown corresponds to the percentage of immune cells classified as the indicated consensus cell type.
+Up to 10 marker genes are shown per broad cell type.
+Only broad cell type annotations present in at least 50 cells across samples in the given diagnosis group are shown.</p>
+<p>B. Barplot showing the percentage of each broad consensus cell type annotation across brain and CNS tumors libraries, separated into high-grade (top panel) and low-grade (bottom panel) glioma diagnoses for non-multiplexed libraries from patient tissue samples.</p>
+<p>C. Barplot showing all consensus cell types classified as immune cells across brain and CNS tumor libraries, separated into high-grade (top panel) and low-grade (bottom panel) glioma diagnoses for non-multiplexed libraries.
+The percentage of immune cells classified as the indicated consensus cell type is shown.
 Only libraries comprised of at least 1% immune cells, based on consensus cell type annotations, are shown.
 Specific consensus cell types for myeloid and lymphocyte immune cells are shown, with all other consensus immune cell types included in “other.”
-Any myeloid or lymphocyte immune cell types with fewer than 1000 cells across all libraries are also included in “other”.</p>
-<p>D. Dot plot showing expression of cell-type-specific marker genes across all non-multiplexed libraries from brain and CNS tumors, considering only immune cells.
-Expression is shown for each consensus cell type annotation.
-The y-axis displays the consensus cell type observed across libraries, with the total number of cells indicated in parentheses.
-The x-axis displays marker genes, determined by <code>CellMarker 2.0</code> <span class="citation" data-cites="MclvBVPD">[<a href="#ref-MclvBVPD" role="doc-biblioref">87</a>]</span>, used for consensus cell type validation for each cell type shown along the top annotation bar.
-Dots are colored by mean gene expression across libraries and sized proportionally to the percent of libraries they are observed in, out of all cells with the same consensus cell type annotation in brain and CNS tumor libraries.
-A maximum of 10 cell type marker genes are shown for each consensus cell type annotation.
-Only broad cell type annotations that appear in at least 50 cells across samples in the given diagnosis group are shown.
-Cell types without associated marker genes in <code>CellMarker 2.0</code> are not shown, including <code>lymphocyte of B lineage</code>, <code>mature T cell</code>, <code>mature alpha-beta T cell</code>, <code>alpha-beta T cell</code>, <code>myeloid leukocyte</code>, and <code>tissue-resident macrophage</code>.
+Myeloid or lymphocyte immune cell types with fewer than 1000 cells across all libraries are included in “other.”</p>
+<p>D. Dot plot as in panel A, but restricted to immune cells across all non-multiplexed libraries from brain and CNS tumors and showing consensus rather than broad cell types showing expression of cell-type-specific marker genes, considering only immune cells.
+Only broad cell type annotations present in at least 50 cells across samples in the given diagnosis group are shown.
+Cell types without associated marker genes in <code>CellMarker 2.0</code> are excluded, including <code>lymphocyte of B lineage</code>, <code>mature T cell</code>, <code>mature alpha-beta T cell</code>, <code>alpha-beta T cell</code>, <code>myeloid leukocyte</code>, and <code>tissue-resident macrophage</code>.
 <br><br></p>
 <!-- Figure 5 -->
 <div id="fig:fig5" class="fignos">
@@ -1021,19 +1009,16 @@ Cell types without associated marker genes in <code>CellMarker 2.0</code> are no
 <figcaption aria-hidden="true"><span>Figure 5:</span> <strong>Cell type annotation and CNV inference on neuroblastoma samples.</strong></figcaption>
 </figure>
 </div>
-<p>A. UMAP highlighting cell type annotations made with the OpenScPCA Project, collapsed into broad annotation groups, for all libraries in the neuroblastoma-only ScPCA Project <code>SCPCP000004</code> (N = 42).
-The UMAP was constructed from the merged <code>SCPCP000004</code> object such that all libraries contribute an equal weight, but no batch correction was performed.</p>
-<p>B. UMAP highlighting total per-cell CNV events as calculated with <code>InferCNV</code> <span class="citation" data-cites="b9hQbZOR">[<a href="#ref-b9hQbZOR" role="doc-biblioref">52</a>]</span> for all libraries in the neuroblastoma-only ScPCA Project <code>SCPCP000004</code> (N = 42).
-The UMAP was constructed from the merged <code>SCPCP000004</code> object such that all libraries contribute an equal weight, but no batch correction was performed.
-The total per-cell CNV values were calculated by summing the total number of chromosome arms with a CNV event, as estimated by the <code>i6</code> HMM in <code>InferCNV</code>.
-Gray cells are from libraries excluded from <code>InferCNV</code> inference because they did not contain enough normal cells to define the <code>InferCNV</code> reference baseline.</p>
+<p>A-B. UMAP of all libraries in the neuroblastoma-only ScPCA Project <code>SCPCP000004</code> (N = 42).
+The UMAP was constructed from the merged <code>SCPCP000004</code> object with equal library weighting, but no batch correction was performed.
+Panel A highlights cell type annotations made with the OpenScPCA Project, collapsed into broad annotation groups.
+Panel B highlights total per-cell CNV events calculated as the sum of chromosome arms with a CNV event, as estimated by the <code>i6</code> HMM in <code>InferCNV</code> <span class="citation" data-cites="b9hQbZOR">[<a href="#ref-b9hQbZOR" role="doc-biblioref">52</a>]</span>.
+Gray cells in panel B represent libraries excluded from <code>InferCNV</code> inference due to insufficient normal cells for defining the <code>InferCNV</code> reference baseline.</p>
 <p>C. Heatmap displaying per-cell CNV events across chromosomes with canonical neuroblastoma alterations <span class="citation" data-cites="11NujsTQW sGIqMPJO 1Ar16jCVg">[<a href="#ref-sGIqMPJO" role="doc-biblioref">65</a>,<a href="#ref-11NujsTQW" role="doc-biblioref">66</a>,<a href="#ref-1Ar16jCVg" role="doc-biblioref">67</a>]</span> for a single library, <code>SCPCL000130</code>.
-Each cell in <code>SCPCL000130</code> is represented by two adjacent rows, the first indicating the presence or absence of copy-number gain and the second indicating the presence or absence of copy-number loss.
-The heatmap is grouped by chromosome arm and OpenScPCA Project cell type annotation, where “normal” cells comprise all characterized non-malignant cells.
-This library exhibits strong signatures of canonical neuroblastoma alterations including <code>1p</code> loss, <code>11q</code> loss, and <code>17q</code> gain.</p>
-<p>D. Example ridge plot as shown in the summary QC report showing per-cell total CNV distributions across the top seven consensus cell type annotations.
-All additional consensus cell types are shown with the “all remaining cell types” category.
-The ridge plot shown is for library <code>SCPCL000130</code>.</p>
+Each cell in <code>SCPCL000130</code> is represented by two adjacent rows, the first indicating copy-number gain and the second indicating copy-number loss.
+The heatmap is grouped by chromosome arm and OpenScPCA Project cell type annotation, where “normal” cells comprise all non-malignant cells.</p>
+<p>D. Ridge plot from the summary QC report (<code>SCPCL000130</code>) of per-cell total CNV distributions across the top seven consensus cell type annotations.
+Other consensus cell types are shown in the “all remaining cell types” category.</p>
 <!-- Figure 6 -->
 <div id="fig:fig6" class="fignos">
 <figure>
@@ -1041,35 +1026,31 @@ The ridge plot shown is for library <code>SCPCL000130</code>.</p>
 <figcaption aria-hidden="true"><span>Figure 6:</span> <strong>Comparison of bulk and pseudobulk modalities.</strong></figcaption>
 </figure>
 </div>
-<p>A. Scatter plots colored by point density of <code>DESeq2</code>-transformed and normalized bulk RNA-seq expression compared to pseudobulk expression from single-cell/nuclei RNA-seq.
-Samples with RNA-seq for both bulk and single-cell/nuclei modalities, excluding multiplexed samples, from ScPCA projects comprising brain and central nervous system tumors are shown, with the number of samples considered per project shown in parentheses.
-The regression line is also shown for each project.
-Results from additional projects are shown in Figure <a href="#fig:figS7">S7</a>A.</p>
-<p>B. Odds ratios from overrepresentation analysis for the same samples shown in panel A, colored by FDR-corrected significance.
-Each odds ratio represents the odds that marker genes for the given cell type were overrepresented in bulk RNA-seq when compared to single-cell/nuclei RNA-seq, relative to other genes.
-A total of 68 cell types were evaluated for each project shown here.
-Results from additional projects are shown in Figure <a href="#fig:figS7">S7</a>B.</p>
+<p>A. Scatter plots colored by point density of <code>DESeq2</code>-transformed and normalized bulk RNA-seq expression compared to pseudobulk expression from single-cell/nuclei RNA-seq, with a regression line shown.
+Samples with RNA-seq for both bulk and single-cell/nuclei modalities, excluding multiplexed samples, from ScPCA projects of brain and CNS tumors are shown, with sample counts in parentheses.</p>
+<p>B. Odds ratios, which indicate overrepresentation of cell-type marker genes in bulk relative to single-cell/nuclei RNA-seq, from overrepresentation analysis for the same samples shown in panel A, colored by FDR-corrected significance.
+68 cell types were evaluated for each project.</p>
 <h2 class="page_break_before" id="supplementary-figures-and-tables">Supplementary Figures and Tables</h2>
 <!-- Table S1 -->
 <p><strong>Table S1. Overview of ScPCA Portal Datasets.</strong>
-This table provides descriptions and sample and library counts for each project in the ScPCA Portal.</p>
+This table provides descriptions and sample and library counts for projects in the ScPCA Portal.</p>
 <p><code>scpca_project_id</code>: ScPCA project unique identifier.
 <code>Diagnosis group</code>: Diagnosis group as shown in Figure <a href="#fig:fig1">1</a>A.
-<code>Diagnoses</code>: Full set of diagnoses for all samples associated with the project.
-<code>Total number of samples (S)</code>: Number of samples associated with the project.
-<code>Total number of libraries (L)</code>: Number of libraries associated with the project.
+<code>Diagnoses</code>: Full set of diagnoses for all samples in the project.
+<code>Total number of samples (S)</code>: Number of samples in the project.
+<code>Total number of libraries (L)</code>: Number of libraries in the project.
 Due to additional sequencing modalities and/or multiplexing, projects may have more libraries than samples.
 All remaining columns give the number of libraries (as designated with <code>(L)</code>) with the given suspension type, 10x kit version, or additional modality.
 <br><br></p>
 <!-- Table S2 -->
 <p><strong>Table S2. Summary of references used for cell type annotation with <code>CellAssign</code>.</strong>
-This table provides a summary of the references used for assigning cell types for ScPCA projects using <code>CellAssign</code>.
-All references were built using all cell types from a specified set of organs present in <code>PanglaoDB</code>’s marker gene list.</p>
+This table summarizes the references used for assigning cell types using <code>CellAssign</code>.
+References were built using all cell types from a set of organs in <code>PanglaoDB</code>’s marker gene list.</p>
 <p><code>scpca_project_id</code>: ScPCA project unique identifier.
-<code>Diagnoses</code>: Full set of diagnoses for all samples associated with the project.
-<code>ScPCA reference name</code>: Name used to describe the custom reference.
-<code>PanglaoDB organs included in reference</code>: A list of all organs included in the reference with names of organs corresponding to organs listed in <code>PanglaoDB</code>.
-The reference includes marker genes for all cell types present in each organ.
+<code>Diagnoses</code>: Full set of diagnoses for all samples in the project.
+<code>ScPCA reference name</code>: Custom reference name.
+<code>PanglaoDB organs included in reference</code>: Organs from <code>PanglaoDB</code> included in the reference.
+Marker genes for all cell types in each organ were included.
 <br><br></p>
 <!-- Figure S1 -->
 <div id="fig:figS1" class="fignos">
@@ -1078,20 +1059,20 @@ The reference includes marker genes for all cell types present in each organ.
 <figcaption aria-hidden="true"><span>Figure S1:</span> <strong>Results from benchmarking <code>alevin-fry</code> and <code>CellRanger</code> performance.</strong></figcaption>
 </figure>
 </div>
-<p>Each panel compares metrics for six ScPCA libraries, including three single-cell and three single-nuclei suspensions, obtained from processing libraries with <code>salmon alevin</code> and <code>alevin-fry</code> or <code>CellRanger</code>.
-Results shown were generated with <code>CellRanger v6.1.2</code> using default parameters for single-cell libraries and use of the <code>--include_introns</code> flag to include intronic reads for single-nuclei libraries only.
-All libraries were processed with <code>salmon alevin v1.5.2</code> and <code>alevin-fry v0.4.1</code> using an index containing both spliced and unspliced cDNA as mentioned in the Methods.
-The libraries used for benchmarking were randomly chosen.</p>
-<p>A. Runtime in minutes (top row) and peak memory in GB (bottom row) for six ScPCA libraries processed with <code>alevin-fry</code> and <code>CellRanger</code>.
-Processing with <code>alevin-fry</code> was consistently faster and more memory-efficient compared to processing with <code>CellRanger</code>.</p>
-<p>Panels B-D show only cells present in both the <code>alevin-fry</code> and <code>CellRanger</code> output.</p>
-<p>B. Comparison of mean gene expression values for six ScPCA libraries processed with <code>alevin-fry</code> and <code>CellRanger</code>, shown on a log-scale.
+<p>Panels compare metrics for six ScPCA libraries (three single-cell and three single-nuclei), obtained from processing with <code>salmon alevin</code> and <code>alevin-fry</code> or <code>CellRanger</code>.
+Results were generated with <code>CellRanger v6.1.2</code> using default parameters for single-cell libraries and the <code>--include_introns</code> flag to include intronic reads for single-nuclei libraries only.
+Libraries were processed with <code>salmon alevin v1.5.2</code> and <code>alevin-fry v0.4.1</code> using an index containing both spliced and unspliced cDNA (see Methods).
+Libraries used for benchmarking were randomly chosen.</p>
+<p>A. Runtime in minutes (top row) and peak memory in GB (bottom row) for libraries processed with both platforms.
+Processing with <code>alevin-fry</code> was consistently faster and more memory-efficient than processing with <code>CellRanger</code>.</p>
+<p>Panels B-D show only cells present in both <code>alevin-fry</code> and <code>CellRanger</code> outputs.</p>
+<p>B. Comparison of mean gene expression values for libraries processed with both platforms, shown on a log-scale.
 Each point is a gene, and only genes detected in at least 5 cells are shown.
 <span class="math inline">\(R^2\)</span> values shown in the top left corner of each panel reflect broad agreement in mean gene expression values between platforms.</p>
-<p>C. Comparison of log total UMI counts for six ScPCA libraries processed with <code>alevin-fry</code> and <code>CellRanger</code>.
-Distributions reflect broad agreement in the total UMI count per cell between platforms, although <code>alevin-fry</code> returned slightly higher values for certain single-cell libraries.</p>
-<p>D. Comparison of log total genes detected per cell for six ScPCA libraries processed with <code>alevin-fry</code> and <code>CellRanger</code>.
-Distributions reflect broad agreement between platforms in the total number of genes detected per cell between platforms, although <code>alevin-fry</code> returned slightly higher values for certain single-cell libraries.
+<p>C. Comparison of log total UMI counts for libraries processed with both platforms.
+The total UMI count per cell between platforms broadly agree, although <code>alevin-fry</code> returned slightly higher values for certain single-cell libraries.</p>
+<p>D. Comparison of log total genes detected per cell for libraries processed with both platforms.
+The total number of genes detected per cell between platforms broadly agree, although <code>alevin-fry</code> returned slightly higher values for certain single-cell libraries.
 <br><br></p>
 <!-- Figure S2 -->
 <div id="fig:figS2" class="fignos">
@@ -1103,7 +1084,6 @@ Distributions reflect broad agreement between platforms in the total number of g
 <p>A. Overview of the <code>scpca-nf</code> workflow for processing libraries with CITE-seq or antibody-derived tag (ADT) data.
 The workflow mirrors that shown in Figure <a href="#fig:fig2">2</a>A with several differences accounting for the presence of ADT data.
 First, both an RNA and ADT FASTQ file are required as input to <code>alevin-fry</code>, along with a TSV file containing information about ADT barcodes.
-The gene-by-cell and ADT-by-cell count matrices are produced and read into <code>R</code> to create a <code>SingleCellExperiment</code> (SCE) object.
 Second, during post-processing, statistics are calculated to filter cells based on ADT counts, but the filter is not applied.
 ADT counts are also normalized and included in the <code>Processed SCE Object</code>.
 Third, the summary QC report will include a <code>CITE-seq</code> section with additional information about ADT-level processing.
@@ -1111,19 +1091,17 @@ Fourth, the workflow exports <code>SCE</code> objects containing both RNA and AD
 <p>Panels B-D show example figures that appear in the CITE-seq section of the summary QC report, shown here for <code>SCPCL000290</code>.</p>
 <p>B. The percent of mitochondrial reads in each cell against the number of genes detected in each cell.
 The panel labeled “Keep” displays cells that are retained based on both RNA and ADT counts.
-The panel labeled “Filter (ADT only)” displays cells that are filtered based on only ADT counts.
-The panel labeled “Filter (RNA only)” displays cells that are filtered based on only RNA counts.
-The panel labeled “Filter (RNA &amp; ADT)” panel displays cells that are filtered based on both RNA and ADT counts.</p>
-<p>C. Density plots of the log-normalized ADT counts shown for the four most variable ADTs in the library.</p>
-<p>D. UMAP embeddings of log-normalized RNA expression values where each cell is colored by the expression of the given highly-variable ADT.</p>
+Other panels display cells that are filtered based only on the given type of counts.</p>
+<p>C. Density plots of the log-normalized ADT counts for the library’s four most variable ADTs.</p>
+<p>D. UMAP log-normalized RNA expression values.
+Cells are colored by expression of the given highly-variable ADT.</p>
 <p>E. Overview of the <code>scpca-nf</code> workflow for multiplexed libraries.
 The workflow mirrors that shown in Figure <a href="#fig:fig2">2</a>A with several differences accounting for the presence of multiplexed data.
 First, both an RNA and HTO FASTQ file are required as input to <code>alevin-fry</code>, along with a TSV file providing information about library pools.
-The gene-by-cell and HTO-by-cell count matrices are produced and read into <code>R</code> to create a <code>SingleCellExperiment</code> (SCE) object.
 Second, in parallel, the RNA FASTQ file, the HTO FASTQ file, and, if available, a corresponding Bulk RNA FASTQ file for each sample present in the multiplexed library are provided to a demultiplexing subprocess.
-The workflow calculates demultiplexing results based on HTO counts, as well as genetic demultiplexing results if the library has corresponding bulk RNA FASTQ files.
-Demultiplexing results are stored in all exported <code>SCE</code> objects (<code>Unfiltered</code>, <code>Filtered</code>, and <code>Processed</code>), but libraries themselves are not demultiplexed.
-Third, only <code>SCE</code> files are provided for multiplexed libraries; no corresponding <code>AnnData</code> files are provided.
+The workflow calculates demultiplexing results based on HTO counts, as well as genetic demultiplexing results if the library has corresponding bulk RNA-seq data.
+Demultiplexing results are stored in all exported <code>SCE</code> objects versions, but libraries themselves are not demultiplexed.
+Third, only <code>SCE</code>, not <code>AnnData</code>, files are provided for multiplexed libraries.
 <br><br></p>
 <!-- Figure S3 -->
 <div id="fig:figS3" class="fignos">
@@ -1133,20 +1111,19 @@ Third, only <code>SCE</code> files are provided for multiplexed libraries; no co
 </figure>
 </div>
 <p>A. Overview of the bulk RNA-Seq workflow.
-A set of FASTQ files from libraries sequenced with bulk RNA-seq are provided as input.
 Reads are trimmed using <code>fastp</code>, and <code>salmon</code> is used to map reads and quantify counts.
-The quantified gene expression files output from <code>salmon</code> are then grouped by ScPCA Project ID, and a sample-by-gene count matrix is exported for each project in TSV format.</p>
+Quantified expression files are grouped by project and exported as a sample-by-gene count matrix in TSV format.</p>
 <p>B. Overview of the spatial transcriptomics workflow.
-The FASTQ file and tissue image for a given library are provided as input to <code>spaceranger</code>.
-The workflow directly returns the results from running <code>spaceranger</code> without any further processing.</p>
+The FASTQ file and tissue and/or CytAssist image for a given library are input to <code>spaceranger</code>.
+<code>spaceranger</code> results are returned without any further processing.</p>
 <p>C. Overview of the merged workflow.
-Processed <code>SCE</code> objects associated with a given project are merged into a single object, including ADT counts from CITE-seq data if present, and a merged summary report is generated.
-Merged objects are available for download either in <code>SCE</code> or <code>AnnData</code> format.</p>
+Processed <code>SCE</code> objects in a given project are merged into a single object, including ADT counts from CITE-seq data if present, and a merged summary report is generated.
+Merged objects are provided in either <code>SCE</code> or <code>AnnData</code> format.</p>
 <p>D. Example of UMAPs as shown in the merged summary report.
-A grid of UMAPs is shown for each library in the merged object, with cells in the library of interest shown in red and cells belonging to other libraries shown in gray.
-The UMAP was constructed from the merged object such that all libraries contribute an equal weight, but no batch correction was performed.
+Cells from the library of interest are in red, and cells from other libraries are in gray.
+The UMAP was constructed from the merged object with equal library weighting, but no batch correction was performed.
 The libraries pictured are a subset of libraries in the ScPCA project <code>SCPCP000003</code>.
-For this figure specifically, the merged UMAP was constructed from a merged object containing only these four libraries, but the merged object and summary report on the ScPCA Portal for <code>SCPCP000003</code> contain all of this project’s libraries.
+For this figure specifically, the merged UMAP was constructed from these four libraries only, but the merged object and summary report on the ScPCA Portal for <code>SCPCP000003</code> contain all of this project’s libraries.
 <br><br></p>
 <!--Figure S4-->
 <div id="fig:figS4" class="fignos">
@@ -1157,11 +1134,10 @@ For this figure specifically, the merged UMAP was constructed from a merged obje
 </div>
 <p>A. UMAP highlighting cells annotated as types of T cells with <code>SingleR</code>, <code>CellAssign</code>, <code>SCimilarity</code> as well as the associated consensus cell types for the library <code>SCPCL000049</code>.
 All other cells are shown in gray.
-This UMAP specifically shows the top three T cell types for each cell type assignment, with remaining T cell types grouped together as “other T cells.”</p>
+The top three T cell types are shown for each method, with remaining T cell types combined in “other T cells.”</p>
 <p>B. UMAP showing the top seven consensus cell types in <code>SCPCL0000049</code>.
-All additional consensus cell types are included in the “all remaining cell types” category.</p>
-<p>C. UMAP showing total per-cell CNV events for <code>SCPCL0000049</code>.
-The total per-cell CNV values were calculated by summing the total number of chromosome arms with a CNV event, as estimated by the <code>i6</code> HMM in <code>InferCNV</code> <span class="citation" data-cites="b9hQbZOR">[<a href="#ref-b9hQbZOR" role="doc-biblioref">52</a>]</span>.
+Other consensus cell types are included in the “all remaining cell types” category.</p>
+<p>C. UMAP showing total per-cell CNV events, calculated by summing the number of chromosome arms with a CNV event as estimated by the <code>i6</code> HMM in <code>InferCNV</code>, <span class="citation" data-cites="b9hQbZOR">[<a href="#ref-b9hQbZOR" role="doc-biblioref">52</a>]</span>, for <code>SCPCL0000049</code>.
 <br><br></p>
 <!-- Figure S5 -->
 <div id="fig:figS5" class="fignos">
@@ -1170,14 +1146,14 @@ The total per-cell CNV values were calculated by summing the total number of chr
 <figcaption aria-hidden="true"><span>Figure S5:</span> <strong>Consensus cell type annotation gene expression in other diagnosis groups.</strong></figcaption>
 </figure>
 </div>
-<p>Dot plots showing expression of cell-type-specific marker genes across all libraries from Leukemia (A), Sarcoma (B), and Other solid tumors (C) diagnosis groups.
-Expression is shown for each broad cell type annotation, where each broad cell type annotation is a collection of similar consensus cell type annotations.
-The y-axis displays the broad consensus cell type observed across libraries, with the total number of cells indicated in parentheses.
-The x-axis displays marker genes, determined by <code>CellMarker 2.0</code> <span class="citation" data-cites="MclvBVPD">[<a href="#ref-MclvBVPD" role="doc-biblioref">87</a>]</span>, used for consensus cell type validation for each cell type shown along the top annotation bar.
+<p>Dot plots showing expression of cell-type-specific marker genes across libraries from Leukemia (A), Sarcoma (B), and Other solid tumors (C) diagnosis groups.
+Expression is shown for each broad cell type annotation.
+The y-axis displays broad consensus cell types.
+The x-axis displays marker genes, determined by <code>CellMarker 2.0</code> <span class="citation" data-cites="MclvBVPD">[<a href="#ref-MclvBVPD" role="doc-biblioref">87</a>]</span>, used to validate cell types in the top annotation bar.
 Dots are colored by mean gene expression across libraries and sized proportionally to the percent of libraries they are observed in, out of all cells with the same broad cell type annotation in the given diagnosis.
-A maximum of 10 cell type marker genes are shown for each broad cell type annotation.
-Only broad cell type annotations that appear in at least 50 cells across samples in the given diagnosis group are shown.
-Cell types without associated marker genes in <code>CellMarker 2.0</code> are not shown, including <code>pigment cell</code> for Sarcoma (B) and <code>pigment cell</code> and <code>kidney cell</code> for Other solid tumors (C).
+Up to 10 marker genes are shown per broad cell type.
+Only broad cell type annotations present in at least 50 cells across samples in the given diagnosis group are shown.
+Cell types without associated marker genes in <code>CellMarker 2.0</code> are excluded, including <code>pigment cell</code> for Sarcoma (B) and <code>pigment cell</code> and <code>kidney cell</code> for Other solid tumors (C).
 <br><br></p>
 <!-- Figure S6 -->
 <div id="fig:figS6" class="fignos">
@@ -1186,10 +1162,9 @@ Cell types without associated marker genes in <code>CellMarker 2.0</code> are no
 <figcaption aria-hidden="true"><span>Figure S6:</span> <strong>Consensus cell type annotation distributions in other diagnosis groups.</strong></figcaption>
 </figure>
 </div>
-<p>Barplots of the percentage of cells annotated as each broad consensus cell type annotation across all libraries from Leukemia (A), Sarcoma (B), and Other solid tumors (C) diagnosis groups.
-Within each panel, libraries are shown grouped by diagnosis.
+<p>Barplots of the percentage of cells annotated as each broad consensus cell type annotation across all libraries from Leukemia (A), Sarcoma (B), and Other solid tumors (C) diagnosis groups, specifically for non-multiplexed libraries from patient tissue samples
+Libraries are grouped by diagnosis in each panel.
 Each column represents the distribution of cell types within a single library.
-Only non-multiplexed libraries from patient tissue samples are shown.
 <br><br></p>
 <!-- Figure S7 -->
 <div id="fig:figS7" class="fignos">
@@ -1198,12 +1173,10 @@ Only non-multiplexed libraries from patient tissue samples are shown.
 <figcaption aria-hidden="true"><span>Figure S7:</span> <strong>Comparison of bulk and pseudobulk modalities for additional projects.</strong></figcaption>
 </figure>
 </div>
-<p>A. Scatter plots colored by point density of <code>DESeq2</code>-transformed and normalized bulk RNA-seq expression compared to pseudobulk expression from single-nuclei RNA-seq.
-Projects with RNA-seq for both bulk and single-cell/nuclei modalities that are not displayed in Figure <a href="#fig:fig6">6</a>A are shown.
-All samples shown here are single-nuclei, and the number of samples considered per project is shown in parentheses.
-The regression line is also shown for each project.</p>
-<p>B. Odds ratios from overrepresentation analysis for the same samples shown in panel A, colored by FDR-corrected significance.
-Each odds ratio represents the odds that marker genes for the given cell type were overrepresented in the bulk modality, relative to other genes.
+<p>A. Scatter plots colored by point density of <code>DESeq2</code>-transformed and normalized bulk RNA-seq expression compared to pseudobulk expression from single-nuclei RNA-seq, with a regression line shown.
+Projects with RNA-seq for both bulk and single-cell/nuclei modalities that are not displayed in Figure <a href="#fig:fig6">6</a>A are shown, with sample counts in parentheses.
+All samples shown here are single-nuclei libraries.</p>
+<p>B. Odds ratios, which indicate overrepresentation of cell-type marker genes in bulk relative to single-cell/nuclei RNA-seq, from overrepresentation analysis for the same samples shown in panel A, colored by FDR-corrected significance.
 44 cell types were evaluated for project <code>SCPCP000006</code>, and 50 cell types were evaluated for project <code>SCPCP000017</code>.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
@@ -1364,7 +1337,7 @@ Each odds ratio represents the odds that marker genes for the given cell type we
 <div class="csl-left-margin">51. </div><div class="csl-right-inline"><strong>A cell atlas foundation model for scalable search of similar human cells</strong> <div class="csl-block">Graham Heimberg, Tony Kuo, Daryle J DePianto, Omar Salem, Tobias Heigl, Nathaniel Diamant, Gabriele Scalia, Tommaso Biancalani, Shannon J Turley, Jason R Rock, … Aviv Regev</div> <em>Nature</em> (2024-11-20) <a href="https://doi.org/g8rqsf">https://doi.org/g8rqsf</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41586-024-08411-y">10.1038/s41586-024-08411-y</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/39566551">39566551</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11864978">PMC11864978</a></div></div>
 </div>
 <div id="ref-b9hQbZOR" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">52. </div><div class="csl-right-inline"><strong>broadinstitute/infercnv</strong> <div class="csl-block">Broad Institute</div> (2026-05-04) <a href="https://github.com/broadinstitute/infercnv">https://github.com/broadinstitute/infercnv</a></div>
+<div class="csl-left-margin">52. </div><div class="csl-right-inline"><strong>broadinstitute/infercnv</strong> <div class="csl-block">Broad Institute</div> (2026-05-06) <a href="https://github.com/broadinstitute/infercnv">https://github.com/broadinstitute/infercnv</a></div>
 </div>
 <div id="ref-KRBW8xeZ" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">53. </div><div class="csl-right-inline"><strong>anndata: Annotated data</strong> <div class="csl-block">Isaac Virshup, Sergei Rybakov, Fabian J Theis, Philipp Angerer, FAlexander Wolf</div> <em>openRxiv</em> (2021-12-19) <a href="https://doi.org/gst7w6">https://doi.org/gst7w6</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2021.12.16.473007">10.1101/2021.12.16.473007</a></div></div>
