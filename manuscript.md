@@ -39,8 +39,8 @@ header-includes: |
   <meta name="dc.date" content="2026-05-06" />
   <meta name="citation_publication_date" content="2026-05-06" />
   <meta property="article:published_time" content="2026-05-06" />
-  <meta name="dc.modified" content="2026-05-06T14:25:55+00:00" />
-  <meta property="article:modified_time" content="2026-05-06T14:25:55+00:00" />
+  <meta name="dc.modified" content="2026-05-06T16:35:13+00:00" />
+  <meta property="article:modified_time" content="2026-05-06T16:35:13+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/4a359fbd2db8616db4f3903e4065f75e2d5c28b2/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/4a359fbd2db8616db4f3903e4065f75e2d5c28b2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/4a359fbd2db8616db4f3903e4065f75e2d5c28b2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2e88da6a38684896132af0e996ef420465257abe/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2e88da6a38684896132af0e996ef420465257abe/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2e88da6a38684896132af0e996ef420465257abe/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,9 +118,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/4a359fbd2db8616db4f3903e4065f75e2d5c28b2/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/2e88da6a38684896132af0e996ef420465257abe/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@4a359fb](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/4a359fbd2db8616db4f3903e4065f75e2d5c28b2)
+from [AlexsLemonade/ScPCA-manuscript@2e88da6](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/2e88da6a38684896132af0e996ef420465257abe)
 on May 6, 2026.
 </em></small>
 
@@ -848,6 +848,19 @@ All merged `SingleCellExperiment` objects were converted to `AnnData` objects an
 If a merged `SingleCellExperiment` object contained any ADT data, the RNA and ADT data were exported and saved separately as RNA (`_rna.h5ad`) and ADT (`_adt.h5ad`) objects.
 In contrast, if a merged `SingleCellExperiment` object contained HTO data due to the presence of any multiplexed libraries in the merged object, the HTO data was removed from the `SingleCellExperiment` object and not included in the exported `AnnData` object.
 
+### QUANTIFICATION AND STATISTICAL REPORTING
+
+Details regarding total sample and/or cell numbers and any statistical tests used can be found in the figure legends and figures. 
+For Figure {@fig:fig4}, Figure {@fig:fig5}, Figure {@fig:figS4}, and Figure {@fig:figS5}, numbers in parentheses in the figure indicate total cell numbers.
+For Figure {@fig:fig1}, Figure {@fig:fig6}, and Figure {@fig:figS7}, numbers in parenthesis in the figure indicate total sample numbers.
+
+#### Benchmarking of `alevin-fry` and `cellranger count` performance 
+
+Six libraries, three single-cell and three single-nuclei, were randomly selected and used to benchmark the performance of `alevin-fry` and `cellranger count`, results of which are shown in Figure {@fig:figS1}. 
+Libraries were processed with `salmon alevin` v1.5.2 and `alevin-fry` v0.4.1 or `cellranger count` from Cell Ranger v6.1.2.
+Results were generated using default parameters for single-cell libraries and use of the `--include_introns` flag to include intronic reads for single-nuclei libraries only. 
+The Pearson correlation between mean gene expression across both methods is reported in Figure {@fig:figS1}B.
+
 #### Analysis of bulk RNA-seq data
 
 ##### Data preparation
@@ -1125,17 +1138,17 @@ Marker genes for all cell types in each organ were included.
 <br><br>
 
 <!-- Figure S1 -->
-![**Results from benchmarking `alevin-fry` and `CellRanger` performance.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_s1.png?sanitize=true){#fig:figS1 tag="S1" width="7in"}
+![**Results from benchmarking `alevin-fry` and `cellranger count` performance.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_s1.png?sanitize=true){#fig:figS1 tag="S1" width="7in"}
 
-Panels compare metrics for six ScPCA libraries (three single-cell and three single-nuclei), obtained from processing with `salmon alevin` and `alevin-fry` or `CellRanger`.
-Results were generated with `CellRanger v6.1.2` using default parameters for single-cell libraries and the `--include_introns` flag to include intronic reads for single-nuclei libraries only.
-Libraries were processed with `salmon alevin v1.5.2` and `alevin-fry v0.4.1` using an index containing both spliced and unspliced cDNA (see Methods).
+Panels compare metrics for six ScPCA libraries (three single-cell and three single-nuclei), obtained from processing with `salmon alevin` and `alevin-fry` or `cellranger count`.
+Results were generated with CellRanger v6.1.2 using default parameters for single-cell libraries and the `--include_introns` flag to include intronic reads for single-nuclei libraries only.
+Libraries were processed with `salmon alevin` v1.5.2 and `alevin-fry` v0.4.1 using an index containing both spliced and unspliced cDNA (see Methods).
 Libraries used for benchmarking were randomly chosen.
 
 A. Runtime in minutes (top row) and peak memory in GB (bottom row) for libraries processed with both platforms.
-Processing with `alevin-fry` was consistently faster and more memory-efficient than processing with `CellRanger`.
+Processing with `alevin-fry` was consistently faster and more memory-efficient than processing with `cellranger count`.
 
-Panels B-D show only cells present in both `alevin-fry` and `CellRanger` outputs.
+Panels B-D show only cells present in both `alevin-fry` and `cellranger count` outputs.
 
 B. Comparison of mean gene expression values for libraries processed with both platforms, shown on a log-scale.
 Each point is a gene, and only genes detected in at least 5 cells are shown.
