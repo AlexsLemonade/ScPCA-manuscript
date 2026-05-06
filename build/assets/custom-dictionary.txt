@@ -61,6 +61,7 @@ embeddings
 endo
 Ensembl
 envest
+epigenomic
 eq
 et
 exocrine
@@ -163,6 +164,7 @@ s
 SCE
 ScPCA
 SCPCP
+scATAC
 scRNA
 selectable
 SingleCellExperiment
@@ -181,6 +183,7 @@ svgs
 Taroni
 tbl
 transcriptionally
+transcriptomic
 transcriptomics
 translational
 TSV
