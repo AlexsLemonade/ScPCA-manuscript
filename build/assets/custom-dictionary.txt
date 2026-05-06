@@ -163,6 +163,7 @@ s
 SCE
 ScPCA
 SCPCP
+scRNA
 selectable
 SingleCellExperiment
 SingleR
