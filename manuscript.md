@@ -39,8 +39,8 @@ header-includes: |
   <meta name="dc.date" content="2026-05-07" />
   <meta name="citation_publication_date" content="2026-05-07" />
   <meta property="article:published_time" content="2026-05-07" />
-  <meta name="dc.modified" content="2026-05-07T19:24:37+00:00" />
-  <meta property="article:modified_time" content="2026-05-07T19:24:37+00:00" />
+  <meta name="dc.modified" content="2026-05-07T19:30:36+00:00" />
+  <meta property="article:modified_time" content="2026-05-07T19:30:36+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/f30df0092e054baef07335b77cd2a1834c1d7bc8/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/f30df0092e054baef07335b77cd2a1834c1d7bc8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/f30df0092e054baef07335b77cd2a1834c1d7bc8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/967ad195dfe2945a3a57c23bc42514e1e933b1bb/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/967ad195dfe2945a3a57c23bc42514e1e933b1bb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/967ad195dfe2945a3a57c23bc42514e1e933b1bb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,9 +118,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/f30df0092e054baef07335b77cd2a1834c1d7bc8/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/967ad195dfe2945a3a57c23bc42514e1e933b1bb/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@f30df00](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/f30df0092e054baef07335b77cd2a1834c1d7bc8)
+from [AlexsLemonade/ScPCA-manuscript@967ad19](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/967ad195dfe2945a3a57c23bc42514e1e933b1bb)
 on May 7, 2026.
 </em></small>
 
@@ -298,7 +298,7 @@ Jaclyn N. Taroni \<jaclyn.taroni@ccdatalab.org\>.
 :::
 
 
-## Abstract {.page_break_before}
+## Summary {.page_break_before}
 
 The Single-cell Pediatric Cancer Atlas (ScPCA) Portal (<https://scpca.alexslemonade.org/>) is a data resource for uniformly processed single-cell and single-nuclei RNA sequencing (RNA-seq) data and de-identified metadata from pediatric tumor samples.
 Originally comprised of data from 10 projects funded by Alex’s Lemonade Stand Foundation (ALSF), the Portal currently contains summarized gene expression data for over 700 samples across 55 cancer types from ALSF-funded and community-contributed datasets.
