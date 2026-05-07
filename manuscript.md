@@ -39,8 +39,8 @@ header-includes: |
   <meta name="dc.date" content="2026-05-07" />
   <meta name="citation_publication_date" content="2026-05-07" />
   <meta property="article:published_time" content="2026-05-07" />
-  <meta name="dc.modified" content="2026-05-07T18:36:03+00:00" />
-  <meta property="article:modified_time" content="2026-05-07T18:36:03+00:00" />
+  <meta name="dc.modified" content="2026-05-07T19:24:37+00:00" />
+  <meta property="article:modified_time" content="2026-05-07T19:24:37+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2662f4594f6a388de83ae8f04049fbf05601a279/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2662f4594f6a388de83ae8f04049fbf05601a279/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2662f4594f6a388de83ae8f04049fbf05601a279/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/f30df0092e054baef07335b77cd2a1834c1d7bc8/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/f30df0092e054baef07335b77cd2a1834c1d7bc8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/f30df0092e054baef07335b77cd2a1834c1d7bc8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,9 +118,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/2662f4594f6a388de83ae8f04049fbf05601a279/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/f30df0092e054baef07335b77cd2a1834c1d7bc8/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@2662f45](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/2662f4594f6a388de83ae8f04049fbf05601a279)
+from [AlexsLemonade/ScPCA-manuscript@f30df00](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/f30df0092e054baef07335b77cd2a1834c1d7bc8)
 on May 7, 2026.
 </em></small>
 
@@ -1164,10 +1164,11 @@ Samples with RNA-seq for both bulk and single-cell/nuclei modalities, excluding 
 B. Odds ratios, which indicate overrepresentation of cell-type marker genes in bulk relative to single-cell/nuclei RNA-seq, from overrepresentation analysis for the same samples shown in panel A, colored by FDR-corrected significance.
 68 cell types were evaluated for each project.
 
+
 ## Supplementary Figures and Tables {.page_break_before}
 
 <!-- Table S1 -->
-**Table S1. Overview of ScPCA Portal Datasets.**
+**Table S1. Overview of ScPCA Portal Datasets, Related to Figure 1.**
 This table provides descriptions and sample and library counts for projects in the ScPCA Portal.
 
 `scpca_project_id`: ScPCA project unique identifier.
@@ -1180,7 +1181,7 @@ All remaining columns give the number of libraries (as designated with `(L)`) wi
 <br><br>
 
 <!-- Table S2 -->
-**Table S2. Summary of references used for cell type annotation with `CellAssign`.**
+**Table S2. Summary of references used for cell type annotation with `CellAssign`, Related to Figure 3.**
 This table summarizes the references used for assigning cell types using `CellAssign`.
 References were built using all cell types from a set of organs in `PanglaoDB`'s marker gene list.
 
@@ -1192,7 +1193,7 @@ Marker genes for all cell types in each organ were included.
 <br><br>
 
 <!-- Figure S1 -->
-![**Results from benchmarking `alevin-fry` and `cellranger count` performance.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_s1.png?sanitize=true){#fig:figS1 tag="S1" width="7in"}
+![**Results from benchmarking `alevin-fry` and `cellranger count` performance, Related to Figure 2.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_s1.png?sanitize=true){#fig:figS1 tag="S1" width="7in"}
 
 Panels compare metrics for six ScPCA libraries (three single-cell and three single-nuclei), obtained from processing with `salmon alevin` and `alevin-fry` or `cellranger count`.
 Results were generated with CellRanger v6.1.2 using default parameters for single-cell libraries and the `--include_introns` flag to include intronic reads for single-nuclei libraries only.
@@ -1216,7 +1217,7 @@ The total number of genes detected per cell between platforms broadly agree, alt
 <br><br>
 
 <!-- Figure S2 -->
-![**Processing additional single-cell modalities in `scpca-nf`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_s2.png?sanitize=true){#fig:figS2 tag="S2" width="7in"}
+![**Processing additional single-cell modalities in `scpca-nf`, Related to Figure 2.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_s2.png?sanitize=true){#fig:figS2 tag="S2" width="7in"}
 
 A. Overview of the `scpca-nf` workflow for processing libraries with CITE-seq or antibody-derived tag (ADT) data.
 The workflow mirrors that shown in Figure {@fig:fig2}A with several differences accounting for the presence of ADT data.
@@ -1247,7 +1248,7 @@ Third, only `SCE`, not `AnnData`, files are provided for multiplexed libraries.
 <br><br>
 
 <!-- Figure S3 -->
-![**Processing other sequencing modalities and merging objects with `scpca-nf`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_s3.png?sanitize=true){#fig:figS3 tag="S3" width="7in"}
+![**Processing other sequencing modalities and merging objects with `scpca-nf`, Related to Figure 2.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_s3.png?sanitize=true){#fig:figS3 tag="S3" width="7in"}
 
 A. Overview of the bulk RNA-Seq workflow.
 Reads are trimmed using `fastp`, and `salmon` is used to map reads and quantify counts.
@@ -1269,7 +1270,7 @@ For this figure specifically, the merged UMAP was constructed from these four li
 <br><br>
 
 <!--Figure S4-->
-![**Ontology-aware consensus cell type assignment provides harmonized labels for cells.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_s4.png?sanitize=true){#fig:figS4 tag="S4" width="7in"}
+![**Ontology-aware consensus cell type assignment provides harmonized labels for cells, Related to Figure 3.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_s4.png?sanitize=true){#fig:figS4 tag="S4" width="7in"}
 
 A. UMAP highlighting cells annotated as types of T cells with `SingleR`, `CellAssign`, `SCimilarity` as well as the associated consensus cell types for the library `SCPCL000049`.
 All other cells are shown in gray.
@@ -1283,7 +1284,7 @@ C. UMAP showing total per-cell CNV events, calculated by summing the number of c
 
 
 <!-- Figure S5 -->
-![**Consensus cell type annotation gene expression in other diagnosis groups.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_s5.png?sanitize=true){#fig:figS5 tag="S5" width="9in"}
+![**Consensus cell type annotation gene expression in other diagnosis groups, Related to Figure 4.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_s5.png?sanitize=true){#fig:figS5 tag="S5" width="9in"}
 
 Dot plots showing expression of cell-type-specific marker genes across libraries from Leukemia (A), Sarcoma (B), and Other solid tumors (C) diagnosis groups.
 Expression is shown for each broad cell type annotation.
@@ -1296,7 +1297,7 @@ Cell types without associated marker genes in `CellMarker 2.0` are excluded, inc
 <br><br>
 
 <!-- Figure S6 -->
-![**Consensus cell type annotation distributions in other diagnosis groups.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_s6.png?sanitize=true){#fig:figS6 tag="S6" width="7in"}
+![**Consensus cell type annotation distributions in other diagnosis groups, Related to Figure 4.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_s6.png?sanitize=true){#fig:figS6 tag="S6" width="7in"}
 
 Barplots of the percentage of cells annotated as each broad consensus cell type annotation across all libraries from Leukemia (A), Sarcoma (B), and Other solid tumors (C) diagnosis groups, specifically for non-multiplexed libraries from patient tissue samples
 Libraries are grouped by diagnosis in each panel.
@@ -1304,7 +1305,7 @@ Each column represents the distribution of cell types within a single library.
 <br><br>
 
 <!-- Figure S7 -->
-![**Comparison of bulk and pseudobulk modalities for additional projects.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_s7.png?sanitize=true){#fig:figS7 tag="S7" width="7in"}
+![**Comparison of bulk and pseudobulk modalities for additional projects, Related to Figure 6.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_s7.png?sanitize=true){#fig:figS7 tag="S7" width="7in"}
 
 A. Scatter plots colored by point density of `DESeq2`-transformed and normalized bulk RNA-seq expression compared to pseudobulk expression from single-nuclei RNA-seq, with a regression line shown.
 Projects with RNA-seq for both bulk and single-cell/nuclei modalities that are not displayed in Figure {@fig:fig6}A are shown, with sample counts in parentheses.
