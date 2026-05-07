@@ -103,7 +103,7 @@
   {
     "id": "url:https://github.com/broadinstitute/inferCNV",
     "type": "post-weblog",
-    "title": "InferCNV: Inferring Copy Number Alterations from Tumor Single Cell RNA-Seq Data",
+    "title": [{"literal": "InferCNV: Inferring Copy Number Alterations from Tumor Single Cell RNA-Seq Data"}],
     "author": [{"literal": "Broad Institute."}],
     "URL": "https://github.com/broadinstitute/inferCNV"
   },
@@ -442,5 +442,117 @@
     "issued": {"date-parts": [[2022]]},
     "container-title": "Preprint at medRxiv",
     "DOI": "10.1101/2022.04.13.22273750"
+  },
+  {
+    "id": "doi:10.5281/zenodo.20058961",
+    "type": "post-weblog",
+    "title": "AlexsLemonade/scpca-portal",
+    "author": [
+      {"family": "Gottlieb", "given": "A."},
+      {"family": "Mejia", "given": "D."},
+      {"family": "Ichihara", "given": "N."},
+      {"family": "Yakovets", "given": "A."},
+      {"family": "Wheeler", "given": "K."},
+      {"family": "Taroni", "given": "J."},
+      {"family": "Hawkins", "given": "A."},
+      {"family": "Prasad", "given": "D.V."},
+      {"family": "Chen", "given": "J."},
+      {"family": "Shapiro", "given": "J."}
+    ],
+    "issued": {"date-parts": [[2026]]},
+    "container-title": "Zenodo",
+    "DOI": "10.5281/zenodo.20058961"
+  },
+  {
+    "id": "doi:10.5281/zenodo.20044281",
+    "type": "post-weblog",
+    "title": "AlexsLemonade/alsf-scpca",
+    "author": [
+      {"family": "Shapiro", "given": "J."},
+      {"family": "Hawkins", "given": "A."},
+      {"family": "Wheeler", "given": "K."},
+      {"family": "Spielman", "given": "S.J."},
+      {"family": "Yakovets", "given": "A."}
+    ],
+    "issued": {"date-parts": [[2026]]},
+    "container-title": "Zenodo",
+    "DOI": "10.5281/zenodo.20044281"
+  },
+  {
+    "id": "doi:10.5281/zenodo.20044314",
+    "type": "post-weblog",
+    "title": "AlexsLemonade/sc-data-integration",
+    "author": [
+      {"family": "Hawkins", "given": "A."},
+      {"family": "Spielman", "given": "S.J."},
+      {"family": "Shapiro", "given": "J."},
+      {"family": "Bethell", "given": "C."},
+      {"family": "Taroni", "given": "J."}
+    ],
+    "issued": {"date-parts": [[2026]]},
+    "container-title": "Zenodo",
+    "DOI": "10.5281/zenodo.20044314"
+  },
+  {
+    "id": "doi:10.5281/zenodo.18459136",
+    "type": "post-weblog",
+    "title": "AlexsLemonade/OpenScPCA-analysis",
+    "author": [
+      {"family": "Spielman", "given": "S.J."},
+      {"family": "Hawkins", "given": "A."},
+      {"family": "Shapiro", "given": "J."},
+      {"family": "Taroni", "given": "J."},
+      {"family": "Plaschka", "given": "M."},
+      {"family": "O'Malley", "given": "J."},
+      {"literal": "UTSouthwesternDSSR"},
+      {"family": "Prasad", "given": "D.V."},
+      {"family": "Chen", "given": "J."},
+      {"family": "Truong", "given": "D."}
+    ],
+    "issued": {"date-parts": [[2026]]},
+    "container-title": "Zenodo",
+    "DOI": "10.5281/zenodo.18459136"
+  },
+  {
+    "id": "doi:10.5281/zenodo.20056054",
+    "type": "post-weblog",
+    "title": "AlexsLemonade/OpenScPCA-nf",
+    "author": [
+      {"family": "Shapiro", "given": "J."},
+      {"family": "Hawkins", "given": "A."},
+      {"family": "Spielman", "given": "S.J."},
+      {"family": "Jackson", "given": "R."},
+      {"family": "Taroni", "given": "J."}
+    ],
+    "issued": {"date-parts": [[2026]]},
+    "container-title": "Zenodo",
+    "DOI": "10.5281/zenodo.20056054"
+  },
+  {
+    "id": "doi:10.5281/zenodo.20044462",
+    "type": "post-weblog",
+    "title": "AlexsLemonade/ScPCAr",
+    "author": [
+      {"family": "Shapiro", "given": "J."}
+    ],
+    "issued": {"date-parts": [[2026]]},
+    "container-title": "Zenodo",
+    "DOI": "10.5281/zenodo.20044462"
+  },
+{
+    "id": "doi:10.5281/zenodo.10685499",
+    "type": "post-weblog",
+    "title": "SCimilarity Models",
+    "author": [
+      {"family": "Heimberg", "given": "G."},
+      {"family": "Kuo", "given": "T."},
+      {"family": "Diamant", "given": "N."},
+      {"family": "Salem", "given": "O."},
+      {"family": "Bravo", "given": "H.C."},
+      {"family": "Vander Heiden", "given": "J."}
+    ],
+    "issued": {"date-parts": [[2024]]},
+    "container-title": "Zenodo",
+    "DOI": "10.5281/zenodo.10685499"
   }
 ]
