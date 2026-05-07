@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2026-05-06'
+date-meta: '2026-05-07'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -36,11 +36,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2026-05-06" />
-  <meta name="citation_publication_date" content="2026-05-06" />
-  <meta property="article:published_time" content="2026-05-06" />
-  <meta name="dc.modified" content="2026-05-06T16:35:13+00:00" />
-  <meta property="article:modified_time" content="2026-05-06T16:35:13+00:00" />
+  <meta name="dc.date" content="2026-05-07" />
+  <meta name="citation_publication_date" content="2026-05-07" />
+  <meta property="article:published_time" content="2026-05-07" />
+  <meta name="dc.modified" content="2026-05-07T18:36:03+00:00" />
+  <meta property="article:modified_time" content="2026-05-07T18:36:03+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2e88da6a38684896132af0e996ef420465257abe/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2e88da6a38684896132af0e996ef420465257abe/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2e88da6a38684896132af0e996ef420465257abe/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2662f4594f6a388de83ae8f04049fbf05601a279/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2662f4594f6a388de83ae8f04049fbf05601a279/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/2662f4594f6a388de83ae8f04049fbf05601a279/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,10 +118,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/2e88da6a38684896132af0e996ef420465257abe/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/2662f4594f6a388de83ae8f04049fbf05601a279/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@2e88da6](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/2e88da6a38684896132af0e996ef420465257abe)
-on May 6, 2026.
+from [AlexsLemonade/ScPCA-manuscript@2662f45](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/2662f4594f6a388de83ae8f04049fbf05601a279)
+on May 7, 2026.
 </em></small>
 
 
@@ -404,9 +404,9 @@ The unfiltered gene-by-cell counts matrices are filtered to remove any barcodes 
 Low-quality cells are identified and removed with `miQC` [@doi:10.1371/journal.pcbi.1009290], which jointly models the proportion of mitochondrial reads and detected genes per cell and calculates a probability that each cell is compromised.
 The remaining cells' counts are normalized [@doi:10.1186/s13059-016-0947-7], and reduced-dimension representations are calculated using both principal component analysis (PCA) and uniform manifold approximation and projection (UMAP) [@arxiv:1802.03426].
 Cell types are classified using three automated methods, `SingleR` [@doi:10.1038/s41590-018-0276-y], `CellAssign` [@doi:10.1038/s41592-019-0529-1], and `SCimilarity` [@doi:10.1038/s41586-024-08411-y], and a consensus cell type label is derived from these labels.
-Finally, CNV is estimated for each cell using `InferCNV` [@url:https://github.com/broadinstitute/inferCNV].
+Finally, CNV is estimated for each cell using `inferCNV` [@url:https://github.com/broadinstitute/inferCNV].
 
-To support both R and Python users, downloads are available as either `SingleCellExperiment` or `AnnData` [@doi:10.1101/2021.12.16.473007] objects.
+To support both R and Python users, downloads are available as either `SingleCellExperiment` or `AnnData` [@doi:10.21105/joss.04371] objects.
 The workflow outputs three different `SingleCellExperiment` objects to `.rds` files: a processed object containing dimension reduction results, cell type annotations, and CNV inference; an unfiltered object with no processing; and a filtered object with the empty droplet filtered gene-by-cell matrices.
 `scpca-nf` also converts all `SingleCellExperiment` objects to `AnnData` objects to `.h5ad` files (Figure {@fig:fig2}A).
 Downloads contain the unfiltered, filtered, and processed objects from `scpca-nf` to allow users to choose to perform their own filtering and normalization or to start their analysis from a processed object.
@@ -506,7 +506,7 @@ Figure {@fig:fig5}A displays a UMAP of all libraries in `SCPCP000004` highlighti
 Unlike the consensus cell type annotations, the OpenScPCA annotations distinguish between normal and malignant cells and contain far fewer uncharacterized cells.
 Summary cell type reports for projects with OpenScPCA annotations also include comparisons between `scpca-nf` and OpenScPCA annotations.
 
-In addition, `scpca-nf` applies `InferCNV` [@url:https://github.com/broadinstitute/inferCNV] to estimate copy-number alterations (Figure {@fig:fig2}A) when enough normal cells are present in a library to serve as a reference (see Methods for details).
+In addition, `scpca-nf` applies `inferCNV` [@url:https://github.com/broadinstitute/inferCNV] to estimate copy-number alterations (Figure {@fig:fig2}A) when enough normal cells are present in a library to serve as a reference (see Methods for details).
 The CNV estimates complement the consensus cell types by providing a proxy for a cell's malignant status; cells with high levels of CNV are more likely to be tumor cells.
 Across libraries within `SCPCP000004`, malignant cell type annotations from OpenScPCA (which does not use CNV information) (Figure {@fig:fig5}A) and the total per-cell CNV (Figure {@fig:fig5}B) broadly correspond.
 We probed this relationship further within a single neuroblastoma library, finding signatures of canonical neuroblastoma CNV events such as `1q` loss, `11q` gain, and `17p` loss [@doi:10.1038/nrdp.2016.78; @doi:10.1016/j.celrep.2024.114804; @doi:10.1158/2159-8290.CD-14-0622] within malignant cells (Figure {@fig:fig5}C).
@@ -567,11 +567,11 @@ All projects included in this publication are available from the ScPCA Portal wi
 ##### Code
 
 - The Nextflow workflow used to process all samples is available on GitHub at <https://github.com/AlexsLemonade/scpca-nf> and is archived at [TODO: Zenodo DOI].
-- The ScPCA Portal code can be found at <https://github.com/AlexsLemonade/scpca-portal> and is archived at [TODO: Zenodo DOI].
-- The benchmarking of tools used to build `scpca-nf` are available at <https://github.com/AlexsLemonade/alsf-scpca/tree/main/analysis> and <https://github.com/AlexsLemonade/sc-data-integration/tree/main/celltype_annotation>, with all repository contents archived at [TODO: Zenodo DOI] and [TODO: Zenodo DOI], respectively.
+- The ScPCA Portal code can be found at <https://github.com/AlexsLemonade/scpca-portal> and is archived at 10.5281/zenodo.20058961 [@doi:10.5281/zenodo.20058961].
+- The benchmarking of tools used to build `scpca-nf` are available at <https://github.com/AlexsLemonade/alsf-scpca/tree/main/analysis> and <https://github.com/AlexsLemonade/sc-data-integration/tree/main/celltype_annotation>, with all repository contents archived at 10.5281/zenodo.20044281 [@doi:10.5281/zenodo.20044281] and 10.5281/zenodo.20044314 [@doi:10.5281/zenodo.20044313], respectively.
 - All code for creating reference files for consensus cell type assignment is available at <https://github.com/AlexsLemonade/OpenScPCA-analysis/tree/main/analyses/cell-type-consensus>, and all repository contents are archived at 10.5281/zenodo.18459136.
-- All code to assign OpenScPCA project cell type annotations is available at <https://github.com/AlexsLemonade/OpenScPCA-nf> and is archived at [TODO: Zenodo DOI].
-- All code for the `ScPCAr` package for programmatically downloading data from the Portal can be found at <https://github.com/AlexsLemonade/ScPCAr> and is archived at [TODO: Zenodo DOI].
+- All code to assign OpenScPCA project cell type annotations is available at <https://github.com/AlexsLemonade/OpenScPCA-nf> and is archived at 10.5281/zenodo.20056054 [@doi:10.5281/zenodo.20056054].
+- All code for the `ScPCAr` package for programmatically downloading data from the Portal can be found at <https://github.com/AlexsLemonade/ScPCAr> and is archived at 10.5281/zenodo.20044462 [@doi:10.5281/zenodo.20044462].
 - All code for the underlying figures and analyses is available at <https://github.com/AlexsLemonade/scpca-paper-figures> and is archived at [TODO: Zenodo DOI].
 To reproduce the figures in this manuscript, see <https://github.com/AlexsLemonade/scpca-paper-figures/tree/main/reproduce-figures>.
 
@@ -600,7 +600,7 @@ In an effort to ensure sample metadata for ScPCA are compatible with CZI's CELLx
 | Age             | Ontology term obtained from HsapDv [@url:https://www.ebi.ac.uk/ols4/ontologies/hsapdv]. For ages 0-11 months, the HsapDv for age in months was used. For ages 12 months and greater, the HsapDv for age in years was used. |
 | Sex             | Ontology term obtained from PATO, either male (PATO:0000384), female (PATO:0000383), or unknown  [@doi:10.1093/bib/bbx035; @url:https://www.ebi.ac.uk/ols4/ontologies/pato].  |
 | Organism   | NCBI taxonomy term for organism. All current samples available on the Portal are from Homo sapiens or NCBITaxon:9606 [@doi:10.1093/database/baaa062; @url:https://www.ncbi.nlm.nih.gov/taxonomy].|
-| Diagnosis   | The most appropriate MONDO term based on the provided diagnosis [@doi:10.1101/2022.04.13.22273750; @url:https://www.ebi.ac.uk/ols4/ontologies/mondo]. An exact match was identified for most samples, but in a handful of cases, the most closely related term was used.  |
+| Diagnosis   | The most appropriate MONDO term based on the provided diagnosis [@doi:10.1093/genetics/iyaf215; @url:https://www.ebi.ac.uk/ols4/ontologies/mondo]. An exact match was identified for most samples, but in a handful of cases, the most closely related term was used.  |
 | Tissue of origin | The most appropriate UBERON term based on the provided tissue of origin [@doi:10.1186/2041-1480-5-21; @doi:10.1186/gb-2012-13-1-r5; @url:https://www.ebi.ac.uk/ols4/ontologies/uberon]. An exact match was identified for most samples, but in a handful of cases, the most closely related term was used.  |
 | Ethnicity (if applicable)  | If the submitter provided ethnicity, the associated Hancestro term [@doi:10.1186/s13059-018-1396-2; @url:https://www.ebi.ac.uk/ols4/ontologies/hancestro]. If ethnicity is unavailable, `unknown` is used. |
 
@@ -645,7 +645,7 @@ The resulting object contains a `counts` assay with a gene-by-cell counts matrix
 We also include a `spliced` assay that contains a gene-by-cell counts matrix with only spliced reads.
 These matrices include all potential cells, including empty droplets, and are provided for all Portal downloads in the unfiltered objects saved as `.rds` files with the `_unfiltered.rds` suffix.
 
-Each droplet was tested for deviation from the ambient RNA profile using `DropletUtils::emptyDropsCellRanger()` [@doi:10.1186/s13059-019-1662-y; @doi:10.1101/2021.05.05.442755] and those with an FDR ≤ 0.01 were retained as likely cells.
+Each droplet was tested for deviation from the ambient RNA profile using `DropletUtils::emptyDropsCellRanger()` [@doi:10.1186/s13059-019-1662-y; @doi:10.1038/s41467-018-05083-x] and those with an FDR ≤ 0.01 were retained as likely cells.
 If a library did not have a sufficient number of droplets and `DropletUtils::emptyDropsCellRanger()` failed, cells with fewer than 100 UMIs were removed.
 Gene expression data for any cells that remain after filtering are provided in the filtered objects saved as `.rds` files with the `_filtered.rds` suffix.
 These filtered objects additionally contain results from doublet detection performed with `scDblFinder::scDblFinder()` [@doi:10.12688/f1000research.73600.2], including each cell's predicted class ("singlet" or "doublet") as well as the associated doublet score.
@@ -737,7 +737,7 @@ Cell type labels determined by `SingleR` [@doi:10.1038/s41590-018-0276-y], `Cell
 If cell types were obtained from the submitter of the dataset, the submitter-provided annotations were incorporated into all `SingleCellExperiment` objects (unfiltered, filtered, and processed).
 
 To prepare the references used for assigning cell types, we developed a separate workflow, `build-celltype-index.nf`, within `scpca-nf`.
-We used the `BlueprintEncodeData` reference from the `celldex` package [@doi:10.3324/haematol.2013.094243; @doi:10.1038/nature11247] to train the `SingleR` classification model with `SingleR::trainSingleR()`.
+We used the `BlueprintEncodeData` reference from the `celldex` package [@doi:10.1038/s41590-018-0276-y; @doi:10.3324/haematol.2013.094243; @doi:10.1038/nature11247] to train the `SingleR` classification model with `SingleR::trainSingleR()`.
 In the main `scpca-nf` workflow, this model and the processed `SingleCellExperiment` object were input to `SingleR::classifySingleR()`.
 The `SingleR` output of cell type annotations and a score matrix for each cell and all possible cell types were added to the processed `SingleCellExperiment` object.
 
@@ -767,7 +767,7 @@ Distances larger than 0.05 can indicate that the model is less confident in the 
 ##### Assigning consensus cell types
 
 Cell type labels obtained from `SingleR`, `CellAssign`, and `SCimilarity` were then used to assign an ontology-aware consensus cell type label.
-We first assigned each of the cell types present in the `PanglaoDB` [@doi:10.1093/database/baz046] reference used with `CellAssign` to an appropriate Cell Ontology term [@url:https://www.ebi.ac.uk/ols4/ontologies/cl].
+We first assigned each of the cell types present in the `PanglaoDB` [@doi:10.1093/database/baz046] reference used with `CellAssign` to an appropriate Cell Ontology term [@doi:10.1186/gb-2005-6-2-r21; @doi:10.1186/1471-2105-12-6; @doi:10.1186/s13326-016-0088-7; @doi:10.1038/s41597-026-07173-8].
 For cell types available in the `BlueprintEncodeData` reference used with `SingleR` and the foundation model used with `SCimilarity`, we used the provided Cell Ontology terms.
 
 We then created a reference table containing all possible combinations of cell types assigned using `SingleR`, `CellAssign`, and `SCimilarity`.
@@ -885,6 +885,60 @@ In this case, positive outliers represent genes with comparatively higher expres
 For each set of cell type marker genes, we calculated two odds ratios representing whether genes were overrepresented in the positive outliers (enriched in bulk) or negative outliers (enriched in pseudobulk).
 We calculated P-values for both the bulk and pseudobulk enrichment directions via permutation testing with 10,000 replicates.
 We defined gene sets with significant overrepresentation as those with a false-discovery-rate-corrected P-value ≤ 0.05 [@doi:10.1111/j.2517-6161.1995.tb02031.x].
+
+### ADDITIONAL RESOURCES 
+
+Documentation for the ScPCA Portal can be found at <https://scpca.readthedocs.io>.
+
+### KEY RESOURCES TABLE 
+
+| **REAGENT or RESOURCE** | **SOURCE** | **IDENTIFIER** |
+| ------------------- | ------ | ---------- |
+| **Deposited Data** |  |  |
+| Summarized gene expression data | This paper | https://scpca.alexslemonade.org |
+| | |
+| **Software and algorithms** |  |  |
+| `scpca-nf` workflow used for processing all ScPCA Portal data | This paper | https://github.com/AlexsLemonade/scpca-nf [TODO: Link to zenodo] |
+| ScPCA Portal code | This paper | https://github.com/AlexsLemonade/scpca-portal [@doi:10.5281/zenodo.20058961] |
+| Benchmarking of tools used to build `scpca-nf` | This paper | https://github.com/AlexsLemonade/alsf-scpca [@doi:10.5281/zenodo.20044281] and https://github.com/AlexsLemonade/sc-data-integration [@doi:10.5281/zenodo.20044313] |
+| Code for creating reference files for consensus cell type assignment | This paper | https://github.com/AlexsLemonade/OpenScPCA-analysis [@doi:10.5281/zenodo.18459136] |
+| Workflow for assigning OpenScPCA project cell type annotations to ScPCA data | This paper | https://github.com/AlexsLemonade/OpenScPCA-nf [@doi:10.5281/zenodo.20056054] |
+| `ScPCAr` package for programmatically downloading from the Portal | This paper | https://github.com/AlexsLemonade/ScPCAr [@doi:10.5281/zenodo.20044462]|
+| Code for underlying figures and analyses | This paper | https://github.com/AlexsLemonade/scpca-paper-figures [TODO: LInk to zenodo] |
+| Nextflow | Tomasso et al. [@doi:10.1038/nbt.3820] | https://github.com/nextflow-io/nextflow/tree/master | 
+| `salmon` | Patro et al. [@doi:10.1038/nmeth.4197] | https://anaconda.org/channels/bioconda/packages/salmon/overview | 
+| `alevin-fry` | He et al. [@doi:10.1038/s41592-022-01408-3] | https://anaconda.org/channels/bioconda/packages/alevin-fry/overview | 
+| Space Ranger | 10x Genomics | https://www.10xgenomics.com/support/software/space-ranger/latest | 
+| `SingleCellExperiment` | Amezquita et al. [@doi:10.1038/s41592-019-0654-x] | https://bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html |
+| `anndata` | Virshup et al. [@doi:10.21105/joss.04371] | https://pypi.org/project/scvi-tools/ |
+| `DropletUtils` | Lun et al. [@doi:0.1186/s13059-019-1662-y.]; Griffiths et al. [@doi:10.1038/s41467-018-05083-x] | https://bioconductor.org/packages/release/bioc/html/DropletUtils.html | 
+| `miQC` | Hippen et al. [@doi:10.1371/journal.pcbi.1009290] | https://bioconductor.org/packages/release/bioc/html/miQC.html | 
+| `scDblFinder` | Germain et al. [@doi:10.12688/f1000research.73600.2] | https://bioconductor.org/packages/release/bioc/html/scDblFinder.html | 
+| `scuttle` | McCarthy et al. [@doi:10.1093/bioinformatics/btw777] | https://bioconductor.org/packages/release/bioc/html/scuttle.html |
+| `scran` | Lun et al. [@doi:10.12688/f1000research.9501.2] | https://bioconductor.org/packages/release/bioc/html/scran.html |
+| `scater` | McCarthy et al. [@doi:10.1093/bioinformatics/btw777] | https://bioconductor.org/packages/release/bioc/html/scater.html | 
+| `Seurat` | Hao et al. [@doi:10.1038/s41587-023-01767-y] | https://satijalab.org/seurat/ | 
+| `vireo` | Huang et al. [@doi:10.1186/s13059-019-1865-2]; Weber et al. [@doi:10.1093/gigascience/giab062] | https://github.com/single-cell-genetics/vireo | 
+| `batchelor` | Lun et al. [@doi:10.1038/nbt.4091] | https://bioconductor.org/packages/release/bioc/html/batchelor.html | 
+| `SingleR` | Aran et al. [@doi:10.1038/s41590-018-0276-y] | https://bioconductor.org/packages/release/bioc/html/SingleR.html | 
+| `celldex` | Aran et al. [@doi:10.1038/s41590-018-0276-y] | https://bioconductor.org/packages/release/data/experiment/html/celldex.html |
+| `CellAssign` | Zhang et al. [@doi:10.1038/s41592-019-0529-1] | https://docs.scvi-tools.org/en/stable/installation.html | 
+| `SCimilarity` | Heimberg et al. [@doi:10.1038/s41586-024-08411-y] | https://genentech.github.io/scimilarity/index.html |
+| `inferCNV` | inferCNV of the Trinity CTAT Project [@url:https://github.com/broadinstitute/infercnv] | https://www.bioconductor.org/packages/release/bioc/html/infercnv.html |
+| `zellkonverter` | Zappia et al. [@doi:10.18129/B9.bioc.zellkonverter] | https://bioconductor.org/packages/release/bioc/html/zellkonverter.html | 
+| `DESeq2` | Love et al. [@doi:10.1186/s13059-014-0550-8] | https://bioconductor.org/packages/release/bioc/html/DESeq2.html | 
+| `lme4` | Bates et al. [@doi:10.18637/jss.v067.i01] | https://cran.r-project.org/web/packages/lme4/index.html | 
+| **Other** | | | 
+| HsapDv | Ontology Lookup Service [@url:https://www.ebi.ac.uk/ols4/ontologies/hsapdv] | https://www.ebi.ac.uk/ols4/ontologies/hsapdv | 
+| PATO | Gkoutos et al. [@doi:10.1093/bib/bbx035] |https://www.ebi.ac.uk/ols4/ontologies/pato | 
+| NCBI Taxonomy | Schoch et al. [@doi:10.1093/database/baaa062] | https://www.ncbi.nlm.nih.gov/taxonomy | 
+| Mondo | Vasilevsky et al. [@doi:10.1093/genetics/iyaf215] | https://www.ebi.ac.uk/ols4/ontologies/mondo |
+| UBERON | Haendel et al. [@doi:10.1186/2041-1480-5-21] | https://www.ebi.ac.uk/ols4/ontologies/uberon | 
+| Hancestro | Morales et al. [@doi:10.1186/s13059-018-1396-2] | https://www.ebi.ac.uk/ols4/ontologies/hancestro |
+| Cell Ontology | Bard et al. [@doi:10.1186/gb-2005-6-2-r21]; Meehan et al. [@doi:10.1186/1471-2105-12-6]; Diehl et al. [@doi:10.1186/s13326-016-0088-7]; Tan et al. [@doi:10.1038/s41597-026-07173-8] | https://www.ebi.ac.uk/ols4/ontologies/cl | 
+| Blueprint and ENCODE | Martens et al. [@doi:10.3324/haematol.2013.094243]; The ENCODE Consortium [@doi:10.1038/nature11247] | https://rdrr.io/github/LTLA/celldex/man/BlueprintEncodeData.html |
+| PanglaoDB | [@doi:10.1093/database/baz046] | https://panglaodb.se/ | 
+| CellMarker 2.0 | [@doi:10.1093/nar/gkac947] | http://117.50.127.228/CellMarker/ | 
 
 
 
