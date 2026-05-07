@@ -167,6 +167,7 @@ ScPCA
 SCPCP
 scATAC
 scRNA
+snRNA
 selectable
 SingleCellExperiment
 SingleR
