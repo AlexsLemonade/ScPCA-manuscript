@@ -1,46 +1,446 @@
 [
+  {
+    "id": "url:https://www.ebi.ac.uk/ols4/ontologies/hsapdv",
+    "type": "post-weblog",
+    "title": "Ontology Lookup Service (OLS) - HsapDv",
+    "author": [{"literal": "EMBL-EBI."}],
+    "URL": "https://www.ebi.ac.uk/ols4/ontologies/hsapdv"
+  },
+  {
+    "id": "url:https://www.ebi.ac.uk/ols4/ontologies/pato",
+    "type": "post-weblog",
+    "title": "Ontology Lookup Service (OLS) - PATO",
+    "author": [{"literal": "EMBL-EBI."}],
+    "URL": "https://www.ebi.ac.uk/ols4/ontologies/pato"
+  },
+  {
+    "id": "url:https://www.ncbi.nlm.nih.gov/taxonomy",
+    "type": "post-weblog",
+    "title": "NCBI Taxonomy",
+    "author": [{"literal": "National Center for Biotechnology Information."}],
+    "URL": "https://www.ncbi.nlm.nih.gov/taxonomy"
+  },
+  {
+    "id": "url:https://www.ebi.ac.uk/ols4/ontologies/mondo",
+    "type": "post-weblog",
+    "title": "Ontology Lookup Service (OLS) - MONDO",
+    "author": [{"literal": "EMBL-EBI."}],
+    "URL": "https://www.ebi.ac.uk/ols4/ontologies/mondo"
+  },
+  {
+    "id": "url:https://www.ebi.ac.uk/ols4/ontologies/uberon",
+    "type": "post-weblog",
+    "title": "Ontology Lookup Service (OLS) - UBERON",
+    "author": [{"literal": "EMBL-EBI."}],
+    "URL": "https://www.ebi.ac.uk/ols4/ontologies/uberon"
+  },
+  {
+    "id": "url:https://www.ebi.ac.uk/ols4/ontologies/hancestro",
+    "type": "post-weblog",
+    "title": "Ontology Lookup Service (OLS) - Hancestro",
+    "author": [{"literal": "EMBL-EBI."}],
+    "URL": "https://www.ebi.ac.uk/ols4/ontologies/hancestro"
+  },
+  {
+    "id": "url:https://www.ebi.ac.uk/ols4/ontologies/cl",
+    "type": "post-weblog",
+    "title": "Ontology Lookup Service (OLS) - Cell Ontology (CL)",
+    "author": [{"literal": "EMBL-EBI."}],
+    "URL": "https://www.ebi.ac.uk/ols4/ontologies/cl"
+  },
+  {
+    "id": "url:https://openscpca.readthedocs.io",
+    "type": "post-weblog",
+    "title": "OpenScPCA Project",
+    "author": [{"literal": "Alex's Lemonade Stand Foundation."}],
+    "URL": "https://openscpca.readthedocs.io"
+  },
+  {
+    "id": "url:https://cellxgene.cziscience.com",
+    "type": "post-weblog",
+    "title": "CELLxGENE",
+    "author": [{"literal": "Chan Zuckerberg Initiative."}],
+    "URL": "https://cellxgene.cziscience.com"
+  },
+  {
+    "id": "url:https://cellxgene.cziscience.com/",
+    "type": "post-weblog",
+    "title": "Cellxgene Data Portal",
+    "author": [{"literal": "Chan Zuckerberg Initiative."}],
+    "URL": "https://cellxgene.cziscience.com/"
+  },
+  {
+    "id": "url:https://bioconductor.org/books/release/SingleRBook/annotation-diagnostics.html#based-on-the-deltas-across-cells",
+    "type": "post-weblog",
+    "title": "SingleR Book: Annotation Diagnostics Based on the Deltas Across Cells",
+    "author": [{"family": "Lun", "given": "Aaron T. L."}],
+    "URL": "https://bioconductor.org/books/release/SingleRBook/annotation-diagnostics.html#based-on-the-deltas-across-cells"
+  },
+  {
+    "id": "url:https://www.kanaverse.org/kana/",
+    "type": "post-weblog",
+    "title": "kana",
+    "author": [
+      {"family": "Kancherla", "given": "J."},
+      {"family": "Lun", "given": "Aaron T. L."}
+    ],
+    "URL": "https://www.kanaverse.org/kana/"
+  },
+  {
+    "id": "url:https://www.10xgenomics.com/support/software/cell-ranger/latest",
+    "type": "post-weblog",
+    "title": "Cell Ranger",
+    "author": [{"literal": "10x Genomics."}],
+    "URL": "https://www.10xgenomics.com/support/software/cell-ranger/latest"
+  },
+  {
+    "id": "url:https://www.10xgenomics.com/support/software/space-ranger/latest",
+    "type": "post-weblog",
+    "title": "Space Ranger",
+    "author": [{"literal": "10x Genomics."}],
+    "URL": "https://www.10xgenomics.com/support/software/space-ranger/latest"
+  },
+  {
+    "id": "url:https://github.com/broadinstitute/inferCNV",
+    "type": "post-weblog",
+    "title": "InferCNV: Inferring Copy Number Alterations from Tumor Single Cell RNA-Seq Data",
+    "author": [{"literal": "Broad Institute."}],
+    "URL": "https://github.com/broadinstitute/inferCNV"
+  },
+  {
+    "id": "url:https://github.com/chanzuckerberg/single-cell-curation/blob/main/schema/3.0.0/schema.md",
+    "type": "post-weblog",
+    "title": "CZI Single Cell Curation Schema 3.0.0",
+    "author": [{"literal": "Chan Zuckerberg Initiative."}],
+    "URL": "https://github.com/chanzuckerberg/single-cell-curation/blob/main/schema/3.0.0/schema.md"
+  },
+  {
+    "id": "url:https://github.com/AlexsLemonade/OpenScPCA-analysis",
+    "type": "post-weblog",
+    "title": "OpenScPCA-analysis GitHub Repository",
+    "author": [{"literal": "Alex's Lemonade Stand Foundation."}],
+    "URL": "https://github.com/AlexsLemonade/OpenScPCA-analysis"
+  },
+  {
+    "id": "url:https://github.com/AlexsLemonade/OpenScPCA-nf",
+    "type": "post-weblog",
+    "title": "OpenScPCA-nf GitHub Repository",
+    "author": [{"literal": "Alex's Lemonade Stand Foundation."}],
+    "URL": "https://github.com/AlexsLemonade/OpenScPCA-nf"
+  },
+  {
+    "id": "doi:10.18129/b9.bioc.dropletutils",
+    "type": "post-weblog",
+    "title": "DropletUtils",
+    "author": [
+      {"family": "Lun", "given": "Aaron T. L."},
+      {"family": "Griffiths", "given": "J."}
+    ],
+    "issued": {"date-parts": [[2018]]},
+    "container-title": "Bioconductor",
+    "DOI": "10.18129/b9.bioc.dropletutils"
+  },
+  {
+    "id": "doi:10.18129/b9.bioc.ontoproc",
+    "type": "post-weblog",
+    "title": "ontoProc",
+    "author": [{"family": "Carey", "given": "V."}],
+    "issued": {"date-parts": [[2017]]},
+    "container-title": "Bioconductor",
+    "DOI": "10.18129/b9.bioc.ontoproc"
+  },
+  {
+    "id": "doi:10.18129/b9.bioc.aucell",
+    "type": "post-weblog",
+    "title": "AUCell",
+    "author": [{"family": "Aibar", "given": "S."}],
+    "issued": {"date-parts": [[2017]]},
+    "container-title": "Bioconductor",
+    "DOI": "10.18129/b9.bioc.aucell"
+  },
+  {
+    "id": "doi:10.18129/b9.bioc.zellkonverter",
+    "type": "post-weblog",
+    "title": "zellkonverter",
+    "author": [
+      {"family": "Zappia", "given": "L."},
+      {"family": "Lun", "given": "Aaron T. L."}
+    ],
+    "issued": {"date-parts": [[2020]]},
+    "container-title": "Bioconductor",
+    "DOI": "10.18129/b9.bioc.zellkonverter"
+  },
+  {
+    "id": "doi:10.18637/jss.v067.i01",
+    "type": "post-weblog",
+    "title": "Fitting Linear Mixed-Effects Models Using lme4",
+    "author": [
+      {"family": "Bates", "given": "D."},
+      {"family": "Mächler", "given": "M."},
+      {"family": "Bolker", "given": "B."},
+      {"family": "Walker", "given": "S."}
+    ],
+    "issued": {"date-parts": [[2015]]},
+    "container-title": "Journal of Statistical Software",
+    "volume": "67",
+    "DOI": "10.18637/jss.v067.i01"
+  },
+  {
+    "id": "doi:10.1101/2021.04.05.438318",
+    "type": "article-journal",
+    "title": "cellxgene: a performant, scalable exploration platform for high dimensional sparse matrices",
+    "author": [
+      {"family": "Megill", "given": "C."},
+      {"family": "Martin", "given": "B."},
+      {"family": "Weaver", "given": "C."},
+      {"family": "Bell", "given": "S."},
+      {"family": "Prins", "given": "L."},
+      {"family": "Badajoz", "given": "S."},
+      {"family": "McCandless", "given": "B."},
+      {"family": "Pisco", "given": "A.O."},
+      {"family": "Kinsella", "given": "M."},
+      {"family": "Griffin", "given": "F."}
+    ],
+    "issued": {"date-parts": [[2021]]},
+    "container-title": "Preprint at bioRxiv",
+    "DOI": "10.1101/2021.04.05.438318"
+  },
+  {
+    "id": "doi:10.1101/2023.10.30.563174",
+    "type": "article-journal",
+    "title": "CZ CELLxGENE Discover: A single-cell data platform for scalable exploration, analysis and modeling of aggregated data",
+    "author": [
+      {"literal": "CZI Cell Science Program"},
+      {"family": "Abdulla", "given": "S."},
+      {"family": "Aevermann", "given": "B."},
+      {"family": "Assis", "given": "P."},
+      {"family": "Badajoz", "given": "S."},
+      {"family": "Bell", "given": "S.M."},
+      {"family": "Bezzi", "given": "E."},
+      {"family": "Cakir", "given": "B."},
+      {"family": "Chaffer", "given": "J."},
+      {"family": "Chambers", "given": "S."}
+    ],
+    "issued": {"date-parts": [[2023]]},
+    "container-title": "Preprint at bioRxiv",
+    "DOI": "10.1101/2023.10.30.563174"
+  },
+  {
+    "id": "doi:10.1101/2023.12.26.573390",
+    "type": "article-journal",
+    "title": "Single-cell transcriptional mapping reveals genetic and non-genetic determinants of aberrant differentiation in AML",
+    "author": [
+      {"family": "Zeng", "given": "A.G.X."},
+      {"family": "Iacobucci", "given": "I."},
+      {"family": "Shah", "given": "S."},
+      {"family": "Mitchell", "given": "A."},
+      {"family": "Wong", "given": "G."},
+      {"family": "Bansal", "given": "S."},
+      {"family": "Chen", "given": "D."},
+      {"family": "Gao", "given": "Q."},
+      {"family": "Kim", "given": "H."},
+      {"family": "Kennedy", "given": "J.A."}
+    ],
+    "issued": {"date-parts": [[2023]]},
+    "container-title": "Preprint at bioRxiv",
+    "DOI": "10.1101/2023.12.26.573390"
+  },
+  {
+    "id": "doi:10.1101/2021.12.16.473007",
+    "type": "article-journal",
+    "title": "anndata: Annotated data",
+    "author": [
+      {"family": "Virshup", "given": "I."},
+      {"family": "Rybakov", "given": "S."},
+      {"family": "Theis", "given": "F.J."},
+      {"family": "Angerer", "given": "P."},
+      {"family": "Wolf", "given": "F.A."}
+    ],
+    "issued": {"date-parts": [[2021]]},
+    "container-title": "Preprint at bioRxiv",
+    "DOI": "10.1101/2021.12.16.473007"
+  },
+  {
+    "id": "doi:10.1101/2021.05.05.442755",
+    "type": "article-journal",
+    "title": "STARsolo: accurate, fast and versatile mapping/quantification of single-cell and single-nucleus RNA-seq data",
+    "author": [
+      {"family": "Kaminow", "given": "B."},
+      {"family": "Yunusov", "given": "D."},
+      {"family": "Dobin", "given": "A."}
+    ],
+    "issued": {"date-parts": [[2021]]},
+    "container-title": "Preprint at bioRxiv",
+    "DOI": "10.1101/2021.05.05.442755"
+  },
+  {
+    "id": "doi:10.1101/2022.03.02.482701",
+    "type": "article-journal",
+    "title": "Powering single-cell analyses in the browser with WebAssembly",
+    "author": [
+      {"family": "Lun", "given": "Aaron T. L."},
+      {"family": "Kancherla", "given": "J."}
+    ],
+    "issued": {"date-parts": [[2022]]},
+    "container-title": "Preprint at bioRxiv",
+    "DOI": "10.1101/2022.03.02.482701"
+  },
+  {
+    "id": "doi:10.1101/2024.01.07.574538",
+    "type": "article-journal",
+    "title": "A spatial cell atlas of neuroblastoma reveals developmental, epigenetic and spatial axis of tumor heterogeneity",
+    "author": [
+      {"family": "Patel", "given": "A.G."},
+      {"family": "Ashenberg", "given": "O."},
+      {"family": "Collins", "given": "N.B."},
+      {"family": "Segerstolpe", "given": "Å."},
+      {"family": "Jiang", "given": "S."},
+      {"family": "Slyper", "given": "M."},
+      {"family": "Huang", "given": "X."},
+      {"family": "Caraccio", "given": "C."},
+      {"family": "Jin", "given": "H."},
+      {"family": "Sheppard", "given": "H."}
+    ],
+    "issued": {"date-parts": [[2024]]},
+    "container-title": "Preprint at bioRxiv",
+    "DOI": "10.1101/2024.01.07.574538"
+  },
+  {
+    "id": "doi:10.21203/rs.3.rs-2517703/v1",
+    "type": "article-journal",
+    "title": "Tumor type and cell type-specific gene expression alterations in diverse pediatric central nervous system tumors identified using single nuclei RNA-seq",
+    "author": [
+      {"family": "Lee", "given": "M.K."},
+      {"family": "Azizgolshani", "given": "N."},
+      {"family": "Shapiro", "given": "J."},
+      {"family": "Nguyen", "given": "L."},
+      {"family": "Kolling", "given": "F.", "suffix": "IV"},
+      {"family": "Zanazzi", "given": "G."},
+      {"family": "Frost", "given": "H."},
+      {"family": "Christensen", "given": "B."}
+    ],
+    "issued": {"date-parts": [[2023]]},
+    "container-title": "Preprint at Research Square",
+    "DOI": "10.21203/rs.3.rs-2517703/v1"
+  },
+  {
+    "id": "doi:10.21203/rs.3.rs-2517758/v1",
+    "type": "article-journal",
+    "title": "Hydroxymethylation alterations in progenitor-like cell types of pediatric central nervous system tumors are associated with cell type-specific transcriptional changes",
+    "author": [
+      {"family": "Lee", "given": "M.K."},
+      {"family": "Azizgolshani", "given": "N."},
+      {"family": "Zhang", "given": "Z."},
+      {"family": "Perreard", "given": "L."},
+      {"family": "Kolling", "given": "F.", "suffix": "IV"},
+      {"family": "Nguyen", "given": "L."},
+      {"family": "Zanazzi", "given": "G."},
+      {"family": "Salas", "given": "L."},
+      {"family": "Christensen", "given": "B."}
+    ],
+    "issued": {"date-parts": [[2023]]},
+    "container-title": "Preprint at Research Square",
+    "DOI": "10.21203/rs.3.rs-2517758/v1"
+  },
+  {
+    "id": "doi:10.1002/cti2.70033",
+    "type": "article-journal",
+    "title": "Data standards for single-cell RNA-sequencing of paediatric cancer",
+    "author": [
+      {"family": "Xu", "given": "X."},
+      {"family": "Saxon", "given": "J."},
+      {"family": "Soon", "given": "M.S.F."},
+      {"family": "Lee", "given": "C.Y."},
+      {"family": "Tuong", "given": "Z.K."}
+    ],
+    "issued": {"date-parts": [[2025]]},
+    "container-title": "Clinical & Translational Immunology",
+    "volume": "14",
+    "DOI": "10.1002/cti2.70033"
+  },
+  {
+    "id": "doi:10.1038/nature11247",
+    "type": "article-journal",
+    "title": "An integrated encyclopedia of DNA elements in the human genome",
+    "author": [{"literal": "ENCODE Project Consortium"}],
+    "issued": {"date-parts": [[2012]]},
+    "container-title": "Nature",
+    "volume": "489",
+    "page": "57-74",
+    "DOI": "10.1038/nature11247"
+  },
+  {
+    "id": "doi:10.1158/2159-8290.cd-14-0622",
+    "type": "article-journal",
+    "title": "Genomic Landscape of Ewing Sarcoma Defines an Aggressive Subtype with Co-Association of STAG2 and TP53 Mutations",
+    "author": [
+      {"family": "Tirode", "given": "F."},
+      {"family": "Surdez", "given": "D."},
+      {"family": "Ma", "given": "X."},
+      {"family": "Parker", "given": "M."},
+      {"family": "Le Deley", "given": "M.C."},
+      {"family": "Bahrami", "given": "A."},
+      {"family": "Zhang", "given": "Z."},
+      {"family": "Lapouble", "given": "E."},
+      {"family": "Grossetête-Lalami", "given": "S."},
+      {"family": "Rusch", "given": "M."}
+    ],
+    "issued": {"date-parts": [[2014]]},
+    "container-title": "Cancer Discovery",
+    "volume": "4",
+    "page": "1342-1353",
+    "DOI": "10.1158/2159-8290.cd-14-0622"
+  },
 {
-  "id": "url:https://cells.ucsc.edu/",
-  "type": "webpage",
-  "URL": "https://cells.ucsc.edu/",
-  "title": "UCSC Cell Browser"
-},
-{
-  "id": "url:https://www.ebi.ac.uk/ols4/ontologies/hancestro",
-  "type": "webpage",
-  "URL": "https://www.ebi.ac.uk/ols4/ontologies/hancestro",
-  "title": "Ontology Lookup Service (OLS) - Hancestro"
-},
-{
-  "id": "url:https://www.ebi.ac.uk/ols4/ontologies/hsapdv",
-  "type": "webpage",
-  "URL": "https://www.ebi.ac.uk/ols4/ontologies/hsapdv",
-  "title": "Ontology Lookup Service (OLS) - HsapDv"
-},
-{
-  "id": "url:https://www.ebi.ac.uk/ols4/ontologies/mondo",
-  "type": "webpage",
-  "URL": "https://www.ebi.ac.uk/ols4/ontologies/mondo",
-  "title": "Ontology Lookup Service (OLS) - MONDO"
-},
-{
-  "id": "url:https://www.ebi.ac.uk/ols4/ontologies/pato",
-  "type": "webpage",
-  "URL": "https://www.ebi.ac.uk/ols4/ontologies/pato",
-  "title": "Ontology Lookup Service (OLS) - PATO"
-},
-{
-  "id": "url:https://www.ebi.ac.uk/ols4/ontologies/uberon",
-  "type": "webpage",
-  "URL": "https://www.ebi.ac.uk/ols4/ontologies/uberon",
-  "title": "Ontology Lookup Service (OLS) - UBERON"
-},
-{
-  "id": "url:https://github.com/chanzuckerberg/single-cell-curation/blob/main/schema/3.0.0/schema.md",
-  "type": "webpage",
-  "abstract": "Code and documentation for the curation of cellxgene datasets - chanzuckerberg/single-cell-curation",
-  "container-title": "CZI Cellxgene",
-  "title": "CZI Single cell curation schema 3.0.0",
-  "URL": "https://github.com/chanzuckerberg/single-cell-curation/blob/main/schema/3.0.0/schema.md"
-}
+    "id": "doi:10.1186/s13059-019-1662-y",
+    "type": "article-journal",
+    "title": "EmptyDrops: distinguishing cells from empty droplets in droplet-based single-cell RNA sequencing data",
+    "author": [
+      {"family": "Lun", "given": "Aaron T. L."},
+      {"family": "Riesenfeld", "given": "S."},
+      {"family": "Andrews", "given": "T."},
+      {"family": "Dao", "given": "T.P."},
+      {"family": "Gomes", "given": "T."},
+      {"family": "Marioni", "given": "J.C."}
+    ],
+    "issued": {"date-parts": [[2019]]},
+    "container-title": "Genome Biol",
+    "volume": "20",
+    "page": "63",
+    "DOI": "10.1186/s13059-019-1662-y"
+  },
+  {
+    "id": "doi:10.1186/s13059-016-0947-7",
+    "type": "article-journal",
+    "title": "Pooling across cells to normalize single-cell RNA sequencing data with many zero counts",
+    "author": [
+      {"family": "Lun", "given": "Aaron T. L."},
+      {"family": "Bach", "given": "K."},
+      {"family": "Marioni", "given": "J.C."}
+    ],
+    "issued": {"date-parts": [[2016]]},
+    "container-title": "Genome Biol",
+    "volume": "17",
+    "DOI": "10.1186/s13059-016-0947-7"
+  },
+  {
+    "id": "doi:10.1101/2022.04.13.22273750",
+    "type": "article-journal",
+    "title": "Mondo: Unifying diseases for the world, by the world",
+    "author": [
+      {"family": "Vasilevsky", "given": "N.A."},
+      {"family": "Matentzoglu", "given": "N.A."},
+      {"family": "Toro", "given": "S."},
+      {"family": "Flack", "given": "J.E.", "suffix": "IV"},
+      {"family": "Hegde", "given": "H."},
+      {"family": "Unni", "given": "D.R."},
+      {"family": "Alyea", "given": "G.F."},
+      {"family": "Amberger", "given": "J.S."},
+      {"family": "Babb", "given": "L."},
+      {"family": "Balhoff", "given": "J.P."}
+    ],
+    "issued": {"date-parts": [[2022]]},
+    "container-title": "Preprint at medRxiv",
+    "DOI": "10.1101/2022.04.13.22273750"
+  }
 ]
