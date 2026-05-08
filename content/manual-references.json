@@ -129,18 +129,6 @@
     "URL": "https://github.com/AlexsLemonade/OpenScPCA-nf"
   },
   {
-    "id": "doi:10.18129/b9.bioc.dropletutils",
-    "type": "post-weblog",
-    "title": "DropletUtils",
-    "author": [
-      {"family": "Lun", "given": "Aaron T. L."},
-      {"family": "Griffiths", "given": "J."}
-    ],
-    "issued": {"date-parts": [[2018]]},
-    "container-title": "Bioconductor",
-    "DOI": "10.18129/b9.bioc.dropletutils"
-  },
-  {
     "id": "doi:10.18129/b9.bioc.ontoproc",
     "type": "post-weblog",
     "title": "ontoProc",
