@@ -39,8 +39,8 @@ header-includes: |
   <meta name="dc.date" content="2026-05-08" />
   <meta name="citation_publication_date" content="2026-05-08" />
   <meta property="article:published_time" content="2026-05-08" />
-  <meta name="dc.modified" content="2026-05-08T16:00:07+00:00" />
-  <meta property="article:modified_time" content="2026-05-08T16:00:07+00:00" />
+  <meta name="dc.modified" content="2026-05-08T19:02:14+00:00" />
+  <meta property="article:modified_time" content="2026-05-08T19:02:14+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c4b1da3243f4ee7e6bb229b31867056b771c3af2/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c4b1da3243f4ee7e6bb229b31867056b771c3af2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c4b1da3243f4ee7e6bb229b31867056b771c3af2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/bde918d309f35a0925475b0bcc526203d97f33f3/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/bde918d309f35a0925475b0bcc526203d97f33f3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/bde918d309f35a0925475b0bcc526203d97f33f3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,9 +118,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/c4b1da3243f4ee7e6bb229b31867056b771c3af2/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/bde918d309f35a0925475b0bcc526203d97f33f3/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@c4b1da3](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/c4b1da3243f4ee7e6bb229b31867056b771c3af2)
+from [AlexsLemonade/ScPCA-manuscript@bde918d](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/bde918d309f35a0925475b0bcc526203d97f33f3)
 on May 8, 2026.
 </em></small>
 
@@ -322,7 +322,7 @@ The HCA, which provides a comprehensive map of all cell types in the human body 
 The HTAN also hosts a collection of genomic data from tumors across multiple cancer types, including scRNA-seq [@doi:10.1016/j.cell.2020.03.053].
 
 Despite these resources, there have been considerably fewer efforts to harmonize and distribute data specifically from pediatric tumors.
-As pediatric cancer is much less common than adult cancer, there are fewer available pediatric tumor than adult tumor samples, [@url:https://www.cancer.gov/types/childhood-cancers/child-adolescent-cancers-fact-sheet#how-do-cancers-in-adolescents-and-young-adults-differ-from-those-in-younger-children] and access to data from pediatric tumors is often limited.
+As pediatric cancer is much less common than adult cancer, fewer samples are available and access to pediatric tumor data is often limited [@doi:10.3389/fped.2024.1357093].
 Recently, Xu and colleagues highlighted lack of standardization of pediatric cancer single-cell data as a barrier to reuse in their attempt to create an atlas [@doi:10.1002/cti2.70033].
 Thus, it is imperative to make harmonized data from pediatric tumors accessible to researchers [@doi:10.1186/s13040-018-0190-8].
 To address this unmet need, Alex's Lemonade Stand Foundation (ALSF) and the Childhood Cancer Data Lab developed and maintain the Single-cell Pediatric Cancer Atlas (ScPCA) Portal (<https://scpca.alexslemonade.org/>), a data resource for single-cell and single-nuclei RNA-seq data of pediatric tumor samples.
@@ -356,10 +356,10 @@ All samples on the Portal include a core set of metadata obtained from investiga
 The majority of projects include additional metadata, such as treatment or tumor stage, if provided.
 We standardized all provided metadata to maintain consistency across projects.
 Where applicable, we include ontology term identifiers in addition to human-readable values.
-We use ontology term identifiers obtained from HsapDv (age) [@url:https://www.ebi.ac.uk/ols4/ontologies/hsapdv], PATO (sex) [@doi:10.1093/bib/bbx035; @url:https://www.ebi.ac.uk/ols4/ontologies/pato], NCBI taxonomy (organism) [@doi:10.1093/database/baaa062; @url:https://www.ncbi.nlm.nih.gov/taxonomy], MONDO (disease) [@doi:10.1101/2022.04.13.22273750; @url:https://www.ebi.ac.uk/ols4/ontologies/mondo], UBERON (tissue) [@doi:10.1186/2041-1480-5-21; @doi:10.1186/gb-2012-13-1-r5; @url:https://www.ebi.ac.uk/ols4/ontologies/uberon], and Hancestro (ethnicity, if applicable) [@doi:10.1186/s13059-018-1396-2; @url:https://www.ebi.ac.uk/ols4/ontologies/hancestro].
+We use ontology term identifiers obtained from HsapDv (age) [@url:https://www.ebi.ac.uk/ols4/ontologies/hsapdv], PATO (sex) [@doi:10.1093/bib/bbx035; @url:https://www.ebi.ac.uk/ols4/ontologies/pato], NCBI taxonomy (organism) [@doi:10.1093/database/baaa062; @url:https://www.ncbi.nlm.nih.gov/taxonomy], MONDO (disease) [@doi:10.1093/genetics/iyaf215; @url:https://www.ebi.ac.uk/ols4/ontologies/mondo], UBERON (tissue) [@doi:10.1186/2041-1480-5-21; @doi:10.1186/gb-2012-13-1-r5; @url:https://www.ebi.ac.uk/ols4/ontologies/uberon], and Hancestro (ethnicity, if applicable) [@doi:10.1186/s13059-018-1396-2; @url:https://www.ebi.ac.uk/ols4/ontologies/hancestro].
 These ontology term identifiers standardize metadata terms and facilitate comparisons across Portal datasets and other research projects.
 
-The Portal contains data from over 700 samples and 55 tumor types [@doi:10.1016/j.devcel.2022.04.003; @doi:10.21203/rs.3.rs-2517703/v1; @doi:10.21203/rs.3.rs-2517758/v1; @doi:10.1038/nature23647; @doi:10.1038/s41467-021-24781-7; @doi:10.1093/neuonc/noad207; @doi:10.1101/2023.12.26.573390].
+The Portal contains data from over 700 samples and 55 tumor types [@doi:10.1016/j.devcel.2022.04.003; @doi:10.1038/s41467-024-47712-8; @doi:10.1038/s41467-024-47943-9; @doi:10.1038/nature23647; @doi:10.1038/s41467-021-24781-7; @doi:10.1093/neuonc/noad207; @10.1158/2643-3230.BCD-24-0342].
 <!-- `TODO`: Update numbers -->
 Figure {@fig:fig1}A summarizes all samples from patient tumors and patient-derived xenografts currently available on the Portal.
 The most common sample diagnosis on the Portal is leukemia (n = 216), followed by from sarcoma and soft tissue tumors (n = 194), brain and central nervous system tumors (n = 167), and a variety of other solid tumors (n = 115).
@@ -400,9 +400,9 @@ Taking FASTQ files as input, `scpca-nf` aligns reads using the selective alignme
 
 `scpca-nf` performs filtering of empty droplets, removal of low-quality cells, normalization, dimensionality reduction, cell type annotation, and copy-number variation (CNV) inference (Figure {@fig:fig2}A).
 We used the Bioconductor ecosystem [@doi:10.1186/gb-2004-5-10-r80; @doi:10.1038/nmeth.3252] for filtering, normalization, and dimensionality reduction because of its rich documentation, wide use in the community, and relatively small file sizes.
-The unfiltered gene-by-cell counts matrices are filtered to remove any barcodes that are unlikely to contain cells using `DropletUtils::emptyDropsCellRanger()` [@doi:10.1186/s13059-019-1662-y].
+The unfiltered gene-by-cell counts matrices are filtered to remove any barcodes that are unlikely to contain cells using `DropletUtils::emptyDropsCellRanger()` [@doi:10.1186/s13059-019-1662-y; @doi:10.1038/s41467-018-05083-x].
 Low-quality cells are identified and removed with `miQC` [@doi:10.1371/journal.pcbi.1009290], which jointly models the proportion of mitochondrial reads and detected genes per cell and calculates a probability that each cell is compromised.
-The remaining cells' counts are normalized [@doi:10.1186/s13059-016-0947-7], and reduced-dimension representations are calculated using both principal component analysis (PCA) and uniform manifold approximation and projection (UMAP) [@arxiv:1802.03426].
+The remaining cells' counts are normalized [@doi:10.1186/s13059-016-0947-7], and reduced-dimension representations are calculated using both principal component analysis (PCA) and uniform manifold approximation and projection (UMAP) [@doi:10.48550/arXiv.1802.03426].
 Cell types are classified using three automated methods, `SingleR` [@doi:10.1038/s41590-018-0276-y], `CellAssign` [@doi:10.1038/s41592-019-0529-1], and `SCimilarity` [@doi:10.1038/s41586-024-08411-y], and a consensus cell type label is derived from these labels.
 Finally, CNV is estimated for each cell using `inferCNV` [@url:https://github.com/broadinstitute/inferCNV].
 
@@ -428,7 +428,7 @@ For these libraries, the QC report includes additional ADT-related statistics an
 
 For multiplexed libraries, the HTO FASTQ files are quantified using `salmon alevin` and `alevin-fry` (Figure {@fig:figS2}E).
 Although `scpca-nf` quantifies the HTO data and includes an HTO-by-cell counts matrix in all objects, final demultiplexing is not performed.
-Instead, `scpca-nf` applies multiple demultiplexing methods, including demultiplexing with `DropletUtils::hashedDrops()` [@doi:10.18129/B9.bioc.DropletUtils], `Seurat::HTODemux()` [@doi:10.1186/s13059-018-1603-1], and genetic demultiplexing [@doi:10.1093/gigascience/giab062] if bulk RNA-seq data from constituent samples are available.
+Instead, `scpca-nf` applies multiple demultiplexing methods, including demultiplexing with `DropletUtils::hashedDrops()` [@doi:10.1186/s13059-019-1662-y; @doi:10.1038/s41467-018-05083-x], `Seurat::HTODemux()` [@doi:10.1186/s13059-018-1603-1], and genetic demultiplexing [@doi:10.1093/gigascience/giab062] if bulk RNA-seq data from constituent samples are available.
 All demultiplexing results are saved in the filtered and processed `SingleCellExperiment` objects, and HTO-specific library statistics are included in the QC report.
 
 For bulk RNA-seq data, `scpca-nf` trims reads using `fastp` [@doi:10.1093/bioinformatics/bty560], quantifies expression with `salmon` (Figure {@fig:figS3}A) [@doi:10.1038/nmeth.4197], and outputs a TSV file with the gene-by-sample counts matrix for all samples in a given ScPCA project.
@@ -566,13 +566,13 @@ All projects included in this publication are available from the ScPCA Portal wi
 
 ##### Code
 
-- The Nextflow workflow used to process all samples is available on GitHub at <https://github.com/AlexsLemonade/scpca-nf> and is archived at [TODO: Zenodo DOI].
+- The Nextflow workflow used to process all samples is available on GitHub at <https://github.com/AlexsLemonade/scpca-nf> and is archived at 10.5281/zenodo.20072636 [@doi:10.5281/zenodo.20072636].
 - The ScPCA Portal code can be found at <https://github.com/AlexsLemonade/scpca-portal> and is archived at 10.5281/zenodo.20058961 [@doi:10.5281/zenodo.20058961].
-- The benchmarking of tools used to build `scpca-nf` are available at <https://github.com/AlexsLemonade/alsf-scpca/tree/main/analysis> and <https://github.com/AlexsLemonade/sc-data-integration/tree/main/celltype_annotation>, with all repository contents archived at 10.5281/zenodo.20044281 [@doi:10.5281/zenodo.20044281] and 10.5281/zenodo.20044314 [@doi:10.5281/zenodo.20044313], respectively.
+- The benchmarking of tools used to build `scpca-nf` are available at <https://github.com/AlexsLemonade/alsf-scpca/tree/main/analysis> and <https://github.com/AlexsLemonade/sc-data-integration/tree/main/celltype_annotation>, with all repository contents archived at 10.5281/zenodo.20044281 [@doi:10.5281/zenodo.20044281] and 10.5281/zenodo.20044314 [@doi:10.5281/zenodo.20044314], respectively.
 - All code for creating reference files for consensus cell type assignment is available at <https://github.com/AlexsLemonade/OpenScPCA-analysis/tree/main/analyses/cell-type-consensus>, and all repository contents are archived at 10.5281/zenodo.18459136.
 - All code to assign OpenScPCA project cell type annotations is available at <https://github.com/AlexsLemonade/OpenScPCA-nf> and is archived at 10.5281/zenodo.20056054 [@doi:10.5281/zenodo.20056054].
 - All code for the `ScPCAr` package for programmatically downloading data from the Portal can be found at <https://github.com/AlexsLemonade/ScPCAr> and is archived at 10.5281/zenodo.20044462 [@doi:10.5281/zenodo.20044462].
-- All code for the underlying figures and analyses is available at <https://github.com/AlexsLemonade/scpca-paper-figures> and is archived at [TODO: Zenodo DOI].
+- All code for the underlying figures and analyses is available at <https://github.com/AlexsLemonade/scpca-paper-figures> and is archived at 10.5281/zenodo.20086729 [@doi:10.5281/zenodo.20086729].
 To reproduce the figures in this manuscript, see <https://github.com/AlexsLemonade/scpca-paper-figures/tree/main/reproduce-figures>.
 
 ##### Additional information
@@ -758,7 +758,7 @@ For each cell, `CellAssign` calculates a probability of assignment to each cell 
 The probability matrix and a prediction based on the most probable cell type were added as cell type annotations to the processed `SingleCellExperiment` object.
 We also display the distribution of all probabilities calculated by `CellAssign` in the cell type report; more confident labels are expected to have many values close to 1.
 
-For `SCimilarity`, the foundation model described in Heimberg et al. [@doi:10.1038/s41586-024-08411-y] containing 7.3 million cells from various normal and diseased tissues was obtained from Zenodo (<https://zenodo.org/records/10685499>) and used to annotate cells in all samples.
+For `SCimilarity`, the foundation model described in Heimberg et al. [@doi:10.1038/s41586-024-08411-y] containing 7.3 million cells from various normal and diseased tissues was obtained from Zenodo [@doi:10.5281/zenodo.10685499] and used to annotate cells in all samples.
 Embeddings were first computed on the processed `AnnData` objects using `scimilarity.get_embeddings()` followed by cell type prediction using `scimilarity.get_predictions_knn()` with `weighting=True`.
 The assigned cell type label and the distance of the query cell to the closest cell in the model were added to the processed `SingleCellExperiment` object.
 A plot showing the distribution of the distance metric calculated by `SCimilarity` is present in the cell type report.
@@ -805,7 +805,7 @@ If `SingleR` and `scANVI/scArches` disagree and at least one inference agrees wi
 If the consensus cell type is `Unknown` and one of the `SingleR` and/or `scANVI/scArches` labels is one of `Neuroendocrine` and the other is one of `Schwann`, `Stromal other`, or `Fibroblast`, the `Neuroendocrine` label is assigned. 
 
 For `SCPCP000015` (Ewing sarcoma), tumor cells were first identified by running `AUCell` [@doi:10.18129/B9.bioc.AUCell] on a merged object containing all samples with `EWS::FLI1` marker gene sets obtained from `MSigDB` and published literature. 
-Cells with an AUC > 0.4 for the `EWS::FLI1` marker gene set obtained from Aynaud et al. [@doi:10.1016/j.celrep.2020.01.049] and AUC > 0.1 for the `STAEGE_EWING_FAMILY_TUMOR` gene set from `MSigDB` [@doi:0.1158/0008-5472.CAN-03-4059] were classified as `tumor EWS-high`. 
+Cells with an AUC > 0.4 for the `EWS::FLI1` marker gene set obtained from Aynaud et al. [@doi:10.1016/j.celrep.2020.01.049] and AUC > 0.1 for the `STAEGE_EWING_FAMILY_TUMOR` gene set from `MSigDB` [@doi:10.1158/0008-5472.CAN-03-4059] were classified as `tumor EWS-high`. 
 Cells with an AUC > 0.1 for the `EWS::FLI1` marker gene set obtained from Wrenn et al. [@doi:10.1158/1078-0432.CCR-23-1111] and AUC > 0.05 for the `HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION` gene set from `MSigDB` [@doi:10.1016/j.cels.2015.12.004] were classified as `tumor EWS-low`.
 Cells that met the criteria for `tumor EWS-high` and had mean expression of proliferative markers (`MKI67`, `PCNA`, and `TOP2A`) > 0 were classified as `tumor EWS-high proliferative`.
 For all non-tumor cells, the consensus cell type label was used. 
@@ -898,20 +898,20 @@ Documentation for the ScPCA Portal can be found at <https://scpca.readthedocs.io
 | Summarized gene expression data | This paper | https://scpca.alexslemonade.org |
 | | |
 | **Software and algorithms** |  |  |
-| `scpca-nf` workflow used for processing all ScPCA Portal data | This paper | https://github.com/AlexsLemonade/scpca-nf [TODO: Link to zenodo] |
+| `scpca-nf` workflow used for processing all ScPCA Portal data | This paper | https://github.com/AlexsLemonade/scpca-nf [@doi:10.5281/zenodo.20072636]|
 | ScPCA Portal code | This paper | https://github.com/AlexsLemonade/scpca-portal [@doi:10.5281/zenodo.20058961] |
-| Benchmarking of tools used to build `scpca-nf` | This paper | https://github.com/AlexsLemonade/alsf-scpca [@doi:10.5281/zenodo.20044281] and https://github.com/AlexsLemonade/sc-data-integration [@doi:10.5281/zenodo.20044313] |
+| Benchmarking of tools used to build `scpca-nf` | This paper | https://github.com/AlexsLemonade/alsf-scpca [@doi:10.5281/zenodo.20044281] and https://github.com/AlexsLemonade/sc-data-integration [@doi:10.5281/zenodo.20044314] |
 | Code for creating reference files for consensus cell type assignment | This paper | https://github.com/AlexsLemonade/OpenScPCA-analysis [@doi:10.5281/zenodo.18459136] |
 | Workflow for assigning OpenScPCA project cell type annotations to ScPCA data | This paper | https://github.com/AlexsLemonade/OpenScPCA-nf [@doi:10.5281/zenodo.20056054] |
 | `ScPCAr` package for programmatically downloading from the Portal | This paper | https://github.com/AlexsLemonade/ScPCAr [@doi:10.5281/zenodo.20044462]|
-| Code for underlying figures and analyses | This paper | https://github.com/AlexsLemonade/scpca-paper-figures [TODO: LInk to zenodo] |
+| Code for underlying figures and analyses | This paper | https://github.com/AlexsLemonade/scpca-paper-figures [@doi:10.5281/zenodo.20086729] |
 | Nextflow | Tomasso et al. [@doi:10.1038/nbt.3820] | https://github.com/nextflow-io/nextflow/tree/master | 
 | `salmon` | Patro et al. [@doi:10.1038/nmeth.4197] | https://anaconda.org/channels/bioconda/packages/salmon/overview | 
 | `alevin-fry` | He et al. [@doi:10.1038/s41592-022-01408-3] | https://anaconda.org/channels/bioconda/packages/alevin-fry/overview | 
 | Space Ranger | 10x Genomics | https://www.10xgenomics.com/support/software/space-ranger/latest | 
 | `SingleCellExperiment` | Amezquita et al. [@doi:10.1038/s41592-019-0654-x] | https://bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html |
 | `anndata` | Virshup et al. [@doi:10.21105/joss.04371] | https://pypi.org/project/scvi-tools/ |
-| `DropletUtils` | Lun et al. [@doi:0.1186/s13059-019-1662-y.]; Griffiths et al. [@doi:10.1038/s41467-018-05083-x] | https://bioconductor.org/packages/release/bioc/html/DropletUtils.html | 
+| `DropletUtils` | Lun et al. [@doi:10.1186/s13059-019-1662-y.]; Griffiths et al. [@doi:10.1038/s41467-018-05083-x] | https://bioconductor.org/packages/release/bioc/html/DropletUtils.html | 
 | `miQC` | Hippen et al. [@doi:10.1371/journal.pcbi.1009290] | https://bioconductor.org/packages/release/bioc/html/miQC.html | 
 | `scDblFinder` | Germain et al. [@doi:10.12688/f1000research.73600.2] | https://bioconductor.org/packages/release/bioc/html/scDblFinder.html | 
 | `scuttle` | McCarthy et al. [@doi:10.1093/bioinformatics/btw777] | https://bioconductor.org/packages/release/bioc/html/scuttle.html |
@@ -924,10 +924,11 @@ Documentation for the ScPCA Portal can be found at <https://scpca.readthedocs.io
 | `celldex` | Aran et al. [@doi:10.1038/s41590-018-0276-y] | https://bioconductor.org/packages/release/data/experiment/html/celldex.html |
 | `CellAssign` | Zhang et al. [@doi:10.1038/s41592-019-0529-1] | https://docs.scvi-tools.org/en/stable/installation.html | 
 | `SCimilarity` | Heimberg et al. [@doi:10.1038/s41586-024-08411-y] | https://genentech.github.io/scimilarity/index.html |
-| `inferCNV` | inferCNV of the Trinity CTAT Project [@url:https://github.com/broadinstitute/infercnv] | https://www.bioconductor.org/packages/release/bioc/html/infercnv.html |
+| `inferCNV` | inferCNV of the Trinity CTAT Project [@url:https://github.com/broadinstitute/inferCNV] | https://www.bioconductor.org/packages/release/bioc/html/infercnv.html |
 | `zellkonverter` | Zappia et al. [@doi:10.18129/B9.bioc.zellkonverter] | https://bioconductor.org/packages/release/bioc/html/zellkonverter.html | 
 | `DESeq2` | Love et al. [@doi:10.1186/s13059-014-0550-8] | https://bioconductor.org/packages/release/bioc/html/DESeq2.html | 
 | `lme4` | Bates et al. [@doi:10.18637/jss.v067.i01] | https://cran.r-project.org/web/packages/lme4/index.html | 
+| `ontoProc` | Carey [@doi:10.18129/b9.bioc.ontoproc] | https://bioconductor.org/packages/release/bioc/html/ontoProc.html | 
 | **Other** | | | 
 | HsapDv | Ontology Lookup Service [@url:https://www.ebi.ac.uk/ols4/ontologies/hsapdv] | https://www.ebi.ac.uk/ols4/ontologies/hsapdv | 
 | PATO | Gkoutos et al. [@doi:10.1093/bib/bbx035] |https://www.ebi.ac.uk/ols4/ontologies/pato | 
@@ -956,7 +957,7 @@ These processed results and metadata allow researchers to save time by moving di
 
 Data on the Portal is available as either `SingleCellExperiment` or `AnnData` objects for ease of use within R or Python (i.e., `Bioconductor` or `scverse`, respectively) environments.
 The `AnnData` objects also allow users to integrate ScPCA data with data and tools on other platforms.
-In particular, our `AnnData` objects are designed to be mostly compliant with the requirements of CZI CELLxGENE [@doi:10.1101/2021.04.05.438318; @doi:10.1101/2023.10.30.563174; @{https://cellxgene.cziscience.com/}], and these objects can also be used with Kana [@doi:10.1101/2022.03.02.482701; @{https://www.kanaverse.org/kana/}].
+In particular, our `AnnData` objects are designed to be mostly compliant with the requirements of CZI CELLxGENE [@doi:10.1101/2021.04.05.438318; @doi:10.1101/2023.10.30.563174; @{https://cellxgene.cziscience.com/}], and these objects can also be used with Kana [@doi:10.21105/joss.05603; @{https://www.kanaverse.org/kana/}].
 Data can be downloaded both via the Portal web interface and programmatically using the `ScPCAr` R package, which is a wrapper for the ScPCA Portal API (<https://api.scpca.alexslemonade.org/docs/>).
 
 

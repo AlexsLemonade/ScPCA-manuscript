@@ -1,5 +1,0 @@
-content/03.results.md:16:TODO
-content/04.methods.md:26:TODO
-content/04.methods.md:32:TODO
-content/04.methods.md:358:TODO
-content/04.methods.md:364:TODO
