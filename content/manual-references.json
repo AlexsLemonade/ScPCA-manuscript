@@ -551,6 +551,7 @@
       {"family": "Andrews", "given": "T."},
       {"family": "Dao", "given": "T.P."},
       {"family": "Gomes", "given": "T."},
+      {"literal": "participants in the 1st Human Cell Atlas Jamboree"},
       {"family": "Marioni", "given": "J.C."}
     ],
     "issued": {"date-parts": [[2019]]},
