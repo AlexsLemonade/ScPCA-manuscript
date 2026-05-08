@@ -1117,5 +1117,35 @@
     "issued": {"date-parts": [[2024]]},
     "container-title": "Zenodo",
     "DOI": "10.5281/zenodo.10685499"
+  },
+  {
+  	"id": "doi:10.5281/zenodo.20086729",
+  	"type": "post-weblog",
+  	"title": "AlexsLemonade/scpca-paper-figures",
+  	"author": [
+      {"family": "Spielman", "given": "S.J."},
+      {"family": "Hawkins", "given": "A."},
+      {"family": "Shapiro", "given": "J."},
+      {"family": "Prasad", "given": "D.V."},
+      {"family": "Taroni", "given": "J."}
+    ],
+  	"issued": {"date-parts": [[2026]]},
+  	"container-title": "Zenodo",
+  	"DOI": "10.5281/zenodo.20086729"
+  },
+  {
+  	"id": "doi:10.5281/zenodo.20072636",
+  	"type": "post-weblog",
+  	"title": "AlexsLemonade/scpca-nf",
+  	"author": [
+      {"family": "Hawkins", "given": "A."},
+      {"family": "Spielman", "given": "S.J."},
+      {"family": "Shapiro", "given": "J."},
+      {"family": "Prasad", "given": "D."},
+      {"family": "Taroni", "given": "J."}
+    ],
+  	"issued": {"date-parts": [[2026]]},
+  	"container-title": "Zenodo",
+  	"DOI": "10.5281/zenodo.20072636"
   }
 ]
