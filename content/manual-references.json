@@ -1143,9 +1143,9 @@
       {"family": "Shapiro", "given": "J."},
       {"family": "Prasad", "given": "D."},
       {"family": "Taroni", "given": "J."}
-  ],
+    ],
   	"issued": {"date-parts": [[2026]]},
   	"container-title": "Zenodo",
   	"DOI": "10.5281/zenodo.20072636"
-}
+  }
 ]
