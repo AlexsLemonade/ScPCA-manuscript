@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2026-05-07'
+date-meta: '2026-05-08'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -36,11 +36,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2026-05-07" />
-  <meta name="citation_publication_date" content="2026-05-07" />
-  <meta property="article:published_time" content="2026-05-07" />
-  <meta name="dc.modified" content="2026-05-07T19:30:36+00:00" />
-  <meta property="article:modified_time" content="2026-05-07T19:30:36+00:00" />
+  <meta name="dc.date" content="2026-05-08" />
+  <meta name="citation_publication_date" content="2026-05-08" />
+  <meta property="article:published_time" content="2026-05-08" />
+  <meta name="dc.modified" content="2026-05-08T16:00:07+00:00" />
+  <meta property="article:modified_time" content="2026-05-08T16:00:07+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/967ad195dfe2945a3a57c23bc42514e1e933b1bb/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/967ad195dfe2945a3a57c23bc42514e1e933b1bb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/967ad195dfe2945a3a57c23bc42514e1e933b1bb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c4b1da3243f4ee7e6bb229b31867056b771c3af2/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c4b1da3243f4ee7e6bb229b31867056b771c3af2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/c4b1da3243f4ee7e6bb229b31867056b771c3af2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,10 +118,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/967ad195dfe2945a3a57c23bc42514e1e933b1bb/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/c4b1da3243f4ee7e6bb229b31867056b771c3af2/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@967ad19](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/967ad195dfe2945a3a57c23bc42514e1e933b1bb)
-on May 7, 2026.
+from [AlexsLemonade/ScPCA-manuscript@c4b1da3](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/c4b1da3243f4ee7e6bb229b31867056b771c3af2)
+on May 8, 2026.
 </em></small>
 
 
@@ -1023,6 +1023,32 @@ This work was funded through the Alex's Lemonade Stand Foundation Childhood Canc
 
 AGH, JAS, SJS, DSM, DVP, NI, AY, AMG, KGW, CJB, JO, and JNT are or were employees of Alex's Lemonade Stand Foundation, a sponsor of this research.
 
+## Supplemental Information Index
+
+Document S1. Figures S1-S7.
+
+**Table S1. Overview of ScPCA Portal Datasets, Related to Figure 1.**
+This table provides descriptions and sample and library counts for projects in the ScPCA Portal.
+
+`scpca_project_id`: ScPCA project unique identifier.
+`Diagnosis group`: Diagnosis group as shown in Figure {@fig:fig1}A.
+`Diagnoses`: Full set of diagnoses for all samples in the project.
+`Total number of samples (S)`: Number of samples in the project.
+`Total number of libraries (L)`: Number of libraries in the project.
+Due to additional sequencing modalities and/or multiplexing, projects may have more libraries than samples.
+All remaining columns give the number of libraries (as designated with `(L)`) with the given suspension type, 10x kit version, or additional modality.
+<br><br>
+**Table S2. Summary of references used for cell type annotation with `CellAssign`, Related to Figure 3.**
+This table summarizes the references used for assigning cell types using `CellAssign`.
+References were built using all cell types from a set of organs in `PanglaoDB`'s marker gene list.
+
+`scpca_project_id`: ScPCA project unique identifier.
+`Diagnoses`: Full set of diagnoses for all samples in the project.
+`ScPCA reference name`: Custom reference name.
+`PanglaoDB organs included in reference`: Organs from `PanglaoDB` included in the reference.
+Marker genes for all cell types in each organ were included.
+
+
 
 ## Figure Titles and Legends {.page_break_before}
 
@@ -1044,6 +1070,8 @@ This project card and visualized sample are from project `SCPCP000004` [@doi:10.
 Project cards include information about the number of samples, technologies and modalities, additional sample metadata information, submitter-provided diagnoses, and a submitter-provided abstract.
 Where available, submitter-provided citation information and other databases hosting this data are also provided.
 The visualization employs the UCSC Cell Browser [@doi:10.1093/bioinformatics/btab503], enabling interactive exploration with user-selectable coloring options for cell types, gene-level expression, and other per-cell annotations created by `scpca-nf`.
+
+Also see Table S1.
 <br><br><br><br><br>
 
 
@@ -1090,6 +1118,8 @@ As in panel H, the download folder is named by project ID, format, and date.
 Download folders contain a folder for all single-cell data, `_single-cell_merged`, with a single merged object containing all samples in the given project and a summary report detailing the merged object's contents.
 Summary QC and cell type reports for each library are provided in the `individual_reports` folder arranged by their library ID.
 As in panel (H), additional files `single-cell_metadata.tsv`, `_bulk_quant.tsv`, `_bulk_metadata.tsv`, and `README.md` are also included.
+
+Also see Figures S1-S3.
 <br><br>
 
 
@@ -1111,6 +1141,8 @@ C. Example heatmap (`SCPCL000001`) as shown in the cell type summary report comp
 Heatmap cells are colored by the Jaccard similarity index.
 A value of 1 indicates complete overlap and 0 indicates no overlap between cells annotated with each label.
 This figure shows only the top seven consensus cell type annotations with at least three cells, but the heatmap in the cell type summary report shows all cell types.
+
+Also see Figure S4 and Table S2.
 <br><br>
 
 
@@ -1136,6 +1168,8 @@ Myeloid or lymphocyte immune cell types with fewer than 1000 cells across all li
 D. Dot plot as in panel A, but restricted to immune cells across all non-multiplexed libraries from brain and CNS tumors and showing consensus rather than broad cell types showing expression of cell-type-specific marker genes, considering only immune cells.
 Only broad cell type annotations present in at least 50 cells across samples in the given diagnosis group are shown.
 Cell types without associated marker genes in `CellMarker 2.0` are excluded, including `lymphocyte of B lineage`, `mature T cell`, `mature alpha-beta T cell`, `alpha-beta T cell`, `myeloid leukocyte`, and `tissue-resident macrophage`.
+
+Also see Figures S5-S6.
 <br><br>
 
 <!-- Figure 5 -->
@@ -1164,33 +1198,10 @@ Samples with RNA-seq for both bulk and single-cell/nuclei modalities, excluding 
 B. Odds ratios, which indicate overrepresentation of cell-type marker genes in bulk relative to single-cell/nuclei RNA-seq, from overrepresentation analysis for the same samples shown in panel A, colored by FDR-corrected significance.
 68 cell types were evaluated for each project.
 
+Also see Figure S7.
 
-## Supplementary Figures and Tables {.page_break_before}
 
-<!-- Table S1 -->
-**Table S1. Overview of ScPCA Portal Datasets, Related to Figure 1.**
-This table provides descriptions and sample and library counts for projects in the ScPCA Portal.
-
-`scpca_project_id`: ScPCA project unique identifier.
-`Diagnosis group`: Diagnosis group as shown in Figure {@fig:fig1}A.
-`Diagnoses`: Full set of diagnoses for all samples in the project.
-`Total number of samples (S)`: Number of samples in the project.
-`Total number of libraries (L)`: Number of libraries in the project.
-Due to additional sequencing modalities and/or multiplexing, projects may have more libraries than samples.
-All remaining columns give the number of libraries (as designated with `(L)`) with the given suspension type, 10x kit version, or additional modality.
-<br><br>
-
-<!-- Table S2 -->
-**Table S2. Summary of references used for cell type annotation with `CellAssign`, Related to Figure 3.**
-This table summarizes the references used for assigning cell types using `CellAssign`.
-References were built using all cell types from a set of organs in `PanglaoDB`'s marker gene list.
-
-`scpca_project_id`: ScPCA project unique identifier.
-`Diagnoses`: Full set of diagnoses for all samples in the project.
-`ScPCA reference name`: Custom reference name.
-`PanglaoDB organs included in reference`: Organs from `PanglaoDB` included in the reference.
-Marker genes for all cell types in each organ were included.
-<br><br>
+## Supplementary Figures {.page_break_before}
 
 <!-- Figure S1 -->
 ![**Results from benchmarking `alevin-fry` and `cellranger count` performance, Related to Figure 2.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_s1.png?sanitize=true){#fig:figS1 tag="S1" width="7in"}
