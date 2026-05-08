@@ -1,46 +1,1171 @@
 [
+  {
+    "id": "url:https://www.ebi.ac.uk/ols4/ontologies/hsapdv",
+    "type": "post-weblog",
+    "title": "Ontology Lookup Service (OLS) - HsapDv",
+    "author": [{"literal": "EMBL-EBI."}],
+    "URL": "https://www.ebi.ac.uk/ols4/ontologies/hsapdv"
+  },
+  {
+    "id": "url:https://www.ebi.ac.uk/ols4/ontologies/pato",
+    "type": "post-weblog",
+    "title": "Ontology Lookup Service (OLS) - PATO",
+    "author": [{"literal": "EMBL-EBI."}],
+    "URL": "https://www.ebi.ac.uk/ols4/ontologies/pato"
+  },
+  {
+    "id": "url:https://www.ncbi.nlm.nih.gov/taxonomy",
+    "type": "post-weblog",
+    "title": "NCBI Taxonomy",
+    "author": [{"literal": "National Center for Biotechnology Information."}],
+    "URL": "https://www.ncbi.nlm.nih.gov/taxonomy"
+  },
+  {
+    "id": "url:https://www.ebi.ac.uk/ols4/ontologies/mondo",
+    "type": "post-weblog",
+    "title": "Ontology Lookup Service (OLS) - MONDO",
+    "author": [{"literal": "EMBL-EBI."}],
+    "URL": "https://www.ebi.ac.uk/ols4/ontologies/mondo"
+  },
+  {
+    "id": "url:https://www.ebi.ac.uk/ols4/ontologies/uberon",
+    "type": "post-weblog",
+    "title": "Ontology Lookup Service (OLS) - UBERON",
+    "author": [{"literal": "EMBL-EBI."}],
+    "URL": "https://www.ebi.ac.uk/ols4/ontologies/uberon"
+  },
+  {
+    "id": "url:https://www.ebi.ac.uk/ols4/ontologies/hancestro",
+    "type": "post-weblog",
+    "title": "Ontology Lookup Service (OLS) - Hancestro",
+    "author": [{"literal": "EMBL-EBI."}],
+    "URL": "https://www.ebi.ac.uk/ols4/ontologies/hancestro"
+  },
+  {
+    "id": "url:https://www.ebi.ac.uk/ols4/ontologies/cl",
+    "type": "post-weblog",
+    "title": "Ontology Lookup Service (OLS) - Cell Ontology (CL)",
+    "author": [{"literal": "EMBL-EBI."}],
+    "URL": "https://www.ebi.ac.uk/ols4/ontologies/cl"
+  },
+  {
+    "id": "url:https://openscpca.readthedocs.io",
+    "type": "post-weblog",
+    "title": "OpenScPCA Project",
+    "author": [{"literal": "Alex's Lemonade Stand Foundation."}],
+    "URL": "https://openscpca.readthedocs.io"
+  },
+  {
+    "id": "url:https://cellxgene.cziscience.com",
+    "type": "post-weblog",
+    "title": "CELLxGENE",
+    "author": [{"literal": "Chan Zuckerberg Initiative."}],
+    "URL": "https://cellxgene.cziscience.com"
+  },
+  {
+    "id": "url:https://cellxgene.cziscience.com/",
+    "type": "post-weblog",
+    "title": "Cellxgene Data Portal",
+    "author": [{"literal": "Chan Zuckerberg Initiative."}],
+    "URL": "https://cellxgene.cziscience.com/"
+  },
+  {
+    "id": "url:https://bioconductor.org/books/release/SingleRBook/annotation-diagnostics.html#based-on-the-deltas-across-cells",
+    "type": "post-weblog",
+    "title": "SingleR Book: Annotation Diagnostics Based on the Deltas Across Cells",
+    "author": [{"family": "Lun", "given": "Aaron T. L."}],
+    "URL": "https://bioconductor.org/books/release/SingleRBook/annotation-diagnostics.html#based-on-the-deltas-across-cells"
+  },
+  {
+    "id": "url:https://www.kanaverse.org/kana/",
+    "type": "post-weblog",
+    "title": "kana",
+    "author": [
+      {"family": "Kancherla", "given": "J."},
+      {"family": "Lun", "given": "Aaron T. L."}
+    ],
+    "URL": "https://www.kanaverse.org/kana/"
+  },
+  {
+    "id": "url:https://www.10xgenomics.com/support/software/cell-ranger/latest",
+    "type": "post-weblog",
+    "title": "Cell Ranger",
+    "author": [{"literal": "10x Genomics."}],
+    "URL": "https://www.10xgenomics.com/support/software/cell-ranger/latest"
+  },
+  {
+    "id": "url:https://www.10xgenomics.com/support/software/space-ranger/latest",
+    "type": "post-weblog",
+    "title": "Space Ranger",
+    "author": [{"literal": "10x Genomics."}],
+    "URL": "https://www.10xgenomics.com/support/software/space-ranger/latest"
+  },
+  {
+    "id": "url:https://github.com/broadinstitute/inferCNV",
+    "type": "post-weblog",
+    "title": "InferCNV: Inferring Copy Number Alterations from Tumor Single Cell RNA-Seq Data",
+    "author": [{"literal": "Broad Institute."}],
+    "URL": "https://github.com/broadinstitute/inferCNV"
+  },
+  {
+    "id": "url:https://github.com/chanzuckerberg/single-cell-curation/blob/main/schema/3.0.0/schema.md",
+    "type": "post-weblog",
+    "title": "CZI Single Cell Curation Schema 3.0.0",
+    "author": [{"literal": "Chan Zuckerberg Initiative."}],
+    "URL": "https://github.com/chanzuckerberg/single-cell-curation/blob/main/schema/3.0.0/schema.md"
+  },
+  {
+    "id": "url:https://github.com/AlexsLemonade/OpenScPCA-analysis",
+    "type": "post-weblog",
+    "title": "OpenScPCA-analysis GitHub Repository",
+    "author": [{"literal": "Alex's Lemonade Stand Foundation."}],
+    "URL": "https://github.com/AlexsLemonade/OpenScPCA-analysis"
+  },
+  {
+    "id": "url:https://github.com/AlexsLemonade/OpenScPCA-nf",
+    "type": "post-weblog",
+    "title": "OpenScPCA-nf GitHub Repository",
+    "author": [{"literal": "Alex's Lemonade Stand Foundation."}],
+    "URL": "https://github.com/AlexsLemonade/OpenScPCA-nf"
+  },
+  {
+    "id": "doi:10.18129/b9.bioc.ontoproc",
+    "type": "post-weblog",
+    "title": "ontoProc",
+    "author": [{"family": "Carey", "given": "V."}],
+    "issued": {"date-parts": [[2017]]},
+    "container-title": "Bioconductor",
+    "DOI": "10.18129/b9.bioc.ontoproc"
+  },
+  {
+    "id": "doi:10.18129/b9.bioc.aucell",
+    "type": "post-weblog",
+    "title": "AUCell",
+    "author": [{"family": "Aibar", "given": "S."}],
+    "issued": {"date-parts": [[2017]]},
+    "container-title": "Bioconductor",
+    "DOI": "10.18129/b9.bioc.aucell"
+  },
+  {
+    "id": "doi:10.18129/b9.bioc.zellkonverter",
+    "type": "post-weblog",
+    "title": "zellkonverter",
+    "author": [
+      {"family": "Zappia", "given": "L."},
+      {"family": "Lun", "given": "Aaron T. L."}
+    ],
+    "issued": {"date-parts": [[2020]]},
+    "container-title": "Bioconductor",
+    "DOI": "10.18129/b9.bioc.zellkonverter"
+  },
 {
-  "id": "url:https://cells.ucsc.edu/",
-  "type": "webpage",
-  "URL": "https://cells.ucsc.edu/",
-  "title": "UCSC Cell Browser"
-},
+    "id": "doi:10.1038/s41467-024-47712-8",
+    "type": "article-journal",
+    "title": "Identifying tumor type and cell type-specific gene expression alterations in pediatric central nervous system tumors",
+    "author": [
+      {"family": "Lee", "given": "M.K."},
+      {"family": "Azizgolshani", "given": "N."},
+      {"family": "Shapiro", "given": "J.A."},
+      {"family": "Nguyen", "given": "L.N."},
+      {"family": "Kolling", "given": "F.W."},
+      {"family": "Zanazzi", "given": "G.J."},
+      {"family": "Frost", "given": "H.R."},
+      {"family": "Christensen", "given": "B.C."}
+    ],
+    "issued": {"date-parts": [[2024]]},
+    "container-title": "Nat Commun",
+    "volume": "15",
+    "page": "3634",
+    "DOI": "10.1038/s41467-024-47712-8"
+  },
+  {
+    "id": "doi:10.1038/s41467-024-47943-9",
+    "type": "article-journal",
+    "title": "Associations in cell type-specific hydroxymethylation and transcriptional alterations of pediatric central nervous system tumors",
+    "author": [
+      {"family": "Lee", "given": "M.K."},
+      {"family": "Azizgolshani", "given": "N."},
+      {"family": "Zhang", "given": "Z."},
+      {"family": "Perreard", "given": "L."},
+      {"family": "Kolling", "given": "F.W."},
+      {"family": "Nguyen", "given": "L.N."},
+      {"family": "Zanazzi", "given": "G.J."},
+      {"family": "Salas", "given": "L.A."},
+      {"family": "Christensen", "given": "B.C."}
+    ],
+    "issued": {"date-parts": [[2024]]},
+    "container-title": "Nat Commun",
+    "volume": "15",
+    "page": "3635",
+    "DOI": "10.1038/s41467-024-47943-9"
+  },
+  {
+    "id": "doi:10.1038/s41467-021-24781-7",
+    "type": "article-journal",
+    "title": "Retinoblastoma from human stem cell-derived retinal organoids",
+    "author": [
+      {"family": "Norrie", "given": "J.L."},
+      {"family": "Nityanandam", "given": "A."},
+      {"family": "Lai", "given": "K."},
+      {"family": "Chen", "given": "X."},
+      {"family": "Wilson", "given": "M."},
+      {"family": "Stewart", "given": "E."},
+      {"family": "Griffiths", "given": "L."},
+      {"family": "Jin", "given": "H."},
+      {"family": "Wu", "given": "G."},
+      {"family": "Orr", "given": "B."},
+      {"family": "Tran", "given": "Q."}
+    ],
+    "issued": {"date-parts": [[2021]]},
+    "container-title": "Nat Commun",
+    "volume": "12",
+    "page": "4535",
+    "DOI": "10.1038/s41467-021-24781-7"
+  },
+  {
+    "id": "doi:10.1186/s13059-025-03673-9",
+    "type": "article-journal",
+    "title": "Empowering bioinformatics communities with Nextflow and nf-core",
+    "author": [
+      {"family": "Langer", "given": "B.E."},
+      {"family": "Amaral", "given": "A."},
+      {"family": "Baudement", "given": "M.-O."},
+      {"family": "Bonath", "given": "F."},
+      {"family": "Charles", "given": "M."},
+      {"family": "Chitneedi", "given": "P.K."},
+      {"family": "Clark", "given": "E.L."},
+      {"family": "Di Tommaso", "given": "P."},
+      {"family": "Djebali", "given": "S."},
+      {"family": "Ewels", "given": "P.A."},
+      {"family": "Eynard", "given": "S."}
+    ],
+    "issued": {"date-parts": [[2025]]},
+    "container-title": "Genome Biol",
+    "volume": "26",
+    "page": "228",
+    "DOI": "10.1186/s13059-025-03673-9"
+  },
+  {
+    "id": "doi:10.1038/ncomms14049",
+    "type": "article-journal",
+    "title": "Massively parallel digital transcriptional profiling of single cells",
+    "author": [
+      {"family": "Zheng", "given": "G.X.Y."},
+      {"family": "Terry", "given": "J.M."},
+      {"family": "Belgrader", "given": "P."},
+      {"family": "Ryvkin", "given": "P."},
+      {"family": "Bent", "given": "Z.W."},
+      {"family": "Wilson", "given": "R."},
+      {"family": "Ziraldo", "given": "S.B."},
+      {"family": "Wheeler", "given": "T.D."},
+      {"family": "McDermott", "given": "G.P."},
+      {"family": "Zhu", "given": "J."}, 
+      {"family": "Gregory", "given": "M.T."}
+    ],
+    "issued": {"date-parts": [[2017]]},
+    "container-title": "Nat Commun",
+    "volume": "8",
+    "page": "14049",
+    "DOI": "10.1038/ncomms14049"
+  },
+  {
+    "id": "doi:10.1186/gb-2004-5-10-r80",
+    "type": "article-journal",
+    "title": "Bioconductor: open software development for computational biology and bioinformatics",
+    "author": [
+      {"family": "Gentleman", "given": "R.C."},
+      {"family": "Carey", "given": "V.J."},
+      {"family": "Bates", "given": "D.M."},
+      {"family": "Bolstad", "given": "B."},
+      {"family": "Dettling", "given": "M."},
+      {"family": "Dudoit", "given": "S."},
+      {"family": "Ellis", "given": "B."},
+      {"family": "Gautier", "given": "L."},
+      {"family": "Ge", "given": "Y."},
+      {"family": "Gentry", "given": "J."}, 
+      {"family": "Hortnik", "given": "K."}
+    ],
+    "issued": {"date-parts": [[2004]]},
+    "container-title": "Genome Biol",
+    "volume": "5",
+    "page": "R80",
+    "DOI": "10.1186/gb-2004-5-10-r80"
+  },
+  {
+    "id": "doi:10.1038/s41467-018-05083-x",
+    "type": "article-journal",
+    "title": "Detection and removal of barcode swapping in single-cell RNA-seq data",
+    "author": [
+      {"family": "Griffiths", "given": "J.A."},
+      {"family": "Richard", "given": "A.C."},
+      {"family": "Bach", "given": "K."},
+      {"family": "Lun", "given": "Aaron T. L."},
+      {"family": "Marioni", "given": "J.C."}
+    ],
+    "issued": {"date-parts": [[2018]]},
+    "container-title": "Nat Commun",
+    "volume": "9",
+    "page": "2667",
+    "DOI": "10.1038/s41467-018-05083-x"
+  },
+  {
+    "id": "doi:10.1186/s13059-016-0947-7",
+    "type": "article-journal",
+    "title": "Pooling across cells to normalize single-cell RNA sequencing data with many zero counts",
+    "author": [
+      {"family": "Lun", "given": "Aaron T. L."},
+      {"family": "Bach", "given": "K."},
+      {"family": "Marioni", "given": "J.C."}
+    ],
+    "issued": {"date-parts": [[2016]]},
+    "container-title": "Genome Biol",
+    "volume": "17",
+    "page": "75",
+    "DOI": "10.1186/s13059-016-0947-7"
+  },
+  {
+    "id": "doi:10.1186/s13059-018-1603-1",
+    "type": "article-journal",
+    "title": "Cell Hashing with barcoded antibodies enables multiplexing and doublet detection for single cell genomics",
+    "author": [
+      {"family": "Stoeckius", "given": "M."},
+      {"family": "Zheng", "given": "S."},
+      {"family": "Houck-Loomis", "given": "B."},
+      {"family": "Hao", "given": "S."},
+      {"family": "Yeung", "given": "B.Z."},
+      {"family": "Mauck", "given": "W.M.", "suffix": "III"},
+      {"family": "Smibert", "given": "P."},
+      {"family": "Satija", "given": "R."}
+    ],
+    "issued": {"date-parts": [[2018]]},
+    "container-title": "Genome Biol",
+    "volume": "19",
+    "page": "224",
+    "DOI": "10.1186/s13059-018-1603-1"
+  },
+  {
+    "id": "doi:10.18637/jss.v067.i01",
+    "type": "post-weblog",
+    "title": "Fitting Linear Mixed-Effects Models Using lme4",
+    "author": [
+      {"family": "Bates", "given": "D."},
+      {"family": "Mächler", "given": "M."},
+      {"family": "Bolker", "given": "B."},
+      {"family": "Walker", "given": "S."}
+    ],
+    "issued": {"date-parts": [[2015]]},
+    "container-title": "Journal of Statistical Software",
+    "volume": "67",
+    "issue": "1",
+    "page": "1-48",
+    "DOI": "10.18637/jss.v067.i01"
+  },
+  {
+    "id": "doi:10.1101/2021.04.05.438318",
+    "type": "article-journal",
+    "title": "cellxgene: a performant, scalable exploration platform for high dimensional sparse matrices",
+    "author": [
+      {"family": "Megill", "given": "C."},
+      {"family": "Martin", "given": "B."},
+      {"family": "Weaver", "given": "C."},
+      {"family": "Bell", "given": "S."},
+      {"family": "Prins", "given": "L."},
+      {"family": "Badajoz", "given": "S."},
+      {"family": "McCandless", "given": "B."},
+      {"family": "Pisco", "given": "A.O."},
+      {"family": "Kinsella", "given": "M."},
+      {"family": "Griffin", "given": "F."},
+      {"family": "Kiggins", "given": "J."}
+    ],
+    "issued": {"date-parts": [[2021]]},
+    "container-title": "Preprint at bioRxiv",
+    "DOI": "10.1101/2021.04.05.438318"
+  },
+  {
+    "id": "doi:10.1101/2023.10.30.563174",
+    "type": "article-journal",
+    "title": "CZ CELLxGENE Discover: A single-cell data platform for scalable exploration, analysis and modeling of aggregated data",
+    "author": [
+      {"literal": "CZI Single-Cell Biology Program"},
+      {"family": "Abdulla", "given": "S."},
+      {"family": "Aevermann", "given": "B."},
+      {"family": "Assis", "given": "P."},
+      {"family": "Badajoz", "given": "S."},
+      {"family": "Bell", "given": "S.M."},
+      {"family": "Bezzi", "given": "E."},
+      {"family": "Cakir", "given": "B."},
+      {"family": "Chaffer", "given": "J."},
+      {"family": "Chambers", "given": "S."},
+      {"family": "Cherry", "given": "J.M."}
+    ],
+    "issued": {"date-parts": [[2023]]},
+    "container-title": "Preprint at bioRxiv",
+    "DOI": "10.1101/2023.10.30.563174"
+  },
+  {
+    "id": "doi:10.1101/2021.05.05.442755",
+    "type": "article-journal",
+    "title": "STARsolo: accurate, fast and versatile mapping/quantification of single-cell and single-nucleus RNA-seq data",
+    "author": [
+      {"family": "Kaminow", "given": "B."},
+      {"family": "Yunusov", "given": "D."},
+      {"family": "Dobin", "given": "A."}
+    ],
+    "issued": {"date-parts": [[2021]]},
+    "container-title": "Preprint at bioRxiv",
+    "DOI": "10.1101/2021.05.05.442755"
+  },
+  {
+    "id": "doi:10.1101/2024.01.07.574538",
+    "type": "article-journal",
+    "title": "A spatial cell atlas of neuroblastoma reveals developmental, epigenetic and spatial axis of tumor heterogeneity",
+    "author": [
+      {"family": "Patel", "given": "A.G."},
+      {"family": "Ashenberg", "given": "O."},
+      {"family": "Collins", "given": "N.B."},
+      {"family": "Segerstolpe", "given": "Å."},
+      {"family": "Jiang", "given": "S."},
+      {"family": "Slyper", "given": "M."},
+      {"family": "Huang", "given": "X."},
+      {"family": "Caraccio", "given": "C."},
+      {"family": "Jin", "given": "H."},
+      {"family": "Sheppard", "given": "H."},
+      {"family": "Xu", "given": "K."}
+    ],
+    "issued": {"date-parts": [[2024]]},
+    "container-title": "Preprint at bioRxiv",
+    "DOI": "10.1101/2024.01.07.574538"
+  },
+  {
+    "id": "doi:10.1002/cti2.70033",
+    "type": "article-journal",
+    "title": "Data standards for single-cell RNA-sequencing of paediatric cancer",
+    "author": [
+      {"family": "Xu", "given": "X."},
+      {"family": "Saxon", "given": "J."},
+      {"family": "Soon", "given": "M.S.F."},
+      {"family": "Lee", "given": "C.Y."},
+      {"family": "Tuong", "given": "Z.K."}
+    ],
+    "issued": {"date-parts": [[2025]]},
+    "container-title": "Clinical & Translational Immunology",
+    "volume": "14",
+    "page": "e70033",
+    "DOI": "10.1002/cti2.70033"
+  },
+  {
+    "id": "doi:10.1038/nature11247",
+    "type": "article-journal",
+    "title": "An integrated encyclopedia of DNA elements in the human genome",
+    "author": [{"literal": "The ENCODE Project Consortium"}],
+    "issued": {"date-parts": [[2012]]},
+    "container-title": "Nature",
+    "volume": "489",
+    "page": "57-74",
+    "DOI": "10.1038/nature11247"
+  },
+  {
+    "id": "doi:10.3389/fimmu.2023.1227126",
+    "type": "article-journal",
+    "title": "The tumor micro-environment in pediatric glioma: friend or foe?",
+    "author": [
+      {"family": "Messiaen", "given": "J."},
+      {"family": "Jacobs", "given": "S.A."},
+      {"family": "De Smet", "given": "F."}
+    ],
+    "issued": {"date-parts": [[2023]]},
+    "container-title": "Front. Immunol.",
+    "volume": "14",
+    "page": "1227126",
+    "DOI": "10.3389/fimmu.2023.1227126"
+  },
+  {
+    "id": "doi:10.3389/fphar.2024.1355242",
+    "type": "article-journal",
+    "title": "Insights into the glioblastoma tumor microenvironment: current and emerging therapeutic approaches",
+    "author": [
+      {"family": "Tripathy", "given": "D.K."},
+      {"family": "Panda", "given": "L.P."},
+      {"family": "Biswal", "given": "S."},
+      {"family": "Barhwal", "given": "K."}
+    ],
+    "issued": {"date-parts": [[2024]]},
+    "container-title": "Front. Pharmacol.",
+    "volume": "15",
+    "page": "1355242",
+    "DOI": "10.3389/fphar.2024.1355242"
+  },
+  {
+    "id": "doi:10.1186/s12885-023-10977-1",
+    "type": "article-journal",
+    "title": "Dissociation protocols used for sarcoma tissues bias the transcriptome observed in single-cell and single-nucleus RNA sequencing",
+    "author": [
+      {"family": "Truong", "given": "D.D."},
+      {"family": "Lamhamedi-Cherradi", "given": "S.-E."},
+      {"family": "Porter", "given": "R.W."},
+      {"family": "Krishnan", "given": "S."},
+      {"family": "Swaminathan", "given": "J."},
+      {"family": "Gibson", "given": "A."},
+      {"family": "Lazar", "given": "A.J."},
+      {"family": "Livingston", "given": "J.A."},
+      {"family": "Gopalakrishnan", "given": "V."},
+      {"family": "Gordon", "given": "N."}, 
+      {"family": "Daw", "given": "N.C."}
+    ],
+    "issued": {"date-parts": [[2023]]},
+    "container-title": "BMC Cancer",
+    "volume": "23",
+    "page": "488",
+    "DOI": "10.1186/s12885-023-10977-1"
+  },
+  {
+    "id": "doi:10.1158/2159-8290.cd-14-0622",
+    "type": "article-journal",
+    "title": "Genomic Landscape of Ewing Sarcoma Defines an Aggressive Subtype with Co-Association of STAG2 and TP53 Mutations",
+    "author": [
+      {"family": "Tirode", "given": "F."},
+      {"family": "Surdez", "given": "D."},
+      {"family": "Ma", "given": "X."},
+      {"family": "Parker", "given": "M."},
+      {"family": "Le Deley", "given": "M.C."},
+      {"family": "Bahrami", "given": "A."},
+      {"family": "Zhang", "given": "Z."},
+      {"family": "Lapouble", "given": "E."},
+      {"family": "Grossetête-Lalami", "given": "S."},
+      {"family": "Rusch", "given": "M."},
+      {"family": "Reynaud", "given": "S."}
+    ],
+    "issued": {"date-parts": [[2014]]},
+    "container-title": "Cancer Discovery",
+    "volume": "4",
+    "page": "1342-1353",
+    "DOI": "10.1158/2159-8290.cd-14-0622"
+  },
 {
-  "id": "url:https://www.ebi.ac.uk/ols4/ontologies/hancestro",
-  "type": "webpage",
-  "URL": "https://www.ebi.ac.uk/ols4/ontologies/hancestro",
-  "title": "Ontology Lookup Service (OLS) - Hancestro"
-},
+    "id": "doi:10.1186/s13059-019-1662-y",
+    "type": "article-journal",
+    "title": "EmptyDrops: distinguishing cells from empty droplets in droplet-based single-cell RNA sequencing data",
+    "author": [
+      {"family": "Lun", "given": "Aaron T. L."},
+      {"family": "Riesenfeld", "given": "S."},
+      {"family": "Andrews", "given": "T."},
+      {"family": "Dao", "given": "T.P."},
+      {"family": "Gomes", "given": "T."},
+      {"literal": "participants in the 1st Human Cell Atlas Jamboree"},
+      {"family": "Marioni", "given": "J.C."}
+    ],
+    "issued": {"date-parts": [[2019]]},
+    "container-title": "Genome Biol",
+    "volume": "20",
+    "page": "63",
+    "DOI": "10.1186/s13059-019-1662-y"
+  },
+  {
+    "id": "doi:10.1093/gigascience/giab062",
+    "type": "article-journal",
+    "title": "Genetic demultiplexing of pooled single-cell RNA-sequencing samples in cancer facilitates effective experimental design",
+    "author": [
+      {"family": "Weber", "given": "L.M."},
+      {"family": "Hippen", "given": "A.A."},
+      {"family": "Hickey", "given": "P.F."},
+      {"family": "Berrett", "given": "K.C."},
+      {"family": "Gertz", "given": "J."},
+      {"family": "Doherty", "given": "J.A."},
+      {"family": "Greene", "given": "C.S."},
+      {"family": "Hicks", "given": "S.C."}
+    ],
+    "issued": {"date-parts": [[2021]]},
+    "container-title": "GigaScience",
+    "volume": "10",
+    "issue": "9",
+    "page": "giab062",
+    "DOI": "10.1093/gigascience/giab062"
+  },
+  {
+    "id": "doi:10.1186/s13326-016-0088-7",
+    "type": "article-journal",
+    "title": "The Cell Ontology 2016: enhanced content, modularization, and ontology interoperability",
+    "author": [
+      {"family": "Diehl", "given": "A.D."},
+      {"family": "Meehan", "given": "T.F."},
+      {"family": "Bradford", "given": "Y.M."},
+      {"family": "Brush", "given": "M.H."},
+      {"family": "Dahdul", "given": "W.M."},
+      {"family": "Dougall", "given": "D.S."},
+      {"family": "He", "given": "Y."},
+      {"family": "Osumi-Sutherland", "given": "D."},
+      {"family": "Ruttenberg", "given": "A."},
+      {"family": "Sarntivijai", "given": "S."},
+      {"family": "Van Slyke", "given": "C.E."}
+    ],
+    "issued": {"date-parts": [[2016]]},
+    "container-title": "J Biomed Semant",
+    "volume": "7",
+    "page": "44",
+    "DOI": "10.1186/s13326-016-0088-7"
+  },
+  {
+    "id": "doi:10.1186/1471-2105-12-6",
+    "type": "article-journal",
+    "title": "Logical Development of the Cell Ontology",
+    "author": [
+      {"family": "Meehan", "given": "T.F."},
+      {"family": "Masci", "given": "A.M."},
+      {"family": "Abdulla", "given": "A."},
+      {"family": "Cowell", "given": "L.G."},
+      {"family": "Blake", "given": "J.A."},
+      {"family": "Mungall", "given": "C.J."},
+      {"family": "Diehl", "given": "A.D."}
+    ],
+    "issued": {"date-parts": [[2011]]},
+    "container-title": "BMC Bioinformatics",
+    "volume": "12",
+    "page": "6",
+    "DOI": "10.1186/1471-2105-12-6"
+  },
+  {
+    "id": "doi:10.1186/gb-2012-13-1-r5",
+    "type": "article-journal",
+    "title": "Uberon, an integrative multi-species anatomy ontology",
+    "author": [
+      {"family": "Mungall", "given": "C.J."},
+      {"family": "Torniai", "given": "C."},
+      {"family": "Gkoutos", "given": "G.V."},
+      {"family": "Lewis", "given": "S.E."},
+      {"family": "Haendel", "given": "M.A."}
+    ],
+    "issued": {"date-parts": [[2012]]},
+    "container-title": "Genome Biol",
+    "volume": "13",
+    "page": "R5",
+    "DOI": "10.1186/gb-2012-13-1-r5"
+  },
+  {
+    "id": "doi:10.1093/database/baaa062",
+    "type": "article-journal",
+    "title": "NCBI Taxonomy: a comprehensive update on curation, resources and tools",
+    "author": [
+      {"family": "Schoch", "given": "C.L."},
+      {"family": "Ciufo", "given": "S."},
+      {"family": "Domrachev", "given": "M."},
+      {"family": "Hotton", "given": "C.L."},
+      {"family": "Kannan", "given": "S."},
+      {"family": "Khovanskaya", "given": "R."},
+      {"family": "Leipe", "given": "D."},
+      {"family": "Mcveigh", "given": "R."},
+      {"family": "O'Neill", "given": "K."},
+      {"family": "Robbertse", "given": "B."}, 
+      {"family": "Sharma", "given": "S."}
+
+    ],
+    "issued": {"date-parts": [[2020]]},
+    "container-title": "Database",
+    "volume": "2020",
+    "page": "baaa062",
+    "DOI": "10.1093/database/baaa062"
+  },
+  {
+    "id": "doi:10.1038/s41698-024-00717-4",
+    "type": "article-journal",
+    "title": "Therapeutic approaches to modulate the immune microenvironment in gliomas",
+    "author": [
+      {"family": "Sarantopoulos", "given": "A."},
+      {"family": "Ene", "given": "C."},
+      {"family": "Aquilanti", "given": "E."}
+    ],
+    "issued": {"date-parts": [[2024]]},
+    "container-title": "npj Precis. Onc.",
+    "volume": "8",
+    "page": "241",
+    "DOI": "10.1038/s41698-024-00717-4"
+  },
+  {
+    "id": "doi:10.1186/s13059-017-1382-0",
+    "type": "article-journal",
+    "title": "SCANPY: large-scale single-cell gene expression data analysis",
+    "author": [
+      {"family": "Wolf", "given": "F.A."},
+      {"family": "Angerer", "given": "P."},
+      {"family": "Theis", "given": "F.J."}
+    ],
+    "issued": {"date-parts": [[2018]]},
+    "container-title": "Genome Biol",
+    "volume": "19",
+    "page": "15",
+    "DOI": "10.1186/s13059-017-1382-0"
+  },
+  {
+    "id": "doi:10.1186/s13040-018-0190-8",
+    "type": "article-journal",
+    "title": "Use case driven evaluation of open databases for pediatric cancer research",
+    "author": [
+      {"family": "Jeanquartier", "given": "F."},
+      {"family": "Jean-Quartier", "given": "C."},
+      {"family": "Holzinger", "given": "A."}
+    ],
+    "issued": {"date-parts": [[2019]]},
+    "container-title": "BioData Mining",
+    "volume": "12",
+    "page": "2",
+    "DOI": "10.1186/s13040-018-0190-8"
+  },
+  {
+    "id": "doi:10.3389/fped.2024.1357093",
+    "type": "article-journal",
+    "title": "Long-term trends in cancer incidence and mortality among U.S. children and adolescents: a SEER database analysis from 1975 to 2018",
+    "author": [
+      {"family": "Tang", "given": "X.-W."},
+      {"family": "Jiang", "given": "J."},
+      {"family": "Huang", "given": "S."},
+      {"family": "Shi", "given": "X.-M."},
+      {"family": "Xu", "given": "H."},
+      {"family": "Xu", "given": "J."},
+      {"family": "Peng", "given": "J.-Y."},
+      {"family": "Zhang", "given": "W."},
+      {"family": "Shi", "given": "L."},
+      {"family": "Zhong", "given": "X.-L."}, 
+      {"family": "Kang", "given": "M."}
+    ],
+    "issued": {"date-parts": [[2024]]},
+    "container-title": "Front. Pediatr.",
+    "volume": "12",
+    "page": "1357093",
+    "DOI": "10.3389/fped.2024.1357093"
+  },
+  {
+    "id": "doi:10.7554/elife.27041",
+    "type": "article-journal",
+    "title": "The Human Cell Atlas",
+    "author": [
+      {"family": "Regev", "given": "A."},
+      {"family": "Teichmann", "given": "S.A."},
+      {"family": "Lander", "given": "E.S."},
+      {"family": "Amit", "given": "I."},
+      {"family": "Benoist", "given": "C."},
+      {"family": "Birney", "given": "E."},
+      {"family": "Bodenmiller", "given": "B."},
+      {"family": "Campbell", "given": "P."},
+      {"family": "Carninci", "given": "P."},
+      {"family": "Clatworthy", "given": "M."}, 
+      {"family": "Clevers", "given": "H."}
+    ],
+    "issued": {"date-parts": [[2017]]},
+    "container-title": "eLife",
+    "volume": "6",
+    "page": "e27041",
+    "DOI": "10.7554/elife.27041"
+  },
+  {
+    "id": "doi:10.1186/gb-2005-6-2-r21",
+    "type": "article-journal",
+    "title": "An ontology for cell types",
+    "author": [
+      {"family": "Bard", "given": "J."},
+      {"family": "Rhee", "given": "S.Y."},
+      {"family": "Ashburner", "given": "M."}
+    ],
+    "issued": {"date-parts": [[2005]]},
+    "container-title": "Genome Biol",
+    "volume": "6",
+    "page": "R21",
+    "DOI": "10.1186/gb-2005-6-2-r21"
+  },
+  {
+    "id": "doi:10.1093/noajnl/vdad009",
+    "type": "article-journal",
+    "title": "Tumor microenvironment in glioblastoma: Current and emerging concepts",
+    "author": [
+      {"family": "Sharma", "given": "P."},
+      {"family": "Aaroe", "given": "A."},
+      {"family": "Liang", "given": "J."},
+      {"family": "Puduvalli", "given": "V.K."}
+    ],
+    "issued": {"date-parts": [[2023]]},
+    "container-title": "Neuro-Oncology Advances",
+    "volume": "5",
+    "issue": "1",
+    "page": "vdad009",
+    "DOI": "10.1093/noajnl/vdad009"
+  },
+  {
+    "id": "doi:10.1038/nrdp.2016.78",
+    "type": "article-journal",
+    "title": "Neuroblastoma",
+    "author": [
+      {"family": "Matthay", "given": "K.K."},
+      {"family": "Maris", "given": "J.M."},
+      {"family": "Schleiermacher", "given": "G."},
+      {"family": "Nakagawara", "given": "A."},
+      {"family": "Mackall", "given": "C.L."},
+      {"family": "Diller", "given": "L."},
+      {"family": "Weiss", "given": "W.A."}
+    ],
+    "issued": {"date-parts": [[2016]]},
+    "container-title": "Nat Rev Dis Primers",
+    "volume": "2",
+    "page": "16078",
+    "DOI": "10.1038/nrdp.2016.78"
+  },
+  {
+    "id": "doi:10.1186/s13059-018-1396-2",
+    "type": "article-journal",
+    "title": "A standardized framework for representation of ancestry data in genomics studies, with application to the NHGRI-EBI GWAS Catalog",
+    "author": [
+      {"family": "Morales", "given": "J."},
+      {"family": "Welter", "given": "D."},
+      {"family": "Bowler", "given": "E.H."},
+      {"family": "Cerezo", "given": "M."},
+      {"family": "Harris", "given": "L.W."},
+      {"family": "McMahon", "given": "A.C."},
+      {"family": "Hall", "given": "P."},
+      {"family": "Junkins", "given": "H.A."},
+      {"family": "Milano", "given": "A."},
+      {"family": "Hastings", "given": "E."},
+      {"family": "Malangone", "given": "C."}
+    ],
+    "issued": {"date-parts": [[2018]]},
+    "container-title": "Genome Biol",
+    "volume": "19",
+    "page": "21",
+    "DOI": "10.1186/s13059-018-1396-2"
+  },
+  {
+    "id": "doi:10.1093/genetics/iyaf215",
+    "type": "article-journal",
+    "title": "Mondo: integrating disease terminology across communities",
+    "author": [
+      {"family": "Vasilevsky", "given": "N.A."},
+      {"family": "Toro", "given": "S."},
+      {"family": "Matentzoglu", "given": "N."},
+      {"family": "Flack", "given": "J.E."},
+      {"family": "Mullen", "given": "K.R."},
+      {"family": "Hegde", "given": "H."},
+      {"family": "Gehrke", "given": "S."},
+      {"family": "Whetzel", "given": "P.L."},
+      {"family": "Shwetar", "given": "Y."},
+      {"family": "Harris", "given": "N.L."},
+      {"family": "Ngu", "given": "M.S."}
+    ],
+    "issued": {"date-parts": [[2025]]},
+    "container-title": "Genetics",
+    "volume": "232",
+    "issue": "4",
+    "page": "iyaf215",
+    "DOI": "10.1093/genetics/iyaf215"
+  },
+  {
+    "id": "doi:10.1186/s13059-020-02151-8",
+    "type": "article-journal",
+    "title": "Alignment and mapping methodology influence transcript abundance estimation",
+    "author": [
+      {"family": "Srivastava", "given": "A."},
+      {"family": "Malik", "given": "L."},
+      {"family": "Sarkar", "given": "H."},
+      {"family": "Zakeri", "given": "M."},
+      {"family": "Almodaresi", "given": "F."},
+      {"family": "Soneson", "given": "C."},
+      {"family": "Love", "given": "M.I."},
+      {"family": "Kingsford", "given": "C."},
+      {"family": "Patro", "given": "R."}
+    ],
+    "issued": {"date-parts": [[2020]]},
+    "container-title": "Genome Biol",
+    "volume": "21",
+    "page": "239",
+    "DOI": "10.1186/s13059-020-02151-8"
+  },
+  {
+    "id": "doi:10.1093/gigascience/giab008",
+    "type": "article-journal",
+    "title": "Twelve years of SAMtools and BCFtools",
+    "author": [
+      {"family": "Danecek", "given": "P."},
+      {"family": "Bonfield", "given": "J.K."},
+      {"family": "Liddle", "given": "J."},
+      {"family": "Marshall", "given": "J."},
+      {"family": "Ohan", "given": "V."},
+      {"family": "Pollard", "given": "M.O."},
+      {"family": "Whitwham", "given": "A."},
+      {"family": "Keane", "given": "T."},
+      {"family": "McCarthy", "given": "S.A."},
+      {"family": "Davies", "given": "R.M."},
+      {"family": "Li", "given": "H."}
+    ],
+    "issued": {"date-parts": [[2021]]},
+    "container-title": "GigaScience",
+    "volume": "10",
+    "issue": "2",
+    "page": "giab008",
+    "DOI": "10.1093/gigascience/giab008"
+  },
+  {
+    "id": "doi:10.1093/database/baz046",
+    "type": "article-journal",
+    "title": "PanglaoDB: a web server for exploration of mouse and human single-cell RNA sequencing data",
+    "author": [
+      {"family": "Franzén", "given": "O."},
+      {"family": "Gan", "given": "L.-M."},
+      {"family": "Björkegren", "given": "J.L.M."}
+    ],
+    "issued": {"date-parts": [[2019]]},
+    "container-title": "Database",
+    "volume": "2019",
+    "page": "baz046",
+    "DOI": "10.1093/database/baz046"
+  },
+  {
+    "id": "doi:10.1186/s13059-014-0550-8",
+    "type": "article-journal",
+    "title": "Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2",
+    "author": [
+      {"family": "Love", "given": "M.I."},
+      {"family": "Huber", "given": "W."},
+      {"family": "Anders", "given": "S."}
+    ],
+    "issued": {"date-parts": [[2014]]},
+    "container-title": "Genome Biol",
+    "volume": "15",
+    "page": "550",
+    "DOI": "10.1186/s13059-014-0550-8"
+  },
+  {
+    "id": "doi:10.1186/s13059-019-1865-2",
+    "type": "article-journal",
+    "title": "Vireo: Bayesian demultiplexing of pooled single-cell RNA-seq data without genotype reference",
+    "author": [
+      {"family": "Huang", "given": "Y."},
+      {"family": "McCarthy", "given": "D.J."},
+      {"family": "Stegle", "given": "O."}
+    ],
+    "issued": {"date-parts": [[2019]]},
+    "container-title": "Genome Biol",
+    "volume": "20",
+    "page": "273",
+    "DOI": "10.1186/s13059-019-1865-2"
+  },
+  {
+    "id": "doi:10.1038/s41467-023-37168-7",
+    "type": "article-journal",
+    "title": "A comprehensive benchmarking with practical guidelines for cellular deconvolution of spatial transcriptomics",
+    "author": [
+      {"family": "Li", "given": "H."},
+      {"family": "Zhou", "given": "J."},
+      {"family": "Li", "given": "Z."},
+      {"family": "Chen", "given": "S."},
+      {"family": "Liao", "given": "X."},
+      {"family": "Zhang", "given": "B."},
+      {"family": "Zhang", "given": "R."},
+      {"family": "Wang", "given": "Y."},
+      {"family": "Sun", "given": "S."},
+      {"family": "Gao", "given": "X."}
+    ],
+    "issued": {"date-parts": [[2023]]},
+    "container-title": "Nat Commun",
+    "volume": "14",
+    "page": "1548",
+    "DOI": "10.1038/s41467-023-37168-7"
+  },
+  {
+    "id": "doi:10.1186/s13059-023-03016-6",
+    "type": "article-journal",
+    "title": "Effective methods for bulk RNA-seq deconvolution using scnRNA-seq transcriptomes",
+    "author": [
+      {"family": "Cobos", "given": "F.A."},
+      {"family": "Panah", "given": "M.J.N."},
+      {"family": "Epps", "given": "J."},
+      {"family": "Long", "given": "X."},
+      {"family": "Man", "given": "T.-K."},
+      {"family": "Chiu", "given": "H.-S."},
+      {"family": "Chomsky", "given": "E."},
+      {"family": "Kiner", "given": "E."},
+      {"family": "Krueger", "given": "M.J."},
+      {"family": "di Bernardo", "given": "D."},
+      {"family": "Voloch", "given": "L."}
+    ],
+    "issued": {"date-parts": [[2023]]},
+    "container-title": "Genome Biol",
+    "volume": "24",
+    "page": "177",
+    "DOI": "10.1186/s13059-023-03016-6"
+  },
+  {
+    "id": "doi:10.1186/s13059-024-03309-4",
+    "type": "article-journal",
+    "title": "An integrated single-cell RNA-seq map of human neuroblastoma tumors and preclinical models uncovers divergent mesenchymal-like gene expression programs",
+    "author": [
+      {"family": "Chapple", "given": "R.H."},
+      {"family": "Liu", "given": "X."},
+      {"family": "Natarajan", "given": "S."},
+      {"family": "Alexander", "given": "M.I.M."},
+      {"family": "Kim", "given": "Y."},
+      {"family": "Patel", "given": "A.G."},
+      {"family": "LaFlamme", "given": "C.W."},
+      {"family": "Pan", "given": "M."},
+      {"family": "Wright", "given": "W.C."},
+      {"family": "Lee", "given": "H.-M."},
+      {"family": "Zhang", "given": "Y."}
+    ],
+    "issued": {"date-parts": [[2024]]},
+    "container-title": "Genome Biol",
+    "volume": "25",
+    "page": "161",
+    "DOI": "10.1186/s13059-024-03309-4"
+  },
+  {
+    "id": "doi:10.48550/arXiv.1802.03426",
+    "type": "article-journal",
+    "title": "UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction",
+    "author": [
+      {"family": "McInnes", "given": "L."},
+      {"family": "Healy", "given": "J."},
+      {"family": "Melville", "given": "J."}
+    ],
+    "issued": {"date-parts": [[2018]]},
+    "container-title": "Preprint at arXiv",
+    "DOI": "10.48550/arXiv.1802.03426"
+  },
+  {
+    "id": "doi:10.5281/zenodo.20058961",
+    "type": "post-weblog",
+    "title": "AlexsLemonade/scpca-portal",
+    "author": [
+      {"family": "Gottlieb", "given": "A."},
+      {"family": "Mejia", "given": "D."},
+      {"family": "Ichihara", "given": "N."},
+      {"family": "Yakovets", "given": "A."},
+      {"family": "Wheeler", "given": "K."},
+      {"family": "Taroni", "given": "J."},
+      {"family": "Hawkins", "given": "A."},
+      {"family": "Prasad", "given": "D.V."},
+      {"family": "Shapiro", "given": "J."}
+    ],
+    "issued": {"date-parts": [[2026]]},
+    "container-title": "Zenodo",
+    "DOI": "10.5281/zenodo.20058961"
+  },
+  {
+    "id": "doi:10.5281/zenodo.20044281",
+    "type": "post-weblog",
+    "title": "AlexsLemonade/alsf-scpca",
+    "author": [
+      {"family": "Shapiro", "given": "J."},
+      {"family": "Hawkins", "given": "A."},
+      {"family": "Wheeler", "given": "K."},
+      {"family": "Spielman", "given": "S.J."},
+      {"family": "Yakovets", "given": "A."}
+    ],
+    "issued": {"date-parts": [[2026]]},
+    "container-title": "Zenodo",
+    "DOI": "10.5281/zenodo.20044281"
+  },
+  {
+    "id": "doi:10.5281/zenodo.20044314",
+    "type": "post-weblog",
+    "title": "AlexsLemonade/sc-data-integration",
+    "author": [
+      {"family": "Hawkins", "given": "A."},
+      {"family": "Spielman", "given": "S.J."},
+      {"family": "Shapiro", "given": "J."},
+      {"family": "Bethell", "given": "C."},
+      {"family": "Taroni", "given": "J."}
+    ],
+    "issued": {"date-parts": [[2026]]},
+    "container-title": "Zenodo",
+    "DOI": "10.5281/zenodo.20044314"
+  },
+  {
+    "id": "doi:10.5281/zenodo.18459136",
+    "type": "post-weblog",
+    "title": "AlexsLemonade/OpenScPCA-analysis",
+    "author": [
+      {"family": "Spielman", "given": "S.J."},
+      {"family": "Hawkins", "given": "A."},
+      {"family": "Shapiro", "given": "J."},
+      {"family": "Taroni", "given": "J."},
+      {"family": "Plaschka", "given": "M."},
+      {"family": "O'Malley", "given": "J."},
+      {"literal": "UTSouthwesternDSSR"},
+      {"family": "Prasad", "given": "D.V."},
+      {"family": "Chen", "given": "J."},
+      {"family": "Truong", "given": "D."},
+      {"family": "Jackson", "given": "R."},
+      {"family": "Al-Badri", "given": "G."},
+      {"literal": "RS"}
+    ],
+    "issued": {"date-parts": [[2026]]},
+    "container-title": "Zenodo",
+    "DOI": "10.5281/zenodo.18459136"
+  },
+  {
+    "id": "doi:10.5281/zenodo.20056054",
+    "type": "post-weblog",
+    "title": "AlexsLemonade/OpenScPCA-nf",
+    "author": [
+      {"family": "Shapiro", "given": "J."},
+      {"family": "Hawkins", "given": "A."},
+      {"family": "Spielman", "given": "S.J."},
+      {"family": "Jackson", "given": "R."},
+      {"family": "Taroni", "given": "J."}
+    ],
+    "issued": {"date-parts": [[2026]]},
+    "container-title": "Zenodo",
+    "DOI": "10.5281/zenodo.20056054"
+  },
+  {
+    "id": "doi:10.5281/zenodo.20044462",
+    "type": "post-weblog",
+    "title": "AlexsLemonade/ScPCAr",
+    "author": [
+      {"family": "Shapiro", "given": "J."}
+    ],
+    "issued": {"date-parts": [[2026]]},
+    "container-title": "Zenodo",
+    "DOI": "10.5281/zenodo.20044462"
+  },
 {
-  "id": "url:https://www.ebi.ac.uk/ols4/ontologies/hsapdv",
-  "type": "webpage",
-  "URL": "https://www.ebi.ac.uk/ols4/ontologies/hsapdv",
-  "title": "Ontology Lookup Service (OLS) - HsapDv"
-},
-{
-  "id": "url:https://www.ebi.ac.uk/ols4/ontologies/mondo",
-  "type": "webpage",
-  "URL": "https://www.ebi.ac.uk/ols4/ontologies/mondo",
-  "title": "Ontology Lookup Service (OLS) - MONDO"
-},
-{
-  "id": "url:https://www.ebi.ac.uk/ols4/ontologies/pato",
-  "type": "webpage",
-  "URL": "https://www.ebi.ac.uk/ols4/ontologies/pato",
-  "title": "Ontology Lookup Service (OLS) - PATO"
-},
-{
-  "id": "url:https://www.ebi.ac.uk/ols4/ontologies/uberon",
-  "type": "webpage",
-  "URL": "https://www.ebi.ac.uk/ols4/ontologies/uberon",
-  "title": "Ontology Lookup Service (OLS) - UBERON"
-},
-{
-  "id": "url:https://github.com/chanzuckerberg/single-cell-curation/blob/main/schema/3.0.0/schema.md",
-  "type": "webpage",
-  "abstract": "Code and documentation for the curation of cellxgene datasets - chanzuckerberg/single-cell-curation",
-  "container-title": "CZI Cellxgene",
-  "title": "CZI Single cell curation schema 3.0.0",
-  "URL": "https://github.com/chanzuckerberg/single-cell-curation/blob/main/schema/3.0.0/schema.md"
-}
+    "id": "doi:10.5281/zenodo.10685499",
+    "type": "post-weblog",
+    "title": "SCimilarity Models",
+    "author": [
+      {"family": "Heimberg", "given": "G."},
+      {"family": "Kuo", "given": "T."},
+      {"family": "Diamant", "given": "N."},
+      {"family": "Salem", "given": "O."},
+      {"family": "Bravo", "given": "H.C."},
+      {"family": "Vander Heiden", "given": "J."}
+    ],
+    "issued": {"date-parts": [[2024]]},
+    "container-title": "Zenodo",
+    "DOI": "10.5281/zenodo.10685499"
+  },
+  {
+  	"id": "doi:10.5281/zenodo.20086729",
+  	"type": "post-weblog",
+  	"title": "AlexsLemonade/scpca-paper-figures",
+  	"author": [
+      {"family": "Spielman", "given": "S.J."},
+      {"family": "Hawkins", "given": "A."},
+      {"family": "Shapiro", "given": "J."},
+      {"family": "Prasad", "given": "D.V."},
+      {"family": "Taroni", "given": "J."}
+    ],
+  	"issued": {"date-parts": [[2026]]},
+  	"container-title": "Zenodo",
+  	"DOI": "10.5281/zenodo.20086729"
+  },
+  {
+  	"id": "doi:10.5281/zenodo.20072636",
+  	"type": "post-weblog",
+  	"title": "AlexsLemonade/scpca-nf",
+  	"author": [
+      {"family": "Hawkins", "given": "A."},
+      {"family": "Spielman", "given": "S.J."},
+      {"family": "Shapiro", "given": "J."},
+      {"family": "Prasad", "given": "D."},
+      {"family": "Taroni", "given": "J."}
+    ],
+  	"issued": {"date-parts": [[2026]]},
+  	"container-title": "Zenodo",
+  	"DOI": "10.5281/zenodo.20072636"
+  }
 ]
