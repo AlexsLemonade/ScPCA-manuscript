@@ -213,7 +213,8 @@
       {"family": "Griffiths", "given": "L."},
       {"family": "Jin", "given": "H."},
       {"family": "Wu", "given": "G."},
-      {"family": "Orr", "given": "B."}
+      {"family": "Orr", "given": "B."},
+      {"family": "Tran", "given": "Q."}
     ],
     "issued": {"date-parts": [[2021]]},
     "container-title": "Nat Commun",
@@ -235,7 +236,8 @@
       {"family": "Clark", "given": "E.L."},
       {"family": "Di Tommaso", "given": "P."},
       {"family": "Djebali", "given": "S."},
-      {"family": "Ewels", "given": "P.A."}
+      {"family": "Ewels", "given": "P.A."},
+      {"family": "Eynard", "given": "S."}
     ],
     "issued": {"date-parts": [[2025]]},
     "container-title": "Genome Biol",
@@ -257,7 +259,8 @@
       {"family": "Ziraldo", "given": "S.B."},
       {"family": "Wheeler", "given": "T.D."},
       {"family": "McDermott", "given": "G.P."},
-      {"family": "Zhu", "given": "J."}
+      {"family": "Zhu", "given": "J."}, 
+      {"family": "Gregory", "given": "M.T."}
     ],
     "issued": {"date-parts": [[2017]]},
     "container-title": "Nat Commun",
@@ -279,7 +282,8 @@
       {"family": "Ellis", "given": "B."},
       {"family": "Gautier", "given": "L."},
       {"family": "Ge", "given": "Y."},
-      {"family": "Gentry", "given": "J."}
+      {"family": "Gentry", "given": "J."}, 
+      {"family": "Hortnik", "given": "K."}
     ],
     "issued": {"date-parts": [[2004]]},
     "container-title": "Genome Biol",
@@ -370,7 +374,8 @@
       {"family": "McCandless", "given": "B."},
       {"family": "Pisco", "given": "A.O."},
       {"family": "Kinsella", "given": "M."},
-      {"family": "Griffin", "given": "F."}
+      {"family": "Griffin", "given": "F."},
+      {"family": "Kiggins", "given": "J."}
     ],
     "issued": {"date-parts": [[2021]]},
     "container-title": "Preprint at bioRxiv",
@@ -381,7 +386,7 @@
     "type": "article-journal",
     "title": "CZ CELLxGENE Discover: A single-cell data platform for scalable exploration, analysis and modeling of aggregated data",
     "author": [
-      {"literal": "CZI Cell Science Program"},
+      {"literal": "CZI Single-Cell Biology Program"},
       {"family": "Abdulla", "given": "S."},
       {"family": "Aevermann", "given": "B."},
       {"family": "Assis", "given": "P."},
@@ -390,7 +395,8 @@
       {"family": "Bezzi", "given": "E."},
       {"family": "Cakir", "given": "B."},
       {"family": "Chaffer", "given": "J."},
-      {"family": "Chambers", "given": "S."}
+      {"family": "Chambers", "given": "S."},
+      {"family": "Cherry", "given": "J.M."}
     ],
     "issued": {"date-parts": [[2023]]},
     "container-title": "Preprint at bioRxiv",
@@ -423,7 +429,8 @@
       {"family": "Huang", "given": "X."},
       {"family": "Caraccio", "given": "C."},
       {"family": "Jin", "given": "H."},
-      {"family": "Sheppard", "given": "H."}
+      {"family": "Sheppard", "given": "H."},
+      {"family": "Xu", "given": "K."}
     ],
     "issued": {"date-parts": [[2024]]},
     "container-title": "Preprint at bioRxiv",
@@ -450,7 +457,7 @@
     "id": "doi:10.1038/nature11247",
     "type": "article-journal",
     "title": "An integrated encyclopedia of DNA elements in the human genome",
-    "author": [{"literal": "ENCODE Project Consortium"}],
+    "author": [{"literal": "The ENCODE Project Consortium"}],
     "issued": {"date-parts": [[2012]]},
     "container-title": "Nature",
     "volume": "489",
@@ -502,7 +509,8 @@
       {"family": "Lazar", "given": "A.J."},
       {"family": "Livingston", "given": "J.A."},
       {"family": "Gopalakrishnan", "given": "V."},
-      {"family": "Gordon", "given": "N."}
+      {"family": "Gordon", "given": "N."}, 
+      {"family": "Daw", "given": "N.C."}
     ],
     "issued": {"date-parts": [[2023]]},
     "container-title": "BMC Cancer",
@@ -524,7 +532,8 @@
       {"family": "Zhang", "given": "Z."},
       {"family": "Lapouble", "given": "E."},
       {"family": "Grossetête-Lalami", "given": "S."},
-      {"family": "Rusch", "given": "M."}
+      {"family": "Rusch", "given": "M."},
+      {"family": "Reynaud", "given": "S."}
     ],
     "issued": {"date-parts": [[2014]]},
     "container-title": "Cancer Discovery",
@@ -585,7 +594,8 @@
       {"family": "He", "given": "Y."},
       {"family": "Osumi-Sutherland", "given": "D."},
       {"family": "Ruttenberg", "given": "A."},
-      {"family": "Sarntivijai", "given": "S."}
+      {"family": "Sarntivijai", "given": "S."},
+      {"family": "Van Slyke", "given": "C.E."}
     ],
     "issued": {"date-parts": [[2016]]},
     "container-title": "J Biomed Semant",
@@ -643,7 +653,9 @@
       {"family": "Leipe", "given": "D."},
       {"family": "Mcveigh", "given": "R."},
       {"family": "O'Neill", "given": "K."},
-      {"family": "Robbertse", "given": "B."}
+      {"family": "Robbertse", "given": "B."}, 
+      {"family": "Sharma", "given": "S."}
+
     ],
     "issued": {"date-parts": [[2020]]},
     "container-title": "Database",
@@ -710,7 +722,8 @@
       {"family": "Peng", "given": "J.-Y."},
       {"family": "Zhang", "given": "W."},
       {"family": "Shi", "given": "L."},
-      {"family": "Zhong", "given": "X.-L."}
+      {"family": "Zhong", "given": "X.-L."}, 
+      {"family": "Kang", "given": "M."}
     ],
     "issued": {"date-parts": [[2024]]},
     "container-title": "Front. Pediatr.",
@@ -732,7 +745,8 @@
       {"family": "Bodenmiller", "given": "B."},
       {"family": "Campbell", "given": "P."},
       {"family": "Carninci", "given": "P."},
-      {"family": "Clatworthy", "given": "M."}
+      {"family": "Clatworthy", "given": "M."}, 
+      {"family": "Clevers", "given": "H."}
     ],
     "issued": {"date-parts": [[2017]]},
     "container-title": "eLife",
@@ -805,7 +819,8 @@
       {"family": "Hall", "given": "P."},
       {"family": "Junkins", "given": "H.A."},
       {"family": "Milano", "given": "A."},
-      {"family": "Hastings", "given": "E."}
+      {"family": "Hastings", "given": "E."},
+      {"family": "Malangone", "given": "C."}
     ],
     "issued": {"date-parts": [[2018]]},
     "container-title": "Genome Biol",
@@ -827,7 +842,8 @@
       {"family": "Gehrke", "given": "S."},
       {"family": "Whetzel", "given": "P.L."},
       {"family": "Shwetar", "given": "Y."},
-      {"family": "Harris", "given": "N.L."}
+      {"family": "Harris", "given": "N.L."},
+      {"family": "Ngu", "given": "M.S."}
     ],
     "issued": {"date-parts": [[2025]]},
     "container-title": "Genetics",
@@ -871,7 +887,8 @@
       {"family": "Whitwham", "given": "A."},
       {"family": "Keane", "given": "T."},
       {"family": "McCarthy", "given": "S.A."},
-      {"family": "Davies", "given": "R.M."}
+      {"family": "Davies", "given": "R.M."},
+      {"family": "Li", "given": "H."}
     ],
     "issued": {"date-parts": [[2021]]},
     "container-title": "GigaScience",
@@ -961,7 +978,8 @@
       {"family": "Chomsky", "given": "E."},
       {"family": "Kiner", "given": "E."},
       {"family": "Krueger", "given": "M.J."},
-      {"family": "di Bernardo", "given": "D."}
+      {"family": "di Bernardo", "given": "D."},
+      {"family": "Voloch", "given": "L."}
     ],
     "issued": {"date-parts": [[2023]]},
     "container-title": "Genome Biol",
@@ -983,7 +1001,8 @@
       {"family": "LaFlamme", "given": "C.W."},
       {"family": "Pan", "given": "M."},
       {"family": "Wright", "given": "W.C."},
-      {"family": "Lee", "given": "H.-M."}
+      {"family": "Lee", "given": "H.-M."},
+      {"family": "Zhang", "given": "Y."}
     ],
     "issued": {"date-parts": [[2024]]},
     "container-title": "Genome Biol",
