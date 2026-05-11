@@ -83,6 +83,7 @@ Gkoutos
 glial
 glioma
 gliomas
+glioneuronal
 Gottlieb
 granulocyte
 granulocytes
