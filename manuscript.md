@@ -9,7 +9,7 @@ keywords:
 - open science
 - reproducibility
 lang: en-US
-date-meta: '2026-05-08'
+date-meta: '2026-05-11'
 author-meta:
 - Allegra G. Hawkins
 - Joshua A. Shapiro
@@ -36,11 +36,11 @@ header-includes: |
   <meta name="citation_title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="og:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
   <meta property="twitter:title" content="The Single-cell Pediatric Cancer Atlas: Data portal and open-source tools for single-cell transcriptomics of pediatric tumors" />
-  <meta name="dc.date" content="2026-05-08" />
-  <meta name="citation_publication_date" content="2026-05-08" />
-  <meta property="article:published_time" content="2026-05-08" />
-  <meta name="dc.modified" content="2026-05-08T19:02:14+00:00" />
-  <meta property="article:modified_time" content="2026-05-08T19:02:14+00:00" />
+  <meta name="dc.date" content="2026-05-11" />
+  <meta name="citation_publication_date" content="2026-05-11" />
+  <meta property="article:published_time" content="2026-05-11" />
+  <meta name="dc.modified" content="2026-05-11T16:28:26+00:00" />
+  <meta property="article:modified_time" content="2026-05-11T16:28:26+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -94,9 +94,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/" />
   <meta name="citation_pdf_url" content="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://AlexsLemonade.github.io/ScPCA-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/bde918d309f35a0925475b0bcc526203d97f33f3/" />
-  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/bde918d309f35a0925475b0bcc526203d97f33f3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/bde918d309f35a0925475b0bcc526203d97f33f3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://AlexsLemonade.github.io/ScPCA-manuscript/v/804c5bac5379db7d0cba1e3184cc3eb2a8a58dea/" />
+  <meta name="manubot_html_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/804c5bac5379db7d0cba1e3184cc3eb2a8a58dea/" />
+  <meta name="manubot_pdf_url_versioned" content="https://AlexsLemonade.github.io/ScPCA-manuscript/v/804c5bac5379db7d0cba1e3184cc3eb2a8a58dea/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -118,10 +118,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/bde918d309f35a0925475b0bcc526203d97f33f3/))
+([permalink](https://AlexsLemonade.github.io/ScPCA-manuscript/v/804c5bac5379db7d0cba1e3184cc3eb2a8a58dea/))
 was automatically generated
-from [AlexsLemonade/ScPCA-manuscript@bde918d](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/bde918d309f35a0925475b0bcc526203d97f33f3)
-on May 8, 2026.
+from [AlexsLemonade/ScPCA-manuscript@804c5ba](https://github.com/AlexsLemonade/ScPCA-manuscript/tree/804c5bac5379db7d0cba1e3184cc3eb2a8a58dea)
+on May 11, 2026.
 </em></small>
 
 
@@ -487,7 +487,7 @@ Library-specific versions of Figures {@fig:fig4}A and {@fig:fig3}C are included 
 #### Consensus cell type annotations in brain and CNS samples available on the Portal
 
 Consensus annotations are particularly useful when examining samples from multiple projects.
-Figure {@fig:fig4}B, for example, displays cell types across all high-grade (HGG) and low-grade glioma (LGG) samples, which originate from six projects and four investigators and reveals similar cell types across all glioma samples.
+Figure {@fig:fig4}B, for example, displays cell types across all high-grade (HGG) and low-grade glial/glioneuronal (LGG) samples, which originate from six projects and four investigators and reveals similar cell types across all samples.
 
 Previous studies have characterized the glioma immune microenvironment as predominantly comprised of myeloid cells, including microglia and glioma-associated macrophages, with smaller proportions of lymphocytes such as T cells [@doi:10.1038/s41698-024-00717-4; @doi:10.1093/noajnl/vdad009].
 While we observe that most immune cells in glioma samples are myeloid or T cell types, there is notable notable heterogeneity within HGG and LGG subtypes (Figure {@fig:fig4}C).
@@ -572,7 +572,7 @@ All projects included in this publication are available from the ScPCA Portal wi
 - All code for creating reference files for consensus cell type assignment is available at <https://github.com/AlexsLemonade/OpenScPCA-analysis/tree/main/analyses/cell-type-consensus>, and all repository contents are archived at 10.5281/zenodo.18459136.
 - All code to assign OpenScPCA project cell type annotations is available at <https://github.com/AlexsLemonade/OpenScPCA-nf> and is archived at 10.5281/zenodo.20056054 [@doi:10.5281/zenodo.20056054].
 - All code for the `ScPCAr` package for programmatically downloading data from the Portal can be found at <https://github.com/AlexsLemonade/ScPCAr> and is archived at 10.5281/zenodo.20044462 [@doi:10.5281/zenodo.20044462].
-- All code for the underlying figures and analyses is available at <https://github.com/AlexsLemonade/scpca-paper-figures> and is archived at 10.5281/zenodo.20086729 [@doi:10.5281/zenodo.20086729].
+- All code for the underlying figures and analyses is available at <https://github.com/AlexsLemonade/scpca-paper-figures> and is archived at 10.5281/zenodo.20123383 [@doi:10.5281/zenodo.20123383].
 To reproduce the figures in this manuscript, see <https://github.com/AlexsLemonade/scpca-paper-figures/tree/main/reproduce-figures>.
 
 ##### Additional information
@@ -904,7 +904,7 @@ Documentation for the ScPCA Portal can be found at <https://scpca.readthedocs.io
 | Code for creating reference files for consensus cell type assignment | This paper | https://github.com/AlexsLemonade/OpenScPCA-analysis [@doi:10.5281/zenodo.18459136] |
 | Workflow for assigning OpenScPCA project cell type annotations to ScPCA data | This paper | https://github.com/AlexsLemonade/OpenScPCA-nf [@doi:10.5281/zenodo.20056054] |
 | `ScPCAr` package for programmatically downloading from the Portal | This paper | https://github.com/AlexsLemonade/ScPCAr [@doi:10.5281/zenodo.20044462]|
-| Code for underlying figures and analyses | This paper | https://github.com/AlexsLemonade/scpca-paper-figures [@doi:10.5281/zenodo.20086729] |
+| Code for underlying figures and analyses | This paper | https://github.com/AlexsLemonade/scpca-paper-figures [@doi:10.5281/zenodo.20123383] |
 | Nextflow | Tomasso et al. [@doi:10.1038/nbt.3820] | https://github.com/nextflow-io/nextflow/tree/master | 
 | `salmon` | Patro et al. [@doi:10.1038/nmeth.4197] | https://anaconda.org/channels/bioconda/packages/salmon/overview | 
 | `alevin-fry` | He et al. [@doi:10.1038/s41592-022-01408-3] | https://anaconda.org/channels/bioconda/packages/alevin-fry/overview | 
@@ -1054,7 +1054,7 @@ Marker genes for all cell types in each organ were included.
 ## Figure Titles and Legends {.page_break_before}
 
 <!-- Figure 1 -->
-![**Overview of ScPCA Portal contents.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_1.png?sanitize=true){#fig:fig1 tag="1" width="7in"}
+![**Overview of ScPCA Portal contents.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.4/figures/compiled_figures/pngs/figure_1.png?sanitize=true){#fig:fig1 tag="1" width="7in"}
 
 A. Barplots showing sample counts across four main cancer groupings in the ScPCA Portal with the total number of samples per cancer type displayed.
 Bars are colored by the number of samples with the indicated disease timing.
@@ -1077,7 +1077,7 @@ Also see Table S1.
 
 
 <!-- Figure 2 -->
-![**Overview of the `scpca-nf` workflow and download file structures.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_2.png?sanitize=true){#fig:fig2 tag="2" width="7in"}
+![**Overview of the `scpca-nf` workflow and download file structures.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.4/figures/compiled_figures/pngs/figure_2.png?sanitize=true){#fig:fig2 tag="2" width="7in"}
 
 A. Overview of `scpca-nf`, the primary workflow for processing single-cell/nuclei RNA-seq data for the ScPCA Portal.
 Mapping is first performed with `alevin-fry` to generate a gene-by-cell count matrix, which is read into `R` and converted into a `SingleCellExperiment` (`SCE`) object (`Unfiltered SCE Object`).
@@ -1125,7 +1125,7 @@ Also see Figures S1-S3.
 
 
 <!-- Figure 3 -->
-![**Consensus cell type annotation in `scpca-nf`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_3.png?sanitize=true){#fig:fig3 tag="3" width="7in"}
+![**Consensus cell type annotation in `scpca-nf`.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.4/figures/compiled_figures/pngs/figure_3.png?sanitize=true){#fig:fig3 tag="3" width="7in"}
 
 A. Expanded view of cell type annotation process within `scpca-nf`, as introduced in Figure {@fig:fig2}A.
 Cell type annotation is performed on the `Processed SCE Object`.
@@ -1148,7 +1148,7 @@ Also see Figure S4 and Table S2.
 
 
 <!-- Figure 4 -->
-![**Consensus cell type annotations in brain and CNS tumors.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_4.png?sanitize=true){#fig:fig4 tag="4" width="7in"}
+![**Consensus cell type annotations in brain and CNS tumors.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.4/figures/compiled_figures/pngs/figure_4.png?sanitize=true){#fig:fig4 tag="4" width="7in"}
 
 A. Dot plot showing expression of cell-type-specific marker genes across all libraries from brain and central nervous system (CNS) tumors, excluding multiplexed libraries.
 Expression is shown for each broad cell type annotation, each of which represents a collection of similar consensus cell type annotations.
@@ -1158,9 +1158,9 @@ Dots are colored by mean gene expression across libraries and sized proportional
 Up to 10 marker genes are shown per broad cell type.
 Only broad cell type annotations present in at least 50 cells across samples in the given diagnosis group are shown.
 
-B. Barplot showing the percentage of each broad consensus cell type annotation across brain and CNS tumors libraries, separated into high-grade (top panel) and low-grade (bottom panel) glioma diagnoses for non-multiplexed libraries from patient tissue samples.
+B. Barplot showing the percentage of each broad consensus cell type annotation across brain and CNS tumors libraries, separated into high-grade glioma(top panel) and low-grade glial/glioneuronal (bottom panel) diagnoses for non-multiplexed libraries from patient tissue samples.
 
-C. Barplot showing all consensus cell types classified as immune cells across brain and CNS tumor libraries, separated into high-grade (top panel) and low-grade (bottom panel) glioma diagnoses for non-multiplexed libraries.
+C. Barplot showing all consensus cell types classified as immune cells across brain and CNS tumor libraries, separated into high-grade glioma (top panel) and low-grade glial/glioneuronal (bottom panel) diagnoses for non-multiplexed libraries.
 The percentage of immune cells classified as the indicated consensus cell type is shown.
 Only libraries comprised of at least 1\% immune cells, based on consensus cell type annotations, are shown.
 Specific consensus cell types for myeloid and lymphocyte immune cells are shown, with all other consensus immune cell types included in "other."
@@ -1174,7 +1174,7 @@ Also see Figures S5-S6.
 <br><br>
 
 <!-- Figure 5 -->
-![**Cell type annotation and CNV inference on neuroblastoma samples.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_5.png?sanitize=true){#fig:fig5 tag="5" width="7in"}
+![**Cell type annotation and CNV inference on neuroblastoma samples.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.4/figures/compiled_figures/pngs/figure_5.png?sanitize=true){#fig:fig5 tag="5" width="7in"}
 
 A-B. UMAP of all libraries in the neuroblastoma-only ScPCA Project `SCPCP000004` (N = 42).
 The UMAP was constructed from the merged `SCPCP000004` object with equal library weighting, but no batch correction was performed.
@@ -1191,7 +1191,7 @@ Other consensus cell types are shown in the "all remaining cell types" category.
 
 
 <!-- Figure 6 -->
-![**Comparison of bulk and pseudobulk modalities.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_6.png?sanitize=true){#fig:fig6 tag="6" width="7in"}
+![**Comparison of bulk and pseudobulk modalities.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.4/figures/compiled_figures/pngs/figure_6.png?sanitize=true){#fig:fig6 tag="6" width="7in"}
 
 A. Scatter plots colored by point density of `DESeq2`-transformed and normalized bulk RNA-seq expression compared to pseudobulk expression from single-cell/nuclei RNA-seq, with a regression line shown.
 Samples with RNA-seq for both bulk and single-cell/nuclei modalities, excluding multiplexed samples, from ScPCA projects of brain and CNS tumors are shown, with sample counts in parentheses.
@@ -1205,7 +1205,7 @@ Also see Figure S7.
 ## Supplementary Figures {.page_break_before}
 
 <!-- Figure S1 -->
-![**Results from benchmarking `alevin-fry` and `cellranger count` performance, Related to Figure 2.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_s1.png?sanitize=true){#fig:figS1 tag="S1" width="7in"}
+![**Results from benchmarking `alevin-fry` and `cellranger count` performance, Related to Figure 2.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.4/figures/compiled_figures/pngs/figure_s1.png?sanitize=true){#fig:figS1 tag="S1" width="7in"}
 
 Panels compare metrics for six ScPCA libraries (three single-cell and three single-nuclei), obtained from processing with `salmon alevin` and `alevin-fry` or `cellranger count`.
 Results were generated with CellRanger v6.1.2 using default parameters for single-cell libraries and the `--include_introns` flag to include intronic reads for single-nuclei libraries only.
@@ -1229,7 +1229,7 @@ The total number of genes detected per cell between platforms broadly agree, alt
 <br><br>
 
 <!-- Figure S2 -->
-![**Processing additional single-cell modalities in `scpca-nf`, Related to Figure 2.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_s2.png?sanitize=true){#fig:figS2 tag="S2" width="7in"}
+![**Processing additional single-cell modalities in `scpca-nf`, Related to Figure 2.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.4/figures/compiled_figures/pngs/figure_s2.png?sanitize=true){#fig:figS2 tag="S2" width="7in"}
 
 A. Overview of the `scpca-nf` workflow for processing libraries with CITE-seq or antibody-derived tag (ADT) data.
 The workflow mirrors that shown in Figure {@fig:fig2}A with several differences accounting for the presence of ADT data.
@@ -1260,7 +1260,7 @@ Third, only `SCE`, not `AnnData`, files are provided for multiplexed libraries.
 <br><br>
 
 <!-- Figure S3 -->
-![**Processing other sequencing modalities and merging objects with `scpca-nf`, Related to Figure 2.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_s3.png?sanitize=true){#fig:figS3 tag="S3" width="7in"}
+![**Processing other sequencing modalities and merging objects with `scpca-nf`, Related to Figure 2.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.4/figures/compiled_figures/pngs/figure_s3.png?sanitize=true){#fig:figS3 tag="S3" width="7in"}
 
 A. Overview of the bulk RNA-Seq workflow.
 Reads are trimmed using `fastp`, and `salmon` is used to map reads and quantify counts.
@@ -1282,7 +1282,7 @@ For this figure specifically, the merged UMAP was constructed from these four li
 <br><br>
 
 <!--Figure S4-->
-![**Ontology-aware consensus cell type assignment provides harmonized labels for cells, Related to Figure 3.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_s4.png?sanitize=true){#fig:figS4 tag="S4" width="7in"}
+![**Ontology-aware consensus cell type assignment provides harmonized labels for cells, Related to Figure 3.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.4/figures/compiled_figures/pngs/figure_s4.png?sanitize=true){#fig:figS4 tag="S4" width="7in"}
 
 A. UMAP highlighting cells annotated as types of T cells with `SingleR`, `CellAssign`, `SCimilarity` as well as the associated consensus cell types for the library `SCPCL000049`.
 All other cells are shown in gray.
@@ -1296,7 +1296,7 @@ C. UMAP showing total per-cell CNV events, calculated by summing the number of c
 
 
 <!-- Figure S5 -->
-![**Consensus cell type annotation gene expression in other diagnosis groups, Related to Figure 4.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_s5.png?sanitize=true){#fig:figS5 tag="S5" width="9in"}
+![**Consensus cell type annotation gene expression in other diagnosis groups, Related to Figure 4.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.4/figures/compiled_figures/pngs/figure_s5.png?sanitize=true){#fig:figS5 tag="S5" width="9in"}
 
 Dot plots showing expression of cell-type-specific marker genes across libraries from Leukemia (A), Sarcoma (B), and Other solid tumors (C) diagnosis groups.
 Expression is shown for each broad cell type annotation.
@@ -1309,7 +1309,7 @@ Cell types without associated marker genes in `CellMarker 2.0` are excluded, inc
 <br><br>
 
 <!-- Figure S6 -->
-![**Consensus cell type annotation distributions in other diagnosis groups, Related to Figure 4.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_s6.png?sanitize=true){#fig:figS6 tag="S6" width="7in"}
+![**Consensus cell type annotation distributions in other diagnosis groups, Related to Figure 4.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.4/figures/compiled_figures/pngs/figure_s6.png?sanitize=true){#fig:figS6 tag="S6" width="7in"}
 
 Barplots of the percentage of cells annotated as each broad consensus cell type annotation across all libraries from Leukemia (A), Sarcoma (B), and Other solid tumors (C) diagnosis groups, specifically for non-multiplexed libraries from patient tissue samples
 Libraries are grouped by diagnosis in each panel.
@@ -1317,7 +1317,7 @@ Each column represents the distribution of cell types within a single library.
 <br><br>
 
 <!-- Figure S7 -->
-![**Comparison of bulk and pseudobulk modalities for additional projects, Related to Figure 6.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.2/figures/compiled_figures/pngs/figure_s7.png?sanitize=true){#fig:figS7 tag="S7" width="7in"}
+![**Comparison of bulk and pseudobulk modalities for additional projects, Related to Figure 6.**](https://raw.githubusercontent.com/AlexsLemonade/scpca-paper-figures/v0.2.4/figures/compiled_figures/pngs/figure_s7.png?sanitize=true){#fig:figS7 tag="S7" width="7in"}
 
 A. Scatter plots colored by point density of `DESeq2`-transformed and normalized bulk RNA-seq expression compared to pseudobulk expression from single-nuclei RNA-seq, with a regression line shown.
 Projects with RNA-seq for both bulk and single-cell/nuclei modalities that are not displayed in Figure {@fig:fig6}A are shown, with sample counts in parentheses.

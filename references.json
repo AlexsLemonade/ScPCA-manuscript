@@ -105,7 +105,7 @@
         [
           "2026",
           5,
-          8
+          11
         ]
       ]
     },
@@ -8371,7 +8371,7 @@
     "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: doi:10.5281/zenodo.20072636"
   },
   {
-    "id": "6NEUnmNP",
+    "id": "19PK9p5Of",
     "type": "post-weblog",
     "title": "AlexsLemonade/scpca-paper-figures",
     "author": [
@@ -8404,8 +8404,8 @@
       ]
     },
     "container-title": "Zenodo",
-    "DOI": "10.5281/zenodo.20086729",
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: doi:10.5281/zenodo.20086729"
+    "DOI": "10.5281/zenodo.20123383",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: doi:10.5281/zenodo.20123383"
   },
   {
     "id": "vk9ZInF3",
